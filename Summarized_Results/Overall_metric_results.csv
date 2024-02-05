@@ -1,0 +1,5 @@
+"","Model_Prompt","Overall Sensitivity","Overall Specificity","Overall Balanced Accuracy"
+"1","GPT-4 Turbo Vision - Expert","0.579(+/-0.14)","0.558(+/-0.08)","0.569(+/-0.07)"
+"2","GPT-4 Turbo Vision - Standard","0.512(+/-0.16)","0.641(+/-0.08)","0.576(+/-0.09)"
+"3","Gemini Pro Vision - Expert","0.449(+/-0.13)","0.731(+/-0.07)","0.59(+/-0.07)"
+"4","Gemini Pro Vision - Standard","0.592(+/-0.14)","0.602(+/-0.09)","0.597(+/-0.08)"
