@@ -1,0 +1,15 @@
+"0","library(tidyverse)"
+"0","library(caret)"
+"0","library(knitr)"
+"2","Warning: package ‘knitr’ was built under R version 4.2.3"
+"0","library(kableExtra)"
+"2","Warning: package ‘kableExtra’ was built under R version 4.2.2"
+"2","
+Attaching package: ‘kableExtra’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    group_rows
+
+"

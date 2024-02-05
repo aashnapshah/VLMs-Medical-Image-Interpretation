@@ -1,0 +1,9 @@
+library(tidyverse)
+ham <- read_csv("~/../Downloads/HAM10000_metadata.csv")
+
+names(ham)
+head(ham)
+
+ham %>% 
+  group_by(dx) %>% 
+  count()
