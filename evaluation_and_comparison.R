@@ -1,13 +1,13 @@
 library(tidyverse)
 library(caret)
 
-ddi <- read_csv("../DDI/ddi_metadata.csv")
+ddi <- read_csv("api_results/ddi_metadata.csv")
 
 # Read the CSV files
-df2 <- read_csv("gemini_ddi_results_2.csv")
-df3 <- read_csv("gemini_ddi_results_missing_2v1.csv")
-df4 <- read_csv("gemini_ddi_results_missing_2v2.csv")
-df5 <- read_csv("gemini_ddi_results_missing_2v3.csv")
+df2 <- read_csv("api_results/gemini_ddi_results_2.csv")
+df3 <- read_csv("api_results/gemini_ddi_results_missing_2v1.csv")
+df4 <- read_csv("api_results/gemini_ddi_results_missing_2v2.csv")
+df5 <- read_csv("api_results/gemini_ddi_results_missing_2v3.csv")
 
 # Merge the data frames
 result_df <- df2 %>%
@@ -76,8 +76,8 @@ g2 %>%
   summarise(mean_acc = mean(standard_correct), N = n())
 
 #### GPT-4 ####
-gpt4 <- read_csv("gpt4_responses.csv")
-gpt4_missing <- read_csv("gpt4_responses_missing.csv")
+gpt4 <- read_csv("api_results/gpt4_responses.csv")
+gpt4_missing <- read_csv("api_results/gpt4_responses_missing.csv")
 
 gpt4_missing <- gpt4_missing %>% 
   filter((Filename %in% c("000424.png", "000441.png") & !grepl("expert", TextPrompt)) |
@@ -142,8 +142,8 @@ g4 %>%
 
 
 #### Get the new prompt responses ####
-df_gem6 <- read_csv("gemini_ddi_results_p34_1.csv")
-df_gem7 <- read_csv("gemini_ddi_results_missing_p34_1v1.csv")
+df_gem6 <- read_csv("api_results/gemini_ddi_results_p34_1.csv")
+df_gem7 <- read_csv("api_results/gemini_ddi_results_missing_p34_1v1.csv")
 
 # Merge the data frames
 g6 <- df_gem6 %>%
@@ -199,7 +199,7 @@ g6 <- inner_join(g6, ddi, by = c("Filename" = "DDI_file"))
 g6 %>% count(responded_expert_eng)
 g6 %>% count(responded_standard_eng)
 
-df_gpt6 <- read_csv("gpt4_responses_p12_1.csv")
+df_gpt6 <- read_csv("api_results/gpt4_responses_p12_1.csv")
 
 g8 <- df_gpt6 %>% 
   mutate(prompt_version = case_when(
@@ -365,8 +365,8 @@ results <- results %>%
 #### Write Results ####
 # write_csv(results, "bootstrapped_metrics_all.csv")
 # write_csv(results, "bootstrapped_metrics_intersection.csv")
-results <- read_csv("bootstrapped_metrics_all.csv")
-results <- read_csv("bootstrapped_metrics_intersection.csv")
+results <- read_csv("classification_results/bootstrapped_metrics_all.csv")
+results <- read_csv("classification_results/bootstrapped_metrics_intersection.csv")
 
 derm_ensemble <- data.frame(FST = c('I-II', 'V-VI'), Sensitivity = c(.84, 0.4), Specificity = c(0.6, 0.79))
 derm_ensemble <- derm_ensemble %>% 
