@@ -94,19 +94,38 @@ g2 %>%
   group_by(skin_tone) %>% 
   summarise(mean_acc = mean(standard_correct), N = n())
 
+#### Gemini Prompt 5 & 6 ####
+filenames <- c("api_results/gemini_ddi_results_p56_1.csv",
+               "api_results/gemini_ddi_results_missing_p56_1v1.csv")
+
+g6 <- read_and_merge(filenames)
+# Fill NA values in 'Response' column until max responses 
+g6 <- g6 %>%
+  mutate(Response = coalesce(Response, Response.2))
+
+# Remove the additional Response columns if not needed
+g6 <- select(g6, -starts_with("Response."))%>% 
+  mutate(prompt_version = map_prompt_version(TextPrompt)) %>% 
+  select(-TextPrompt) %>% 
+  pivot_wider(names_from = prompt_version, values_from = Response)
+
+# Apply the function to each prompt version
+prompt_versions <- c("P5", "P6")
+for (version in prompt_versions) {
+  g6 <- analyze_prompt_version_gemini(g6, version)
+}
+g6 <- inner_join(g6, ddi, by = c("Filename" = "DDI_file"))
+
 #### GPT-4 Prompts 5 & 6####
 gpt4 <- read_csv("api_results/gpt4_responses.csv")
 gpt4_missing <- read_csv("api_results/gpt4_responses_missing.csv")
 
-# Manual filtering since there were so few missing 
-gpt4_missing <- gpt4_missing %>% 
-  filter((Filename %in% c("000424.png", "000441.png") & !grepl("expert", TextPrompt)) |
-           (Filename %in% c("000482.png", "000520.png") & grepl("expert", TextPrompt)))
+filenames <- c("api_results/gpt4_responses.csv",
+               "api_results/gpt4_responses_missing.csv")
 
-gpt_results <- tibble(rbind(gpt4, gpt4_missing))
-
-# Remove the additional Response columns if not needed
-gpt_results <- select(gpt_results, -starts_with("Response."))
+gpt_results <- read_and_merge(filenames)
+gpt_results <- gpt_results %>% 
+  mutate(Response = coalesce(Response, Response.2))
 
 # Function to analyze responses for a given prompt version
 analyze_prompt_version_gpt4 <- function(df, prompt_version) {
@@ -143,28 +162,6 @@ for (version in prompt_versions_g4) {
 g4 <- inner_join(g4, ddi, by = c("Filename" = "DDI_file"))
 
 
-#### Get the new prompt responses ####
-filenames <- c("api_results/gemini_ddi_results_p34_1.csv",
-               "api_results/gemini_ddi_results_missing_p34_1v1.csv")
-
-g6 <- read_and_merge(filenames)
-# Fill NA values in 'Response' column until max responses 
-g6 <- g6 %>%
-  mutate(Response = coalesce(Response, Response.2))
-
-# Remove the additional Response columns if not needed
-g6 <- select(g6, -starts_with("Response."))%>% 
-  mutate(prompt_version = map_prompt_version(TextPrompt)) %>% 
-  select(-TextPrompt) %>% 
-  pivot_wider(names_from = prompt_version, values_from = Response)
-
-# Apply the function to each prompt version
-prompt_versions <- c("P5", "P6")
-for (version in prompt_versions) {
-  g6 <- analyze_prompt_version_gemini(g6, version)
-}
-g6 <- inner_join(g6, ddi, by = c("Filename" = "DDI_file"))
-
 #### GPT4 Prompts 1 & 2 ####
 df_gpt12 <- read_csv("api_results/gpt4_responses_p12_1.csv")
 
@@ -179,6 +176,21 @@ for (version in prompt_versions_g8) {
   g8 <- analyze_prompt_version_gpt4(g8, version)
 }
 g8 <- inner_join(g8, ddi, by = c("Filename" = "DDI_file"))
+
+#### GPT4 Prompts 3 & 4 ####
+df_gpt12 <- read_csv("api_results/gpt4_responses_p34_1.csv")
+
+g10 <- select(df_gpt12, -starts_with("Response."))%>% 
+  mutate(prompt_version = map_prompt_version(TextPrompt)) %>% 
+  select(-TextPrompt) %>% 
+  pivot_wider(names_from = prompt_version, values_from = Response)
+
+
+prompt_versions_g10 <- c("P3", "P4")
+for (version in prompt_versions_g10) {
+  g10 <- analyze_prompt_version_gpt4(g10, version)
+}
+g10 <- inner_join(g10, ddi, by = c("Filename" = "DDI_file"))
 
 
 #### Get intersection ####
