@@ -1,0 +1,383 @@
+---
+title: "evaluation_and_comparison.R"
+author: "Aashna Shah"
+date: "2024-03-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(caret)
+```
+
+
+```{r cars}
+
+prompt_df <- read.csv('prompts.csv')
+# Read in Gemini results and add model column
+gemini_results <- read.csv('data/gemini_chexpert_results_20240312.csv')
+gemini_results$model <- 'Gemini Pro Vision'
+
+# Read in GPT-4v results and add model column
+openai_results <- read.csv('/Users/aashnashah/Dropbox/Research/gpt_refusal_xray/data/gpt4v_chexpert_results_20240318.csv')
+openai_results$model <- 'GPT-4v with Vision'
+
+api_results <- rbind(openai_results, gemini_results)
+
+# Read in demographics data
+demographics <- read.csv('data/processed_test_set_2024-03-10.csv')
+demographics <- read.csv('data/processed_test_val_set_20240319.csv')
+demographics$AGE_GROUP <- cut(demographics$AGE_AT_CXR, breaks = c(0, 44, 70, Inf), labels = c("18-44", "44-70", "70-96"))
+
+# Merge GPT-4v results with demographics
+df <- merge(api_results, demographics, by.x = "Filename", by.y = "Path", all.x = TRUE)
+
+df <- df[order(df$Filename, df$PromptID), ]
+
+# Displaying the head of the combined dataframe
+head(df)
+```
+
+```{r}
+print(nrow(demographics))
+print(nrow(df))
+```
+
+
+```{r pressure, echo=FALSE}
+
+# Define a function to categorize the model's response
+categorize_response <- function(response) {
+  response <- tolower(response)
+    ifelse(grepl("\\b(error)\\b", response), "Blocked",
+        ifelse(grepl("sorry|cannot|not possible|impossible to", response, ignore.case = TRUE), "Refused",
+           ifelse(grepl("\\b(normal)\\b", response) | grepl("\\b(abnormal)\\b", response), "Diagnosed",
+              ifelse(is.na(response), "Blocked", "Blocked")
+                )
+         )
+  )
+}
+
+# Define a function to extract the initial response
+extract_initial_response <- function(response) {
+  response <- tolower(response)
+  ifelse(grepl("\\b(abnormal)\\b", response), 1,
+         ifelse(grepl("\\b(normal)\\b", response), 0, NA)
+  )
+}
+
+# Clean the dataframe
+df_cleaned <- df %>%
+  mutate(CategorizedResponse = categorize_response(Response),
+         PredictedDiagnosis = extract_initial_response(Response))
+
+# Calculate unique values for cleaned Response column
+unique_values <- calculate_unique_values(df_cleaned, Response)
+print(unique_values)
+
+unique_values <- calculate_unique_values(df_cleaned, CategorizedResponse)
+print(unique_values)
+
+unique_values <- calculate_unique_values(df_cleaned, PredictedDiagnosis)
+print(unique_values)
+
+df_cleaned <- df_cleaned %>%
+  select(model, Filename, PromptID, GENDER, AGE_AT_CXR, AGE_GROUP, PRIMARY_RACE, Ethnicity, Race, No.Finding, CategorizedResponse, Response, PredictedDiagnosis, abnormal) %>% 
+  filter(PromptID < 8) %>% 
+  mutate(PromptID = PromptID + 1)
+
+df_cleaned
+```
+```{r}
+result_with_prompt 
+result_filtered_sorted
+```
+
+
+```{r}
+result <- df_cleaned %>%
+  mutate(PromptID_ = paste0("P", as.numeric(PromptID)))
+
+# Merge with prompt_df based on PromptID_
+result_with_prompt <- merge(result, prompt_df, by.x = "PromptID_", by.y = 'ID')
+
+# Reorder columns with Full_Prompt as the first column
+result_filtered_sorted <- result_with_prompt %>%
+  select(Prompt, everything())
+# Calculate counts of each CategorizedResponse for each model and PromptID
+
+df_counts <- result_filtered_sorted %>%
+  group_by(model, PromptID, CategorizedResponse) %>%
+  summarize(Count = n())
+
+# Define custom colors
+custom_colors <- c(
+  "Diagnosed" = "#1f77b4",   # blue
+  "Refused" = "#ff7f0e",      # orange
+  "Blocked" = "#2ca02c"       # green
+)
+
+# Plot the stacked bar plot
+ggplot(df_counts, aes(x = factor(PromptID), y = Count, fill = CategorizedResponse)) +
+  geom_bar(stat = "identity") +
+  labs(
+    title = "X-Rays",
+    x = "Prompt ID",
+    y = "Count",
+    fill = "Response"
+  ) +
+  scale_fill_manual(values = custom_colors) +
+  facet_wrap(~ model, scales = "free_x") +
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+
+
+```
+
+```{r}
+# Use dcast to pivot the data frame
+pivot_df <- df_counts %>% spread(key=CategorizedResponse, value = 'Count') %>% select(Diagnosed, Refused, Blocked)
+
+# Print the pivoted data frame
+print(pivot_df)
+write.csv(pivot_df, "xray_response_rate.csv", row.names = FALSE)
+
+```
+
+```{r}
+calculate_metrics_with_CI <- function(data, n_bootstrap = 1000) {
+  column_name <- "PredictedDiagnosis"
+  
+  if (!column_name %in% names(data)) {
+    return(data.frame(Accuracy = NA, Sensitivity = NA, Specificity = NA, Precision = NA, Recall = NA, F1 = NA, `Balanced Accuracy` = NA))
+  }
+  
+  calculate_single_sample <- function(prompt_value) {
+    sample_data <- data %>%
+      filter(PromptID == prompt_value) %>%
+      drop_na({{ column_name }}, abnormal) %>%
+      sample_frac(1, replace = TRUE)
+    
+    # Ensure that both TRUE and FALSE levels exist
+    sample_data[[column_name]] <- factor(sample_data[[column_name]], levels = c(0, 1))
+    sample_data$abnormal <- factor(sample_data$abnormal, levels = c(0, 1))
+    
+    cm <- confusionMatrix(as.factor(sample_data[[column_name]]), as.factor(sample_data$abnormal), positive = "1")
+    
+    return(data.frame(PromptID = prompt_value,
+                      Size = nrow(sample_data),
+                      Accuracy = cm$overall['Accuracy'], 
+                      Sensitivity = cm$byClass['Sensitivity'], 
+                      Specificity = cm$byClass['Specificity'], 
+                      Precision = cm$byClass['Precision'], 
+                      Recall = cm$byClass['Recall'], 
+                      F1 = cm$byClass['F1'],
+                      `Balanced Accuracy` = cm$byClass['Balanced Accuracy']))
+}
+  
+  prompts <- unique(data$PromptID)
+
+  bootstrap_samples <- replicate(n_bootstrap, lapply(prompts, calculate_single_sample), simplify = FALSE) %>%
+    bind_rows()
+  
+  metrics_with_CI <- bootstrap_samples %>%
+    group_by(PromptID, Size) %>%
+    summarise(across(everything(), list(mean = ~mean(., na.rm = TRUE), 
+                                        lower = ~quantile(., 0.025, na.rm = TRUE), 
+                                        upper = ~quantile(., 0.975, na.rm = TRUE))))
+  
+  return(metrics_with_CI)
+}
+
+final_df <- df_cleaned %>%
+  group_by(model) %>%
+  do({
+    # Apply the function to each subset of data
+    metrics_result <- calculate_metrics_with_CI(.)
+    # Convert the result to a data frame
+    as.data.frame(metrics_result)
+  }) %>%
+  ungroup()
+
+```
+
+
+```{r}
+# Step 1: Filter by PromptID > 2 and PredictedDiagnosis is not NA
+filtered_df <- df_cleaned %>%
+  filter((model == 'GPT-4v with Vision' & PromptID > 2 | model == 'Gemini Pro Vision')  & !is.na(PredictedDiagnosis))
+
+# Step 2: Extract list of filenames
+filenames_list <- filtered_df$Filename
+
+# Step 3: Count the occurrences of each filename
+filename_counts <- table(filenames_list)
+
+# Step 4: Get filenames that appear at least 12 times
+filenames_at_least_12 <- names(filename_counts[filename_counts >= 14])
+
+overlap_filtered_df <- df_cleaned %>%
+  filter(Filename %in% filenames_at_least_12)
+
+# Print the filenames that appear at least 12 times
+print(length(filenames_at_least_12))  
+```
+```{r}
+
+```
+
+```{r}
+master_df <- data.frame()
+demographic_groups <- c('Overall', 'AGE_GROUP')
+
+df_results <- overlap_filtered_df
+
+for (group in demographic_groups) {
+  
+  if (group == 'Overall') {
+    metrics <- df_results %>%
+        group_by(model) %>%
+        do({
+          metrics_result <- calculate_metrics_with_CI(.)
+          as.data.frame(metrics_result)
+        }) %>%
+        ungroup()
+
+    df <- data.frame(Category = rep('Overall', nrow(metrics)), Unique_Value = rep('Overall', nrow(metrics)), metrics)
+    master_df <- rbind(master_df, df)
+    
+  } else {
+    unique_values <- unique(df_results[[group]])
+    
+    for (value in unique_values) {
+      sample_df <- df_results[df_results[[group]] == value, ]
+      metrics <- sample_df %>%
+        group_by(model) %>%
+        do({
+          metrics_result <- calculate_metrics_with_CI(.)
+          as.data.frame(metrics_result)
+        }) %>%
+        ungroup()
+      
+      df <- data.frame(Category = rep(group, nrow(metrics)), Unique_Value = rep(value, nrow(metrics)), metrics)
+      master_df <- rbind(master_df, df)
+    }
+  }
+}
+
+print(master_df)
+
+# Calculate confidence intervals and format metrics
+df <- master_df %>%
+  mutate(
+    Balanced.Accuracy_CI = paste0(round(Balanced.Accuracy_mean, 2), " (+/- ", round(Balanced.Accuracy_mean - Balanced.Accuracy_lower, 2), ")"),
+    Sensitivity_CI = paste0(round(Sensitivity_mean, 2), " (+/- ", round(Sensitivity_mean - Sensitivity_lower, 2), ")"),
+    Specificity_CI = paste0(round(Specificity_mean, 2), " (+/- ", round(Specificity_mean - Specificity_lower, 2), ")")
+  )
+
+# Create the table
+table_df <- df %>%
+  select(model, PromptID, Size, Unique_Value, Balanced.Accuracy_CI, Sensitivity_CI, Specificity_CI) %>%
+  pivot_wider(
+    id_cols = c('model', 'PromptID'),
+    names_from = Unique_Value,values_from = c(ends_with("CI"))) 
+
+table_df
+
+write.csv(table_df, "xray_classification_overlap_metrics.csv", row.names = FALSE)
+```
+```
+
+```{r}
+race_df <- master_df %>% filter(Category == "AGE_GROUP")
+race_df$Unique_Value <- factor(race_df$Unique_Value, levels = c('18-44', '44-70', '70-96'))
+
+filtered_race_df <- race_df %>%
+  filter(PromptID > 2)
+
+filtered_race_df$PromptID <- paste0("P", filtered_race_df$PromptID)
+
+p <- filtered_race_df %>%
+  mutate(TPR = Sensitivity_mean, FPR = 1 - Specificity_mean) %>%
+  mutate(TPR_upper = Sensitivity_upper, TPR_lower = Sensitivity_lower,
+         FPR_lower = 1 - Specificity_upper, FPR_upper = 1 - Specificity_lower) %>% 
+  ggplot() +
+  geom_errorbar(aes(x = FPR, y = TPR, ymin = TPR_lower, ymax = TPR_upper), alpha = 0.4) +
+  geom_errorbar(aes(x = FPR, y = TPR, xmin = FPR_lower, xmax = FPR_upper), alpha = 0.4) +
+  geom_point(aes(x = FPR, y = TPR, color = model, shape = PromptID), size = 3) +
+  geom_abline(intercept = 0, slope = 1, linetype = "dotted") +
+  facet_wrap(~Unique_Value) +
+  xlim(0, 1.0) + 
+  ylim(0, 1.0) +
+  theme_minimal(base_size = 14) +  
+  theme(legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 10), 
+        axis.title = element_text(size = 12),  
+        axis.text = element_text(size = 10),  
+        strip.text = element_text(size = 12), 
+        legend.position = "bottom") +  
+  labs(title = "Gemini Pro Vision vs. GPT-4V X-Ray Classification Performance by Age", 
+       x = "False Positive Rate (FPR)", 
+       y = "True Positive Rate (TPR)", 
+       color = "Model", 
+       shape = "Prompt") +
+  scale_shape_manual(values = c("P3" = 16, "P4" = 1, "P5" = 15, "P6" = 0, "P7" = 17, "P8" = 2, "Dermatologist Ensemble" = 4)) +  # Manual shape mapping
+  scale_color_brewer(palette = "Set1") +
+  guides(shape = guide_legend(override.aes = list(color = "black")))+
+  guides(color = guide_legend(nrow = 2, byrow = TRUE),  
+         shape = guide_legend(nrow = 3, byrow = TRUE))
+
+
+p
+ggsave("figures/intersection_TPR_x_FPR.png", plot = p, width = 10, height = 6)
+
+```
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(kableExtra)
+
+
+# Calculate confidence intervals and format metrics
+df <- overlap_filtered_df %>%
+  mutate(
+    Balanced.Accuracy_CI = paste0(round(Balanced.Accuracy_mean, 2), " (+/- ", round(Balanced.Accuracy_mean - Balanced.Accuracy_lower, 2), ")"),
+    Sensitivity_CI = paste0(round(Sensitivity_mean, 2), " (+/- ", round(Sensitivity_mean - Sensitivity_lower, 2), ")"),
+    Specificity_CI = paste0(round(Specificity_mean, 2), " (+/- ", round(Specificity_mean - Specificity_lower, 2), ")")
+  )
+
+# Create the table
+table_df <- df %>%
+  select(model, PromptID, Size, Unique_Value, Balanced.Accuracy_CI, Sensitivity_CI, Specificity_CI) %>%
+  pivot_wider(
+    id_cols = c('model', 'PromptID', 'Size'),
+    names_from = Unique_Value,values_from = c(ends_with("CI"))) 
+
+
+
+write.csv(table_df, "xray_classification_metrics.csv", row.names = FALSE)
+```
+
+```{r}
+# Create Model_Prompt column
+library(dplyr)
+library(tidyr)
+
+# Assuming df is your dataframe and you want to pivot based on Unique_Value and Sensitivity_mean
+# Use Model_Prompt as the index (id_cols)
+library(dplyr)
+library(tidyr)
+
+# Assuming df is your dataframe and you want to pivot based on Model_Prompt and Unique_Value
+table_df <- df %>%
+  select(Model_Prompt, Unique_Value, Sensitivity_mean) %>%
+  pivot_wider(
+    id_cols = Model_Prompt,
+    names_from = Unique_Value,
+    values_from = Sensitivity_mean,
+  )
+
+table_df 
+```
+
