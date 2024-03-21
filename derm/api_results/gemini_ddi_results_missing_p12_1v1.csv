@@ -1,0 +1,509 @@
+Filename,TextPrompt,Response
+000001.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000001.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000003.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This lesion is benign.
+000003.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000004.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000004.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000006.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000006.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000007.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000007.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000008.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., Cannot evaluate; image quality too poor.
+000008.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., Cannot assess; poor image quality.
+000009.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000009.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000012.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000012.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image provided.
+000013.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000013.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000014.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000014.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000015.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000015.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000016.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., The lesion is benign.
+000016.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image.
+000017.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000017.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000018.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000018.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000019.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., The lesion is benign.
+000019.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000020.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000020.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000021.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000021.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000022.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000022.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000025.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000025.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000026.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000026.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000027.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000027.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000028.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This lesion is benign.
+000028.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This lesion is benign.
+000029.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000029.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image provided.
+000030.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This appears to be a case of Acanthosis Nigricans which is usually a sign of an underlying malignancy.
+000030.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., The lesion is malignant.
+000050.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000050.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000055.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000055.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000063.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000063.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000064.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000064.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000071.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000071.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000079.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000079.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000091.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., Cannot assess; the image is too blurry.
+000091.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image provided.
+000092.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000092.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000093.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000093.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000094.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000094.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000095.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000095.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000096.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000096.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000097.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000097.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000098.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000098.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000099.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000099.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000100.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000100.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000101.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000101.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000102.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000102.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000103.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000103.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image.
+000104.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000104.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000105.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000105.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image.
+000106.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000106.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000107.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000107.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot rule out melanoma
+000108.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000108.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000109.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot rule out melanoma
+000109.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot rule out melanoma
+000110.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000110.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000111.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000111.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000112.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000112.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000113.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000113.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000114.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000114.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000115.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000115.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000116.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000116.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000117.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000117.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000118.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000118.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000119.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000119.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000120.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000120.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000134.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000134.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000141.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000141.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000150.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000150.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000154.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000154.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000158.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000158.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000161.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000161.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000163.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000163.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000165.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000165.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000169.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000169.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000170.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000170.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000172.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000172.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000176.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000176.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000180.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000180.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000182.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000182.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000185.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000185.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000186.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000186.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000187.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000187.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000188.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000188.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000190.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000190.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000192.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000192.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000194.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000194.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000196.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000196.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000197.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000197.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot rule out melanoma
+000198.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000198.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000200.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000200.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000202.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000202.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000205.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000205.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000207.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000207.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000210.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000210.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000214.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot rule out melanoma
+000214.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to determine whether the lesion is malignant or benign based on the image.
+000220.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000220.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000223.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000223.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000224.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000224.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000228.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., The lesion is benign.
+000228.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., The lesion is most likely benign.
+000231.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000231.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000233.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000233.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., Cannot determine
+000240.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000240.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000248.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000248.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000251.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000251.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000252.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000252.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000253.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000253.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000258.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000258.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000264.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000264.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000267.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000267.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000268.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000268.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000270.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000270.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000272.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000272.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000273.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000273.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000274.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This lesion is concerning for melanoma and should be evaluated by a dermatologist.
+000274.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000277.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000277.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000280.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000280.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000282.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000282.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000283.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000283.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000284.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000284.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000285.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000285.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000286.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000286.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image provided.
+000288.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000288.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000291.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000291.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000292.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This lesion is concerning for basal cell carcinoma. It has rolled borders and telangiectasias. A biopsy is recommended to confirm the diagnosis.
+000292.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000293.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000293.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000294.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000294.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000295.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000295.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000296.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000296.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000297.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000297.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000298.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This lesion is concerning for melanoma and should be removed for biopsy.
+000298.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000299.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000299.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000300.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000300.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000328.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000328.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000331.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000331.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000332.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000332.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000334.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000334.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000335.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000335.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000336.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000336.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000337.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000337.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000338.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000338.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000339.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000339.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000340.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000340.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000341.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000341.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000342.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000342.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000343.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000343.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000344.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000344.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000345.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000345.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000346.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000346.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000347.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000347.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000349.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000349.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell whether the lesion is malignant or benign based on the image provided.
+000350.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000350.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000351.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000351.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000352.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000352.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000353.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000353.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000354.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000354.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000355.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000355.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000356.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000356.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000357.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000357.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000358.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000358.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000359.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000359.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000360.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000360.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000362.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000362.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000367.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000367.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000391.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000391.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000392.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000392.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000393.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000393.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000394.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000394.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell whether the lesion is malignant or benign based on the image provided.
+000395.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000395.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000396.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000396.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000397.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000397.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000398.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000398.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000399.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000399.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000400.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to determine if the lesion is malignant or benign based on the image.
+000400.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image.
+000401.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000401.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000402.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000402.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000403.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000403.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000404.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000404.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if a lesion is malignant or benign based on an image.
+000405.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000405.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000406.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000406.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000407.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000407.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000408.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000408.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000409.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000409.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000410.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000410.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000411.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000411.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000412.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000412.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000413.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000413.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000414.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000414.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000415.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000415.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000416.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000416.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000417.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000417.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000418.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000418.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000419.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000419.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000420.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000420.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000435.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000435.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000444.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000444.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot rule out melanoma
+000451.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000451.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000452.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000452.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000453.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000453.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000454.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000454.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000455.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000455.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000456.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000456.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000457.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to determine if the lesion is malignant or benign based on the image.
+000457.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image.
+000458.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000458.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000459.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000459.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000460.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000460.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000461.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot rule out melanoma
+000461.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000462.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000462.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000463.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000463.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000464.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000464.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if this lesion is malignant or benign based on a photo. I recommend that you see a doctor to have it checked out.
+000465.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000465.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot determine
+000466.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000466.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot rule out melanoma
+000467.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000467.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This lesion is concerning for basal cell carcinoma.
+000468.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000468.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000469.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000469.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000470.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000470.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000471.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000471.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000472.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This lesion is a benign solar lentigo.
+000472.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This lesion is most likely benign given the large size and erythematous base. The lesion appears to be a seborrheic keratosis.
+000473.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000473.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000474.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000474.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000475.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000475.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000476.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000476.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000477.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000477.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000479.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000479.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000480.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000480.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000483.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000483.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000485.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000485.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000505.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000505.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000508.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000508.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., It is not possible to tell if the lesion is malignant or benign based on the image.
+000515.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000515.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000521.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000521.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000528.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000528.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000535.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000535.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000538.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000538.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000549.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000549.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000571.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000571.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000572.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.," This does not appear to be a concerning lesion. This appears to be striae, which are common in pregnancy. They are benign."
+000572.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., This does not appear to be a concerning lesion. It is likely a benign lesion such as striae.
+000573.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000573.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000574.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000574.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000575.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000575.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000577.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000577.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000579.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000579.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000581.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000581.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000582.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000582.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000584.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000584.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000586.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., cannot assess
+000586.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000587.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000587.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000593.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.," Erysipelas. This is a spreading infection of the superficial layers of the skin. It is caused by bacteria, usually Streptococcus pyogenes (group A streptococcus). It is typically treated with antibiotics."
+000593.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.," Erysipelas is a spreading infection of the superficial layers of the skin. It is caused by bacteria, usually Streptococcus pyogenes (group A streptococcus). The infection typically starts as a small, red, painful area of skin that quickly spreads. The edges of the infected area are often raised and have a sharp, defined border. The skin may be warm to the touch and may feel tender. Erysipelas can be treated with antibiotics."
+000595.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000595.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000598.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000598.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000604.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000604.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000605.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000605.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000608.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000608.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000620.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000620.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000621.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000621.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., malignant
+000623.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000623.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000630.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000630.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'., benign
+000632.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000632.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000639.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000639.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000645.png,You are an expert dermatologist. I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
+000645.png,I have provided you with an image of a skin lesion. Is the lesion malignant or benign? Please answer concisely with either 'malignant' or 'benign'.,
