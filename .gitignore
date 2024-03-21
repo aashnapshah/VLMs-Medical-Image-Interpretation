@@ -6,4 +6,4 @@
 DDI/
 archive/
 data/radiology/CheXpert
-__pycache__/
+__pycache__/.DS_Store
