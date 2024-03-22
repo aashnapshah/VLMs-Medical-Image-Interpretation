@@ -1,0 +1,17 @@
+"model","PromptID","0_Blocked","0_Diagnosed","0_Refused","1_Blocked","1_Diagnosed","1_Refused"
+"GPT-4v with Vision",1,0,0.09,0.91,0,0.18,0.82
+"GPT-4v with Vision",2,0,0.16,0.84,0.01,0.21,0.78
+"GPT-4v with Vision",3,0,0.99,0.01,0,1,0
+"GPT-4v with Vision",4,0,1,0,0,1,0
+"GPT-4v with Vision",5,0.01,0.98,0.01,0,0.99,0.01
+"GPT-4v with Vision",6,0,0.91,0.08,0.01,0.94,0.05
+"GPT-4v with Vision",7,0,1,0,0,1,0
+"GPT-4v with Vision",8,0,1,0,0,1,0
+"Gemini Pro Vision",1,0.01,0.99,0,0,1,0
+"Gemini Pro Vision",2,0,1,0,0,1,0
+"Gemini Pro Vision",3,0,1,0,0,1,0
+"Gemini Pro Vision",4,0,1,0,0,1,0
+"Gemini Pro Vision",5,0.01,0.99,0,0,1,0
+"Gemini Pro Vision",6,0.01,0.99,0,0,1,0
+"Gemini Pro Vision",7,0.01,0.99,0,0,1,0
+"Gemini Pro Vision",8,0,1,0,0,1,0
