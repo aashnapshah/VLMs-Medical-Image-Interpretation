@@ -11,24 +11,31 @@ library(tidyverse)
 library(caret)
 ```
 
+```{r}
+base_dir <- "/Users/aashnashah/Dropbox/Research/derm-gemini-vs-gpt4/"
+data_dir <- "data/radiology/"
+tables_dir <- "tables/radiology/"
+
+prompt_df <- read.csv(paste0(base_dir, data_dir, "prompts.csv"))
+```
+
 
 ```{r cars}
-
-prompt_df <- read.csv('prompts.csv')
 # Read in Gemini results and add model column
-gemini_results <- read.csv('data/gemini_chexpert_results_20240312.csv')
-gemini_results$model <- 'Gemini Pro Vision'
+gemini_results <- read.csv(paste0(base_dir, data_dir, "apiResults/gemini_chexpert_results_20240312.csv"))
+gemini_results$model <- "Gemini Pro Vision"
 
 # Read in GPT-4v results and add model column
-openai_results <- read.csv('/Users/aashnashah/Dropbox/Research/gpt_refusal_xray/data/gpt4v_chexpert_results_20240318.csv')
-openai_results$model <- 'GPT-4v with Vision'
+openai_results <- read.csv(paste0(base_dir, data_dir, "apiResults/gpt4v_chexpert_results_20240318.csv"))
+openai_results$model <- "GPT-4v with Vision"
 
 api_results <- rbind(openai_results, gemini_results)
 
 # Read in demographics data
-demographics <- read.csv('data/processed_test_set_2024-03-10.csv')
-demographics <- read.csv('data/processed_test_val_set_20240319.csv')
-demographics$AGE_GROUP <- cut(demographics$AGE_AT_CXR, breaks = c(0, 44, 70, Inf), labels = c("18-44", "44-70", "70-96"))
+demographics <- read.csv(paste0(base_dir, data_dir, "CheXpert/processed_test_set_2024-03-10.csv"))
+demographics <- read.csv(paste0(base_dir, data_dir, "CheXpert/processed_test_val_set_20240319.csv"))
+demographics$AGE_GROUP <- cut(demographics$AGE_AT_CXR, 
+breaks = c(0, 44, 70, Inf), labels = c("18-44", "44-70", "70-96"))
 
 # Merge GPT-4v results with demographics
 df <- merge(api_results, demographics, by.x = "Filename", by.y = "Path", all.x = TRUE)
@@ -44,10 +51,13 @@ print(nrow(demographics))
 print(nrow(df))
 ```
 
+```{r}
+df
+```
 
 ```{r pressure, echo=FALSE}
 
-# Define a function to categorize the model's response
+# Define a function to categorize the model"s response
 categorize_response <- function(response) {
   response <- tolower(response)
     ifelse(grepl("\\b(error)\\b", response), "Blocked",
@@ -67,31 +77,34 @@ extract_initial_response <- function(response) {
   )
 }
 
+# Function to calculate unique values
+calculate_unique_values <- function(data_frame, column_name) {
+  unique_values <- unique(data_frame[[column_name]])
+  return(unique_values)
+}
+
 # Clean the dataframe
 df_cleaned <- df %>%
   mutate(CategorizedResponse = categorize_response(Response),
          PredictedDiagnosis = extract_initial_response(Response))
 
+
 # Calculate unique values for cleaned Response column
-unique_values <- calculate_unique_values(df_cleaned, Response)
+unique_values <- calculate_unique_values(df_cleaned, 'Response')
 print(unique_values)
 
-unique_values <- calculate_unique_values(df_cleaned, CategorizedResponse)
+unique_values <- calculate_unique_values(df_cleaned, 'CategorizedResponse')
 print(unique_values)
 
-unique_values <- calculate_unique_values(df_cleaned, PredictedDiagnosis)
+unique_values <- calculate_unique_values(df_cleaned, 'PredictedDiagnosis')
 print(unique_values)
 
 df_cleaned <- df_cleaned %>%
-  select(model, Filename, PromptID, GENDER, AGE_AT_CXR, AGE_GROUP, PRIMARY_RACE, Ethnicity, Race, No.Finding, CategorizedResponse, Response, PredictedDiagnosis, abnormal) %>% 
+  #select(model, Filename, PromptID, GENDER, AGE_AT_CXR, AGE_GROUP, PRIMARY_RACE, Ethnicity, Race, No.Finding, CategorizedResponse, Response, PredictedDiagnosis, abnormal) %>% 
   filter(PromptID < 8) %>% 
   mutate(PromptID = PromptID + 1)
 
 df_cleaned
-```
-```{r}
-result_with_prompt 
-result_filtered_sorted
 ```
 
 
@@ -100,7 +113,7 @@ result <- df_cleaned %>%
   mutate(PromptID_ = paste0("P", as.numeric(PromptID)))
 
 # Merge with prompt_df based on PromptID_
-result_with_prompt <- merge(result, prompt_df, by.x = "PromptID_", by.y = 'ID')
+result_with_prompt <- merge(result, prompt_df, by.x = "PromptID_", by.y = "ID")
 
 # Reorder columns with Full_Prompt as the first column
 result_filtered_sorted <- result_with_prompt %>%
@@ -110,7 +123,75 @@ result_filtered_sorted <- result_with_prompt %>%
 df_counts <- result_filtered_sorted %>%
   group_by(model, PromptID, CategorizedResponse) %>%
   summarize(Count = n())
+```
 
+```{r}
+# Define the variable name dynamically
+
+library(tidyverse)
+
+generate_contingency_plot <- function(variable_name) {
+  # Filter the data and calculate proportions
+  contingency_table <- df_cleaned %>%
+    group_by(PromptID, model, !!sym(variable_name), CategorizedResponse, .drop = FALSE) %>%
+    summarise(
+        Count = n(),
+        .groups = "drop"
+    ) %>%
+    group_by(PromptID, model, !!sym(variable_name)) %>%
+    mutate(Prop = round((Count / sum(Count)), 2)) %>%  # Round percentages to 2 decimal places
+    filter(CategorizedResponse %in% c("Diagnosed", "Refused", "Blocked")) %>%
+    pivot_wider(
+        id_cols = c("model", "PromptID"),
+        names_from = c(!!sym(variable_name), CategorizedResponse),
+        values_from = Prop,
+        values_fill = 0,
+        names_sort = TRUE
+    )
+    
+    contingency_table2 <- df_cleaned %>%
+    group_by(PromptID, model, !!sym(variable_name), CategorizedResponse, .drop = FALSE) %>%
+    summarise(
+      Count = n(),
+      .groups = "drop"
+    ) %>%
+    group_by(PromptID, model, !!sym(variable_name)) %>%
+    mutate(Prop = Count / sum(Count)) %>%
+    filter(CategorizedResponse %in% c("Diagnosed", "Refused", "Blocked")) 
+  
+  # Create the plot
+  ggplot(contingency_table2, aes(x = factor(!!sym(variable_name)), y = Prop, fill = CategorizedResponse)) +
+    geom_bar(stat = "identity", position = "stack") +
+    scale_y_continuous(labels = scales::percent_format(scale = 1)) +  # Set y-axis labels as percentages
+    facet_wrap(~PromptID + model, scales = "free_y") +  # Facet by both PromptID and model
+    labs(x = "Variable Name", y = "Proportion", fill = "Response") +
+    theme_minimal()
+
+  return(list(contingency_table = contingency_table, plot = plot))
+}
+
+# List of variables to generate plots for
+variables <- c('Race', 'AGE_GROUP', 'Support.Devices')
+
+# Generate plots and contingency tables for each variable in the list
+results <- lapply(variables, generate_contingency_plot)
+for (i in seq_along(results)) {
+  # View the contingency table
+  results[[i]]$contingency_table <- results[[i]]$contingency_table %>%
+    arrange(model)
+  
+  print(results[[i]]$contingency_table)
+  
+  # Save the contingency table as CSV
+  csv_file <- paste0(base_dir, tables_dir, "xray_response_rate_", variables[i], ".csv")
+  write.csv(results[[i]]$pivot_df, csv_file, row.names = FALSE)
+  
+  # View the plot
+  print(results[[i]]$plot)
+}
+
+```
+```{r}
 # Define custom colors
 custom_colors <- c(
   "Diagnosed" = "#1f77b4",   # blue
@@ -136,11 +217,11 @@ ggplot(df_counts, aes(x = factor(PromptID), y = Count, fill = CategorizedRespons
 
 ```{r}
 # Use dcast to pivot the data frame
-pivot_df <- df_counts %>% spread(key=CategorizedResponse, value = 'Count') %>% select(Diagnosed, Refused, Blocked)
+pivot_df <- df_counts %>% spread(key=CategorizedResponse, value = "Count") %>% select(Diagnosed, Refused, Blocked)
 
 # Print the pivoted data frame
 print(pivot_df)
-write.csv(pivot_df, "xray_response_rate.csv", row.names = FALSE)
+write.csv(pivot_df, paste0(base_dir, tables_dir, "overall_response_rate.csv"), row.names = FALSE)
 
 ```
 
@@ -166,13 +247,13 @@ calculate_metrics_with_CI <- function(data, n_bootstrap = 1000) {
     
     return(data.frame(PromptID = prompt_value,
                       Size = nrow(sample_data),
-                      Accuracy = cm$overall['Accuracy'], 
-                      Sensitivity = cm$byClass['Sensitivity'], 
-                      Specificity = cm$byClass['Specificity'], 
-                      Precision = cm$byClass['Precision'], 
-                      Recall = cm$byClass['Recall'], 
-                      F1 = cm$byClass['F1'],
-                      `Balanced Accuracy` = cm$byClass['Balanced Accuracy']))
+                      Accuracy = cm$overall["Accuracy"], 
+                      Sensitivity = cm$byClass["Sensitivity"], 
+                      Specificity = cm$byClass["Specificity"], 
+                      Precision = cm$byClass["Precision"], 
+                      Recall = cm$byClass["Recall"], 
+                      F1 = cm$byClass["F1"],
+                      `Balanced Accuracy` = cm$byClass["Balanced Accuracy"]))
 }
   
   prompts <- unique(data$PromptID)
@@ -189,52 +270,32 @@ calculate_metrics_with_CI <- function(data, n_bootstrap = 1000) {
   return(metrics_with_CI)
 }
 
-final_df <- df_cleaned %>%
-  group_by(model) %>%
-  do({
-    # Apply the function to each subset of data
-    metrics_result <- calculate_metrics_with_CI(.)
-    # Convert the result to a data frame
-    as.data.frame(metrics_result)
-  }) %>%
-  ungroup()
-
 ```
 
 
 ```{r}
 # Step 1: Filter by PromptID > 2 and PredictedDiagnosis is not NA
 filtered_df <- df_cleaned %>%
-  filter((model == 'GPT-4v with Vision' & PromptID > 2 | model == 'Gemini Pro Vision')  & !is.na(PredictedDiagnosis))
+  filter((model == "GPT-4v with Vision" & PromptID > 2 | model == "Gemini Pro Vision")  & !is.na(PredictedDiagnosis))
 
-# Step 2: Extract list of filenames
 filenames_list <- filtered_df$Filename
-
-# Step 3: Count the occurrences of each filename
 filename_counts <- table(filenames_list)
-
-# Step 4: Get filenames that appear at least 12 times
 filenames_at_least_12 <- names(filename_counts[filename_counts >= 14])
-
 overlap_filtered_df <- df_cleaned %>%
   filter(Filename %in% filenames_at_least_12)
 
-# Print the filenames that appear at least 12 times
 print(length(filenames_at_least_12))  
-```
-```{r}
-
 ```
 
 ```{r}
 master_df <- data.frame()
-demographic_groups <- c('Overall', 'AGE_GROUP')
+demographic_groups <- c("Overall", "AGE_GROUP", "Race")
 
-df_results <- overlap_filtered_df
+df_results <- df_cleaned
 
 for (group in demographic_groups) {
   
-  if (group == 'Overall') {
+  if (group == "Overall") {
     metrics <- df_results %>%
         group_by(model) %>%
         do({
@@ -243,7 +304,7 @@ for (group in demographic_groups) {
         }) %>%
         ungroup()
 
-    df <- data.frame(Category = rep('Overall', nrow(metrics)), Unique_Value = rep('Overall', nrow(metrics)), metrics)
+    df <- data.frame(Category = rep("Overall", nrow(metrics)), Unique_Value = rep("Overall", nrow(metrics)), metrics)
     master_df <- rbind(master_df, df)
     
   } else {
@@ -279,18 +340,18 @@ df <- master_df %>%
 table_df <- df %>%
   select(model, PromptID, Size, Unique_Value, Balanced.Accuracy_CI, Sensitivity_CI, Specificity_CI) %>%
   pivot_wider(
-    id_cols = c('model', 'PromptID'),
+    id_cols = c("model", "PromptID"),
     names_from = Unique_Value,values_from = c(ends_with("CI"))) 
 
 table_df
 
-write.csv(table_df, "xray_classification_overlap_metrics.csv", row.names = FALSE)
-```
+write.csv(table_df, paste0(base_dir, tables_dir, "xray_classification_metrics.csv"), row.names = FALSE)
 ```
 
+
 ```{r}
-race_df <- master_df %>% filter(Category == "AGE_GROUP")
-race_df$Unique_Value <- factor(race_df$Unique_Value, levels = c('18-44', '44-70', '70-96'))
+race_df <- master_df %>% filter(Category == "Race")
+race_df$Unique_Value <- factor(race_df$Unique_Value, levels = c("White", "Black", "Asian", "Other"))
 
 filtered_race_df <- race_df %>%
   filter(PromptID > 2)
@@ -329,16 +390,11 @@ p <- filtered_race_df %>%
 
 
 p
-ggsave("figures/intersection_TPR_x_FPR.png", plot = p, width = 10, height = 6)
+ggsave(paste0(base_dir, tables_dir, "race_intersection_TPR_x_FPR.png"), plot = p, width = 45, height = 6)
 
 ```
 
 ```{r}
-library(dplyr)
-library(tidyr)
-library(kableExtra)
-
-
 # Calculate confidence intervals and format metrics
 df <- overlap_filtered_df %>%
   mutate(
@@ -351,10 +407,8 @@ df <- overlap_filtered_df %>%
 table_df <- df %>%
   select(model, PromptID, Size, Unique_Value, Balanced.Accuracy_CI, Sensitivity_CI, Specificity_CI) %>%
   pivot_wider(
-    id_cols = c('model', 'PromptID', 'Size'),
+    id_cols = c("model", "PromptID", "Size"),
     names_from = Unique_Value,values_from = c(ends_with("CI"))) 
-
-
 
 write.csv(table_df, "xray_classification_metrics.csv", row.names = FALSE)
 ```
