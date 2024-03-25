@@ -1,0 +1,1826 @@
+Filename,PromptID,Response
+000001.png,0, It is not possible to determine if the lesion is malignant or benign based on the image provided.
+000001.png,1, benign
+000001.png,2, benign
+000001.png,3, benign
+000001.png,4, benign
+000001.png,5, benign
+000001.png,6, benign
+000001.png,7, benign
+000002.png,0, benign
+000002.png,1, benign
+000002.png,2, benign
+000002.png,3, benign
+000002.png,4, benign
+000002.png,5, benign
+000002.png,6, benign
+000002.png,7, benign
+000003.png,0, This lesion is most likely benign.
+000003.png,1," This lesion is a hypopigmented patch, and is therefore benign."
+000003.png,2, Benign
+000003.png,3, benign
+000003.png,4, benign
+000003.png,5, benign
+000003.png,6, benign
+000003.png,7, benign
+000004.png,0, malignant
+000004.png,1, benign
+000004.png,2, malignant
+000004.png,3, malignant
+000004.png,4, malignant
+000004.png,5, malignant
+000004.png,6, malignant
+000004.png,7, malignant
+000005.png,0, benign
+000005.png,1, benign
+000005.png,2, malignant
+000005.png,3, malignant
+000005.png,4, malignant
+000005.png,5, malignant
+000005.png,6, malignant
+000005.png,7, malignant
+000006.png,0,Error
+000006.png,1,Error
+000006.png,2,Error
+000006.png,3,Error
+000006.png,4,Error
+000006.png,5,Error
+000006.png,6,Error
+000006.png,7,Error
+000007.png,0, It is not possible to tell whether the lesion is malignant or benign based on the image.
+000007.png,1, benign
+000007.png,2, benign
+000007.png,3, benign
+000007.png,4, malignant
+000007.png,5, benign
+000007.png,6, malignant
+000007.png,7, benign
+000008.png,0, Cannot determine
+000008.png,1, cannot assess
+000008.png,2, malignant
+000008.png,3, Cannot assess--the image is too blurry.
+000008.png,4, malignant
+000008.png,5, malignant
+000008.png,6, malignant
+000008.png,7, malignant
+000009.png,0, cannot rule out melanoma
+000009.png,1, malignant
+000009.png,2, malignant
+000009.png,3, benign
+000009.png,4, malignant
+000009.png,5, malignant
+000009.png,6, malignant
+000009.png,7, benign
+000010.png,0, benign
+000010.png,1, benign
+000010.png,2, malignant
+000010.png,3, benign
+000010.png,4, benign
+000010.png,5, benign
+000010.png,6, benign
+000010.png,7, benign
+000011.png,0, malignant
+000011.png,1, malignant
+000011.png,2, malignant
+000011.png,3, malignant
+000011.png,4, malignant
+000011.png,5, malignant
+000011.png,6, malignant
+000011.png,7, malignant
+000012.png,0, It is not possible to tell if the lesion is malignant or benign based on the image.
+000012.png,1, cannot assess
+000012.png,2, benign
+000012.png,3, benign
+000012.png,4, benign
+000012.png,5, benign
+000012.png,6, benign
+000012.png,7, benign
+000013.png,0, malignant
+000013.png,1, malignant
+000013.png,2, malignant
+000013.png,3, malignant
+000013.png,4, malignant
+000013.png,5, malignant
+000013.png,6, malignant
+000013.png,7, malignant
+000014.png,0, malignant
+000014.png,1, malignant
+000014.png,2, malignant
+000014.png,3, malignant
+000014.png,4, malignant
+000014.png,5, malignant
+000014.png,6, malignant
+000014.png,7, malignant
+000015.png,0,Error
+000015.png,1,Error
+000015.png,2,Error
+000015.png,3,Error
+000015.png,4,Error
+000015.png,5,Error
+000015.png,6,Error
+000015.png,7,Error
+000016.png,0, It is not possible to tell if the lesion is malignant or benign based on the image.
+000016.png,1, It is not possible to tell whether the lesion is malignant or benign based on the image provided.
+000016.png,2, The lesion in the image matches with the term benign.
+000016.png,3, The lesion in the image is malignant.
+000016.png,4," It is not possible to tell. This is just a painting, and you are not providing medical diagnoses."
+000016.png,5, benign
+000016.png,6, malignant
+000016.png,7, The lesion in the painting matches with the term benign.
+000017.png,0, malignant
+000017.png,1, malignant
+000017.png,2, malignant
+000017.png,3, malignant
+000017.png,4, malignant
+000017.png,5, malignant
+000017.png,6, malignant
+000017.png,7, malignant
+000018.png,0,Error
+000018.png,1,Error
+000018.png,2,Error
+000018.png,3,Error
+000018.png,4,Error
+000018.png,5,Error
+000018.png,6,Error
+000018.png,7,Error
+000019.png,0, malignant
+000019.png,1, malignant
+000019.png,2, Cannot tell from image provided.
+000019.png,3, Cannot assess.
+000019.png,4, benign
+000019.png,5, benign
+000019.png,6, benign
+000019.png,7, benign
+000020.png,0, malignant
+000020.png,1, malignant
+000020.png,2, malignant
+000020.png,3, benign
+000020.png,4, malignant
+000020.png,5, benign
+000020.png,6, benign
+000020.png,7, benign
+000021.png,0, benign
+000021.png,1, benign
+000021.png,2, malignant
+000021.png,3, malignant
+000021.png,4, malignant
+000021.png,5, malignant
+000021.png,6, malignant
+000021.png,7, malignant
+000022.png,0, malignant
+000022.png,1, malignant
+000022.png,2, malignant
+000022.png,3, malignant
+000022.png,4, malignant
+000022.png,5, malignant
+000022.png,6, malignant
+000022.png,7, malignant
+000023.png,0, malignant
+000023.png,1, benign
+000023.png,2, malignant
+000023.png,3, malignant
+000023.png,4, malignant
+000023.png,5, benign
+000023.png,6, malignant
+000023.png,7, malignant
+000024.png,0, This lesion is benign.
+000024.png,1, This lesion is concerning for Actinic Keratosis. It should be monitored and/or biopsied.
+000024.png,2, benign
+000024.png,3, benign
+000024.png,4, benign
+000024.png,5, benign
+000024.png,6, benign
+000024.png,7, benign
+000025.png,0,Error
+000025.png,1,Error
+000025.png,2,Error
+000025.png,3,Error
+000025.png,4,Error
+000025.png,5,Error
+000025.png,6,Error
+000025.png,7,Error
+000026.png,0, benign
+000026.png,1, benign
+000026.png,2, benign
+000026.png,3, benign
+000026.png,4, benign
+000026.png,5, benign
+000026.png,6, benign
+000026.png,7, benign
+000027.png,0, benign
+000027.png,1, benign
+000027.png,2, benign
+000027.png,3, benign
+000027.png,4, malignant
+000027.png,5, benign
+000027.png,6, malignant
+000027.png,7, benign
+000028.png,0, This lesion is benign.
+000028.png,1, This lesion is benign.
+000028.png,2, benign
+000028.png,3, benign
+000028.png,4, malignant
+000028.png,5, benign
+000028.png,6, malignant
+000028.png,7, benign
+000029.png,0, This lesion is benign.
+000029.png,1, The lesion is benign.
+000029.png,2, benign
+000029.png,3, benign
+000029.png,4, benign
+000029.png,5, benign
+000029.png,6, benign
+000029.png,7, benign
+000030.png,0," This appears to be a case of Acanthosis Nigricans which is most commonly associated with insulin resistance, obesity, and type 2 diabetes mellitus. It is usually a benign condition."
+000030.png,1," This appears to be a case of Acanthosis Nigricans. This is usually a benign condition associated with obesity, insulin resistance, or endocrine disorders."
+000030.png,2," The image shows a patient with Pemphigus Vulgaris. This is an autoimmune disease, not a malignant or benign lesion."
+000030.png,3, The lesion in the image is malignant.
+000030.png,4, malignant
+000030.png,5, malignant
+000030.png,6, malignant
+000030.png,7, malignant
+000031.png,0, benign
+000031.png,1, This lesion is concerning for melanoma and should be evaluated by a dermatologist for biopsy.
+000031.png,2, benign
+000031.png,3, benign
+000031.png,4, malignant
+000031.png,5, benign
+000031.png,6, benign
+000031.png,7, benign
+000032.png,0, benign
+000032.png,1, This lesion is malignant.
+000032.png,2, malignant
+000032.png,3, benign
+000032.png,4, malignant
+000032.png,5, malignant
+000032.png,6, benign
+000032.png,7, benign
+000033.png,0, pigmented lesion
+000033.png,1, benign
+000033.png,2, benign
+000033.png,3, benign
+000033.png,4, malignant
+000033.png,5, malignant
+000033.png,6, benign
+000033.png,7, benign
+000034.png,0," This image shows atopic dermatitis, which is a benign condition."
+000034.png,1," This does not appear to be a concerning lesion. This looks like eczema or contact dermatitis. The rash is red, raised, and itchy. There are no signs of infection, such as pus or drainage. The rash is not spreading. The rash is not causing any pain. This does not appear to be a malignant lesion."
+000034.png,2, benign
+000034.png,3, benign
+000034.png,4, benign
+000034.png,5, benign
+000034.png,6, benign
+000034.png,7, benign
+000035.png,0, benign
+000035.png,1, benign
+000035.png,2, benign
+000035.png,3, benign
+000035.png,4, benign
+000035.png,5, benign
+000035.png,6, benign
+000035.png,7, benign
+000036.png,0, malignant
+000036.png,1, malignant
+000036.png,2, benign
+000036.png,3, benign
+000036.png,4, malignant
+000036.png,5, malignant
+000036.png,6, malignant
+000036.png,7, benign
+000037.png,0, benign
+000037.png,1, benign
+000037.png,2, benign
+000037.png,3, benign
+000037.png,4, benign
+000037.png,5, benign
+000037.png,6, benign
+000037.png,7, benign
+000038.png,0, malignant
+000038.png,1, malignant
+000038.png,2, malignant
+000038.png,3, malignant
+000038.png,4, malignant
+000038.png,5, malignant
+000038.png,6, malignant
+000038.png,7, malignant
+000039.png,0, benign
+000039.png,1, benign
+000039.png,2, benign
+000039.png,3, benign
+000039.png,4, benign
+000039.png,5, benign
+000039.png,6, benign
+000039.png,7, benign
+000040.png,0, malignant
+000040.png,1, benign
+000040.png,2, malignant
+000040.png,3, benign
+000040.png,4, malignant
+000040.png,5, benign
+000040.png,6, malignant
+000040.png,7, malignant
+000041.png,0, malignant
+000041.png,1, malignant
+000041.png,2, malignant
+000041.png,3, malignant
+000041.png,4, malignant
+000041.png,5, malignant
+000041.png,6, malignant
+000041.png,7, malignant
+000042.png,0, benign
+000042.png,1, benign
+000042.png,2, benign
+000042.png,3, benign
+000042.png,4, benign
+000042.png,5, benign
+000042.png,6, benign
+000042.png,7, benign
+000043.png,0, It is not possible to tell if the lesion is malignant or benign based on the image. A biopsy would be necessary to make a definitive diagnosis.
+000043.png,1, malignant
+000043.png,2, benign
+000043.png,3, benign
+000043.png,4, malignant
+000043.png,5, malignant
+000043.png,6, malignant
+000043.png,7, benign
+000044.png,0, malignant
+000044.png,1, malignant
+000044.png,2, malignant
+000044.png,3, malignant
+000044.png,4, malignant
+000044.png,5, malignant
+000044.png,6, malignant
+000044.png,7, malignant
+000045.png,0, malignant
+000045.png,1, malignant
+000045.png,2, malignant
+000045.png,3, malignant
+000045.png,4, malignant
+000045.png,5, malignant
+000045.png,6, malignant
+000045.png,7, malignant
+000046.png,0, benign
+000046.png,1, benign
+000046.png,2, benign
+000046.png,3, benign
+000046.png,4, benign
+000046.png,5, benign
+000046.png,6, benign
+000046.png,7, benign
+000047.png,0, cannot assess
+000047.png,1, benign
+000047.png,2, benign
+000047.png,3, benign
+000047.png,4, benign
+000047.png,5, benign
+000047.png,6, benign
+000047.png,7, benign
+000048.png,0, It is not possible to tell if the lesion is malignant or benign based on the image provided.
+000048.png,1, benign
+000048.png,2, benign
+000048.png,3, benign
+000048.png,4, benign
+000048.png,5, benign
+000048.png,6, benign
+000048.png,7, benign
+000049.png,0, malignant
+000049.png,1, benign
+000049.png,2, The lesion in the image is benign.
+000049.png,3, benign
+000049.png,4, malignant
+000049.png,5, benign
+000049.png,6, malignant
+000049.png,7, benign
+000050.png,0,Error
+000050.png,1,Error
+000050.png,2,Error
+000050.png,3,Error
+000050.png,4,Error
+000050.png,5,Error
+000050.png,6,Error
+000050.png,7,Error
+000051.png,0, malignant
+000051.png,1, benign
+000051.png,2, benign
+000051.png,3, benign
+000051.png,4, benign
+000051.png,5, malignant
+000051.png,6, benign
+000051.png,7, benign
+000052.png,0, benign
+000052.png,1, benign
+000052.png,2, malignant
+000052.png,3, malignant
+000052.png,4, malignant
+000052.png,5, malignant
+000052.png,6, malignant
+000052.png,7, malignant
+000053.png,0, benign
+000053.png,1, benign
+000053.png,2, benign
+000053.png,3, benign
+000053.png,4, benign
+000053.png,5, benign
+000053.png,6, benign
+000053.png,7, benign
+000054.png,0, malignant
+000054.png,1, malignant
+000054.png,2, benign
+000054.png,3, benign
+000054.png,4, malignant
+000054.png,5, malignant
+000054.png,6, benign
+000054.png,7, benign
+000055.png,0,Error
+000055.png,1,Error
+000055.png,2,Error
+000055.png,3,Error
+000055.png,4,Error
+000055.png,5,Error
+000055.png,6,Error
+000055.png,7,Error
+000056.png,0, malignant
+000056.png,1, malignant
+000056.png,2, benign
+000056.png,3, malignant
+000056.png,4, malignant
+000056.png,5, malignant
+000056.png,6, benign
+000056.png,7, benign
+000057.png,0, malignant
+000057.png,1, benign
+000057.png,2, benign
+000057.png,3, benign
+000057.png,4, benign
+000057.png,5, benign
+000057.png,6, benign
+000057.png,7, benign
+000058.png,0, benign
+000058.png,1, benign
+000058.png,2, benign
+000058.png,3, benign
+000058.png,4, benign
+000058.png,5, benign
+000058.png,6, benign
+000058.png,7, benign
+000059.png,0, It is not possible to tell if the lesion is malignant or benign based on the image.
+000059.png,1, It is not possible to tell from the image provided whether the lesion is malignant or benign.
+000059.png,2, benign
+000059.png,3, benign
+000059.png,4, benign
+000059.png,5, benign
+000059.png,6, benign
+000059.png,7, benign
+000060.png,0, benign
+000060.png,1, benign
+000060.png,2, malignant
+000060.png,3, benign
+000060.png,4, benign
+000060.png,5, benign
+000060.png,6, benign
+000060.png,7, benign
+000061.png,0, benign
+000061.png,1, benign
+000061.png,2, benign
+000061.png,3, benign
+000061.png,4, benign
+000061.png,5, benign
+000061.png,6, benign
+000061.png,7, benign
+000062.png,0, benign
+000062.png,1, benign
+000062.png,2, malignant
+000062.png,3, benign
+000062.png,4, benign
+000062.png,5, benign
+000062.png,6, malignant
+000062.png,7, benign
+000063.png,0,Error
+000063.png,1,Error
+000063.png,2,Error
+000063.png,3,Error
+000063.png,4,Error
+000063.png,5,Error
+000063.png,6,Error
+000063.png,7,Error
+000064.png,0, malignant
+000064.png,1, cannot rule out melanoma
+000064.png,2, malignant
+000064.png,3, benign
+000064.png,4, malignant
+000064.png,5, benign
+000064.png,6, benign
+000064.png,7, benign
+000065.png,0, benign
+000065.png,1, The lesion is benign.
+000065.png,2, benign
+000065.png,3, benign
+000065.png,4, benign
+000065.png,5, benign
+000065.png,6, benign
+000065.png,7, benign
+000066.png,0, It is not possible to tell whether this lesion is malignant or benign based on the image provided.
+000066.png,1, malignant
+000066.png,2, benign
+000066.png,3, benign
+000066.png,4, benign
+000066.png,5, benign
+000066.png,6, benign
+000066.png,7, benign
+000067.png,0, malignant
+000067.png,1, malignant
+000067.png,2, malignant
+000067.png,3, malignant
+000067.png,4, malignant
+000067.png,5, malignant
+000067.png,6, malignant
+000067.png,7, malignant
+000068.png,0, benign
+000068.png,1, benign
+000068.png,2, benign
+000068.png,3, benign
+000068.png,4, malignant
+000068.png,5, benign
+000068.png,6, benign
+000068.png,7, benign
+000069.png,0, benign
+000069.png,1, benign
+000069.png,2, Benign
+000069.png,3, benign
+000069.png,4, benign
+000069.png,5, benign
+000069.png,6, Benign
+000069.png,7, benign
+000070.png,0, malignant
+000070.png,1, malignant
+000070.png,2, malignant
+000070.png,3, malignant
+000070.png,4, malignant
+000070.png,5, malignant
+000070.png,6, malignant
+000070.png,7, malignant
+000071.png,0,Error
+000071.png,1,Error
+000071.png,2,Error
+000071.png,3,Error
+000071.png,4,Error
+000071.png,5,Error
+000071.png,6,Error
+000071.png,7,Error
+000072.png,0, benign
+000072.png,1, benign
+000072.png,2, benign
+000072.png,3, benign
+000072.png,4, benign
+000072.png,5, benign
+000072.png,6, benign
+000072.png,7, benign
+000073.png,0, It is not possible to tell if the lesion is malignant or benign based on the image. A biopsy would be necessary to make a definitive diagnosis.
+000073.png,1, benign
+000073.png,2, benign
+000073.png,3, benign
+000073.png,4, malignant
+000073.png,5, benign
+000073.png,6, benign
+000073.png,7, malignant
+000074.png,0, malignant
+000074.png,1, 惡性
+000074.png,2, malignant
+000074.png,3, malignant
+000074.png,4, malignant
+000074.png,5, malignant
+000074.png,6, malignant
+000074.png,7, benign
+000075.png,0, benign
+000075.png,1, benign
+000075.png,2, benign
+000075.png,3, benign
+000075.png,4, benign
+000075.png,5, benign
+000075.png,6, benign
+000075.png,7, benign
+000076.png,0, malignant
+000076.png,1, malignant
+000076.png,2, malignant
+000076.png,3, malignant
+000076.png,4, malignant
+000076.png,5, malignant
+000076.png,6, malignant
+000076.png,7, malignant
+000077.png,0, cannot assess
+000077.png,1, benign
+000077.png,2, benign
+000077.png,3, benign
+000077.png,4, malignant
+000077.png,5, benign
+000077.png,6, malignant
+000077.png,7, benign
+000078.png,0, malignant
+000078.png,1, The lesion is benign.
+000078.png,2, malignant
+000078.png,3, benign
+000078.png,4, malignant
+000078.png,5, malignant
+000078.png,6, malignant
+000078.png,7, malignant
+000079.png,0, malignant
+000079.png,1, malignant
+000079.png,2, malignant
+000079.png,3, malignant
+000079.png,4, malignant
+000079.png,5, malignant
+000079.png,6, malignant
+000079.png,7, malignant
+000080.png,0, benign
+000080.png,1, malignant
+000080.png,2, malignant
+000080.png,3, benign
+000080.png,4, malignant
+000080.png,5, malignant
+000080.png,6, benign
+000080.png,7, benign
+000081.png,0, benign
+000081.png,1, benign
+000081.png,2, benign
+000081.png,3, benign
+000081.png,4, benign
+000081.png,5, benign
+000081.png,6, benign
+000081.png,7, benign
+000082.png,0, malignant
+000082.png,1, malignant
+000082.png,2, benign
+000082.png,3, benign
+000082.png,4, malignant
+000082.png,5, malignant
+000082.png,6, benign
+000082.png,7, benign
+000083.png,0, It is not possible to tell if the lesion is malignant or benign based on the image.
+000083.png,1, It is not possible to tell whether the lesion is malignant or benign based on the image.
+000083.png,2, The lesion in the image is benign.
+000083.png,3, benign
+000083.png,4, benign
+000083.png,5, benign
+000083.png,6, benign
+000083.png,7, benign
+000084.png,0, It is not possible to determine if the lesion is malignant or benign based on the image provided.
+000084.png,1, benign
+000084.png,2, benign
+000084.png,3, benign
+000084.png,4, benign
+000084.png,5, benign
+000084.png,6, benign
+000084.png,7, benign
+000085.png,0, malignant
+000085.png,1, malignant
+000085.png,2, malignant
+000085.png,3, malignant
+000085.png,4, malignant
+000085.png,5, malignant
+000085.png,6, malignant
+000085.png,7, malignant
+000086.png,0, malignant
+000086.png,1, malignant
+000086.png,2, malignant
+000086.png,3, malignant
+000086.png,4, malignant
+000086.png,5, malignant
+000086.png,6, malignant
+000086.png,7, malignant
+000087.png,0, malignant
+000087.png,1, malignant
+000087.png,2, malignant
+000087.png,3, malignant
+000087.png,4, malignant
+000087.png,5, malignant
+000087.png,6, malignant
+000087.png,7, malignant
+000088.png,0, It is not possible to tell if the lesion is malignant or benign based on the image.
+000088.png,1, malignant
+000088.png,2, The lesion in the image is a benign lesion.
+000088.png,3, The lesion in the image is benign.
+000088.png,4, benign
+000088.png,5, benign
+000088.png,6, benign
+000088.png,7, benign
+000089.png,0, malignant
+000089.png,1, malignant
+000089.png,2, malignant
+000089.png,3, malignant
+000089.png,4, malignant
+000089.png,5, malignant
+000089.png,6, malignant
+000089.png,7, malignant
+000090.png,0, benign
+000090.png,1, benign
+000090.png,2, benign
+000090.png,3, benign
+000090.png,4, benign
+000090.png,5, benign
+000090.png,6, benign
+000090.png,7, benign
+000091.png,0, It is not possible to determine if the lesion is malignant or benign based on the image provided.
+000091.png,1, Cannot assess. The image is too blurry.
+000091.png,2, benign
+000091.png,3, benign
+000091.png,4, benign
+000091.png,5, benign
+000091.png,6, benign
+000091.png,7, benign
+000092.png,0,Error
+000092.png,1,Error
+000092.png,2,Error
+000092.png,3,Error
+000092.png,4,Error
+000092.png,5,Error
+000092.png,6,Error
+000092.png,7,Error
+000093.png,0, benign
+000093.png,1, benign
+000093.png,2, benign
+000093.png,3, benign
+000093.png,4, benign
+000093.png,5, benign
+000093.png,6, benign
+000093.png,7, benign
+000094.png,0, benign
+000094.png,1, benign
+000094.png,2, benign
+000094.png,3, benign
+000094.png,4, benign
+000094.png,5, benign
+000094.png,6, benign
+000094.png,7, benign
+000095.png,0, Cannot assess--need more information.
+000095.png,1, cannot assess
+000095.png,2, benign
+000095.png,3, benign
+000095.png,4, benign
+000095.png,5, benign
+000095.png,6, benign
+000095.png,7, benign
+000096.png,0, benign
+000096.png,1, benign
+000096.png,2, benign
+000096.png,3, benign
+000096.png,4, benign
+000096.png,5, benign
+000096.png,6, benign
+000096.png,7, benign
+000097.png,0,Error
+000097.png,1,Error
+000097.png,2,Error
+000097.png,3,Error
+000097.png,4,Error
+000097.png,5,Error
+000097.png,6,Error
+000097.png,7,Error
+000098.png,0, cannot assess
+000098.png,1, benign
+000098.png,2, benign
+000098.png,3, benign
+000098.png,4, benign
+000098.png,5, malignant
+000098.png,6, benign
+000098.png,7, benign
+000099.png,0, It is not possible to tell if the lesion is malignant or benign based on the image.
+000099.png,1, malignant
+000099.png,2, benign
+000099.png,3, benign
+000099.png,4, malignant
+000099.png,5, benign
+000099.png,6, benign
+000099.png,7, benign
+000100.png,0, malignant
+000100.png,1, Cannot rule out melanoma. Recommend biopsy.
+000100.png,2, malignant
+000100.png,3, benign
+000100.png,4, malignant
+000100.png,5, benign
+000100.png,6, benign
+000100.png,7, benign
+000101.png,0, benign
+000101.png,1, pigmented lesion of the lip
+000101.png,2, benign
+000101.png,3, benign
+000101.png,4, malignant
+000101.png,5, benign
+000101.png,6, malignant
+000101.png,7, benign
+000102.png,0, benign
+000102.png,1, benign
+000102.png,2, benign
+000102.png,3, benign
+000102.png,4, benign
+000102.png,5, benign
+000102.png,6, benign
+000102.png,7, benign
+000103.png,0, It is not possible to tell if the lesion is malignant or benign based on the image.
+000103.png,1, benign
+000103.png,2, Cannot tell from image provided.
+000103.png,3, benign
+000103.png,4, benign
+000103.png,5, benign
+000103.png,6, benign
+000103.png,7, benign
+000104.png,0, benign
+000104.png,1, benign
+000104.png,2, benign
+000104.png,3, benign
+000104.png,4, benign
+000104.png,5, benign
+000104.png,6, benign
+000104.png,7, benign
+000105.png,0, cannot assess
+000105.png,1, cannot assess
+000105.png,2, The lesion in the image is benign.
+000105.png,3, The lesion in the image is benign.
+000105.png,4, malignant
+000105.png,5, benign
+000105.png,6, benign
+000105.png,7, benign
+000106.png,0, malignant
+000106.png,1, malignant
+000106.png,2, malignant
+000106.png,3, malignant
+000106.png,4, malignant
+000106.png,5, malignant
+000106.png,6, malignant
+000106.png,7, malignant
+000107.png,0, malignant
+000107.png,1, benign
+000107.png,2, benign
+000107.png,3, The lesion in the image is malignant.
+000107.png,4, benign
+000107.png,5, benign
+000107.png,6, benign
+000107.png,7, benign
+000108.png,0, The lesion is benign.
+000108.png,1, onychomycosis
+000108.png,2, benign
+000108.png,3, benign
+000108.png,4, benign
+000108.png,5, benign
+000108.png,6, benign
+000108.png,7, benign
+000109.png,0, cannot rule out melanoma
+000109.png,1, benign
+000109.png,2, The lesion in the image is benign.
+000109.png,3, The lesion in the image is a benign melanocytic nevus.
+000109.png,4, benign
+000109.png,5, benign
+000109.png,6, benign
+000109.png,7, benign
+000110.png,0, benign
+000110.png,1, cannot rule out melanoma
+000110.png,2, benign
+000110.png,3, benign
+000110.png,4, malignant
+000110.png,5, malignant
+000110.png,6, benign
+000110.png,7, benign
+000111.png,0, malignant
+000111.png,1, benign
+000111.png,2, benign
+000111.png,3, benign
+000111.png,4, malignant
+000111.png,5, benign
+000111.png,6, malignant
+000111.png,7, benign
+000112.png,0, malignant
+000112.png,1, malignant
+000112.png,2, malignant
+000112.png,3, malignant
+000112.png,4, malignant
+000112.png,5, malignant
+000112.png,6, malignant
+000112.png,7, malignant
+000113.png,0,Error
+000113.png,1,Error
+000113.png,2,Error
+000113.png,3,Error
+000113.png,4,Error
+000113.png,5,Error
+000113.png,6,Error
+000113.png,7,Error
+000114.png,0, benign
+000114.png,1, benign
+000114.png,2, benign
+000114.png,3, benign
+000114.png,4, benign
+000114.png,5, benign
+000114.png,6, benign
+000114.png,7, benign
+000115.png,0, malignant
+000115.png,1, benign
+000115.png,2, malignant
+000115.png,3, benign
+000115.png,4, malignant
+000115.png,5, malignant
+000115.png,6, benign
+000115.png,7, benign
+000116.png,0, malignant
+000116.png,1, benign
+000116.png,2, benign
+000116.png,3, benign
+000116.png,4, malignant
+000116.png,5, benign
+000116.png,6, benign
+000116.png,7, benign
+000117.png,0, malignant
+000117.png,1, malignant
+000117.png,2, malignant
+000117.png,3, malignant
+000117.png,4, malignant
+000117.png,5, malignant
+000117.png,6, malignant
+000117.png,7, malignant
+000118.png,0,Error
+000118.png,1,Error
+000118.png,2,Error
+000118.png,3,Error
+000118.png,4,Error
+000118.png,5,Error
+000118.png,6,Error
+000118.png,7,Error
+000119.png,0,Error
+000119.png,1,Error
+000119.png,2,Error
+000119.png,3,Error
+000119.png,4,Error
+000119.png,5,Error
+000119.png,6,Error
+000119.png,7,Error
+000120.png,0,Error
+000120.png,1,Error
+000120.png,2,Error
+000120.png,3,Error
+000120.png,4,Error
+000120.png,5,Error
+000120.png,6,Error
+000120.png,7,Error
+000121.png,0, malignant
+000121.png,1, malignant
+000121.png,2, malignant
+000121.png,3, The lesion in the image is benign.
+000121.png,4, malignant
+000121.png,5, malignant
+000121.png,6, benign
+000121.png,7, benign
+000122.png,0, malignant
+000122.png,1, malignant
+000122.png,2, malignant
+000122.png,3, malignant
+000122.png,4, malignant
+000122.png,5, malignant
+000122.png,6, malignant
+000122.png,7, malignant
+000123.png,0, benign
+000123.png,1, benign
+000123.png,2, benign
+000123.png,3, benign
+000123.png,4, benign
+000123.png,5, malignant
+000123.png,6, benign
+000123.png,7, benign
+000124.png,0, benign
+000124.png,1, malignant
+000124.png,2, malignant
+000124.png,3, benign
+000124.png,4, malignant
+000124.png,5, malignant
+000124.png,6, benign
+000124.png,7, benign
+000125.png,0, malignant
+000125.png,1, benign
+000125.png,2, malignant
+000125.png,3, benign
+000125.png,4, malignant
+000125.png,5, benign
+000125.png,6, malignant
+000125.png,7, benign
+000126.png,0, malignant
+000126.png,1, malignant
+000126.png,2, malignant
+000126.png,3, malignant
+000126.png,4, malignant
+000126.png,5, malignant
+000126.png,6, malignant
+000126.png,7, malignant
+000127.png,0, malignant
+000127.png,1, malignant
+000127.png,2, malignant
+000127.png,3, The lesion in the image is malignant.
+000127.png,4, malignant
+000127.png,5, malignant
+000127.png,6, malignant
+000127.png,7, malignant
+000128.png,0, benign
+000128.png,1, malignant
+000128.png,2, malignant
+000128.png,3, malignant
+000128.png,4, malignant
+000128.png,5, malignant
+000128.png,6, malignant
+000128.png,7, malignant
+000129.png,0, benign
+000129.png,1, benign
+000129.png,2, malignant
+000129.png,3, benign
+000129.png,4, malignant
+000129.png,5, malignant
+000129.png,6, malignant
+000129.png,7, benign
+000130.png,0, The lesion is benign.
+000130.png,1, The lesion is benign.
+000130.png,2, benign
+000130.png,3, benign
+000130.png,4, benign
+000130.png,5, benign
+000130.png,6, benign
+000130.png,7, benign
+000131.png,0, benign
+000131.png,1, benign
+000131.png,2, benign
+000131.png,3, benign
+000131.png,4, benign
+000131.png,5, benign
+000131.png,6, benign
+000131.png,7, benign
+000132.png,0, malignant
+000132.png,1, benign
+000132.png,2, malignant
+000132.png,3, benign
+000132.png,4, malignant
+000132.png,5, benign
+000132.png,6, malignant
+000132.png,7, benign
+000133.png,0, cannot rule out melanoma
+000133.png,1, benign
+000133.png,2, benign
+000133.png,3, benign
+000133.png,4, malignant
+000133.png,5, benign
+000133.png,6, benign
+000133.png,7, benign
+000134.png,0,Error
+000134.png,1,Error
+000134.png,2,Error
+000134.png,3,Error
+000134.png,4,Error
+000134.png,5,Error
+000134.png,6,Error
+000134.png,7,Error
+000135.png,0, benign
+000135.png,1, benign
+000135.png,2, benign
+000135.png,3, benign
+000135.png,4, benign
+000135.png,5, benign
+000135.png,6, benign
+000135.png,7, benign
+000136.png,0, benign
+000136.png,1, benign
+000136.png,2, benign
+000136.png,3, benign
+000136.png,4, benign
+000136.png,5, benign
+000136.png,6, benign
+000136.png,7, benign
+000137.png,0, malignant
+000137.png,1, benign
+000137.png,2, malignant
+000137.png,3, benign
+000137.png,4, malignant
+000137.png,5, benign
+000137.png,6, malignant
+000137.png,7, malignant
+000138.png,0, malignant
+000138.png,1, malignant
+000138.png,2, malignant
+000138.png,3, malignant
+000138.png,4, malignant
+000138.png,5, malignant
+000138.png,6, malignant
+000138.png,7, malignant
+000139.png,0, malignant
+000139.png,1, malignant
+000139.png,2, benign
+000139.png,3, benign
+000139.png,4, malignant
+000139.png,5, malignant
+000139.png,6, benign
+000139.png,7, benign
+000140.png,0, It is not possible to tell whether the lesion is malignant or benign based on the provided image.
+000140.png,1, The lesion is benign.
+000140.png,2, benign
+000140.png,3, Cannot assess; the image is too blurry.
+000140.png,4, benign
+000140.png,5, benign
+000140.png,6, benign
+000140.png,7, benign
+000141.png,0,Error
+000141.png,1,Error
+000141.png,2,Error
+000141.png,3,Error
+000141.png,4,Error
+000141.png,5,Error
+000141.png,6,Error
+000141.png,7,Error
+000142.png,0, malignant
+000142.png,1, benign
+000142.png,2, benign
+000142.png,3, benign
+000142.png,4, benign
+000142.png,5, malignant
+000142.png,6, malignant
+000142.png,7, benign
+000143.png,0, benign
+000143.png,1, malignant
+000143.png,2, benign
+000143.png,3, benign
+000143.png,4, malignant
+000143.png,5, malignant
+000143.png,6, benign
+000143.png,7, benign
+000144.png,0, benign
+000144.png,1, benign
+000144.png,2, malignant
+000144.png,3, malignant
+000144.png,4, malignant
+000144.png,5, malignant
+000144.png,6, malignant
+000144.png,7, malignant
+000145.png,0, cannot assess
+000145.png,1, benign
+000145.png,2, benign
+000145.png,3, benign
+000145.png,4, benign
+000145.png,5, benign
+000145.png,6, benign
+000145.png,7, benign
+000146.png,0, cannot assess
+000146.png,1, benign
+000146.png,2, benign
+000146.png,3, benign
+000146.png,4, benign
+000146.png,5, benign
+000146.png,6, benign
+000146.png,7, benign
+000147.png,0, malignant
+000147.png,1, benign
+000147.png,2, malignant
+000147.png,3, malignant
+000147.png,4, malignant
+000147.png,5, malignant
+000147.png,6, malignant
+000147.png,7, malignant
+000148.png,0, malignant
+000148.png,1, benign
+000148.png,2, malignant
+000148.png,3, benign
+000148.png,4, malignant
+000148.png,5, malignant
+000148.png,6, benign
+000148.png,7, benign
+000149.png,0, It is not possible to tell if the lesion is malignant or benign based on the image.
+000149.png,1, benign
+000149.png,2, benign
+000149.png,3, benign
+000149.png,4, malignant
+000149.png,5, benign
+000149.png,6, benign
+000149.png,7, benign
+000150.png,0,Error
+000150.png,1,Error
+000150.png,2,Error
+000150.png,3,Error
+000150.png,4,Error
+000150.png,5,Error
+000150.png,6,Error
+000150.png,7,Error
+000151.png,0, cannot determine
+000151.png,1, benign
+000151.png,2, benign
+000151.png,3, benign
+000151.png,4, benign
+000151.png,5, benign
+000151.png,6, benign
+000151.png,7, benign
+000152.png,0, It is not possible to tell from the image whether the lesion is malignant or benign.
+000152.png,1, benign
+000152.png,2, benign
+000152.png,3, benign
+000152.png,4, benign
+000152.png,5, benign
+000152.png,6, benign
+000152.png,7, benign
+000153.png,0, malignant
+000153.png,1, benign
+000153.png,2, malignant
+000153.png,3, malignant
+000153.png,4, malignant
+000153.png,5, malignant
+000153.png,6, malignant
+000153.png,7, malignant
+000154.png,0,Error
+000154.png,1,Error
+000154.png,2,Error
+000154.png,3,Error
+000154.png,4,Error
+000154.png,5,Error
+000154.png,6,Error
+000154.png,7,Error
+000155.png,0, benign
+000155.png,1, benign
+000155.png,2, malignant
+000155.png,3, benign
+000155.png,4, malignant
+000155.png,5, malignant
+000155.png,6, malignant
+000155.png,7, malignant
+000156.png,0, benign
+000156.png,1, benign
+000156.png,2, benign
+000156.png,3, benign
+000156.png,4, benign
+000156.png,5, benign
+000156.png,6, benign
+000156.png,7, benign
+000157.png,0, benign
+000157.png,1, benign
+000157.png,2, benign
+000157.png,3, benign
+000157.png,4, benign
+000157.png,5, benign
+000157.png,6, benign
+000157.png,7, benign
+000158.png,0,Error
+000158.png,1,Error
+000158.png,2,Error
+000158.png,3,Error
+000158.png,4,Error
+000158.png,5,Error
+000158.png,6,Error
+000158.png,7,Error
+000159.png,0, cannot rule out melanoma
+000159.png,1, malignant
+000159.png,2, The lesion in the image matches with the term benign.
+000159.png,3, benign
+000159.png,4, malignant
+000159.png,5, malignant
+000159.png,6, benign
+000159.png,7, benign
+000160.png,0, malignant
+000160.png,1, benign
+000160.png,2, malignant
+000160.png,3, The lesion in the image is benign.
+000160.png,4, malignant
+000160.png,5, malignant
+000160.png,6, malignant
+000160.png,7, benign
+000161.png,0, malignant
+000161.png,1, malignant
+000161.png,2, malignant
+000161.png,3, malignant
+000161.png,4, malignant
+000161.png,5, malignant
+000161.png,6, malignant
+000161.png,7, malignant
+000162.png,0, malignant
+000162.png,1, malignant
+000162.png,2, malignant
+000162.png,3, malignant
+000162.png,4, malignant
+000162.png,5, malignant
+000162.png,6, benign
+000162.png,7, malignant
+000163.png,0, benign
+000163.png,1, cannot rule out malignant
+000163.png,2, benign
+000163.png,3, benign
+000163.png,4, benign
+000163.png,5, benign
+000163.png,6, benign
+000163.png,7, benign
+000164.png,0, malignant
+000164.png,1, malignant
+000164.png,2, malignant
+000164.png,3, malignant
+000164.png,4, malignant
+000164.png,5, malignant
+000164.png,6, malignant
+000164.png,7, malignant
+000165.png,0, malignant
+000165.png,1, benign
+000165.png,2, malignant
+000165.png,3, benign
+000165.png,4, malignant
+000165.png,5, malignant
+000165.png,6, malignant
+000165.png,7, malignant
+000166.png,0, malignant
+000166.png,1, malignant
+000166.png,2, malignant
+000166.png,3, malignant
+000166.png,4, malignant
+000166.png,5, malignant
+000166.png,6, malignant
+000166.png,7, malignant
+000167.png,0, malignant
+000167.png,1, malignant
+000167.png,2, malignant
+000167.png,3, malignant
+000167.png,4, malignant
+000167.png,5, malignant
+000167.png,6, malignant
+000167.png,7, malignant
+000168.png,0, malignant
+000168.png,1, cannot rule out melanoma
+000168.png,2, The lesion in the image is benign.
+000168.png,3, benign
+000168.png,4, benign
+000168.png,5, benign
+000168.png,6, benign
+000168.png,7, benign
+000169.png,0,Error
+000169.png,1,Error
+000169.png,2,Error
+000169.png,3,Error
+000169.png,4,Error
+000169.png,5,Error
+000169.png,6,Error
+000169.png,7,Error
+000170.png,0, malignant
+000170.png,1, malignant
+000170.png,2, malignant
+000170.png,3, benign
+000170.png,4, malignant
+000170.png,5, malignant
+000170.png,6, malignant
+000170.png,7, malignant
+000171.png,0, cannot rule out malignant
+000171.png,1, benign
+000171.png,2, benign
+000171.png,3, benign
+000171.png,4, malignant
+000171.png,5, malignant
+000171.png,6, benign
+000171.png,7, benign
+000172.png,0, malignant
+000172.png,1, benign
+000172.png,2, malignant
+000172.png,3, malignant
+000172.png,4, malignant
+000172.png,5, malignant
+000172.png,6, malignant
+000172.png,7, malignant
+000173.png,0, cannot assess
+000173.png,1, malignant
+000173.png,2, benign
+000173.png,3, benign
+000173.png,4, benign
+000173.png,5, malignant
+000173.png,6, benign
+000173.png,7, benign
+000174.png,0, benign
+000174.png,1, malignant
+000174.png,2, malignant
+000174.png,3, benign
+000174.png,4, malignant
+000174.png,5, benign
+000174.png,6, malignant
+000174.png,7, benign
+000175.png,0, cannot rule out melanoma
+000175.png,1, benign
+000175.png,2, benign
+000175.png,3, benign
+000175.png,4, benign
+000175.png,5, benign
+000175.png,6, benign
+000175.png,7, benign
+000176.png,0,Error
+000176.png,1,Error
+000176.png,2,Error
+000176.png,3,Error
+000176.png,4,Error
+000176.png,5,Error
+000176.png,6,Error
+000176.png,7,Error
+000177.png,0, It is not possible to determine if the lesion is malignant or benign based on the image provided.
+000177.png,1, benign
+000177.png,2, benign
+000177.png,3, benign
+000177.png,4, benign
+000177.png,5, benign
+000177.png,6, benign
+000177.png,7, benign
+000178.png,0, malignant
+000178.png,1, malignant
+000178.png,2, malignant
+000178.png,3, benign
+000178.png,4, malignant
+000178.png,5, malignant
+000178.png,6, malignant
+000178.png,7, benign
+000179.png,0, benign
+000179.png,1, benign
+000179.png,2, malignant
+000179.png,3, benign
+000179.png,4, malignant
+000179.png,5, malignant
+000179.png,6, malignant
+000179.png,7, malignant
+000180.png,0, malignant
+000180.png,1, benign
+000180.png,2, malignant
+000180.png,3, benign
+000180.png,4, malignant
+000180.png,5, benign
+000180.png,6, malignant
+000180.png,7, malignant
+000181.png,0, malignant
+000181.png,1, malignant
+000181.png,2, malignant
+000181.png,3, benign
+000181.png,4, benign
+000181.png,5, benign
+000181.png,6, malignant
+000181.png,7, benign
+000182.png,0, malignant
+000182.png,1, malignant
+000182.png,2, malignant
+000182.png,3, malignant
+000182.png,4, malignant
+000182.png,5, malignant
+000182.png,6, malignant
+000182.png,7, malignant
+000183.png,0, It is not possible to determine if the lesion is malignant or benign based on the image provided.
+000183.png,1, It is not possible to tell whether the lesion is malignant or benign based on the image provided.
+000183.png,2, benign
+000183.png,3, The lesion in the image is benign.
+000183.png,4, benign
+000183.png,5, benign
+000183.png,6, benign
+000183.png,7, benign
+000184.png,0, malignant
+000184.png,1, malignant
+000184.png,2, benign
+000184.png,3, benign
+000184.png,4, malignant
+000184.png,5, benign
+000184.png,6, benign
+000184.png,7, benign
+000185.png,0, malignant
+000185.png,1, benign
+000185.png,2, benign
+000185.png,3, benign
+000185.png,4, malignant
+000185.png,5, benign
+000185.png,6, malignant
+000185.png,7, benign
+000186.png,0,Error
+000186.png,1,Error
+000186.png,2,Error
+000186.png,3,Error
+000186.png,4,Error
+000186.png,5,Error
+000186.png,6,Error
+000186.png,7,Error
+000187.png,0, benign
+000187.png,1, malignant
+000187.png,2, malignant
+000187.png,3, benign
+000187.png,4, malignant
+000187.png,5, malignant
+000187.png,6, malignant
+000187.png,7, benign
+000188.png,0, The lesion is benign.
+000188.png,1, benign
+000188.png,2, benign
+000188.png,3, benign
+000188.png,4, benign
+000188.png,5, benign
+000188.png,6, benign
+000188.png,7, benign
+000189.png,0, cannot assess
+000189.png,1, malignant
+000189.png,2, malignant
+000189.png,3, benign
+000189.png,4, malignant
+000189.png,5, malignant
+000189.png,6, malignant
+000189.png,7, malignant
+000190.png,0, malignant
+000190.png,1, malignant
+000190.png,2, malignant
+000190.png,3, malignant
+000190.png,4, malignant
+000190.png,5, malignant
+000190.png,6, malignant
+000190.png,7, malignant
+000191.png,0, It is not possible to determine if the lesion is malignant or benign based on the image.
+000191.png,1, malignant
+000191.png,2, benign
+000191.png,3, benign
+000191.png,4, malignant
+000191.png,5, malignant
+000191.png,6, benign
+000191.png,7, benign
+000192.png,0, benign
+000192.png,1, benign
+000192.png,2, benign
+000192.png,3, benign
+000192.png,4, benign
+000192.png,5, benign
+000192.png,6, benign
+000192.png,7, benign
+000193.png,0, cannot assess
+000193.png,1, benign
+000193.png,2, benign
+000193.png,3, benign
+000193.png,4, benign
+000193.png,5, benign
+000193.png,6, benign
+000193.png,7, benign
+000194.png,0, benign
+000194.png,1, benign
+000194.png,2, benign
+000194.png,3, benign
+000194.png,4, benign
+000194.png,5, benign
+000194.png,6, benign
+000194.png,7, benign
+000195.png,0, malignant
+000195.png,1, malignant
+000195.png,2, malignant
+000195.png,3, malignant
+000195.png,4, malignant
+000195.png,5, malignant
+000195.png,6, malignant
+000195.png,7, benign
+000196.png,0,Error
+000196.png,1,Error
+000196.png,2,Error
+000196.png,3,Error
+000196.png,4,Error
+000196.png,5,Error
+000196.png,6,Error
+000196.png,7,Error
+000197.png,0, It is not possible to tell if the lesion is malignant or benign based on the image.
+000197.png,1, benign
+000197.png,2, benign
+000197.png,3, benign
+000197.png,4, malignant
+000197.png,5, benign
+000197.png,6, benign
+000197.png,7, benign
+000198.png,0,Error
+000198.png,1,Error
+000198.png,2,Error
+000198.png,3,Error
+000198.png,4,Error
+000198.png,5,Error
+000198.png,6,Error
+000198.png,7,Error
+000199.png,0, malignant
+000199.png,1, benign
+000199.png,2, malignant
+000199.png,3, benign
+000199.png,4, malignant
+000199.png,5, malignant
+000199.png,6, malignant
+000199.png,7, malignant
+000200.png,0,Error
+000200.png,1,Error
+000200.png,2,Error
+000200.png,3,Error
+000200.png,4,Error
+000200.png,5,Error
+000200.png,6,Error
+000200.png,7,Error
+000201.png,0, malignant
+000201.png,1, malignant
+000201.png,2, It is not possible to determine if the lesion is malignant or benign based on the image.
+000201.png,3, benign
+000201.png,4, malignant
+000201.png,5, malignant
+000201.png,6, benign
+000201.png,7, benign
+000202.png,0,Error
+000202.png,1,Error
+000202.png,2,Error
+000202.png,3,Error
+000202.png,4,Error
+000202.png,5,Error
+000202.png,6,Error
+000202.png,7,Error
+000203.png,0, cannot rule out melanoma
+000203.png,1, cannot rule out melanoma
+000203.png,2, benign
+000203.png,3, benign
+000203.png,4, benign
+000203.png,5, benign
+000203.png,6, benign
+000203.png,7, benign
+000204.png,0, benign
+000204.png,1, benign
+000204.png,2, benign
+000204.png,3, benign
+000204.png,4, benign
+000204.png,5, benign
+000204.png,6, benign
+000204.png,7, benign
+000205.png,0,Error
+000205.png,1,Error
+000205.png,2,Error
+000205.png,3,Error
+000205.png,4,Error
+000205.png,5,Error
+000205.png,6,Error
+000205.png,7,Error
+000206.png,0, It is not possible to tell if the lesion is malignant or benign based on the image provided.
+000206.png,1, malignant
+000206.png,2, The lesion in the image is benign.
+000206.png,3, The lesion in the image matches with the term benign.
+000206.png,4, malignant
+000206.png,5, malignant
+000206.png,6, benign
+000206.png,7, malignant
+000207.png,0, benign
+000207.png,1, benign
+000207.png,2, benign
+000207.png,3, benign
+000207.png,4, benign
+000207.png,5, benign
+000207.png,6, benign
+000207.png,7, benign
+000208.png,0, malignant
+000208.png,1, malignant
+000208.png,2, benign
+000208.png,3, malignant
+000208.png,4, malignant
+000208.png,5, malignant
+000208.png,6, malignant
+000208.png,7, malignant
+000209.png,0, benign
+000209.png,1, benign
+000209.png,2, malignant
+000209.png,3, benign
+000209.png,4, malignant
+000209.png,5, malignant
+000209.png,6, benign
+000209.png,7, benign
+000210.png,0, benign
+000210.png,1, benign
+000210.png,2, malignant
+000210.png,3, malignant
+000210.png,4, malignant
+000210.png,5, malignant
+000210.png,6, malignant
+000210.png,7, malignant
+000211.png,0, benign
+000211.png,1, benign
+000211.png,2, benign
+000211.png,3, benign
+000211.png,4, benign
+000211.png,5, benign
+000211.png,6, benign
+000211.png,7, benign
+000212.png,0, malignant
+000212.png,1, malignant
+000212.png,2, malignant
+000212.png,3, malignant
+000212.png,4, malignant
+000212.png,5, malignant
+000212.png,6, malignant
+000212.png,7, malignant
+000213.png,0, benign
+000213.png,1, benign
+000213.png,2, benign
+000213.png,3, benign
+000213.png,4, benign
+000213.png,5, benign
+000213.png,6, benign
+000213.png,7, benign
+000214.png,0, cannot assess
+000214.png,1, benign
+000214.png,2, The lesion in the image is benign.
+000214.png,3, benign
+000214.png,4, benign
+000214.png,5, benign
+000214.png,6, benign
+000214.png,7, benign
+000215.png,0, benign
+000215.png,1, benign
+000215.png,2, benign
+000215.png,3, benign
+000215.png,4, malignant
+000215.png,5, malignant
+000215.png,6, malignant
+000215.png,7, malignant
+000216.png,0, cannot assess
+000216.png,1, benign
+000216.png,2, benign
+000216.png,3, benign
+000216.png,4, benign
+000216.png,5, benign
+000216.png,6, benign
+000216.png,7, benign
+000217.png,0, benign
+000217.png,1, benign
+000217.png,2, benign
+000217.png,3, benign
+000217.png,4, malignant
+000217.png,5, malignant
+000217.png,6, benign
+000217.png,7, benign
+000218.png,0, malignant
+000218.png,1, malignant
+000218.png,2, malignant
+000218.png,3, malignant
+000218.png,4, malignant
+000218.png,5, malignant
+000218.png,6, malignant
+000218.png,7, malignant
+000219.png,0, benign
+000219.png,1, benign
+000219.png,2, benign
+000219.png,3, benign
+000219.png,4, benign
+000219.png,5, benign
+000219.png,6, benign
+000219.png,7, benign
+000220.png,0,Error
+000220.png,1,Error
+000220.png,2,Error
+000220.png,3,Error
+000220.png,4,Error
+000220.png,5,Error
+000220.png,6,Error
+000220.png,7,Error
+000221.png,0, malignant
+000221.png,1, malignant
+000221.png,2, malignant
+000221.png,3, benign
+000221.png,4, malignant
+000221.png,5, malignant
+000221.png,6, benign
+000221.png,7, benign
+000222.png,0, It is not possible to determine if the lesion is malignant or benign based on the image provided.
+000222.png,1, benign
+000222.png,2, malignant
+000222.png,3, benign
+000222.png,4, malignant
+000222.png,5, benign
+000222.png,6, malignant
+000222.png,7, malignant
+000223.png,0,Error
+000223.png,1,Error
+000223.png,2,Error
+000223.png,3,Error
+000223.png,4,Error
+000223.png,5,Error
+000223.png,6,Error
+000223.png,7,Error
+000224.png,0, malignant
+000224.png,1, malignant
+000224.png,2, malignant
+000224.png,3, malignant
+000224.png,4, malignant
+000224.png,5, malignant
+000224.png,6, malignant
+000224.png,7, malignant
+000225.png,0, benign
+000225.png,1, malignant
+000225.png,2, malignant
+000225.png,3, benign
+000225.png,4, malignant
+000225.png,5, benign
+000225.png,6, malignant
+000225.png,7, benign
+000226.png,0, malignant
+000226.png,1, benign
+000226.png,2, benign
+000226.png,3, malignant
+000226.png,4, malignant
+000226.png,5, benign
+000226.png,6, benign
+000226.png,7, benign
+000227.png,0, cannot rule out melanoma
+000227.png,1, cannot rule out melanoma
+000227.png,2, The lesion in the image matches with the term benign.
+000227.png,3, The lesion in the image is benign.
+000227.png,4, benign
+000227.png,5, benign
+000227.png,6, benign
+000227.png,7, benign
+000228.png,0, This lesion is concerning for basal cell carcinoma and should be evaluated by a dermatologist for biopsy.
+000228.png,1, This lesion is concerning for basal cell carcinoma.
+000228.png,2, Benign
+000228.png,3, benign
+000228.png,4, benign
+000228.png,5, benign
+000228.png,6, benign
+000228.png,7, benign
+000229.png,0, benign

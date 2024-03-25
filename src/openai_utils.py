@@ -7,22 +7,20 @@ import base64
 import logging
 import pandas as pd
 import requests
+import functools
 from openai import OpenAI
-from config import OPENAI_API_KEY, OPENAI_ORG_ID
 from concurrent.futures import ThreadPoolExecutor
+import argparse
+from config import Config
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Process images for a specific department.")
+    parser.add_argument("--department", help="Specify the department (dermatology or radiology)", required=True)
+    args = parser.parse_args()
+    return args.department
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
-
-class Config:
-    """Configuration for the script."""
-    folder_path = 'data/CheXpert/'
-    image_paths = pd.read_csv('data/processed_test_val_set_20240319.csv')['Path'] # Validation set only
-    prompts_dict = pd.read_csv('prompts.csv')['Prompt'].to_dict() 
-    headers = {
-    "Content-Type": "application/json",
-    "Authorization": f"Bearer {OPENAI_API_KEY}",
-    }
 
 def get_image_paths(input: str) -> list:
     """Get a list of image paths from the input directory or list."""
@@ -41,8 +39,8 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
     
-def process_request(filename, prompt, max_tokens=7):
-    image_path = os.path.join(Config.folder_path, filename)
+def process_request(filename, prompt, config, max_tokens=7):
+    image_path = os.path.join(config.folder_path, filename)
     base64_image = encode_image(image_path)
     payload = {
         "model": "gpt-4-vision-preview",
@@ -58,7 +56,7 @@ def process_request(filename, prompt, max_tokens=7):
         "max_tokens": max_tokens,
     }
 
-    response = requests.post("https://api.openai.com/v1/chat/completions", headers=Config.headers, json=payload)
+    response = requests.post("https://api.openai.com/v1/chat/completions", headers=config.headers, json=payload)
     
     if response.status_code == 200:
         response_text = response.json()['choices'][0]['message']['content']
@@ -67,22 +65,25 @@ def process_request(filename, prompt, max_tokens=7):
     else:
         print(f"Error processing {filename} with prompt '{prompt}': {response.text}")
         return filename, prompt, None
-def process_pair(pair):
+    
+def process_pair(pair, config):
     file_name, prompt_id = pair
     if file_name.endswith(('.png', '.jpg')):
-        text_prompt = Config.prompts_dict[prompt_id] 
+        text_prompt = config.prompts_dict[prompt_id] 
         try:
-            response = process_request(file_name, text_prompt)
+            response = process_request(file_name, text_prompt, config)
             return {"Filename": response[0], "PromptID": prompt_id, "Response": response[2]}
         except Exception as e:
             print(f"Error processing {file_name}: {e}")
             return None
         
 def main():
-    image_paths = get_image_paths(Config.image_paths)
+    department = parse_args()
+    config = Config(department)
+    image_paths = get_image_paths(config.image_paths)
     date = time.strftime("%Y%m%d")
     date = '20240318'
-    csvfile_path = f"data/gpt4v_chexpert_results_{date}.csv"
+    csvfile_path = f"data/{department}/gpt4v_{department}_results_{date}.csv"
 
     processed_count = 0
     
@@ -91,15 +92,16 @@ def main():
         completed_df = pd.read_csv(csvfile_path)
         completed_df = completed_df.dropna(subset=['Response'])
         completed_pairs = list(zip(completed_df['Filename'], completed_df['PromptID']))  
-        image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in Config.prompts_dict.keys()]
+        image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
         image_prompt_pairs = [pair for pair in image_prompt_pairs if pair not in completed_pairs]
 
     else:
         mode = 'w'  # write if does not exist
-        image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in Config.prompts_dict.keys()]
+        image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
         
     with ThreadPoolExecutor() as executor:
-        results = list(executor.map(process_pair, image_prompt_pairs))
+        results = list(executor.map(lambda pair: process_pair(pair, config), image_prompt_pairs))
+
 
     with open(csvfile_path, mode, newline='') as csvfile:
         fieldnames = ["Filename", "PromptID", "Response"]

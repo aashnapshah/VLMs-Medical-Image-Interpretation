@@ -6,5 +6,6 @@
 DDI/
 archive/
 data/radiology/CheXpert
+data/dermatology/DDI
 __pycache__/
 .DS_Store
