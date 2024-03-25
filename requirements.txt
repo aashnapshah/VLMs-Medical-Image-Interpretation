@@ -1,0 +1,17 @@
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+scikit-image
+opencv-python
+pillow
+tensorflow
+keras
+torch
+openai
+google-generativeai
+python-dotenv
+requests
+Pillow
+openpyxl
