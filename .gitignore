@@ -9,3 +9,4 @@ data/radiology/CheXpert
 data/dermatology/DDI
 __pycache__/
 .DS_Store
+src/__pycache__
