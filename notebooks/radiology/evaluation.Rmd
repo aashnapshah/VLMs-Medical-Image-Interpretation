@@ -160,7 +160,7 @@ generate_contingency_plot <- function(variable_name) {
     filter(CategorizedResponse %in% c("Diagnosed", "Refused", "Blocked")) 
   
   # Create the plot
-  ggplot(contingency_table2, aes(x = factor(!!sym(variable_name)), y = Prop, fill = CategorizedResponse)) +
+  plot <- ggplot(contingency_table2, aes(x = factor(!!sym(variable_name)), y = Prop, fill = CategorizedResponse)) +
     geom_bar(stat = "identity", position = "stack") +
     scale_y_continuous(labels = scales::percent_format(scale = 1)) +  # Set y-axis labels as percentages
     facet_wrap(~PromptID + model, scales = "free_y") +  # Facet by both PromptID and model
@@ -184,7 +184,7 @@ for (i in seq_along(results)) {
   
   # Save the contingency table as CSV
   csv_file <- paste0(base_dir, tables_dir, "xray_response_rate_", variables[i], ".csv")
-  write.csv(results[[i]]$pivot_df, csv_file, row.names = FALSE)
+  write.csv(results[[i]]$contingency_table, csv_file, row.names = FALSE)
   
   # View the plot
   print(results[[i]]$plot)
@@ -286,6 +286,9 @@ overlap_filtered_df <- df_cleaned %>%
 
 print(length(filenames_at_least_12))  
 ```
+```{r}
+df_cleaned
+```
 
 ```{r}
 master_df <- data.frame()
@@ -367,7 +370,7 @@ p <- filtered_race_df %>%
   geom_errorbar(aes(x = FPR, y = TPR, xmin = FPR_lower, xmax = FPR_upper), alpha = 0.4) +
   geom_point(aes(x = FPR, y = TPR, color = model, shape = PromptID), size = 3) +
   geom_abline(intercept = 0, slope = 1, linetype = "dotted") +
-  facet_wrap(~Unique_Value) +
+  facet_wrap(~Unique_Value, ncol=4) +
   xlim(0, 1.0) + 
   ylim(0, 1.0) +
   theme_minimal(base_size = 14) +  
@@ -377,8 +380,7 @@ p <- filtered_race_df %>%
         axis.text = element_text(size = 10),  
         strip.text = element_text(size = 12), 
         legend.position = "bottom") +  
-  labs(title = "Gemini Pro Vision vs. GPT-4V X-Ray Classification Performance by Age", 
-       x = "False Positive Rate (FPR)", 
+  labs(x = "False Positive Rate (FPR)", 
        y = "True Positive Rate (TPR)", 
        color = "Model", 
        shape = "Prompt") +
@@ -390,7 +392,7 @@ p <- filtered_race_df %>%
 
 
 p
-ggsave(paste0(base_dir, tables_dir, "race_intersection_TPR_x_FPR.png"), plot = p, width = 45, height = 6)
+ggsave(paste0(base_dir, tables_dir, "race_intersection_TPR_x_FPR.png"), plot = p, width = 10, height = 6)
 
 ```
 
