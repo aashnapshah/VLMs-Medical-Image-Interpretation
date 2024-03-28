@@ -53,7 +53,7 @@ def main():
     config = Config(department)
     image_paths = get_image_paths(config.image_paths)
     date = time.strftime("%Y%m%d")
-    csvfile_path = f"data/{department}/gemini_ddi_results_{date}.csv"
+    csvfile_path = f"data/{department}/gemini_ddi_results_{date}_single_word_errors.csv"
 
     processed_count = 0
     
@@ -79,7 +79,7 @@ def main():
             if file_name.endswith(('.png', '.jpg')):
                 text_prompt = config.prompts_dict[prompt_id] 
                 try:
-                    response = process_image(file_name, text_prompt, config.safety_settings)
+                    response = process_image(config, file_name, text_prompt, config.safety_settings)
                     csv_writer.writerow({"Filename": response[0], "PromptID": prompt_id, "Response": response[2]})
                     csvfile.flush()
                 except Exception as exc:
@@ -87,7 +87,7 @@ def main():
                 processed_count += 1
                 if processed_count >= 50:
                     logging.info("Rate limit reached. Sleeping for 60 seconds.")
-                    time.sleep(60)
+                    time.sleep(10)
                     processed_count = 0 
     
 if __name__ == "__main__":

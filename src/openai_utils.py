@@ -83,7 +83,7 @@ def main():
     image_paths = get_image_paths(config.image_paths)
     date = time.strftime("%Y%m%d")
     date = '20240318'
-    csvfile_path = f"data/{department}/gpt4v_{department}_results_{date}.csv"
+    csvfile_path = f"data/{department}/gpt4v_{department}_results_{date}_single_word.csv"
 
     processed_count = 0
     

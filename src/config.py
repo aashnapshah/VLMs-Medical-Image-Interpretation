@@ -1,6 +1,7 @@
 import os
 import sys
 import pandas as pd
+import google.generativeai as genai
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -21,7 +22,7 @@ class Config:
     def load_department_settings(self):
         if self.department == "dermatology":
             self.folder_path = "data/dermatology/DDI"
-            self.image_paths = pd.read_csv('data/dermatology/DDI/ddi_metadata.csv')['DDI_file']
+            self.image_paths = pd.read_csv('data/dermatology/DDI/gemini_errors.csv')['DDI_file']
             self.prompts_dict = pd.read_csv('data/dermatology/prompts.csv')['Prompt'].to_dict()
             # Additional dermatology-specific settings can be added here
         elif self.department == "radiology":
@@ -44,7 +45,7 @@ class Config:
             # You can add more OpenAI specific settings here
         elif "gemini" in main_script_name:
             # Configure for Google Gemini
-            self.model = "gemini-1.0-pro-vision-latest"
+            self.model = genai.GenerativeModel('gemini-1.0-pro-vision-latest')
             self.safety_settings = [
                 {"category": "HARM_CATEGORY_DANGEROUS", "threshold": "BLOCK_NONE"},
                 {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
