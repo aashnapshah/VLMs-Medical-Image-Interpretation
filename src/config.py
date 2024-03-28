@@ -2,14 +2,14 @@ import os
 import sys
 import pandas as pd
 from dotenv import load_dotenv
-
+import sys
+sys.path.append('../')
 # Load environment variables
 load_dotenv()
 
 class Config:
     # Shared configurations
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-    OPENAI_ORG_ID = os.getenv('OPENAI_ORG_ID')
     GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 
     def __init__(self, department):
@@ -25,9 +25,9 @@ class Config:
             self.prompts_dict = pd.read_csv('data/dermatology/prompts.csv')['Prompt'].to_dict()
             # Additional dermatology-specific settings can be added here
         elif self.department == "radiology":
-            self.folder_path = "data/CheXpert/"
-            self.image_paths = pd.read_csv('data/processed_test_val_set_20240319.csv')['Path']
-            self.prompts_dict = pd.read_csv('data/radiology/prompts.csv')['Prompt'].to_dict()
+            self.folder_path = "../data/radiology/CheXpert/"
+            self.image_paths = pd.read_csv('../data/radiology/CheXpert/processed_test_val_set_20240319.csv')['Path']
+            self.prompts_dict = pd.read_csv('../data/radiology/prompts.csv')['Prompt'][:8].to_dict()
             # Additional radiology-specific settings can be added here
         else:
             raise ValueError(f"Unsupported department: {self.department}")
@@ -44,7 +44,7 @@ class Config:
             # You can add more OpenAI specific settings here
         elif "gemini" in main_script_name:
             # Configure for Google Gemini
-            self.model = "gemini-1.0-pro-vision-latest"
+            self.model_name = "gemini-1.0-pro-vision-latest"
             self.safety_settings = [
                 {"category": "HARM_CATEGORY_DANGEROUS", "threshold": "BLOCK_NONE"},
                 {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},

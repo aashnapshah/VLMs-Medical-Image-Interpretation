@@ -11,6 +11,10 @@ import functools
 from openai import OpenAI
 from concurrent.futures import ThreadPoolExecutor
 import argparse
+
+import sys
+sys.path.append('../')
+
 from config import Config
 
 def parse_args():
@@ -82,22 +86,29 @@ def main():
     config = Config(department)
     image_paths = get_image_paths(config.image_paths)
     date = time.strftime("%Y%m%d")
-    date = '20240318'
-    csvfile_path = f"data/{department}/gpt4v_{department}_results_{date}.csv"
+    date = '20240328'
+    csvfile_path = f"../data/{department}/apiResults/gpt4v_{department}_results_{date}.csv"
 
     processed_count = 0
+    print(os.path.exists(csvfile_path))
     
     if os.path.exists(csvfile_path):
         mode = 'a'  # append if already exists
+        all_image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
+        
+        # remove any na and remove if prompt bigger than 8
         completed_df = pd.read_csv(csvfile_path)
         completed_df = completed_df.dropna(subset=['Response'])
+        completed_df = completed_df[~completed_df['Response'].str.contains("The X-ray in the image appears")]
+        completed_df.to_csv(csvfile_path, index=False)
+        #show rows with na in response column
         completed_pairs = list(zip(completed_df['Filename'], completed_df['PromptID']))  
-        image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
-        image_prompt_pairs = [pair for pair in image_prompt_pairs if pair not in completed_pairs]
-
+                
+        image_prompt_pairs = [pair for pair in all_image_prompt_pairs if pair not in completed_pairs]
+        print(len(image_prompt_pairs))
     else:
         mode = 'w'  # write if does not exist
-        image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
+        image_prompt_pairs = [] #[(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
         
     with ThreadPoolExecutor() as executor:
         results = list(executor.map(lambda pair: process_pair(pair, config), image_prompt_pairs))
