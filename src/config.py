@@ -44,6 +44,7 @@ class Config:
             # You can add more OpenAI specific settings here
         elif "gemini" in main_script_name:
             # Configure for Google Gemini
+            
             self.model_name = "gemini-1.0-pro-vision-latest"
             self.safety_settings = [
                 {"category": "HARM_CATEGORY_DANGEROUS", "threshold": "BLOCK_NONE"},

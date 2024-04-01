@@ -34,18 +34,23 @@ def get_image_paths(input: str) -> list:
         raise ValueError("Input must be a list of image paths or a directory path")
     return image_paths
 
-def process_image(config, file_name: str, text_prompt: str, safety_settings: list) -> tuple:
+def load_model(config):
+    genai.configure(api_key=Config.GOOGLE_API_KEY)
+    model = genai.GenerativeModel(config.model_name)
+    return model
+
+def process_image(config, model, file_name: str, text_prompt: str, safety_settings: list) -> tuple:
     """Process an image and return the filename, text prompt, and response."""
     img_path = os.path.join(config.folder_path, file_name)
     with Image.open(img_path) as image:
         try:
-            response = config.model.generate_content([text_prompt, image], safety_settings=safety_settings)
-            #logging.info(response.text)
+            response = model.generate_content([text_prompt, image], safety_settings=safety_settings)
+            logging.info(response.text)
             return file_name, text_prompt, response.text
         except Exception as e:
             time.sleep(2)
             logging.error(f"Error processing hererere {file_name}: {e}")
-            return file_name, text_prompt, "Error"
+            return file_name, text_prompt, None
 
 def main():
     """Main function to process images and save results to a CSV file."""
@@ -53,20 +58,29 @@ def main():
     config = Config(department)
     image_paths = get_image_paths(config.image_paths)
     date = time.strftime("%Y%m%d")
-    csvfile_path = f"data/{department}/gemini_ddi_results_{date}.csv"
+    date = '20240312'
+    csvfile_path = f"../data/{department}/apiResults/gemini_chexpert_results_20240312.csv"
 
     processed_count = 0
     
+    print(os.path.exists(csvfile_path))
+
     if os.path.exists(csvfile_path):
         mode = 'a'  # append if already exists
+        all_image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
+        
+        # remove any na and remove if prompt bigger than 8
         completed_df = pd.read_csv(csvfile_path)
+        completed_df = completed_df.dropna(subset=['Response'])
+        completed_df = completed_df[~completed_df['Response'].str.contains("Error")]
+        completed_df.to_csv(csvfile_path, index=False)
+        
         completed_pairs = list(zip(completed_df['Filename'], completed_df['PromptID']))  
-        image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
-        image_prompt_pairs = [pair for pair in image_prompt_pairs if pair not in completed_pairs]
-
+        image_prompt_pairs = [pair for pair in all_image_prompt_pairs if pair not in completed_pairs]
+        print(len(image_prompt_pairs))
     else:
         mode = 'w'  # write if does not exist
-        image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
+        image_prompt_pairs = [] #[(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
         
     with open(csvfile_path, mode, newline='') as csvfile:
         fieldnames = ["Filename", "PromptID", "Response"]
@@ -79,7 +93,8 @@ def main():
             if file_name.endswith(('.png', '.jpg')):
                 text_prompt = config.prompts_dict[prompt_id] 
                 try:
-                    response = process_image(file_name, text_prompt, config.safety_settings)
+                    model = load_model(config)
+                    response = process_image(config, model, file_name, text_prompt, config.safety_settings)
                     csv_writer.writerow({"Filename": response[0], "PromptID": prompt_id, "Response": response[2]})
                     csvfile.flush()
                 except Exception as exc:

@@ -1306,7 +1306,6 @@ test/patient64822/study1/view1_frontal.jpg,7, normal
 test/patient64822/study1/view1_frontal.jpg,8, normal
 test/patient64822/study1/view1_frontal.jpg,9, normal
 test/patient64822/study1/view1_frontal.jpg,10, normal
-test/patient64822/study1/view1_frontal.jpg,11,Error
 test/patient64822/study1/view1_frontal.jpg,12, normal
 test/patient64822/study1/view1_frontal.jpg,13, normal
 test/patient64822/study1/view1_frontal.jpg,14, normal
@@ -1525,7 +1524,6 @@ test/patient64836/study1/view1_frontal.jpg,2, normal
 test/patient64836/study1/view1_frontal.jpg,3, normal
 test/patient64836/study1/view1_frontal.jpg,4, normal
 test/patient64836/study1/view1_frontal.jpg,5, normal
-test/patient64836/study1/view1_frontal.jpg,6,Error
 test/patient64836/study1/view1_frontal.jpg,7, normal
 test/patient64836/study1/view1_frontal.jpg,8, normal
 test/patient64836/study1/view1_frontal.jpg,9, normal
@@ -1559,7 +1557,6 @@ test/patient64838/study1/view1_frontal.jpg,4, normal
 test/patient64838/study1/view1_frontal.jpg,5, normal
 test/patient64838/study1/view1_frontal.jpg,6, abnormal
 test/patient64838/study1/view1_frontal.jpg,7, normal
-test/patient64838/study1/view1_frontal.jpg,8,Error
 test/patient64838/study1/view1_frontal.jpg,9, normal
 test/patient64838/study1/view1_frontal.jpg,10, abnormal
 test/patient64838/study1/view1_frontal.jpg,11, abnormal
@@ -1623,7 +1620,6 @@ test/patient64842/study1/view1_frontal.jpg,4, abnormal
 test/patient64842/study1/view1_frontal.jpg,5, abnormal
 test/patient64842/study1/view1_frontal.jpg,6, abnormal
 test/patient64842/study1/view1_frontal.jpg,7, abnormal
-test/patient64842/study1/view1_frontal.jpg,8,Error
 test/patient64842/study1/view1_frontal.jpg,9, abnormal
 test/patient64842/study1/view1_frontal.jpg,10, abnormal
 test/patient64842/study1/view1_frontal.jpg,11, abnormal
@@ -1793,7 +1789,6 @@ test/patient64852/study1/view1_frontal.jpg,14, normal
 test/patient64852/study1/view1_frontal.jpg,15, normal
 test/patient64853/study1/view1_frontal.jpg,0, normal
 test/patient64853/study1/view1_frontal.jpg,1, normal
-test/patient64853/study1/view1_frontal.jpg,2,Error
 test/patient64853/study1/view1_frontal.jpg,3, normal
 test/patient64853/study1/view1_frontal.jpg,4, normal
 test/patient64853/study1/view1_frontal.jpg,5, normal
@@ -1823,7 +1818,6 @@ test/patient64854/study1/view1_frontal.jpg,12, normal
 test/patient64854/study1/view1_frontal.jpg,13, normal
 test/patient64854/study1/view1_frontal.jpg,14, normal
 test/patient64854/study1/view1_frontal.jpg,15, normal
-test/patient64855/study1/view1_frontal.jpg,0,Error
 test/patient64855/study1/view1_frontal.jpg,1, normal
 test/patient64855/study1/view1_frontal.jpg,2, normal
 test/patient64855/study1/view1_frontal.jpg,3, normal
@@ -1831,7 +1825,6 @@ test/patient64855/study1/view1_frontal.jpg,4, normal
 test/patient64855/study1/view1_frontal.jpg,5, normal
 test/patient64855/study1/view1_frontal.jpg,6, normal
 test/patient64855/study1/view1_frontal.jpg,7, normal
-test/patient64855/study1/view1_frontal.jpg,8,Error
 test/patient64855/study1/view1_frontal.jpg,9, normal
 test/patient64855/study1/view1_frontal.jpg,10, normal
 test/patient64855/study1/view1_frontal.jpg,11, normal
@@ -1883,7 +1876,6 @@ test/patient64858/study1/view1_frontal.jpg,8, normal
 test/patient64858/study1/view1_frontal.jpg,9, normal
 test/patient64858/study1/view1_frontal.jpg,10, abnormal
 test/patient64858/study1/view1_frontal.jpg,11, abnormal
-test/patient64858/study1/view1_frontal.jpg,12,Error
 test/patient64858/study1/view1_frontal.jpg,13, normal
 test/patient64858/study1/view1_frontal.jpg,14, abnormal
 test/patient64858/study1/view1_frontal.jpg,15, normal
@@ -1979,7 +1971,6 @@ test/patient64864/study1/view1_frontal.jpg,8, normal
 test/patient64864/study1/view1_frontal.jpg,9, normal
 test/patient64864/study1/view1_frontal.jpg,10, abnormal
 test/patient64864/study1/view1_frontal.jpg,11, abnormal
-test/patient64864/study1/view1_frontal.jpg,12,Error
 test/patient64864/study1/view1_frontal.jpg,13, normal
 test/patient64864/study1/view1_frontal.jpg,14, abnormal
 test/patient64864/study1/view1_frontal.jpg,15, abnormal
@@ -2035,8 +2026,6 @@ test/patient64868/study1/view1_frontal.jpg,0, normal
 test/patient64868/study1/view1_frontal.jpg,1, normal
 test/patient64868/study1/view1_frontal.jpg,2, normal
 test/patient64868/study1/view1_frontal.jpg,3, normal
-test/patient64868/study1/view1_frontal.jpg,4,Error
-test/patient64868/study1/view1_frontal.jpg,5,Error
 test/patient64868/study1/view1_frontal.jpg,6, normal
 test/patient64868/study1/view1_frontal.jpg,7, normal
 test/patient64868/study1/view1_frontal.jpg,8, normal
@@ -2071,7 +2060,6 @@ test/patient64870/study1/view1_frontal.jpg,4, normal
 test/patient64870/study1/view1_frontal.jpg,5, normal
 test/patient64870/study1/view1_frontal.jpg,6, normal
 test/patient64870/study1/view1_frontal.jpg,7, normal
-test/patient64870/study1/view1_frontal.jpg,8,Error
 test/patient64870/study1/view1_frontal.jpg,9, normal
 test/patient64870/study1/view1_frontal.jpg,10, normal
 test/patient64870/study1/view1_frontal.jpg,11, normal
@@ -2100,7 +2088,6 @@ test/patient64872/study1/view1_frontal.jpg,1, normal
 test/patient64872/study1/view1_frontal.jpg,2, normal
 test/patient64872/study1/view1_frontal.jpg,3, normal
 test/patient64872/study1/view1_frontal.jpg,4, normal
-test/patient64872/study1/view1_frontal.jpg,5,Error
 test/patient64872/study1/view1_frontal.jpg,6, normal
 test/patient64872/study1/view1_frontal.jpg,7, normal
 test/patient64872/study1/view1_frontal.jpg,8, normal
@@ -2223,7 +2210,6 @@ test/patient64879/study1/view1_frontal.jpg,12, abnormal
 test/patient64879/study1/view1_frontal.jpg,13, abnormal
 test/patient64879/study1/view1_frontal.jpg,14, abnormal
 test/patient64879/study1/view1_frontal.jpg,15, abnormal
-test/patient64880/study1/view1_frontal.jpg,0,Error
 test/patient64880/study1/view1_frontal.jpg,1, normal
 test/patient64880/study1/view1_frontal.jpg,2, normal
 test/patient64880/study1/view1_frontal.jpg,3, normal
@@ -2352,7 +2338,6 @@ test/patient64887/study1/view1_frontal.jpg,13, abnormal
 test/patient64887/study1/view1_frontal.jpg,14, abnormal
 test/patient64887/study1/view1_frontal.jpg,15, abnormal
 test/patient64888/study1/view1_frontal.jpg,0, normal
-test/patient64888/study1/view1_frontal.jpg,1,Error
 test/patient64888/study1/view1_frontal.jpg,2, normal
 test/patient64888/study1/view1_frontal.jpg,3, normal
 test/patient64888/study1/view1_frontal.jpg,4, normal
@@ -2426,7 +2411,6 @@ test/patient64892/study1/view1_frontal.jpg,7, normal
 test/patient64892/study1/view1_frontal.jpg,8, normal
 test/patient64892/study1/view1_frontal.jpg,9, normal
 test/patient64892/study1/view1_frontal.jpg,10, normal
-test/patient64892/study1/view1_frontal.jpg,11,Error
 test/patient64892/study1/view1_frontal.jpg,12, normal
 test/patient64892/study1/view1_frontal.jpg,13, normal
 test/patient64892/study1/view1_frontal.jpg,14, normal
@@ -2487,7 +2471,6 @@ test/patient64896/study1/view1_frontal.jpg,13, normal
 test/patient64896/study1/view1_frontal.jpg,14, normal
 test/patient64896/study1/view1_frontal.jpg,15, normal
 test/patient64897/study1/view1_frontal.jpg,9, normal
-test/patient64897/study1/view1_frontal.jpg,10,Error
 test/patient64897/study1/view1_frontal.jpg,11, normal
 test/patient64897/study1/view1_frontal.jpg,12, normal
 test/patient64897/study1/view1_frontal.jpg,13, normal
@@ -2594,7 +2577,6 @@ test/patient64911/study1/view1_frontal.jpg,15, normal
 test/patient64912/study1/view1_frontal.jpg,9, normal
 test/patient64912/study1/view1_frontal.jpg,10, abnormal
 test/patient64912/study1/view1_frontal.jpg,11, normal
-test/patient64912/study1/view1_frontal.jpg,12,Error
 test/patient64912/study1/view1_frontal.jpg,13, normal
 test/patient64912/study1/view1_frontal.jpg,14, normal
 test/patient64912/study1/view1_frontal.jpg,15, normal
@@ -3300,7 +3282,6 @@ test/patient65012/study1/view1_frontal.jpg,14, normal
 test/patient65012/study1/view1_frontal.jpg,15, normal
 test/patient65013/study1/view1_frontal.jpg,9, normal
 test/patient65013/study1/view1_frontal.jpg,10, normal
-test/patient65013/study1/view1_frontal.jpg,11,Error
 test/patient65013/study1/view1_frontal.jpg,12, normal
 test/patient65013/study1/view1_frontal.jpg,13, normal
 test/patient65013/study1/view1_frontal.jpg,14, normal
@@ -4289,7 +4270,6 @@ test/patient65154/study1/view1_frontal.jpg,9, normal
 test/patient65154/study1/view1_frontal.jpg,10, abnormal
 test/patient65154/study1/view1_frontal.jpg,11, normal
 test/patient65154/study1/view1_frontal.jpg,12, abnormal
-test/patient65154/study1/view1_frontal.jpg,13,Error
 test/patient65154/study1/view1_frontal.jpg,14, abnormal
 test/patient65154/study1/view1_frontal.jpg,15, abnormal
 test/patient65155/study1/view1_frontal.jpg,9, normal
@@ -4806,7 +4786,6 @@ test/patient65227/study1/view1_frontal.jpg,15, normal
 test/patient65228/study1/view1_frontal.jpg,9, normal
 test/patient65228/study1/view1_frontal.jpg,10, normal
 test/patient65228/study1/view1_frontal.jpg,11, normal
-test/patient65228/study1/view1_frontal.jpg,12,Error
 test/patient65228/study1/view1_frontal.jpg,13, normal
 test/patient65228/study1/view1_frontal.jpg,14, normal
 test/patient65228/study1/view1_frontal.jpg,15, normal
@@ -9637,7 +9616,6 @@ val/patient64643/study1/view1_frontal.jpg,2, abnormal
 val/patient64643/study1/view1_frontal.jpg,3, abnormal
 val/patient64643/study1/view1_frontal.jpg,4, abnormal
 val/patient64643/study1/view1_frontal.jpg,5, abnormal
-val/patient64643/study1/view1_frontal.jpg,6,Error
 val/patient64643/study1/view1_frontal.jpg,7, abnormal
 val/patient64643/study1/view1_frontal.jpg,8, abnormal
 val/patient64643/study1/view1_frontal.jpg,9, normal
@@ -10832,10 +10810,6 @@ val/patient64678/study1/view1_frontal.jpg,0, abnormal
 val/patient64678/study1/view1_frontal.jpg,1, abnormal
 val/patient64678/study1/view1_frontal.jpg,2, abnormal
 val/patient64678/study1/view1_frontal.jpg,3, abnormal
-val/patient64678/study1/view1_frontal.jpg,4,Error
-val/patient64678/study1/view1_frontal.jpg,5,Error
-val/patient64678/study1/view1_frontal.jpg,6,Error
-val/patient64678/study1/view1_frontal.jpg,7,Error
 val/patient64678/study1/view1_frontal.jpg,8, abnormal
 val/patient64678/study1/view1_frontal.jpg,9, abnormal
 val/patient64678/study1/view1_frontal.jpg,10, abnormal
@@ -11581,7 +11555,6 @@ val/patient64722/study1/view1_frontal.jpg,1, abnormal
 val/patient64722/study1/view1_frontal.jpg,2, abnormal
 val/patient64722/study1/view1_frontal.jpg,3, abnormal
 val/patient64722/study1/view1_frontal.jpg,4, abnormal
-val/patient64722/study1/view1_frontal.jpg,5,Error
 val/patient64722/study1/view1_frontal.jpg,6, abnormal
 val/patient64722/study1/view1_frontal.jpg,7, abnormal
 val/patient64722/study1/view1_frontal.jpg,8, abnormal
@@ -11899,3 +11872,17 @@ val/patient64740/study1/view1_frontal.jpg,13, normal
 val/patient64740/study1/view1_frontal.jpg,14, normal
 val/patient64740/study1/view1_frontal.jpg,15, normal
 val/patient64740/study1/view1_frontal.jpg,16, abnormal
+test/patient64836/study1/view1_frontal.jpg,6, normal
+test/patient64853/study1/view1_frontal.jpg,2, abnormal
+test/patient64855/study1/view1_frontal.jpg,0, normal
+test/patient64868/study1/view1_frontal.jpg,4, normal
+test/patient64868/study1/view1_frontal.jpg,5, normal
+test/patient64872/study1/view1_frontal.jpg,5, normal
+test/patient64880/study1/view1_frontal.jpg,0, normal
+test/patient64888/study1/view1_frontal.jpg,1, normal
+val/patient64643/study1/view1_frontal.jpg,6, abnormal
+val/patient64678/study1/view1_frontal.jpg,4, abnormal
+val/patient64678/study1/view1_frontal.jpg,5, abnormal
+val/patient64678/study1/view1_frontal.jpg,6, abnormal
+val/patient64678/study1/view1_frontal.jpg,7, abnormal
+val/patient64722/study1/view1_frontal.jpg,5, abnormal

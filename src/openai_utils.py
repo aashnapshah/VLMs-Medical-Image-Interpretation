@@ -99,9 +99,6 @@ def main():
         # remove any na and remove if prompt bigger than 8
         completed_df = pd.read_csv(csvfile_path)
         completed_df = completed_df.dropna(subset=['Response'])
-        completed_df = completed_df[~completed_df['Response'].str.contains("The X-ray in the image appears")]
-        completed_df.to_csv(csvfile_path, index=False)
-        #show rows with na in response column
         completed_pairs = list(zip(completed_df['Filename'], completed_df['PromptID']))  
                 
         image_prompt_pairs = [pair for pair in all_image_prompt_pairs if pair not in completed_pairs]
