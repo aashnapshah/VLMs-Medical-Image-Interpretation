@@ -40,6 +40,8 @@ breaks = c(0, 44, 70, Inf), labels = c("18-44", "44-70", "70-96"))
 # Merge GPT-4v results with demographics
 df <- merge(api_results, demographics, by.x = "Filename", by.y = "Path", all.x = TRUE)
 df <- df[order(df$Filename, df$PromptID), ]
+df$Gender <- ifelse(df$GENDER == "" | is.na(df$GENDER), "unknown", df$GENDER)
+
 ```
 
 ```{r}
@@ -160,7 +162,6 @@ ggplot(df_counts_proportion, aes(x = factor(PromptID), y = Proportion, fill = Ca
   scale_fill_manual(values = custom_colors) +
   facet_wrap(~ Model, scales = "free_x") +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 0.5))
-
 ```
 
 ```{r}
@@ -188,28 +189,27 @@ fraction_data$PromptID <- as.factor(fraction_data$PromptID)
 plot <- ggplot(fraction_data, aes(x = Age, y = Rate, fill = Age, shape = Model)) +
   geom_point(size = 4, position = position_dodge(width = 1.0), aes(color = Age), stroke = 1.0, alpha = 1) +
   scale_fill_brewer(palette = "Set1") +
-  #scale_shape_manual(values = c(0, 15, 1, 16, 2, 17, 5, 18)) +  # Manual shape mapping
   scale_shape_manual(values = c(15, 16), guide = guide_legend(title = "Rate Type", override.aes = list(stroke = c(1, 1)))) +
   labs(x = "Prompts", y = "Fraction") +
   scale_color_brewer(palette = "Set1") +
-  facet_grid(RateType ~ PromptID, scales = "fixed") +  # Adjusted facet_grid layout
+  facet_grid(RateType ~ PromptID, scales = "fixed") + 
+  theme_minimal() +# Adjusted facet_grid layout
   theme(
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    legend.title = element_text(size = 12),
-    legend.text = element_text(size = 10),
-    legend.position = "bottom",
-    panel.background = element_rect(fill = "white"),  # Set white background for plot panel
-    plot.background = element_rect(fill = "white")     # Set white background for entire plot
+    legend.text = element_text(size = 10), 
+    panel.background = element_rect(fill = "white"),  # Set background color to white
+    panel.grid.major = element_line(color = "gray93"), # Customize major grid lines color and transparency
+    panel.border = element_rect(color = "gray", fill = NA, size = 0.5),
+    strip.background = element_blank(),  # Remove background color for facet titles
+    strip.text = element_text(color = "black", face = "bold", angle = 0, hjust = 0.5, vjust = 0.5),  # Customize facet title appearance
+    legend.position = "bottom"  # Move legend to the bottom
   ) +
-  theme_minimal() +
-  guides(shape = guide_legend(override.aes = list(color = "black")))+
   guides(color = guide_legend(nrow = 2, byrow = TRUE),  
-         shape = guide_legend(nrow = 3, byrow = TRUE))
+         shape = guide_legend(nrow = 2, byrow = TRUE))
 
-print(plot)
+plot
 
 # Display the plot
-ggsave(paste0(base_dir, figures_dir, "facet_plot_with_consistent_jitter.png"), plot,  width = 13, height = 3 , units = "in", dpi = 300,  bg = "white")  # Set the b
+ggsave(paste0(base_dir, figures_dir, "facet_plot_with_consistent_jitter.png"), plot,  width = 13, height = 4 , units = "in", dpi = 300,  bg = "white")  # Set the b
 
 ```
 ```{r}
@@ -418,7 +418,7 @@ for (i in seq_along(dfs)) {
   
   # Print outfile name
   # Check if outfile_path exists
-  if (file.exists(outfile_path)) {
+  if (file.exists('outfile_path')) {
     # Load data from CSV file into table_df
     table_df <- read_csv(outfile_path, show_col_types = FALSE)
     
@@ -429,7 +429,7 @@ for (i in seq_along(dfs)) {
     master_dfs[[outfile_type]] <- table_df
     
   } else {
-    demographic_groups <- c("Overall", "Age")
+    demographic_groups <- c("Overall", "Age", "Race", "GENDER")
     for (group in demographic_groups) {
       if (group == "Overall") {
         if (!clopper_pearson) {
@@ -521,10 +521,11 @@ for (i in seq_along(dfs)) {
 
 
 ```{r}
-master_df <- master_dfs[['overlap']]
+type = 'all'
+master_df <- master_dfs[[type]]
 
 demo_df <- master_df %>% filter(Category == "Age")
-demo_df <- demo_df[!(demo_df$Model == 'GPT-4 Vision' & demo_df$PromptID < 3), ]
+#demo_df <- demo_df[!(demo_df$Model == 'GPT-4 Vision' & demo_df$PromptID < 3), ]
 
 mean_df <- demo_df %>%
   group_by(Model, PromptID) %>%
@@ -558,13 +559,13 @@ p <- ggplot(filtered_demo_df, aes(x = Unique_Value, y = Balanced.Accuracy_mean, 
   guides(shape = guide_legend(override.aes = list(color = "black")))
 
 # Save and display the plot
-ggsave(paste0(base_dir, figures_dir, "age_overlap_intersection_cp_balanced_acc.png"), plot = p, width = 10, height = 4 , units = "in", dpi = 300, bg = "white")
- print(p)
+ggsave(paste0(base_dir, figures_dir, "age_", type, "_intersection_cp_balanced_acc.png"), plot = p, width = 13, height = 4 , units = "in", dpi = 300, bg = "white")
+print(p)
 ```
 
 ```{r}
-demo_df <- master_df %>% filter(Category == "Age")
-#race_df$Unique_Value <- factor(race_df$Unique_Value, levels = c("White", "Black", "Asian", "Other"))
+demo_df <- master_df %>% filter(Category == "Race")
+demo_df$Unique_Value <- factor(demo_df$Unique_Value, levels = c("White", "Black", "Asian", "Other"))
 
 filtered_demo_df <- demo_df# %>%
   #filter(PromptID > 2)
@@ -600,11 +601,9 @@ p <- filtered_demo_df %>%
   guides(color = guide_legend(nrow = 2, byrow = TRUE),
          shape = guide_legend(nrow = 2, byrow = TRUE)) 
   guides(shape = guide_legend(override.aes = list(color = "black")))
-
-
-
 p
-ggsave(paste0(base_dir, figures_dir, "race_intersection_TPR_x_FPR.png"), plot = p, width = 10, height = 6)
+
+ggsave(paste0(base_dir, figures_dir, "race_", type, "_", val, "_", "_intersection_TPR_x_FPR.png"), plot = p, width = 12, height = 5)
 
 ```
 
