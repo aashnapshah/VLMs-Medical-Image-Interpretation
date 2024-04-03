@@ -55,9 +55,8 @@ class Config:
             {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
             {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
         ]
-
-main
-            # Add any Google API specific settings or initializations here
+    
+    # Add any Google API specific settings or initializations here
        # else:
        #     # Default or error handling
        #     raise ValueError(f"Script name '{main_script_name}' does not match any known configurations.")
