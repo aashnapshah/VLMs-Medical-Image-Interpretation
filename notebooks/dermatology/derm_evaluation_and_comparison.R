@@ -2,7 +2,7 @@ library(tidyverse)
 library(caret)
 
 # Read the DDI ground truth file
-ddi <- read_csv("api_results/ddi_metadata.csv")
+ddi <- read_csv("../../data/dermatology/apiResults/ddi_metadata.csv")
 
 # Map the text prompts to standardized prompt numbers
 prompt_map <- setNames(c("P1", "P2", "P3", "P4", "P5", "P6"), 
@@ -34,10 +34,10 @@ read_and_merge <- function(file_names, join_cols = c("Filename", "TextPrompt")) 
 
 #### Gemini Pro Prompts 1 & 2 ####
 # Read in first batch of gemini results
-file_names <- c("api_results/gemini_ddi_results_p12_1.csv",
-                "api_results/gemini_ddi_results_missing_p12_1v1.csv",
-                "api_results/gemini_ddi_results_missing_p12_1v2.csv",
-                "api_results/gemini_ddi_results_missing_p12_1v3.csv")
+file_names <- c("../../data/dermatology/apiResults/gemini_ddi_results_p12_1.csv",
+                "../../data/dermatology/apiResults/gemini_ddi_results_missing_p12_1v1.csv",
+                "../../data/dermatology/apiResults/gemini_ddi_results_missing_p12_1v2.csv",
+                "../../data/dermatology/apiResults/gemini_ddi_results_missing_p12_1v3.csv")
 
 result_df <- read_and_merge(file_names, c("Filename", "TextPrompt"))
 
@@ -84,7 +84,7 @@ for (version in prompt_versions) {
 gemini12 <- inner_join(gemini12, ddi, by = c("Filename" = "DDI_file"))
 
 #### Gemini Prompt 3 & 4 ####
-gemini34 <- read_csv("api_results/gemini_ddi_results_p34_1.csv")
+gemini34 <- read_csv("../../data/dermatology/apiResults/gemini_ddi_results_p34_1.csv")
 
 # Remove the additional Response columns if not needed
 gemini34 <- gemini34 %>% 
@@ -100,8 +100,8 @@ for (version in prompt_versions) {
 gemini34 <- inner_join(gemini34, ddi, by = c("Filename" = "DDI_file"))
 
 #### Gemini Prompt 5 & 6 ####
-filenames <- c("api_results/gemini_ddi_results_p56_1.csv",
-               "api_results/gemini_ddi_results_missing_p56_1v1.csv")
+filenames <- c("../../data/dermatology/apiResults/gemini_ddi_results_p56_1.csv",
+               "../../data/dermatology/apiResults/gemini_ddi_results_missing_p56_1v1.csv")
 
 gemini56 <- read_and_merge(filenames)
 # Fill NA values in 'Response' column until max responses 
@@ -125,8 +125,8 @@ gemini56 <- inner_join(gemini56, ddi, by = c("Filename" = "DDI_file"))
 
 
 #### GPT-4 Prompts 5 & 6####
-filenames <- c("api_results/gpt4_responses_p56_1.csv",
-               "api_results/gpt4_responses_missing_p56_1v1.csv")
+filenames <- c("../../data/dermatology/apiResults/gpt4_responses_p56_2_concisely.csv",
+               "../../data/dermatology/apiResults/gpt4_responses_missing_p56_1v1.csv")
 
 gpt_results <- read_and_merge(filenames)
 gpt_results <- gpt_results %>% 
@@ -169,7 +169,7 @@ gpt56 <- inner_join(gpt56, ddi, by = c("Filename" = "DDI_file"))
 
 
 #### GPT4 Prompts 1 & 2 ####
-df_gpt12 <- read_csv("api_results/gpt4_responses_p12_1.csv")
+df_gpt12 <- read_csv("../../data/dermatology/apiResults/gpt4_responses_p12_1.csv")
 
 gpt12 <- select(df_gpt12, -starts_with("Response.")) %>% 
   mutate(prompt_version = map_prompt_version(TextPrompt)) %>% 
@@ -184,7 +184,7 @@ for (version in prompt_versions_gpt12) {
 gpt12 <- inner_join(gpt12, ddi, by = c("Filename" = "DDI_file"))
 
 #### GPT4 Prompts 3 & 4 ####
-df_gpt12 <- read_csv("api_results/gpt4_responses_p34_1.csv")
+df_gpt12 <- read_csv("../../data/dermatology/apiResults/gpt4_responses_p34_1.csv")
 
 gpt34 <- select(df_gpt12, -starts_with("Response."))%>% 
   mutate(prompt_version = map_prompt_version(TextPrompt)) %>% 

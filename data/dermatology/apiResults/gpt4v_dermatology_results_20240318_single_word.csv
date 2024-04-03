@@ -1,0 +1,5249 @@
+Filename,PromptID,Response
+000001.png,0,"I'm sorry, but I can"
+000001.png,1,"I'm sorry, I can't"
+000001.png,2,Benign.
+000001.png,3,"I'm sorry, but I cannot"
+000001.png,4,"I'm sorry, I can't"
+000001.png,5,"I'm sorry, I can't"
+000001.png,6,benign
+000001.png,7,Benign.
+000002.png,0,"I'm sorry, but I'm"
+000002.png,1,"I'm sorry, but I'm"
+000002.png,2,benign
+000002.png,3,"I'm sorry, I can't"
+000002.png,4,"I'm sorry, but I can"
+000002.png,5,"I'm sorry, but as an"
+000002.png,6,"I'm sorry, I can't"
+000002.png,7,Benign.
+000003.png,0,"I'm sorry, but I can"
+000003.png,1,"I'm sorry, I can't"
+000003.png,2,Benign.
+000003.png,3,benign
+000003.png,4,"I'm sorry, but I cannot"
+000003.png,5,"I'm sorry, I can't"
+000003.png,6,Benign
+000003.png,7,Benign.
+000004.png,0,"I'm sorry, I'm not"
+000004.png,1,"I'm sorry, I can't"
+000004.png,2,"I'm sorry, I can't"
+000004.png,3,Malignant
+000004.png,4,"I'm sorry, but I can"
+000004.png,5,"I'm sorry, I cannot assist"
+000004.png,6,Malignant
+000004.png,7,Malignant
+000005.png,0,"I'm sorry, but I can"
+000005.png,1,"I'm sorry, but I cannot"
+000005.png,2,"I'm sorry, I can't"
+000005.png,3,"I'm sorry, I can't"
+000005.png,4,"I'm sorry, but I'm"
+000005.png,5,"I'm sorry, I can't"
+000005.png,6,Malignant.
+000005.png,7,Malignant
+000006.png,0,"I'm sorry, but I'm"
+000006.png,1,"I'm sorry, but I cannot"
+000006.png,2,"I'm sorry, I can't"
+000006.png,3,"I'm sorry, I can't"
+000006.png,4,"I'm sorry, I can't"
+000006.png,5,"I'm sorry, I can't"
+000006.png,6,malignant
+000006.png,7,Malignant.
+000007.png,0,"I'm sorry, I cannot provide"
+000007.png,1,"I'm sorry, I can't"
+000007.png,2,"I'm sorry, I can't"
+000007.png,3,Benign
+000007.png,4,benign
+000007.png,5,Benign.
+000007.png,6,Malignant
+000007.png,7,Malignant
+000008.png,0,"I'm sorry, I can't"
+000008.png,1,"I'm sorry, but I'm"
+000008.png,2,benign
+000008.png,3,Benign.
+000008.png,4,benign
+000008.png,5,Benign.
+000008.png,6,benign
+000008.png,7,Benign.
+000009.png,0,"I'm sorry, I can't"
+000009.png,1,"I'm sorry, I cannot provide"
+000009.png,2,"I'm sorry, I can't"
+000009.png,3,"I'm sorry, I can't"
+000009.png,4,Malignant
+000009.png,5,"I'm sorry, I can't"
+000009.png,6,Malignant
+000009.png,7,Malignant
+000010.png,0,"I'm sorry, I can't"
+000010.png,1,"I'm sorry, I can't"
+000010.png,2,"I'm sorry, but I can"
+000010.png,3,benign
+000010.png,4,benign
+000010.png,5,"I'm sorry, I can't"
+000010.png,6,benign
+000010.png,7,benign
+000011.png,0,"I'm sorry, I'm not"
+000011.png,1,"I'm sorry, but I can"
+000011.png,2,"I'm sorry, I can't"
+000011.png,3,Malignant
+000011.png,4,"I'm sorry, but I cannot"
+000011.png,5,malignant
+000011.png,6,malignant
+000011.png,7,Malignant
+000012.png,0,"I'm sorry, I cannot provide"
+000012.png,1,"I'm sorry, but I cannot"
+000012.png,2,"I'm sorry, I can't"
+000012.png,3,Benign.
+000012.png,4,"I'm sorry, I can't"
+000012.png,5,benign
+000012.png,6,benign
+000012.png,7,Benign.
+000013.png,0,"I'm sorry, I can't"
+000013.png,1,"I'm sorry, I can't"
+000013.png,2,"I'm sorry, but I can"
+000013.png,3,Benign.
+000013.png,4,Benign.
+000013.png,5,"I'm sorry, I can't"
+000013.png,6,Malignant
+000013.png,7,Malignant
+000014.png,0,"I'm sorry, I can't"
+000014.png,1,"I'm sorry, but I can"
+000014.png,2,"I'm sorry, I can't"
+000014.png,3,"I'm sorry, I can't"
+000014.png,4,benign
+000014.png,5,"I'm sorry, I can't"
+000014.png,6,Malignant
+000014.png,7,Malignant
+000015.png,0,"I'm sorry, but as an"
+000015.png,1,"I'm sorry, I can't"
+000015.png,2,"I'm sorry, I can't"
+000015.png,3,Malignant.
+000015.png,4,"I'm sorry, I can't"
+000015.png,5,"I'm sorry, I can't"
+000015.png,6,Malignant
+000015.png,7,Malignant.
+000016.png,0,"I'm sorry, but I'm"
+000016.png,1,"I'm sorry, I'm not"
+000016.png,2,"I'm sorry, I can't"
+000016.png,3,Benign
+000016.png,4,"I'm sorry, I can't"
+000016.png,5,benign
+000016.png,6,Benign.
+000016.png,7,Benign.
+000017.png,0,"I'm sorry, I can't"
+000017.png,1,"I'm sorry, I can't"
+000017.png,2,"I'm sorry, but I can"
+000017.png,3,Malignant
+000017.png,4,"I'm sorry, I can't"
+000017.png,5,"I'm sorry, I cannot provide"
+000017.png,6,Malignant
+000017.png,7,Malignant
+000018.png,0,"I'm sorry, but I cannot"
+000018.png,1,"I'm sorry, I can't"
+000018.png,2,"I'm sorry, I can't"
+000018.png,3,Malignant
+000018.png,4,"I'm sorry, I can't"
+000018.png,5,benign
+000018.png,6,Malignant
+000018.png,7,Malignant
+000019.png,0,"I'm sorry, but I'm"
+000019.png,1,"I'm sorry, I can't"
+000019.png,2,"I'm sorry, I can't"
+000019.png,3,benign
+000019.png,4,benign
+000019.png,5,"I'm sorry, I can't"
+000019.png,6,"I'm sorry, I can't"
+000019.png,7,"I'm sorry, I can't"
+000020.png,0,"I'm sorry, but I cannot"
+000020.png,1,"I'm sorry, I can't"
+000020.png,2,"I'm sorry, I can't"
+000020.png,3,"I'm sorry, I can't"
+000020.png,4,"I'm sorry, I can't"
+000020.png,5,"I'm sorry, I can't"
+000020.png,6,Malignant
+000020.png,7,benign
+000021.png,0,"I'm sorry, but I can"
+000021.png,1,"I'm sorry, but I'm"
+000021.png,2,"I'm sorry, I can't"
+000021.png,3,"I'm sorry, but I can"
+000021.png,4,"I'm sorry, I can't"
+000021.png,5,"I'm sorry, I cannot provide"
+000021.png,6,Malignant
+000021.png,7,"I'm sorry, I can't"
+000022.png,0,"I'm sorry, but I cannot"
+000022.png,1,"I'm sorry, but I'm"
+000022.png,2,"I'm sorry, I can't"
+000022.png,3,"I'm sorry, I can't"
+000022.png,4,benign
+000022.png,5,benign
+000022.png,6,Malignant
+000022.png,7,Malignant
+000023.png,0,"I'm sorry, I can't"
+000023.png,1,"I'm sorry, I can't"
+000023.png,2,"I'm sorry, I cannot provide"
+000023.png,3,"I'm sorry, I cannot assist"
+000023.png,4,"I'm sorry, I can't"
+000023.png,5,"I'm sorry, I can't"
+000023.png,6,Malignant
+000023.png,7,Malignant
+000024.png,0,"I'm sorry, I can't"
+000024.png,1,"I'm sorry, but I cannot"
+000024.png,2,"I'm sorry, I can't"
+000024.png,3,"I'm sorry, I can't"
+000024.png,4,Benign.
+000024.png,5,"I'm sorry, I can't"
+000024.png,6,benign
+000024.png,7,Benign.
+000025.png,0,"I'm sorry, I can't"
+000025.png,1,"I'm sorry, I'm not"
+000025.png,2,"I'm sorry, but I cannot"
+000025.png,3,"I'm sorry, but I cannot"
+000025.png,4,"I'm sorry, I can't"
+000025.png,5,"Sorry, I can't help with"
+000025.png,6,Malignant
+000025.png,7,Malignant.
+000026.png,0,"I'm sorry, but I'm"
+000026.png,1,"I'm sorry, I can't"
+000026.png,2,benign
+000026.png,3,Benign
+000026.png,4,Benign.
+000026.png,5,benign
+000026.png,6,Malignant
+000026.png,7,Benign
+000027.png,0,"I'm sorry, I can't"
+000027.png,1,"I'm sorry, I can't"
+000027.png,2,"I'm sorry, I can't"
+000027.png,3,"I'm sorry, I can't"
+000027.png,4,benign
+000027.png,5,"I'm sorry, but I cannot"
+000027.png,6,Malignant
+000027.png,7,Malignant
+000028.png,0,"I'm sorry, but I'm"
+000028.png,1,"I'm sorry, but I cannot"
+000028.png,2,"I'm sorry, I'm not"
+000028.png,3,Benign.
+000028.png,4,benign
+000028.png,5,benign
+000028.png,6,Benign
+000028.png,7,Benign
+000029.png,0,"I'm sorry, but I am"
+000029.png,1,"I'm sorry, I can't"
+000029.png,2,"Sorry, I can't assist with"
+000029.png,3,benign
+000029.png,4,benign
+000029.png,5,"I'm sorry, I can't"
+000029.png,6,Benign.
+000029.png,7,Benign.
+000030.png,0,"I'm sorry, but I can"
+000030.png,1,"I'm sorry, I can't"
+000030.png,2,"I'm sorry, I can't"
+000030.png,3,benign
+000030.png,4,Benign.
+000030.png,5,"I'm sorry, I can't"
+000030.png,6,"I'm sorry, I can't"
+000030.png,7,benign
+000031.png,0,"I'm sorry, but I'm"
+000031.png,1,"I'm sorry, I cannot provide"
+000031.png,2,"I'm sorry, but I can"
+000031.png,3,"I'm sorry, I can't"
+000031.png,4,"I'm sorry, I can't"
+000031.png,5,"I'm sorry, I can't"
+000031.png,6,"I'm sorry, I can't"
+000031.png,7,Benign.
+000032.png,0,"I'm sorry, but I am"
+000032.png,1,"I'm sorry, I cannot provide"
+000032.png,2,"I'm sorry, I can't"
+000032.png,3,"I'm sorry, I can't"
+000032.png,4,Benign.
+000032.png,5,"I'm sorry, I am not"
+000032.png,6,benign
+000032.png,7,Benign.
+000033.png,0,"I'm sorry, but I'm"
+000033.png,1,"I'm sorry, I can't"
+000033.png,2,"I'm sorry, but I can"
+000033.png,3,"I'm sorry, I can't"
+000033.png,4,benign
+000033.png,5,"Sorry, I can't assist with"
+000033.png,6,Benign.
+000033.png,7,"I'm sorry, I can't"
+000034.png,0,"I'm sorry, I cannot provide"
+000034.png,1,"I'm sorry, I'm not"
+000034.png,2,Benign.
+000034.png,3,Benign
+000034.png,4,"I'm sorry, I can't"
+000034.png,5,benign
+000034.png,6,benign
+000034.png,7,Benign.
+000035.png,0,"I'm sorry, but I can"
+000035.png,1,"I'm sorry, but I cannot"
+000035.png,2,"I'm sorry, I can't"
+000035.png,3,benign
+000035.png,4,"I'm sorry, I can't"
+000035.png,5,"I'm sorry, I can't"
+000035.png,6,benign
+000035.png,7,Benign
+000036.png,0,"I'm sorry, but I'm"
+000036.png,1,"I'm sorry, I can't"
+000036.png,2,"I'm sorry, I can't"
+000036.png,3,benign
+000036.png,4,Benign.
+000036.png,5,Benign.
+000036.png,6,Malignant
+000036.png,7,Malignant
+000037.png,0,"I'm sorry, I cannot provide"
+000037.png,1,"I'm sorry, I can't"
+000037.png,2,"I'm sorry, I can't"
+000037.png,3,Benign.
+000037.png,4,"I'm sorry, I can't"
+000037.png,5,"I'm sorry, I can't"
+000037.png,6,Benign.
+000037.png,7,Malignant.
+000038.png,0,"I'm sorry, I'm not"
+000038.png,1,"I'm sorry, but I can"
+000038.png,2,"I'm sorry, I can't"
+000038.png,3,"I'm sorry, I can't"
+000038.png,4,"I'm sorry, I can't"
+000038.png,5,"I'm sorry, I can't"
+000038.png,6,"I'm sorry, I can't"
+000038.png,7,Malignant
+000039.png,0,"I'm sorry, I cannot provide"
+000039.png,1,"I'm sorry, I'm not"
+000039.png,2,"I'm sorry, I can't"
+000039.png,3,Benign.
+000039.png,4,"I'm sorry, but I can"
+000039.png,5,"I'm sorry, but I cannot"
+000039.png,6,"I'm sorry, but I can"
+000039.png,7,Benign
+000040.png,0,"I'm sorry, but I am"
+000040.png,1,"I'm sorry, I can't"
+000040.png,2,"I'm sorry, I can't"
+000040.png,3,"I'm sorry, I can't"
+000040.png,4,benign
+000040.png,5,"Sorry, I can't provide assistance"
+000040.png,6,benign
+000040.png,7,Benign.
+000041.png,0,"I'm sorry, but I cannot"
+000041.png,1,"I'm sorry, but I can"
+000041.png,2,"I'm sorry, I can't"
+000041.png,3,"Sorry, I can't provide help"
+000041.png,4,"I'm sorry, I can't"
+000041.png,5,benign
+000041.png,6,Malignant
+000041.png,7,Malignant
+000042.png,0,"I'm sorry, I'm not"
+000042.png,1,"I'm sorry, but I cannot"
+000042.png,2,Benign.
+000042.png,3,benign
+000042.png,4,benign
+000042.png,5,"I'm sorry, I'm not"
+000042.png,6,Benign.
+000042.png,7,Benign.
+000043.png,0,"I'm sorry, but I'm"
+000043.png,1,"I'm sorry, I'm not"
+000043.png,2,"I'm sorry, I can't"
+000043.png,3,benign
+000043.png,4,benign
+000043.png,5,"I'm sorry, but I cannot"
+000043.png,6,"I'm sorry, I can't"
+000043.png,7,Malignant.
+000044.png,0,"I'm sorry, I'm not"
+000044.png,1,"I'm sorry, but I can"
+000044.png,2,"I'm sorry, but as an"
+000044.png,3,"I'm sorry, but I am"
+000044.png,4,"I'm sorry, I'm unable"
+000044.png,5,"Sorry, I can't assist with"
+000044.png,6,malignant
+000044.png,7,Malignant
+000045.png,0,"I'm sorry, but I'm"
+000045.png,1,"I'm sorry, I cannot provide"
+000045.png,2,"I'm sorry, I can't"
+000045.png,3,Malignant
+000045.png,4,"I'm sorry, I can't"
+000045.png,5,"Sorry, I can't assist with"
+000045.png,6,malignant
+000045.png,7,malignant
+000046.png,0,"I'm sorry, I can't"
+000046.png,1,"I'm sorry, but I cannot"
+000046.png,2,benign
+000046.png,3,"I'm sorry, but I can"
+000046.png,4,benign
+000046.png,5,"I'm sorry, but as an"
+000046.png,6,benign
+000046.png,7,Benign.
+000047.png,0,"I'm sorry, but I cannot"
+000047.png,1,"I'm sorry, I'm not"
+000047.png,2,"I'm sorry, I can't"
+000047.png,3,"I'm sorry, but I can"
+000047.png,4,benign
+000047.png,5,malignant
+000047.png,6,benign
+000047.png,7,Benign.
+000048.png,0,"I'm sorry, but I'm"
+000048.png,1,"I'm sorry, I can't"
+000048.png,2,"I'm sorry, I cannot provide"
+000048.png,3,benign
+000048.png,4,benign
+000048.png,5,"I'm sorry, I can't"
+000048.png,6,"I'm sorry, I can't"
+000048.png,7,Benign.
+000049.png,0,"I'm sorry, but I cannot"
+000049.png,1,"I'm sorry, I can't"
+000049.png,2,"I'm sorry, I can't"
+000049.png,3,benign
+000049.png,4,Benign.
+000049.png,5,benign
+000049.png,6,Malignant
+000049.png,7,Benign.
+000050.png,0,"I'm sorry, but I'm"
+000050.png,1,"I'm sorry, I can't"
+000050.png,2,"I'm sorry, I can't"
+000050.png,3,Benign.
+000050.png,4,Benign.
+000050.png,5,"I'm sorry, I cannot provide"
+000050.png,6,Benign
+000050.png,7,Benign.
+000051.png,0,"I'm sorry, I can't"
+000051.png,1,"I'm sorry, I'm not"
+000051.png,2,"I'm sorry, I can't"
+000051.png,3,Benign.
+000051.png,4,benign
+000051.png,5,"I'm sorry, I can't"
+000051.png,6,benign
+000051.png,7,Benign
+000052.png,0,"I'm sorry, I can't"
+000052.png,1,"I'm sorry, I can't"
+000052.png,2,"I'm sorry, I can't"
+000052.png,3,"I'm sorry, I can't"
+000052.png,4,"I'm sorry, I can't"
+000052.png,5,"Sorry, I can't help with"
+000052.png,6,"I'm sorry, but I can"
+000052.png,7,"I'm sorry, but I cannot"
+000053.png,0,"I'm sorry, I can't"
+000053.png,1,"I'm sorry, I'm not"
+000053.png,2,benign
+000053.png,3,Benign.
+000053.png,4,I cannot provide a diagnosis.
+000053.png,5,Benign.
+000053.png,6,benign
+000053.png,7,Benign.
+000054.png,0,"I'm sorry, I cannot provide"
+000054.png,1,"I'm sorry, but I can"
+000054.png,2,Benign.
+000054.png,3,Benign.
+000054.png,4,"I'm sorry, I can't"
+000054.png,5,"I'm sorry, but I can"
+000054.png,6,benign
+000054.png,7,Benign.
+000055.png,0,"I'm sorry, I can't"
+000055.png,1,"I'm sorry, but I am"
+000055.png,2,"I'm sorry, but I cannot"
+000055.png,3,"I'm sorry, I can't"
+000055.png,4,benign
+000055.png,5,"Sorry, I can't provide this"
+000055.png,6,benign
+000055.png,7,benign
+000056.png,0,"I'm sorry, but I'm"
+000056.png,1,"I'm sorry, I can't"
+000056.png,2,"I'm sorry, but I'm"
+000056.png,3,benign
+000056.png,4,benign
+000056.png,5,benign
+000056.png,6,benign
+000056.png,7,Benign.
+000057.png,0,"I'm sorry, I'm not"
+000057.png,1,"I'm sorry, but I cannot"
+000057.png,2,"I'm sorry, but as an"
+000057.png,3,Malignant
+000057.png,4,"I'm sorry, I cannot assist"
+000057.png,5,"I'm sorry, but I cannot"
+000057.png,6,Benign
+000057.png,7,Malignant
+000058.png,0,"I'm sorry, I can't"
+000058.png,1,"I'm sorry, but I cannot"
+000058.png,2,"I'm sorry, I can't"
+000058.png,3,"I'm sorry, I can't"
+000058.png,4,"I'm sorry, I can't"
+000058.png,5,"I'm sorry, but as an"
+000058.png,6,Malignant
+000058.png,7,Malignant
+000059.png,0,"I'm sorry, I can't"
+000059.png,1,"I'm sorry, but I cannot"
+000059.png,2,"I'm sorry, I can't"
+000059.png,3,"I'm sorry, but I cannot"
+000059.png,4,"I'm sorry, I can't"
+000059.png,5,"I'm sorry, I can't"
+000059.png,6,benign
+000059.png,7,"I'm sorry, I can't"
+000060.png,0,"I'm sorry, but I cannot"
+000060.png,1,"I'm sorry, but I cannot"
+000060.png,2,"I'm sorry, but I cannot"
+000060.png,3,"I'm sorry, I can't"
+000060.png,4,"I'm sorry, I can't"
+000060.png,5,"I'm sorry, I can't"
+000060.png,6,Malignant
+000060.png,7,Malignant
+000061.png,0,"I'm sorry, I can't"
+000061.png,1,"I'm sorry, but I cannot"
+000061.png,2,"I'm sorry, I can't"
+000061.png,3,benign
+000061.png,4,benign
+000061.png,5,benign
+000061.png,6,Malignant
+000061.png,7,Malignant
+000062.png,0,"I'm sorry, I'm not"
+000062.png,1,"I'm sorry, but I can"
+000062.png,2,benign
+000062.png,3,"I'm sorry, I can't"
+000062.png,4,"I'm sorry, but I can"
+000062.png,5,"I'm sorry, but I can"
+000062.png,6,Malignant
+000062.png,7,Malignant
+000063.png,0,"I'm sorry, but I cannot"
+000063.png,1,"I'm sorry, but I'm"
+000063.png,2,"I'm sorry, I can't"
+000063.png,3,"I'm sorry, but I cannot"
+000063.png,4,"I'm sorry, I can't"
+000063.png,5,"I'm sorry, I can't"
+000063.png,6,"I'm sorry, I can't"
+000063.png,7,Malignant
+000064.png,0,"I'm sorry, I'm not"
+000064.png,1,"I'm sorry, I can't"
+000064.png,2,"I'm sorry, but I can"
+000064.png,3,"I'm sorry, but I can"
+000064.png,4,Benign.
+000064.png,5,benign
+000064.png,6,"I'm sorry, I can't"
+000064.png,7,Malignant
+000065.png,0,"I'm sorry, but I'm"
+000065.png,1,"I'm sorry, but I can"
+000065.png,2,benign
+000065.png,3,"I'm sorry, I can't"
+000065.png,4,Benign.
+000065.png,5,Benign.
+000065.png,6,Benign.
+000065.png,7,Benign
+000066.png,0,"I'm sorry, but I can"
+000066.png,1,"I'm sorry, but I can"
+000066.png,2,"I'm sorry, I can't"
+000066.png,3,benign
+000066.png,4,"Sorry, I can't help with"
+000066.png,5,"Sorry, I can't assist with"
+000066.png,6,Benign
+000066.png,7,benign
+000067.png,0,"I'm sorry, I can't"
+000067.png,1,"I'm sorry, I can't"
+000067.png,2,"I'm sorry, I can't"
+000067.png,3,"I'm sorry, I can't"
+000067.png,4,benign
+000067.png,5,"I'm sorry, I can't"
+000067.png,6,"I'm sorry, but as an"
+000067.png,7,Malignant
+000068.png,0,"I'm sorry, but I'm"
+000068.png,1,"I'm sorry, but I'm"
+000068.png,2,"I'm sorry, I can't"
+000068.png,3,Benign.
+000068.png,4,benign
+000068.png,5,benign
+000068.png,6,Benign
+000068.png,7,Benign
+000069.png,0,"I'm sorry, I can't"
+000069.png,1,"I'm sorry, I can't"
+000069.png,2,"I'm sorry, but I can"
+000069.png,3,Benign.
+000069.png,4,Benign.
+000069.png,5,"I'm sorry, I can't"
+000069.png,6,Malignant
+000069.png,7,Benign.
+000070.png,0,"I'm sorry, I can't"
+000070.png,1,"I'm sorry, but I can"
+000070.png,2,"I'm sorry, I can't"
+000070.png,3,"I'm sorry, I can't"
+000070.png,4,"I'm sorry, but I can"
+000070.png,5,"I'm sorry, but I cannot"
+000070.png,6,malignant
+000070.png,7,Malignant
+000071.png,0,"I'm sorry, I can't"
+000071.png,1,"I'm sorry, I can't"
+000071.png,2,"I'm sorry, but I cannot"
+000071.png,3,Malignant.
+000071.png,4,"I'm sorry, I can't"
+000071.png,5,"I'm sorry, I can't"
+000071.png,6,Malignant
+000071.png,7,Malignant
+000072.png,0,"I'm sorry, but I cannot"
+000072.png,1,"I'm sorry, but as an"
+000072.png,2,"I'm sorry, but I can"
+000072.png,3,"I'm sorry, but I am"
+000072.png,4,"I'm sorry, I can't"
+000072.png,5,"I'm sorry, I can't"
+000072.png,6,benign
+000072.png,7,Malignant
+000073.png,0,"I'm sorry, I can't"
+000073.png,1,"I'm sorry, I can't"
+000073.png,2,"I'm sorry, I can't"
+000073.png,3,Malignant
+000073.png,4,"I'm sorry, I can't"
+000073.png,5,"I'm sorry, I can't"
+000073.png,6,benign
+000073.png,7,Malignant.
+000074.png,0,"I'm sorry, I can't"
+000074.png,1,"I'm sorry, but I'm"
+000074.png,2,benign
+000074.png,3,Malignant
+000074.png,4,benign
+000074.png,5,benign
+000074.png,6,"I'm sorry, I can't"
+000074.png,7,Malignant
+000075.png,0,"I'm sorry, I can't"
+000075.png,1,"I'm sorry, but I cannot"
+000075.png,2,"I'm sorry, I can't"
+000075.png,3,Benign.
+000075.png,4,"I'm sorry, I can't"
+000075.png,5,"I'm sorry, I can't"
+000075.png,6,Benign.
+000075.png,7,Benign.
+000076.png,0,"I'm sorry, but I cannot"
+000076.png,1,"I'm sorry, I cannot provide"
+000076.png,2,"I'm sorry, I cannot provide"
+000076.png,3,Benign.
+000076.png,4,benign
+000076.png,5,malignant
+000076.png,6,Malignant
+000076.png,7,Malignant
+000077.png,0,"I'm sorry, but I cannot"
+000077.png,1,"I'm sorry, but as an"
+000077.png,2,"I'm sorry, but I cannot"
+000077.png,3,benign
+000077.png,4,benign
+000077.png,5,"I'm sorry, I can't"
+000077.png,6,Benign
+000077.png,7,Benign.
+000078.png,0,"I'm sorry, but I'm"
+000078.png,1,"I'm sorry, but I can"
+000078.png,2,"I'm sorry, I can't"
+000078.png,3,Malignant
+000078.png,4,benign
+000078.png,5,"I'm sorry, I can't"
+000078.png,6,malignant
+000078.png,7,Malignant
+000079.png,0,"I'm sorry, I'm not"
+000079.png,1,"I'm sorry, I can't"
+000079.png,2,"I'm sorry, but I cannot"
+000079.png,3,Malignant.
+000079.png,4,benign
+000079.png,5,benign
+000079.png,6,Malignant
+000079.png,7,Malignant
+000080.png,0,"I'm sorry, but I cannot"
+000080.png,1,"I'm sorry, but I am"
+000080.png,2,"I'm sorry, but I'm"
+000080.png,3,"I'm sorry, but I cannot"
+000080.png,4,benign
+000080.png,5,"I'm sorry, I'm not"
+000080.png,6,Malignant
+000080.png,7,malignant
+000081.png,0,"I'm sorry, but I cannot"
+000081.png,1,"I'm sorry, I'm not"
+000081.png,2,"I'm sorry, I can't"
+000081.png,3,Benign
+000081.png,4,Benign.
+000081.png,5,"I'm sorry, I can't"
+000081.png,6,"I'm sorry, I can't"
+000081.png,7,Benign.
+000082.png,0,"I'm sorry, I'm not"
+000082.png,1,"I'm sorry, I can't"
+000082.png,2,"I'm sorry, I can't"
+000082.png,3,Malignant
+000082.png,4,"I'm sorry, I can't"
+000082.png,5,"I'm sorry, I can't"
+000082.png,6,"I'm sorry, but I can"
+000082.png,7,Malignant
+000083.png,0,"I'm sorry, but I can"
+000083.png,1,"I'm sorry, I can't"
+000083.png,2,"I'm sorry, I can't"
+000083.png,3,"I'm sorry, but I cannot"
+000083.png,4,"I'm sorry, I can't"
+000083.png,5,"I'm sorry, I can't"
+000083.png,6,"I'm sorry, but I can"
+000083.png,7,Benign.
+000084.png,0,"I'm sorry, but I'm"
+000084.png,1,"I'm sorry, I can't"
+000084.png,2,"I'm sorry, but I can"
+000084.png,3,Malignant.
+000084.png,4,benign
+000084.png,5,"I'm sorry, but I am"
+000084.png,6,Malignant
+000084.png,7,Malignant
+000085.png,0,"I'm sorry, but I can"
+000085.png,1,"I'm sorry, I am not"
+000085.png,2,"I'm sorry, but I cannot"
+000085.png,3,"I'm sorry, I can't"
+000085.png,4,"I'm sorry, I can't"
+000085.png,5,"I'm sorry, I can't"
+000085.png,6,Malignant
+000085.png,7,Malignant
+000086.png,0,"I'm sorry, but I cannot"
+000086.png,1,"I'm sorry, I can't"
+000086.png,2,"I'm sorry, I can't"
+000086.png,3,Malignant
+000086.png,4,Malignant
+000086.png,5,"I'm sorry, but I can"
+000086.png,6,Malignant
+000086.png,7,Malignant
+000087.png,0,"I'm sorry, but I'm"
+000087.png,1,"I'm sorry, I can't"
+000087.png,2,benign
+000087.png,3,Malignant
+000087.png,4,"I'm sorry, but I'm"
+000087.png,5,"I'm sorry, I can't"
+000087.png,6,malignant
+000087.png,7,Malignant
+000088.png,0,"I'm sorry, but I can"
+000088.png,1,"I'm sorry, I'm not"
+000088.png,2,"I'm sorry, I can't"
+000088.png,3,benign
+000088.png,4,"I'm sorry, I can't"
+000088.png,5,Benign.
+000088.png,6,"I'm sorry, I cannot assist"
+000088.png,7,Malignant
+000089.png,0,"I'm sorry, I'm not"
+000089.png,1,"I'm sorry, I can't"
+000089.png,2,benign
+000089.png,3,Malignant.
+000089.png,4,benign
+000089.png,5,"I'm sorry, I can't"
+000089.png,6,Malignant
+000089.png,7,Malignant
+000090.png,0,"I'm sorry, but I cannot"
+000090.png,1,"I'm sorry, I'm not"
+000090.png,2,"I'm sorry, I can't"
+000090.png,3,"I'm sorry, I can't"
+000090.png,4,"I'm sorry, I can't"
+000090.png,5,"I'm sorry, but I cannot"
+000090.png,6,"I'm sorry, I can't"
+000090.png,7,benign
+000091.png,0,"I'm sorry, but I can"
+000091.png,1,"I'm sorry, I can't"
+000091.png,2,"I'm sorry, I can't"
+000091.png,3,"I'm sorry, I can't"
+000091.png,4,benign
+000091.png,5,"I'm sorry, I can't"
+000091.png,6,Malignant
+000091.png,7,benign
+000092.png,0,"I'm sorry, but I'm"
+000092.png,1,"I'm sorry, but I cannot"
+000092.png,2,benign
+000092.png,3,Benign.
+000092.png,4,Malignant
+000092.png,5,benign
+000092.png,6,Malignant
+000092.png,7,Malignant
+000093.png,0,"I'm sorry, I can't"
+000093.png,1,"I'm sorry, but I cannot"
+000093.png,2,"I'm sorry, I can't"
+000093.png,3,Benign.
+000093.png,4,benign
+000093.png,5,"I'm sorry, I can't"
+000093.png,6,malignant
+000093.png,7,Malignant
+000094.png,0,"I'm sorry, but I am"
+000094.png,1,"I'm sorry, but I'm"
+000094.png,2,"I'm sorry, but I can"
+000094.png,3,"I'm sorry, I can't"
+000094.png,4,"I'm sorry, but I'm"
+000094.png,5,"I'm sorry, I can't"
+000094.png,6,Benign.
+000094.png,7,benign
+000095.png,0,"I'm sorry, I can't"
+000095.png,1,"I'm sorry, I'm not"
+000095.png,2,benign
+000095.png,3,benign
+000095.png,4,"I'm sorry, but I can"
+000095.png,5,"I'm sorry, I can't"
+000095.png,6,"I'm sorry, but I cannot"
+000095.png,7,Benign.
+000096.png,0,"I'm sorry, I can't"
+000096.png,1,"I'm sorry, I cannot provide"
+000096.png,2,"I'm sorry, I can't"
+000096.png,3,Benign.
+000096.png,4,benign
+000096.png,5,"I'm sorry, I can't"
+000096.png,6,benign
+000096.png,7,Malignant
+000097.png,0,"I'm sorry, I can't"
+000097.png,1,"I'm sorry, but I'm"
+000097.png,2,"I'm sorry, but without specific"
+000097.png,3,"I'm sorry, I can't"
+000097.png,4,"I'm sorry, I can't"
+000097.png,5,"I'm sorry, I can't"
+000097.png,6,Malignant
+000097.png,7,Malignant
+000098.png,0,"I'm sorry, I can't"
+000098.png,1,"I'm sorry, I cannot assist"
+000098.png,2,"I'm sorry, I can't"
+000098.png,3,"I'm sorry, I can't"
+000098.png,4,"I'm sorry, I can't"
+000098.png,5,"I'm sorry, I can't"
+000098.png,6,benign
+000098.png,7,Malignant
+000099.png,0,"I'm sorry, but I cannot"
+000099.png,1,"I'm sorry, but I cannot"
+000099.png,2,"I'm sorry, I can't"
+000099.png,3,"I'm sorry, I can't"
+000099.png,4,"I'm sorry, I can't"
+000099.png,5,"I'm sorry, I'm not"
+000099.png,6,"I'm sorry, I can't"
+000099.png,7,Malignant
+000100.png,0,"I'm sorry, but I cannot"
+000100.png,1,"I'm sorry, I can't"
+000100.png,2,"I'm sorry, I can't"
+000100.png,3,Benign.
+000100.png,4,Benign.
+000100.png,5,benign
+000100.png,6,Malignant.
+000100.png,7,Malignant
+000101.png,0,"I'm sorry, I can't"
+000101.png,1,"I'm sorry, I cannot provide"
+000101.png,2,"I'm sorry, I cannot provide"
+000101.png,3,benign
+000101.png,4,"I'm sorry, I can't"
+000101.png,5,benign
+000101.png,6,Malignant
+000101.png,7,Malignant
+000102.png,0,"I'm sorry, but I am"
+000102.png,1,"I'm sorry, but I can"
+000102.png,2,"Sorry, but I can't provide"
+000102.png,3,Benign.
+000102.png,4,"I'm sorry, I can't"
+000102.png,5,benign
+000102.png,6,Benign.
+000102.png,7,Benign.
+000103.png,0,"I'm sorry, I can't"
+000103.png,1,"I'm sorry, I cannot provide"
+000103.png,2,Benign.
+000103.png,3,Benign.
+000103.png,4,Benign
+000103.png,5,"I'm sorry, but I'm"
+000103.png,6,Malignant
+000103.png,7,Malignant
+000104.png,0,"I'm sorry, I can't"
+000104.png,1,"I'm sorry, I'm not"
+000104.png,2,"I'm sorry, I can't"
+000104.png,3,Benign.
+000104.png,4,"I'm sorry, I cannot assist"
+000104.png,5,"Sorry, I can't provide a"
+000104.png,6,Benign.
+000104.png,7,Malignant
+000105.png,0,"I'm sorry, I can't"
+000105.png,1,"I'm sorry, but I can"
+000105.png,2,benign
+000105.png,3,"I'm sorry, I can't"
+000105.png,4,Benign
+000105.png,5,"Sorry, I can't help with"
+000105.png,6,"I'm sorry, I can't"
+000105.png,7,Malignant
+000106.png,0,"I'm sorry, I cannot provide"
+000106.png,1,"I'm sorry, but I cannot"
+000106.png,2,"I'm sorry, I can't"
+000106.png,3,benign
+000106.png,4,"I'm sorry, I can't"
+000106.png,5,"I'm sorry, I cannot provide"
+000106.png,6,benign
+000106.png,7,benign
+000107.png,0,"I'm sorry, I can't"
+000107.png,1,"I'm sorry, but I cannot"
+000107.png,2,"I'm sorry, but I cannot"
+000107.png,3,"I'm sorry, but I cannot"
+000107.png,4,"I'm sorry, I can't"
+000107.png,5,benign
+000107.png,6,"I'm sorry, I can't"
+000107.png,7,Benign.
+000108.png,0,"I'm sorry, I can't"
+000108.png,1,"I'm sorry, but I can"
+000108.png,2,"I'm sorry, I can't"
+000108.png,3,"I'm sorry, I can't"
+000108.png,4,"I'm sorry, but I cannot"
+000108.png,5,"I'm sorry, I cannot provide"
+000108.png,6,Benign
+000108.png,7,malignant
+000109.png,0,"I'm sorry, I'm not"
+000109.png,1,"I'm sorry, I can't"
+000109.png,2,"I'm sorry, I can't"
+000109.png,3,"I'm sorry, I can't"
+000109.png,4,"I'm sorry, I can't"
+000109.png,5,"I'm sorry, I cannot provide"
+000109.png,6,"I'm sorry, I can't"
+000109.png,7,Benign.
+000110.png,0,"I'm sorry, but I'm"
+000110.png,1,"I'm sorry, I can't"
+000110.png,2,"I'm sorry, I can't"
+000110.png,3,"I'm sorry, I can't"
+000110.png,4,benign
+000110.png,5,"I'm sorry, but I can"
+000110.png,6,"I'm sorry, I can't"
+000110.png,7,"I'm sorry, I cannot assist"
+000111.png,0,"I'm sorry, I can't"
+000111.png,1,"I'm sorry, but I cannot"
+000111.png,2,"I'm sorry, I can't"
+000111.png,3,"I'm sorry, I can't"
+000111.png,4,benign
+000111.png,5,benign
+000111.png,6,Malignant
+000111.png,7,benign
+000112.png,0,"I'm sorry, but I'm"
+000112.png,1,"I'm sorry, but I can"
+000112.png,2,"I'm sorry, I can't"
+000112.png,3,"I'm sorry, I can't"
+000112.png,4,benign
+000112.png,5,"Sorry, I can't help with"
+000112.png,6,Malignant
+000112.png,7,Malignant
+000113.png,0,"I'm sorry, but I cannot"
+000113.png,1,"I'm sorry, but I cannot"
+000113.png,2,Benign.
+000113.png,3,Benign.
+000113.png,4,benign
+000113.png,5,"I'm sorry, I can't"
+000113.png,6,Benign
+000113.png,7,Benign
+000114.png,0,"I'm sorry, but I'm"
+000114.png,1,"I'm sorry, I can't"
+000114.png,2,"I'm sorry, but I'm"
+000114.png,3,"I'm sorry, I can't"
+000114.png,4,"I'm sorry, I can't"
+000114.png,5,"I'm sorry, but I can"
+000114.png,6,"I'm sorry, I cannot provide"
+000114.png,7,"I'm sorry, I can't"
+000115.png,0,"I'm sorry, but I cannot"
+000115.png,1,"I'm sorry, but I can"
+000115.png,2,"I'm sorry, I can't"
+000115.png,3,"I'm sorry, I can't"
+000115.png,4,"I'm sorry, but I cannot"
+000115.png,5,"I'm sorry, I can't"
+000115.png,6,Malignant
+000115.png,7,"I'm sorry, but I cannot"
+000116.png,0,"I'm sorry, I can't"
+000116.png,1,"I'm sorry, I cannot provide"
+000116.png,2,"I'm sorry, but I can"
+000116.png,3,"I'm sorry, but I can"
+000116.png,4,benign
+000116.png,5,"I'm sorry, I can't"
+000116.png,6,Malignant
+000116.png,7,Malignant
+000117.png,0,"I'm sorry, I can't"
+000117.png,1,"I'm sorry, but I'm"
+000117.png,2,"I'm sorry, I can't"
+000117.png,3,"I'm sorry, I can't"
+000117.png,4,"I'm sorry, but I can"
+000117.png,5,Unable to assess.
+000117.png,6,Benign
+000117.png,7,Malignant
+000118.png,0,"I'm sorry, I cannot provide"
+000118.png,1,"I'm sorry, I can't"
+000118.png,2,"I'm sorry, I can't"
+000118.png,3,"I'm sorry, but I cannot"
+000118.png,4,"I'm sorry, but I cannot"
+000118.png,5,"I'm sorry, I can't"
+000118.png,6,"I'm sorry, I can't"
+000118.png,7,"I'm sorry, I can't"
+000119.png,0,"I'm sorry, but I'm"
+000119.png,1,"I'm sorry, I can't"
+000119.png,2,"I'm sorry, I can't"
+000119.png,3,"I'm sorry, I can't"
+000119.png,4,Benign.
+000119.png,5,"I'm sorry, I can't"
+000119.png,6,Benign.
+000119.png,7,Benign.
+000120.png,0,"I'm sorry, I cannot provide"
+000120.png,1,"I'm sorry, I am not"
+000120.png,2,"I'm sorry, but I cannot"
+000120.png,3,benign
+000120.png,4,"I'm sorry, I can't"
+000120.png,5,"Sorry, I can't provide assistance"
+000120.png,6,"I'm sorry, I can't"
+000120.png,7,benign
+000121.png,0,"I'm sorry, but I cannot"
+000121.png,1,"I'm sorry, but I cannot"
+000121.png,2,"I'm sorry, but I cannot"
+000121.png,3,Malignant
+000121.png,4,"I'm sorry, I cannot provide"
+000121.png,5,"I'm sorry, but I cannot"
+000121.png,6,"I'm sorry, I can't"
+000121.png,7,Malignant
+000122.png,0,"I'm sorry, I can't"
+000122.png,1,"I'm sorry, but I'm"
+000122.png,2,"I'm sorry, I can't"
+000122.png,3,benign
+000122.png,4,"I'm sorry, I can't"
+000122.png,5,"Sorry, I can't assist with"
+000122.png,6,benign
+000122.png,7,Benign
+000123.png,0,"I'm sorry, but I cannot"
+000123.png,1,"I'm sorry, but I can"
+000123.png,2,"I'm sorry, I can't"
+000123.png,3,benign
+000123.png,4,"I'm sorry, I can't"
+000123.png,5,"I'm sorry, I can't"
+000123.png,6,benign
+000123.png,7,Benign.
+000124.png,0,"I'm sorry, I can't"
+000124.png,1,"I'm sorry, I can't"
+000124.png,2,benign
+000124.png,3,Benign
+000124.png,4,malignant
+000124.png,5,Unable to provide a response.
+000124.png,6,Malignant
+000124.png,7,Malignant
+000125.png,0,"I'm sorry, I can't"
+000125.png,1,"I'm sorry, but I cannot"
+000125.png,2,"I'm sorry, but I can"
+000125.png,3,"I'm sorry, I can't"
+000125.png,4,"I'm sorry, I can't"
+000125.png,5,"I'm sorry, but I can"
+000125.png,6,benign
+000125.png,7,benign
+000126.png,0,"I'm sorry, but I'm"
+000126.png,1,"I'm sorry, I can't"
+000126.png,2,"I'm sorry, I can't"
+000126.png,3,Malignant
+000126.png,4,benign
+000126.png,5,benign
+000126.png,6,Malignant
+000126.png,7,Malignant
+000127.png,0,"I'm sorry, I can't"
+000127.png,1,"I'm sorry, but I'm"
+000127.png,2,"I'm sorry, I can't"
+000127.png,3,"I'm sorry, but I can"
+000127.png,4,"I'm sorry, I can't"
+000127.png,5,"I'm sorry, I can't"
+000127.png,6,benign
+000127.png,7,benign
+000128.png,0,"I'm sorry, I can't"
+000128.png,1,"I'm sorry, I cannot provide"
+000128.png,2,"I'm sorry, I can't"
+000128.png,3,Malignant.
+000128.png,4,"I'm sorry, I can't"
+000128.png,5,"I'm sorry, I can't"
+000128.png,6,Malignant
+000128.png,7,Malignant
+000129.png,0,"I'm sorry, but I'm"
+000129.png,1,"I'm sorry, but as an"
+000129.png,2,Benign.
+000129.png,3,Malignant
+000129.png,4,benign
+000129.png,5,"I'm sorry, I can't"
+000129.png,6,Malignant
+000129.png,7,Malignant
+000130.png,0,"I'm sorry, but I cannot"
+000130.png,1,"I'm sorry, I'm not"
+000130.png,2,"I'm sorry, I can't"
+000130.png,3,"I'm sorry, I can't"
+000130.png,4,"I'm sorry, I can't"
+000130.png,5,benign
+000130.png,6,Benign
+000130.png,7,Benign
+000131.png,0,"I'm sorry, I can't"
+000131.png,1,"I'm sorry, but I am"
+000131.png,2,"I'm sorry, I can't"
+000131.png,3,benign
+000131.png,4,"I'm sorry, I cannot provide"
+000131.png,5,benign
+000131.png,6,Benign.
+000131.png,7,Benign.
+000132.png,0,"I'm sorry, I can't"
+000132.png,1,"I'm sorry, I'm not"
+000132.png,2,"I'm sorry, I can't"
+000132.png,3,"I'm sorry, but I can"
+000132.png,4,"I'm sorry, I can't"
+000132.png,5,"I'm sorry, I can't"
+000132.png,6,Malignant
+000132.png,7,Malignant
+000133.png,0,"I'm sorry, I can't"
+000133.png,1,"I'm sorry, but I cannot"
+000133.png,2,"I'm sorry, I can't"
+000133.png,3,"I'm sorry, but I cannot"
+000133.png,4,benign
+000133.png,5,"I'm sorry, but I can"
+000133.png,6,"I'm sorry, I can't"
+000133.png,7,Malignant
+000134.png,0,"I'm sorry, I cannot assist"
+000134.png,1,"I'm sorry, but I cannot"
+000134.png,2,Benign.
+000134.png,3,Benign.
+000134.png,4,benign
+000134.png,5,"I'm sorry, I cannot provide"
+000134.png,6,benign
+000134.png,7,Benign.
+000135.png,0,"I'm sorry, but I cannot"
+000135.png,1,"I'm sorry, I can't"
+000135.png,2,"I'm sorry, but I can"
+000135.png,3,"I'm sorry, I can't"
+000135.png,4,Benign.
+000135.png,5,benign
+000135.png,6,Benign.
+000135.png,7,Benign.
+000136.png,0,"I'm sorry, but I cannot"
+000136.png,1,"I'm sorry, I can't"
+000136.png,2,"I'm sorry, I can't"
+000136.png,3,"I'm sorry, I can't"
+000136.png,4,"I'm sorry, I can't"
+000136.png,5,"I'm sorry, I can't"
+000136.png,6,benign
+000136.png,7,"I'm sorry, I cannot assist"
+000137.png,0,"I'm sorry, I can't"
+000137.png,1,"I'm sorry, I'm not"
+000137.png,2,"I'm sorry, I can't"
+000137.png,3,"I'm sorry, but I cannot"
+000137.png,4,"I'm sorry, I can't"
+000137.png,5,"I'm sorry, I can't"
+000137.png,6,benign
+000137.png,7,"I'm sorry, I can't"
+000138.png,0,"I'm sorry, but I'm"
+000138.png,1,"I'm sorry, but as an"
+000138.png,2,"I'm sorry, I can't"
+000138.png,3,benign
+000138.png,4,"I'm sorry, but I cannot"
+000138.png,5,benign
+000138.png,6,"I'm sorry, but I am"
+000138.png,7,Malignant
+000139.png,0,"I'm sorry, I cannot provide"
+000139.png,1,"I'm sorry, but I can"
+000139.png,2,"I'm sorry, but I can"
+000139.png,3,benign
+000139.png,4,benign
+000139.png,5,"I'm sorry, but I cannot"
+000139.png,6,benign
+000139.png,7,Malignant
+000140.png,0,"I'm sorry, but I'm"
+000140.png,1,"I'm sorry, I can't"
+000140.png,2,"I'm sorry, I can't"
+000140.png,3,Malignant
+000140.png,4,"I'm sorry, I can't"
+000140.png,5,benign
+000140.png,6,Malignant
+000140.png,7,Malignant
+000141.png,0,"I'm sorry, I can't"
+000141.png,1,"I'm sorry, but I can"
+000141.png,2,Benign
+000141.png,3,Benign.
+000141.png,4,benign
+000141.png,5,"I'm sorry, I can't"
+000141.png,6,Malignant.
+000141.png,7,Benign.
+000142.png,0,"I'm sorry, but I cannot"
+000142.png,1,"I'm sorry, I can't"
+000142.png,2,"I'm sorry, but I cannot"
+000142.png,3,"I'm sorry, I can't"
+000142.png,4,"I'm sorry, I can't"
+000142.png,5,"I'm sorry, I can't"
+000142.png,6,"I'm sorry, I can't"
+000142.png,7,Malignant
+000143.png,0,"I'm sorry, but I'm"
+000143.png,1,"I'm sorry, I cannot provide"
+000143.png,2,"I'm sorry, I can't"
+000143.png,3,"I'm sorry, I can't"
+000143.png,4,"I'm sorry, I can't"
+000143.png,5,benign
+000143.png,6,Benign.
+000143.png,7,Benign.
+000144.png,0,"I'm sorry, but I cannot"
+000144.png,1,"I'm sorry, I'm not"
+000144.png,2,"I'm sorry, but I'm"
+000144.png,3,"I'm sorry, I can't"
+000144.png,4,"I'm sorry, I can't"
+000144.png,5,"I'm sorry, I'm not"
+000144.png,6,benign
+000144.png,7,Malignant
+000145.png,0,"I'm sorry, I can't"
+000145.png,1,"I'm sorry, but I can"
+000145.png,2,"I'm sorry, but I can"
+000145.png,3,benign
+000145.png,4,benign
+000145.png,5,"I'm sorry, but I cannot"
+000145.png,6,benign
+000145.png,7,Benign.
+000146.png,0,"I'm sorry, I can't"
+000146.png,1,"I'm sorry, but I cannot"
+000146.png,2,benign
+000146.png,3,"I'm sorry, I can't"
+000146.png,4,Benign.
+000146.png,5,"I'm sorry, I cannot provide"
+000146.png,6,Benign
+000146.png,7,Benign
+000147.png,0,"I'm sorry, I can't"
+000147.png,1,"I'm sorry, I can't"
+000147.png,2,"I'm sorry, I can't"
+000147.png,3,"I'm sorry, but I cannot"
+000147.png,4,benign
+000147.png,5,"I'm sorry, but I can"
+000147.png,6,Benign
+000147.png,7,Malignant.
+000148.png,0,"I'm sorry, but I'm"
+000148.png,1,"I'm sorry, but I can"
+000148.png,2,benign
+000148.png,3,benign
+000148.png,4,"I'm sorry, I can't"
+000148.png,5,"Sorry, I can't provide assistance"
+000148.png,6,benign
+000148.png,7,Benign.
+000149.png,0,"I'm sorry, I can't"
+000149.png,1,"I'm sorry, but I'm"
+000149.png,2,"I'm sorry, I can't"
+000149.png,3,"I'm sorry, I can't"
+000149.png,4,benign
+000149.png,5,"I'm sorry, I can't"
+000149.png,6,benign
+000149.png,7,Benign.
+000150.png,0,"I'm sorry, but I cannot"
+000150.png,1,"I'm sorry, but I'm"
+000150.png,2,"I'm sorry, I can't"
+000150.png,3,benign
+000150.png,4,"I'm sorry, I can't"
+000150.png,5,"I'm sorry, but I cannot"
+000150.png,6,benign
+000150.png,7,"I'm sorry, I'm not"
+000151.png,0,"I'm sorry, I can't"
+000151.png,1,"I'm sorry, I can't"
+000151.png,2,"I'm sorry, I can't"
+000151.png,3,"I'm sorry, I can't"
+000151.png,4,"I'm sorry, I can't"
+000151.png,5,"I'm sorry, I can't"
+000151.png,6,"I'm sorry, but I cannot"
+000151.png,7,Malignant.
+000152.png,0,"I'm sorry, but I cannot"
+000152.png,1,"I'm sorry, but I cannot"
+000152.png,2,"I'm sorry, but I cannot"
+000152.png,3,"I'm sorry, I can't"
+000152.png,4,benign
+000152.png,5,"I'm sorry, I can't"
+000152.png,6,"I'm sorry, I can't"
+000152.png,7,"I'm sorry, I can't"
+000153.png,0,"I'm sorry, but I'm"
+000153.png,1,"I'm sorry, but I can"
+000153.png,2,Malignant
+000153.png,3,Malignant
+000153.png,4,"I'm sorry, I can't"
+000153.png,5,"I'm sorry, but I cannot"
+000153.png,6,Malignant
+000153.png,7,Malignant
+000154.png,0,"I'm sorry, I can't"
+000154.png,1,"I'm sorry, I can't"
+000154.png,2,Malignant
+000154.png,3,Malignant
+000154.png,4,benign
+000154.png,5,"I'm sorry, I can't"
+000154.png,6,Malignant
+000154.png,7,Malignant.
+000155.png,0,"I'm sorry, I cannot provide"
+000155.png,1,"I'm sorry, but I cannot"
+000155.png,2,benign
+000155.png,3,Benign
+000155.png,4,benign
+000155.png,5,"I'm sorry, I can't"
+000155.png,6,Benign.
+000155.png,7,Benign.
+000156.png,0,"I'm sorry, but I'm"
+000156.png,1,"I'm sorry, but I am"
+000156.png,2,"I'm sorry, I can't"
+000156.png,3,"I'm sorry, I can't"
+000156.png,4,"I'm sorry, I can't"
+000156.png,5,"I'm sorry, but without appropriate"
+000156.png,6,Benign
+000156.png,7,Benign.
+000157.png,0,"I'm sorry, but I cannot"
+000157.png,1,"I'm sorry, I can't"
+000157.png,2,"I'm sorry, but I cannot"
+000157.png,3,Benign.
+000157.png,4,"I'm sorry, I can't"
+000157.png,5,benign
+000157.png,6,Malignant
+000157.png,7,Benign
+000158.png,0,"I'm sorry, I cannot provide"
+000158.png,1,"I'm sorry, but I can"
+000158.png,2,"I'm sorry, I can't"
+000158.png,3,Benign.
+000158.png,4,"Sorry, I can't provide help"
+000158.png,5,"I'm sorry, I can't"
+000158.png,6,Malignant
+000158.png,7,Malignant
+000159.png,0,"I'm sorry, I can't"
+000159.png,1,"I'm sorry, I'm not"
+000159.png,2,"I'm sorry, but I cannot"
+000159.png,3,benign
+000159.png,4,"I'm sorry, I can't"
+000159.png,5,"I'm sorry, I can't"
+000159.png,6,benign
+000159.png,7,benign
+000160.png,0,"I'm sorry, I can't"
+000160.png,1,"I'm sorry, I can't"
+000160.png,2,"I'm sorry, I can't"
+000160.png,3,Malignant
+000160.png,4,benign
+000160.png,5,benign
+000160.png,6,Malignant
+000160.png,7,Malignant
+000161.png,0,"I'm sorry, but I'm"
+000161.png,1,"I'm sorry, I can't"
+000161.png,2,"I'm sorry, I can't"
+000161.png,3,"I'm sorry, I can't"
+000161.png,4,"I'm sorry, I can't"
+000161.png,5,"Sorry, I can't provide that"
+000161.png,6,Malignant
+000161.png,7,Malignant
+000162.png,0,"I'm sorry, but I'm"
+000162.png,1,"I'm sorry, I can't"
+000162.png,2,benign
+000162.png,3,benign
+000162.png,4,benign
+000162.png,5,"I'm sorry, I can't"
+000162.png,6,Benign.
+000162.png,7,Malignant
+000163.png,0,"I'm sorry, but I can"
+000163.png,1,"I'm sorry, I can't"
+000163.png,2,benign
+000163.png,3,benign
+000163.png,4,"I'm sorry, I can't"
+000163.png,5,"I'm sorry, I cannot provide"
+000163.png,6,Benign
+000163.png,7,Benign.
+000164.png,0,"I'm sorry, I can't"
+000164.png,1,"I'm sorry, but I cannot"
+000164.png,2,"I'm sorry, I can't"
+000164.png,3,benign
+000164.png,4,"I'm sorry, but I cannot"
+000164.png,5,"I'm sorry, but I can"
+000164.png,6,"I'm sorry, I can't"
+000164.png,7,Benign.
+000165.png,0,"I'm sorry, but I'm"
+000165.png,1,"I'm sorry, but I'm"
+000165.png,2,"I'm sorry, but I can"
+000165.png,3,"I'm sorry, but I can"
+000165.png,4,Malignant
+000165.png,5,"I'm sorry, I can't"
+000165.png,6,benign
+000165.png,7,Benign.
+000166.png,0,"I'm sorry, but I'm"
+000166.png,1,"I'm sorry, I cannot provide"
+000166.png,2,"I'm sorry, I can't"
+000166.png,3,Malignant
+000166.png,4,"I'm sorry, I cannot assist"
+000166.png,5,"I'm sorry, I can't"
+000166.png,6,malignant
+000166.png,7,Malignant
+000167.png,0,"I'm sorry, I can't"
+000167.png,1,"I'm sorry, I can't"
+000167.png,2,benign
+000167.png,3,"I'm sorry, I can't"
+000167.png,4,"I'm sorry, but I can"
+000167.png,5,benign
+000167.png,6,benign
+000167.png,7,Malignant
+000168.png,0,"I'm sorry, I can't"
+000168.png,1,"I'm sorry, but I can"
+000168.png,2,"I'm sorry, but I'm"
+000168.png,3,"I'm sorry, but I can"
+000168.png,4,benign
+000168.png,5,"I'm sorry, but I cannot"
+000168.png,6,"I'm sorry, I can't"
+000168.png,7,Benign
+000169.png,0,"I'm sorry, I'm not"
+000169.png,1,"I'm sorry, I'm not"
+000169.png,2,"I'm sorry, but I can"
+000169.png,3,Malignant
+000169.png,4,"I'm sorry, I can't"
+000169.png,5,"I'm sorry, I can't"
+000169.png,6,Malignant
+000169.png,7,Malignant
+000170.png,0,"I'm sorry, but I'm"
+000170.png,1,"I'm sorry, but I can"
+000170.png,2,"I'm sorry, I can't"
+000170.png,3,"I'm sorry, but I cannot"
+000170.png,4,"I'm sorry, I can't"
+000170.png,5,"I'm sorry, I can't"
+000170.png,6,Malignant
+000170.png,7,Malignant.
+000171.png,0,"I'm sorry, I can't"
+000171.png,1,"I'm sorry, but I'm"
+000171.png,2,"I'm sorry, but I can"
+000171.png,3,Benign.
+000171.png,4,"I'm sorry, I can't"
+000171.png,5,"I'm sorry, I cannot assist"
+000171.png,6,"I'm sorry, I can't"
+000171.png,7,Malignant
+000172.png,0,"I'm sorry, but I'm"
+000172.png,1,"I'm sorry, I can't"
+000172.png,2,"I'm sorry, but I cannot"
+000172.png,3,Malignant
+000172.png,4,malignant
+000172.png,5,"I'm sorry, I can't"
+000172.png,6,Malignant
+000172.png,7,Malignant
+000173.png,0,"I'm sorry, I cannot provide"
+000173.png,1,"I'm sorry, I cannot provide"
+000173.png,2,"I'm sorry, I can't"
+000173.png,3,"I'm sorry, but I can"
+000173.png,4,benign
+000173.png,5,"I'm sorry, I can't"
+000173.png,6,"I'm sorry, but I can"
+000173.png,7,Malignant
+000174.png,0,"I'm sorry, I can't"
+000174.png,1,"I'm sorry, I can't"
+000174.png,2,"I'm sorry, but I can"
+000174.png,3,benign
+000174.png,4,benign
+000174.png,5,"I'm sorry, but I can"
+000174.png,6,benign
+000174.png,7,benign
+000175.png,0,"I'm sorry, I cannot provide"
+000175.png,1,"I'm sorry, but I cannot"
+000175.png,2,benign
+000175.png,3,"I'm sorry, but I cannot"
+000175.png,4,benign
+000175.png,5,Benign.
+000175.png,6,"I'm sorry, I can't"
+000175.png,7,"I'm sorry, I can't"
+000176.png,0,"I'm sorry, I'm not"
+000176.png,1,"I'm sorry, I cannot provide"
+000176.png,2,"I'm sorry, I can't"
+000176.png,3,benign
+000176.png,4,Benign.
+000176.png,5,"I'm sorry, I cannot provide"
+000176.png,6,benign
+000176.png,7,"I'm sorry, but I cannot"
+000177.png,0,"I'm sorry, but I cannot"
+000177.png,1,"I'm sorry, but I'm"
+000177.png,2,benign
+000177.png,3,"I'm sorry, I can't"
+000177.png,4,benign
+000177.png,5,"I'm sorry, I can't"
+000177.png,6,"I'm sorry, but I can"
+000177.png,7,Benign.
+000178.png,0,"I'm sorry, I can't"
+000178.png,1,"I'm sorry, but I can"
+000178.png,2,"I'm sorry, I can't"
+000178.png,3,Malignant
+000178.png,4,"I'm sorry, I can't"
+000178.png,5,"I'm sorry, I cannot provide"
+000178.png,6,malignant
+000178.png,7,Malignant
+000179.png,0,"I'm sorry, but I'm"
+000179.png,1,"I'm sorry, I cannot provide"
+000179.png,2,"I'm sorry, I can't"
+000179.png,3,"I'm sorry, I can't"
+000179.png,4,"I'm sorry, I can't"
+000179.png,5,"I'm sorry, I can't"
+000179.png,6,Benign.
+000179.png,7,Benign.
+000180.png,0,"I'm sorry, but I cannot"
+000180.png,1,"I'm sorry, I can't"
+000180.png,2,"I'm sorry, but I can"
+000180.png,3,"I'm sorry, but I cannot"
+000180.png,4,"I'm sorry, I can't"
+000180.png,5,"I'm sorry, I can't"
+000180.png,6,Malignant
+000180.png,7,Malignant
+000181.png,0,"Sorry, I can't provide that"
+000181.png,1,"I'm sorry, I cannot provide"
+000181.png,2,"I'm sorry, I can't"
+000181.png,3,benign
+000181.png,4,benign
+000181.png,5,"I'm sorry, I'm not"
+000181.png,6,Benign.
+000181.png,7,Benign.
+000182.png,0,"I'm sorry, but I can"
+000182.png,1,"I'm sorry, but I cannot"
+000182.png,2,"I'm sorry, but I cannot"
+000182.png,3,"I'm sorry, I can't"
+000182.png,4,"I'm sorry, I can't"
+000182.png,5,"I'm sorry, I can't"
+000182.png,6,"I'm sorry, I can't"
+000182.png,7,Malignant
+000183.png,0,"I'm sorry, I cannot provide"
+000183.png,1,"I'm sorry, I can't"
+000183.png,2,benign
+000183.png,3,Benign
+000183.png,4,benign
+000183.png,5,"I'm sorry, I cannot provide"
+000183.png,6,Malignant
+000183.png,7,Benign.
+000184.png,0,"I'm sorry, I can't"
+000184.png,1,"I'm sorry, I can't"
+000184.png,2,"I'm sorry, I can't"
+000184.png,3,"I'm sorry, I can't"
+000184.png,4,"I'm sorry, but I cannot"
+000184.png,5,"I'm sorry, I can't"
+000184.png,6,Malignant
+000184.png,7,Malignant
+000185.png,0,"I'm sorry, I cannot provide"
+000185.png,1,"I'm sorry, but I can"
+000185.png,2,"I'm sorry, I can't"
+000185.png,3,Malignant
+000185.png,4,"I'm sorry, I cannot provide"
+000185.png,5,"I'm sorry, I cannot provide"
+000185.png,6,"I'm sorry, I can't"
+000185.png,7,Malignant
+000186.png,0,"I'm sorry, I can't"
+000186.png,1,"I'm sorry, I'm not"
+000186.png,2,"I'm sorry, I can't"
+000186.png,3,"I'm sorry, I can't"
+000186.png,4,benign
+000186.png,5,"I'm sorry, but I'm"
+000186.png,6,"I'm sorry, I can't"
+000186.png,7,malignant
+000187.png,0,"I'm sorry, I cannot provide"
+000187.png,1,"I'm sorry, I cannot provide"
+000187.png,2,"I'm sorry, but I can"
+000187.png,3,benign
+000187.png,4,"I'm sorry, I can't"
+000187.png,5,"I'm sorry, I can't"
+000187.png,6,"I'm sorry, I can't"
+000187.png,7,Benign.
+000188.png,0,"I'm sorry, but I cannot"
+000188.png,1,"I'm sorry, I cannot provide"
+000188.png,2,benign
+000188.png,3,Benign.
+000188.png,4,Benign.
+000188.png,5,benign
+000188.png,6,Benign.
+000188.png,7,Benign.
+000189.png,0,"I'm sorry, but I cannot"
+000189.png,1,"I'm sorry, but I can"
+000189.png,2,benign
+000189.png,3,Malignant
+000189.png,4,"I'm sorry, I can't"
+000189.png,5,"I'm sorry, I am not"
+000189.png,6,Malignant
+000189.png,7,Malignant
+000190.png,0,"I'm sorry, I cannot provide"
+000190.png,1,"I'm sorry, but I can"
+000190.png,2,"I'm sorry, but I cannot"
+000190.png,3,Malignant
+000190.png,4,"I'm sorry, but I can"
+000190.png,5,"I'm sorry, I can't"
+000190.png,6,"I'm sorry, I cannot assist"
+000190.png,7,Malignant
+000191.png,0,"I'm sorry, I can't"
+000191.png,1,"I'm sorry, I can't"
+000191.png,2,"I'm sorry, I can't"
+000191.png,3,Benign.
+000191.png,4,"I'm sorry, I can't"
+000191.png,5,"I'm sorry, I can't"
+000191.png,6,"I'm sorry, I can't"
+000191.png,7,Benign.
+000192.png,0,"I'm sorry, but I'm"
+000192.png,1,"I'm sorry, I'm not"
+000192.png,2,"I'm sorry, I can't"
+000192.png,3,"I'm sorry, I can't"
+000192.png,4,"I'm sorry, but I'm"
+000192.png,5,"I'm sorry, I can't"
+000192.png,6,"I'm sorry, I can't"
+000192.png,7,Malignant
+000193.png,0,"I'm sorry, but I'm"
+000193.png,1,"I'm sorry, I can't"
+000193.png,2,"Sorry, I can't assist with"
+000193.png,3,"I'm sorry, I can't"
+000193.png,4,"I'm sorry, I can't"
+000193.png,5,"I'm sorry, I can't"
+000193.png,6,"I'm sorry, I can't"
+000193.png,7,"I'm sorry, I can't"
+000194.png,0,"I'm sorry, but I cannot"
+000194.png,1,"I'm sorry, I'm not"
+000194.png,2,benign
+000194.png,3,benign
+000194.png,4,benign
+000194.png,5,"I'm sorry, I can't"
+000194.png,6,Benign.
+000194.png,7,Benign.
+000195.png,0,"I'm sorry, I can't"
+000195.png,1,"I'm sorry, I can't"
+000195.png,2,"I'm sorry, but I cannot"
+000195.png,3,benign
+000195.png,4,benign
+000195.png,5,"I'm sorry, I can't"
+000195.png,6,benign
+000195.png,7,benign
+000196.png,0,"I'm sorry, I can't"
+000196.png,1,"I'm sorry, I can't"
+000196.png,2,benign
+000196.png,3,benign
+000196.png,4,"I'm sorry, I can't"
+000196.png,5,"I'm sorry, I can't"
+000196.png,6,"I'm sorry, but I can"
+000196.png,7,benign
+000197.png,0,"I'm sorry, I can't"
+000197.png,1,"I'm sorry, but I cannot"
+000197.png,2,"I'm sorry, but I can"
+000197.png,3,"I'm sorry, but I can"
+000197.png,4,"I'm sorry, I can't"
+000197.png,5,"I'm sorry, I can't"
+000197.png,6,"I'm sorry, I can't"
+000197.png,7,Benign.
+000198.png,0,"I'm sorry, but I cannot"
+000198.png,1,"I'm sorry, I cannot provide"
+000198.png,2,Benign.
+000198.png,3,Benign.
+000198.png,4,benign
+000198.png,5,benign
+000198.png,6,Benign.
+000198.png,7,Benign.
+000199.png,0,"I'm sorry, but I am"
+000199.png,1,"I'm sorry, but I can"
+000199.png,2,"I'm sorry, but I can"
+000199.png,3,Benign.
+000199.png,4,"I'm sorry, I can't"
+000199.png,5,"I'm sorry, I can't"
+000199.png,6,Malignant
+000199.png,7,benign
+000200.png,0,"I'm sorry, but I can"
+000200.png,1,"I'm sorry, but I cannot"
+000200.png,2,"I'm sorry, but I cannot"
+000200.png,3,Benign.
+000200.png,4,benign
+000200.png,5,"I'm sorry, I can't"
+000200.png,6,benign
+000200.png,7,Benign.
+000201.png,0,"I'm sorry, but I'm"
+000201.png,1,"I'm sorry, I can't"
+000201.png,2,"I'm sorry, but I cannot"
+000201.png,3,"I'm sorry, I can't"
+000201.png,4,"I'm sorry, I can't"
+000201.png,5,"I'm sorry, but I cannot"
+000201.png,6,malignant
+000201.png,7,Malignant
+000202.png,0,"I'm sorry, but I'm"
+000202.png,1,"I'm sorry, but I can"
+000202.png,2,benign
+000202.png,3,Benign
+000202.png,4,benign
+000202.png,5,"I'm sorry, I can't"
+000202.png,6,Malignant
+000202.png,7,Benign.
+000203.png,0,"I'm sorry, but I'm"
+000203.png,1,"I'm sorry, I can't"
+000203.png,2,"I'm sorry, I can't"
+000203.png,3,"I'm sorry, I can't"
+000203.png,4,"I'm sorry, I can't"
+000203.png,5,"I'm sorry, I can't"
+000203.png,6,benign
+000203.png,7,Malignant
+000204.png,0,"I'm sorry, I can't"
+000204.png,1,"I'm sorry, but I can"
+000204.png,2,"I'm sorry, I can't"
+000204.png,3,benign
+000204.png,4,"I'm sorry, but I cannot"
+000204.png,5,"I'm sorry, but I cannot"
+000204.png,6,benign
+000204.png,7,Benign.
+000205.png,0,"I'm sorry, I can't"
+000205.png,1,"I'm sorry, I can't"
+000205.png,2,"I'm sorry, but I can"
+000205.png,3,Benign.
+000205.png,4,"I'm sorry, I can't"
+000205.png,5,"I'm sorry, but I can"
+000205.png,6,"I'm sorry, I can't"
+000205.png,7,Benign.
+000206.png,0,"I'm sorry, I can't"
+000206.png,1,"I'm sorry, but I'm"
+000206.png,2,"I'm sorry, I can't"
+000206.png,3,Benign
+000206.png,4,"I'm sorry, I can't"
+000206.png,5,benign
+000206.png,6,benign
+000206.png,7,Malignant
+000207.png,0,"I'm sorry, I'm not"
+000207.png,1,"I'm sorry, but as an"
+000207.png,2,"I'm sorry, I can't"
+000207.png,3,Benign.
+000207.png,4,benign
+000207.png,5,"I'm sorry, I cannot provide"
+000207.png,6,"I'm sorry, I can't"
+000207.png,7,Benign
+000208.png,0,"I'm sorry, I can't"
+000208.png,1,"I'm sorry, I can't"
+000208.png,2,Benign
+000208.png,3,"Sorry, I can't help with"
+000208.png,4,benign
+000208.png,5,"Sorry, I'm not able to"
+000208.png,6,benign
+000208.png,7,benign
+000209.png,0,"I'm sorry, I can't"
+000209.png,1,"I'm sorry, but I cannot"
+000209.png,2,"I'm sorry, but I cannot"
+000209.png,3,Benign.
+000209.png,4,"I'm sorry, I can't"
+000209.png,5,"I'm sorry, but I cannot"
+000209.png,6,Malignant
+000209.png,7,Malignant
+000210.png,0,"I'm sorry, I can't"
+000210.png,1,"I'm sorry, I can't"
+000210.png,2,"I'm sorry, I can't"
+000210.png,3,"I'm sorry, I can't"
+000210.png,4,benign
+000210.png,5,"I'm sorry, I can't"
+000210.png,6,"Sorry, I can't assist with"
+000210.png,7,Benign.
+000211.png,0,"I'm sorry, I cannot provide"
+000211.png,1,"I'm sorry, but I'm"
+000211.png,2,benign
+000211.png,3,Malignant
+000211.png,4,Benign.
+000211.png,5,"I'm sorry, I can't"
+000211.png,6,Malignant.
+000211.png,7,Malignant
+000212.png,0,"I'm sorry, I can't"
+000212.png,1,"I'm sorry, but I'm"
+000212.png,2,"I'm sorry, I can't"
+000212.png,3,"I'm sorry, I can't"
+000212.png,4,"I'm sorry, but I cannot"
+000212.png,5,"I'm sorry, I cannot assist"
+000212.png,6,Malignant.
+000212.png,7,Malignant.
+000213.png,0,"I'm sorry, I'm not"
+000213.png,1,"I'm sorry, I can't"
+000213.png,2,"I'm sorry, I can't"
+000213.png,3,"I'm sorry, I can't"
+000213.png,4,"I'm sorry, I can't"
+000213.png,5,"I'm sorry, I can't"
+000213.png,6,Malignant
+000213.png,7,Malignant
+000214.png,0,"I'm sorry, but I'm"
+000214.png,1,"I'm sorry, but I'm"
+000214.png,2,"I'm sorry, I can't"
+000214.png,3,Benign.
+000214.png,4,benign
+000214.png,5,"Sorry, I can't provide assistance"
+000214.png,6,Benign.
+000214.png,7,Benign
+000215.png,0,"I'm sorry, but I cannot"
+000215.png,1,"I'm sorry, but I cannot"
+000215.png,2,"I'm sorry, I can't"
+000215.png,3,"I'm sorry, I can't"
+000215.png,4,"I'm sorry, I can't"
+000215.png,5,"I'm sorry, I can't"
+000215.png,6,benign
+000215.png,7,Benign.
+000216.png,0,"I'm sorry, I can't"
+000216.png,1,"I'm sorry, but I cannot"
+000216.png,2,benign
+000216.png,3,Benign
+000216.png,4,benign
+000216.png,5,benign
+000216.png,6,Benign.
+000216.png,7,Malignant
+000217.png,0,"I'm sorry, but I'm"
+000217.png,1,"I'm sorry, but I'm"
+000217.png,2,"I'm sorry, I can't"
+000217.png,3,"I'm sorry, I can't"
+000217.png,4,"I'm sorry, I can't"
+000217.png,5,"I'm sorry, I can't"
+000217.png,6,Malignant
+000217.png,7,Malignant.
+000218.png,0,"I'm sorry, I'm not"
+000218.png,1,"I'm sorry, but I cannot"
+000218.png,2,"I'm sorry, but I can"
+000218.png,3,"I'm sorry, I can't"
+000218.png,4,"I'm sorry, but I cannot"
+000218.png,5,"I'm sorry, I can't"
+000218.png,6,Malignant
+000218.png,7,Malignant
+000219.png,0,"I'm sorry, but I'm"
+000219.png,1,"I'm sorry, but I cannot"
+000219.png,2,"I'm sorry, but I can"
+000219.png,3,"I'm sorry, but I can"
+000219.png,4,"I'm sorry, but I am"
+000219.png,5,"I'm sorry, but I can"
+000219.png,6,Malignant
+000219.png,7,Malignant
+000220.png,0,"I'm sorry, I can't"
+000220.png,1,"I'm sorry, I cannot provide"
+000220.png,2,"I'm sorry, I can't"
+000220.png,3,"I'm sorry, but I'm"
+000220.png,4,"I'm sorry, I can't"
+000220.png,5,benign
+000220.png,6,"I'm sorry, I can't"
+000220.png,7,Malignant.
+000221.png,0,"I'm sorry, but I can"
+000221.png,1,"I'm sorry, but I'm"
+000221.png,2,"I'm sorry, but I can"
+000221.png,3,Benign
+000221.png,4,"I'm sorry, I can't"
+000221.png,5,"I'm sorry, I cannot provide"
+000221.png,6,benign
+000221.png,7,Malignant
+000222.png,0,"I'm sorry, I can't"
+000222.png,1,"I'm sorry, but I cannot"
+000222.png,2,"I'm sorry, but I cannot"
+000222.png,3,"I'm sorry, I can't"
+000222.png,4,benign
+000222.png,5,"I'm sorry, I cannot provide"
+000222.png,6,"I'm sorry, I can't"
+000222.png,7,Benign.
+000223.png,0,"I'm sorry, but I'm"
+000223.png,1,"I'm sorry, but I can"
+000223.png,2,"I'm sorry, I can't"
+000223.png,3,Benign.
+000223.png,4,"I'm sorry, I can't"
+000223.png,5,benign
+000223.png,6,benign
+000223.png,7,Benign.
+000224.png,0,"I'm sorry, but I'm"
+000224.png,1,"I'm sorry, I'm not"
+000224.png,2,"I'm sorry, I can't"
+000224.png,3,Malignant
+000224.png,4,benign
+000224.png,5,Malignant
+000224.png,6,Malignant
+000224.png,7,Malignant
+000225.png,0,"I'm sorry, but I'm"
+000225.png,1,"I'm sorry, I can't"
+000225.png,2,"I'm sorry, I can't"
+000225.png,3,Malignant
+000225.png,4,"I'm sorry, I can't"
+000225.png,5,Benign.
+000225.png,6,Malignant
+000225.png,7,Malignant
+000226.png,0,"I'm sorry, I can't"
+000226.png,1,"Sorry, I can't help with"
+000226.png,2,Malignant
+000226.png,3,Malignant
+000226.png,4,"I'm sorry, I can't"
+000226.png,5,benign
+000226.png,6,Malignant
+000226.png,7,Malignant
+000227.png,0,"I'm sorry, I can't"
+000227.png,1,"I'm sorry, I can't"
+000227.png,2,"I'm sorry, I can't"
+000227.png,3,benign
+000227.png,4,"I'm sorry, I can't"
+000227.png,5,"I'm sorry, but I cannot"
+000227.png,6,benign
+000227.png,7,"I'm sorry, I can't"
+000228.png,0,"I'm sorry, but I'm"
+000228.png,1,"I'm sorry, but I cannot"
+000228.png,2,"I'm sorry, I can't"
+000228.png,3,"I'm sorry, I can't"
+000228.png,4,"I'm sorry, I can't"
+000228.png,5,"I'm sorry, I'm not"
+000228.png,6,Benign.
+000228.png,7,Benign.
+000229.png,0,"I'm sorry, but I'm"
+000229.png,1,"I'm sorry, I'm not"
+000229.png,2,"I'm sorry, I can't"
+000229.png,3,"I'm sorry, I cannot provide"
+000229.png,4,benign
+000229.png,5,"Sorry, I can't provide this"
+000229.png,6,Benign.
+000229.png,7,"I'm sorry, I cannot provide"
+000230.png,0,"I'm sorry, but I'm"
+000230.png,1,"I'm sorry, but I can"
+000230.png,2,benign
+000230.png,3,Benign.
+000230.png,4,benign
+000230.png,5,"I'm sorry, I can't"
+000230.png,6,Benign
+000230.png,7,benign
+000231.png,0,"I'm sorry, I'm not"
+000231.png,1,"I'm sorry, I can't"
+000231.png,2,"I'm sorry, I can't"
+000231.png,3,"I'm sorry, I cannot provide"
+000231.png,4,"I'm sorry, I can't"
+000231.png,5,"I'm sorry, I can't"
+000231.png,6,"I'm sorry, but I'm"
+000231.png,7,Malignant
+000232.png,0,"I'm sorry, I can't"
+000232.png,1,"I'm sorry, I can't"
+000232.png,2,"I'm sorry, I'm not"
+000232.png,3,Malignant
+000232.png,4,"I'm sorry, I can't"
+000232.png,5,"I'm sorry, I can't"
+000232.png,6,Malignant
+000232.png,7,Malignant
+000233.png,0,"I'm sorry, I can't"
+000233.png,1,"I'm sorry, I'm not"
+000233.png,2,"I'm sorry, I can't"
+000233.png,3,Malignant
+000233.png,4,"I'm sorry, but I can"
+000233.png,5,"I'm sorry, I can't"
+000233.png,6,Benign
+000233.png,7,Malignant
+000234.png,0,"I'm sorry, but I cannot"
+000234.png,1,"I'm sorry, I'm not"
+000234.png,2,"I'm sorry, I can't"
+000234.png,3,"I'm sorry, I can't"
+000234.png,4,benign
+000234.png,5,"I'm sorry, but I can"
+000234.png,6,benign
+000234.png,7,Benign.
+000235.png,0,"I'm sorry, but I cannot"
+000235.png,1,"I'm sorry, I can't"
+000235.png,2,"Sorry, I can't assist with"
+000235.png,3,benign
+000235.png,4,benign
+000235.png,5,"Sorry, I can't provide this"
+000235.png,6,benign
+000235.png,7,benign
+000236.png,0,"I'm sorry, but I'm"
+000236.png,1,"I'm sorry, I cannot provide"
+000236.png,2,"I'm sorry, I can't"
+000236.png,3,benign
+000236.png,4,"I'm sorry, but I cannot"
+000236.png,5,benign
+000236.png,6,Benign
+000236.png,7,Benign.
+000237.png,0,"I'm sorry, I can't"
+000237.png,1,"I'm sorry, but I'm"
+000237.png,2,"I'm sorry, I can't"
+000237.png,3,"I'm sorry, I can't"
+000237.png,4,"Sorry, I can't help with"
+000237.png,5,"I'm sorry, I cannot provide"
+000237.png,6,"I'm sorry, I can't"
+000237.png,7,"I'm sorry, I can't"
+000238.png,0,"I'm sorry, but I cannot"
+000238.png,1,"I'm sorry, I'm not"
+000238.png,2,"I'm sorry, I can't"
+000238.png,3,Malignant
+000238.png,4,benign
+000238.png,5,"I'm sorry, I can't"
+000238.png,6,Malignant
+000238.png,7,Malignant
+000239.png,0,"I'm sorry, but I'm"
+000239.png,1,"I'm sorry, I can't"
+000239.png,2,"I'm sorry, but I can"
+000239.png,3,benign
+000239.png,4,benign
+000239.png,5,benign
+000239.png,6,Benign.
+000239.png,7,Benign.
+000240.png,0,"I'm sorry, I can't"
+000240.png,1,"I'm sorry, I'm not"
+000240.png,2,"I'm sorry, I can't"
+000240.png,3,Benign.
+000240.png,4,"I'm sorry, I can't"
+000240.png,5,"I'm sorry, I can't"
+000240.png,6,"I'm sorry, I can't"
+000240.png,7,Malignant
+000241.png,0,"I'm sorry, but I can"
+000241.png,1,"I'm sorry, I'm not"
+000241.png,2,"I'm sorry, but I cannot"
+000241.png,3,"I'm sorry, I can't"
+000241.png,4,"I'm sorry, I can't"
+000241.png,5,"Sorry, I can't provide help"
+000241.png,6,Malignant
+000241.png,7,Malignant.
+000242.png,0,"I'm sorry, but I cannot"
+000242.png,1,"I'm sorry, but I'm"
+000242.png,2,benign
+000242.png,3,Benign.
+000242.png,4,benign
+000242.png,5,"I'm sorry, I cannot provide"
+000242.png,6,benign
+000242.png,7,Benign.
+000243.png,0,"I'm sorry, but I'm"
+000243.png,1,"I'm sorry, I cannot provide"
+000243.png,2,benign
+000243.png,3,Benign.
+000243.png,4,benign
+000243.png,5,"I'm sorry, I can't"
+000243.png,6,Benign.
+000243.png,7,Benign
+000244.png,0,"I'm sorry, I'm not"
+000244.png,1,"I'm sorry, I'm not"
+000244.png,2,"I'm sorry, I can't"
+000244.png,3,"I'm sorry, but I cannot"
+000244.png,4,Benign.
+000244.png,5,benign
+000244.png,6,Malignant
+000244.png,7,Malignant
+000245.png,0,"I'm sorry, but I'm"
+000245.png,1,"I'm sorry, I'm not"
+000245.png,2,"I'm sorry, I can't"
+000245.png,3,"I'm sorry, I can't"
+000245.png,4,"I'm sorry, I can't"
+000245.png,5,"I'm sorry, I can't"
+000245.png,6,Benign.
+000245.png,7,Benign.
+000246.png,0,"I'm sorry, I can't"
+000246.png,1,"I'm sorry, I can't"
+000246.png,2,benign
+000246.png,3,Benign.
+000246.png,4,"I'm sorry, I can't"
+000246.png,5,"Sorry, I can't provide that"
+000246.png,6,Benign.
+000246.png,7,Benign.
+000247.png,0,"I'm sorry, but I'm"
+000247.png,1,"I'm sorry, I can't"
+000247.png,2,benign
+000247.png,3,"I'm sorry, but I can"
+000247.png,4,"I'm sorry, but I cannot"
+000247.png,5,"I'm sorry, I can't"
+000247.png,6,"I'm sorry, I can't"
+000247.png,7,Malignant
+000248.png,0,"I'm sorry, I can't"
+000248.png,1,"I'm sorry, but I'm"
+000248.png,2,"I'm sorry, but I'm"
+000248.png,3,"I'm sorry, I can't"
+000248.png,4,Benign.
+000248.png,5,benign
+000248.png,6,Benign.
+000248.png,7,Benign.
+000249.png,0,"I'm sorry, I can't"
+000249.png,1,"I'm sorry, but I can"
+000249.png,2,"I'm sorry, I can't"
+000249.png,3,benign
+000249.png,4,"I'm sorry, I can't"
+000249.png,5,"I'm sorry, I cannot provide"
+000249.png,6,benign
+000249.png,7,Malignant
+000250.png,0,"I'm sorry, but I'm"
+000250.png,1,"I'm sorry, but I can"
+000250.png,2,Benign.
+000250.png,3,"I'm sorry, I can't"
+000250.png,4,"I'm sorry, I can't"
+000250.png,5,"Sorry, I can't help with"
+000250.png,6,Benign
+000250.png,7,Benign.
+000251.png,0,"I'm sorry, but I cannot"
+000251.png,1,"I'm sorry, I'm not"
+000251.png,2,"I'm sorry, I can't"
+000251.png,3,Benign
+000251.png,4,"I'm sorry, but I cannot"
+000251.png,5,"I'm sorry, I can't"
+000251.png,6,Benign.
+000251.png,7,Benign.
+000252.png,0,"I'm sorry, but I'm"
+000252.png,1,"I'm sorry, I'm not"
+000252.png,2,Benign
+000252.png,3,Benign.
+000252.png,4,Benign.
+000252.png,5,Benign.
+000252.png,6,Benign.
+000252.png,7,Benign.
+000253.png,0,"I'm sorry, I can't"
+000253.png,1,"I'm sorry, but I cannot"
+000253.png,2,benign
+000253.png,3,Benign.
+000253.png,4,"I'm sorry, I can't"
+000253.png,5,"I'm sorry, but I can"
+000253.png,6,benign
+000253.png,7,Benign.
+000254.png,0,"I'm sorry, but I'm"
+000254.png,1,"I'm sorry, I can't"
+000254.png,2,Benign.
+000254.png,3,Benign.
+000254.png,4,benign
+000254.png,5,"I'm sorry, I can't"
+000254.png,6,Benign.
+000254.png,7,Benign
+000255.png,0,"I'm sorry, but I'm"
+000255.png,1,"I'm sorry, I can't"
+000255.png,2,"I'm sorry, but I can"
+000255.png,3,benign
+000255.png,4,"I'm sorry, I can't"
+000255.png,5,benign
+000255.png,6,benign
+000255.png,7,Benign.
+000256.png,0,"I'm sorry, I'm not"
+000256.png,1,"I'm sorry, but I am"
+000256.png,2,"I'm sorry, I can't"
+000256.png,3,Benign.
+000256.png,4,"I'm sorry, I can't"
+000256.png,5,benign
+000256.png,6,"I'm sorry, I can't"
+000256.png,7,Benign
+000257.png,0,"I'm sorry, I can't"
+000257.png,1,"I'm sorry, I'm not"
+000257.png,2,"I'm sorry, I can't"
+000257.png,3,"I'm sorry, I can't"
+000257.png,4,"I'm sorry, I can't"
+000257.png,5,"I'm sorry, but I cannot"
+000257.png,6,Benign.
+000257.png,7,Benign.
+000258.png,0,"I'm sorry, but I am"
+000258.png,1,"I'm sorry, I cannot assist"
+000258.png,2,"I'm sorry, but I can"
+000258.png,3,"I'm sorry, but I cannot"
+000258.png,4,"I'm sorry, I can't"
+000258.png,5,"I'm sorry, but I can"
+000258.png,6,Malignant
+000258.png,7,Malignant
+000259.png,0,"I'm sorry, but I can"
+000259.png,1,"I'm sorry, but I cannot"
+000259.png,2,"I'm sorry, but I cannot"
+000259.png,3,Benign
+000259.png,4,benign
+000259.png,5,"I'm sorry, I can't"
+000259.png,6,Benign
+000259.png,7,Malignant
+000260.png,0,"I'm sorry, but I'm"
+000260.png,1,"I'm sorry, but I can"
+000260.png,2,"I'm sorry, I cannot provide"
+000260.png,3,"I'm sorry, I can't"
+000260.png,4,Benign.
+000260.png,5,"I'm sorry, I can't"
+000260.png,6,Malignant
+000260.png,7,Malignant
+000261.png,0,"I'm sorry, I can't"
+000261.png,1,"I'm sorry, but I'm"
+000261.png,2,"I'm sorry, I can't"
+000261.png,3,Benign.
+000261.png,4,benign
+000261.png,5,"I'm sorry, I can't"
+000261.png,6,Malignant
+000261.png,7,Malignant
+000262.png,0,"I'm sorry, I can't"
+000262.png,1,"I'm sorry, I can't"
+000262.png,2,"I'm sorry, I can't"
+000262.png,3,Malignant
+000262.png,4,"I'm sorry, I can't"
+000262.png,5,"I'm sorry, I can't"
+000262.png,6,"I'm sorry, I can't"
+000262.png,7,Malignant
+000263.png,0,"I'm sorry, I'm not"
+000263.png,1,"I'm sorry, but I am"
+000263.png,2,benign
+000263.png,3,"I'm sorry, I can't"
+000263.png,4,"I'm sorry, I can't"
+000263.png,5,"I'm sorry, I can't"
+000263.png,6,Malignant
+000263.png,7,Malignant
+000264.png,0,"I'm sorry, but I cannot"
+000264.png,1,"I'm sorry, but I cannot"
+000264.png,2,"I'm sorry, I can't"
+000264.png,3,benign
+000264.png,4,benign
+000264.png,5,benign
+000264.png,6,Malignant
+000264.png,7,Benign.
+000265.png,0,"I'm sorry, but I'm"
+000265.png,1,"I'm sorry, I can't"
+000265.png,2,"I'm sorry, I can't"
+000265.png,3,"I'm sorry, but I can"
+000265.png,4,"I'm sorry, I can't"
+000265.png,5,"I'm sorry, but I can"
+000265.png,6,"I'm sorry, I can't"
+000265.png,7,benign
+000266.png,0,"I'm sorry, I can't"
+000266.png,1,"I'm sorry, but I can"
+000266.png,2,"I'm sorry, I can't"
+000266.png,3,Malignant
+000266.png,4,"I'm sorry, I can't"
+000266.png,5,"I'm sorry, I can't"
+000266.png,6,Malignant
+000266.png,7,Malignant
+000267.png,0,"I'm sorry, I can't"
+000267.png,1,"I'm sorry, I can't"
+000267.png,2,"I'm sorry, I can't"
+000267.png,3,"I'm sorry, I can't"
+000267.png,4,"I'm sorry, but I can"
+000267.png,5,"I'm sorry, I can't"
+000267.png,6,benign
+000267.png,7,Malignant
+000268.png,0,"I'm sorry, I can't"
+000268.png,1,"I'm sorry, but I cannot"
+000268.png,2,"I'm sorry, I can't"
+000268.png,3,"I'm sorry, but I can"
+000268.png,4,Benign.
+000268.png,5,"I'm sorry, I can't"
+000268.png,6,Benign.
+000268.png,7,Benign.
+000269.png,0,"I'm sorry, but I can"
+000269.png,1,"I'm sorry, I'm not"
+000269.png,2,"I'm sorry, but I cannot"
+000269.png,3,"I'm sorry, I can't"
+000269.png,4,"I'm sorry, I can't"
+000269.png,5,"I'm sorry, but I cannot"
+000269.png,6,Malignant
+000269.png,7,Benign.
+000270.png,0,"I'm sorry, I'm not"
+000270.png,1,"I'm sorry, but I can"
+000270.png,2,"I'm sorry, I can't"
+000270.png,3,"I'm sorry, but I cannot"
+000270.png,4,"I'm sorry, I can't"
+000270.png,5,"I'm sorry, I can't"
+000270.png,6,Malignant
+000270.png,7,Malignant
+000271.png,0,"I'm sorry, but I cannot"
+000271.png,1,"I'm sorry, I can't"
+000271.png,2,"I'm sorry, I can't"
+000271.png,3,"I'm sorry, but I can"
+000271.png,4,benign
+000271.png,5,"I'm sorry, I can't"
+000271.png,6,malignant
+000271.png,7,Malignant
+000272.png,0,"I'm sorry, I can't"
+000272.png,1,"I'm sorry, but I cannot"
+000272.png,2,"I'm sorry, I can't"
+000272.png,3,"I'm sorry, I can't"
+000272.png,4,"I'm sorry, but I'm"
+000272.png,5,"I'm sorry, I can't"
+000272.png,6,Malignant
+000272.png,7,Malignant
+000273.png,0,"I'm sorry, but I cannot"
+000273.png,1,"I'm sorry, I'm not"
+000273.png,2,"I'm sorry, I can't"
+000273.png,3,Malignant
+000273.png,4,"I'm sorry, I can't"
+000273.png,5,"I'm sorry, I can't"
+000273.png,6,Benign
+000273.png,7,benign
+000274.png,0,"I'm sorry, but I can"
+000274.png,1,"I'm sorry, but I can"
+000274.png,2,"I'm sorry, but I cannot"
+000274.png,3,Benign.
+000274.png,4,"I'm sorry, I can't"
+000274.png,5,Benign.
+000274.png,6,Malignant
+000274.png,7,Malignant
+000275.png,0,"I'm sorry, I can't"
+000275.png,1,"I'm sorry, I cannot provide"
+000275.png,2,Benign.
+000275.png,3,benign
+000275.png,4,"I'm sorry, I can't"
+000275.png,5,"I'm sorry, but I cannot"
+000275.png,6,Malignant
+000275.png,7,Malignant
+000276.png,0,"I'm sorry, I can't"
+000276.png,1,"I'm sorry, I can't"
+000276.png,2,"I'm sorry, I can't"
+000276.png,3,Benign.
+000276.png,4,"I'm sorry, I can't"
+000276.png,5,Benign.
+000276.png,6,Benign
+000276.png,7,Benign.
+000277.png,0,"I'm sorry, I can't"
+000277.png,1,"I'm sorry, but I cannot"
+000277.png,2,"I'm sorry, I can't"
+000277.png,3,benign
+000277.png,4,"I'm sorry, but I can"
+000277.png,5,"I'm sorry, I can't"
+000277.png,6,benign
+000277.png,7,Benign.
+000278.png,0,"I'm sorry, I cannot provide"
+000278.png,1,"I'm sorry, I can't"
+000278.png,2,"I'm sorry, but I can"
+000278.png,3,Benign.
+000278.png,4,"I'm sorry, I can't"
+000278.png,5,"I'm sorry, I can't"
+000278.png,6,Benign.
+000278.png,7,Benign.
+000279.png,0,"I'm sorry, I cannot provide"
+000279.png,1,"I'm sorry, I can't"
+000279.png,2,"I'm sorry, I can't"
+000279.png,3,Malignant.
+000279.png,4,"I'm sorry, I can't"
+000279.png,5,"I'm sorry, but I cannot"
+000279.png,6,Malignant
+000279.png,7,Malignant
+000280.png,0,"I'm sorry, I cannot provide"
+000280.png,1,"I'm sorry, but I cannot"
+000280.png,2,"I'm sorry, I can't"
+000280.png,3,"I'm sorry, but I cannot"
+000280.png,4,benign
+000280.png,5,"Sorry, I can't provide assistance"
+000280.png,6,"I'm sorry, I can't"
+000280.png,7,Malignant
+000281.png,0,"I'm sorry, but I am"
+000281.png,1,"I'm sorry, but I cannot"
+000281.png,2,Benign.
+000281.png,3,Malignant
+000281.png,4,benign
+000281.png,5,"I'm sorry, I can't"
+000281.png,6,Malignant
+000281.png,7,Benign
+000282.png,0,"I'm sorry, but I cannot"
+000282.png,1,"I'm sorry, but I'm"
+000282.png,2,"I'm sorry, I can't"
+000282.png,3,Malignant
+000282.png,4,"I'm sorry, I can't"
+000282.png,5,"I'm sorry, I can't"
+000282.png,6,"I'm sorry, I can't"
+000282.png,7,Malignant.
+000283.png,0,"I'm sorry, but I'm"
+000283.png,1,"I'm sorry, but I'm"
+000283.png,2,"I'm sorry, I can't"
+000283.png,3,Malignant
+000283.png,4,benign
+000283.png,5,"I'm sorry, I can't"
+000283.png,6,Malignant
+000283.png,7,Malignant
+000284.png,0,"I'm sorry, but I'm"
+000284.png,1,"I'm sorry, but I’m"
+000284.png,2,"I'm sorry, but I can"
+000284.png,3,malignant
+000284.png,4,Benign.
+000284.png,5,"I'm sorry, I can't"
+000284.png,6,Malignant
+000284.png,7,Malignant
+000285.png,0,"I'm sorry, I can't"
+000285.png,1,"I'm sorry, I'm not"
+000285.png,2,"I'm sorry, I can't"
+000285.png,3,benign
+000285.png,4,"I'm sorry, I can't"
+000285.png,5,Benign.
+000285.png,6,"I'm sorry, I can't"
+000285.png,7,benign
+000286.png,0,"I'm sorry, but I cannot"
+000286.png,1,"I'm sorry, I can't"
+000286.png,2,"I'm sorry, I can't"
+000286.png,3,benign
+000286.png,4,"I'm sorry, but I can"
+000286.png,5,"I'm sorry, but I cannot"
+000286.png,6,"I'm sorry, but I can"
+000286.png,7,Malignant
+000287.png,0,"I'm sorry, but I cannot"
+000287.png,1,"I'm sorry, but I can"
+000287.png,2,"I'm sorry, but I can"
+000287.png,3,Benign.
+000287.png,4,Benign.
+000287.png,5,"I'm sorry, I cannot provide"
+000287.png,6,benign
+000287.png,7,benign
+000288.png,0,"Sorry, I can't provide that"
+000288.png,1,"I'm sorry, I can't"
+000288.png,2,"I'm sorry, I can't"
+000288.png,3,"I'm sorry, I can't"
+000288.png,4,benign
+000288.png,5,"I'm sorry, I cannot provide"
+000288.png,6,"I'm sorry, I can't"
+000288.png,7,Malignant
+000289.png,0,"I'm sorry, I can't"
+000289.png,1,"I'm sorry, I can't"
+000289.png,2,"I'm sorry, I can't"
+000289.png,3,"I'm sorry, I can't"
+000289.png,4,"I'm sorry, I can't"
+000289.png,5,"I'm sorry, I can't"
+000289.png,6,"I'm sorry, I can't"
+000289.png,7,Malignant
+000290.png,0,"I'm sorry, but I'm"
+000290.png,1,"I'm sorry, but I can"
+000290.png,2,"I'm sorry, but I'm"
+000290.png,3,benign
+000290.png,4,benign
+000290.png,5,"I'm sorry, I can't"
+000290.png,6,benign
+000290.png,7,Benign.
+000291.png,0,"I'm sorry, I'm not"
+000291.png,1,"I'm sorry, I'm not"
+000291.png,2,Benign.
+000291.png,3,Benign.
+000291.png,4,benign
+000291.png,5,Benign.
+000291.png,6,Malignant
+000291.png,7,Malignant
+000292.png,0,"I'm sorry, but I'm"
+000292.png,1,"I'm sorry, I'm not"
+000292.png,2,"I'm sorry, I can't"
+000292.png,3,Malignant
+000292.png,4,"I'm sorry, but I cannot"
+000292.png,5,"I'm sorry, I cannot provide"
+000292.png,6,Malignant
+000292.png,7,Malignant
+000293.png,0,"I'm sorry, but I cannot"
+000293.png,1,"I'm sorry, but I'm"
+000293.png,2,"I'm sorry, but I can"
+000293.png,3,"I'm sorry, but I cannot"
+000293.png,4,benign
+000293.png,5,"I'm sorry, I can't"
+000293.png,6,Benign.
+000293.png,7,benign
+000294.png,0,"I'm sorry, I can't"
+000294.png,1,"I'm sorry, but I can"
+000294.png,2,"I'm sorry, I can't"
+000294.png,3,"I'm sorry, I can't"
+000294.png,4,"I'm sorry, I can't"
+000294.png,5,"I'm sorry, I cannot provide"
+000294.png,6,"As an AI, I'm not"
+000294.png,7,Malignant
+000295.png,0,"I'm sorry, I can't"
+000295.png,1,"I'm sorry, I can't"
+000295.png,2,"I'm sorry, I can't"
+000295.png,3,Malignant
+000295.png,4,"I'm sorry, but I can"
+000295.png,5,"Sorry, I can't assist with"
+000295.png,6,Malignant
+000295.png,7,Malignant
+000296.png,0,"I'm sorry, I cannot provide"
+000296.png,1,"I'm sorry, I'm not"
+000296.png,2,"I'm sorry, but I can"
+000296.png,3,Benign
+000296.png,4,Benign.
+000296.png,5,benign
+000296.png,6,Malignant
+000296.png,7,Malignant
+000297.png,0,"I'm sorry, but I'm"
+000297.png,1,"I'm sorry, I can't"
+000297.png,2,"I'm sorry, but I can"
+000297.png,3,Benign.
+000297.png,4,"I'm sorry, I can't"
+000297.png,5,"I'm sorry, I can't"
+000297.png,6,Benign
+000297.png,7,Malignant
+000298.png,0,"I'm sorry, but I'm"
+000298.png,1,"I'm sorry, but I cannot"
+000298.png,2,Benign.
+000298.png,3,Benign
+000298.png,4,benign
+000298.png,5,"I'm sorry, I can't"
+000298.png,6,Benign.
+000298.png,7,Malignant
+000299.png,0,"I'm sorry, I can't"
+000299.png,1,"I'm sorry, but I cannot"
+000299.png,2,"I'm sorry, I can't"
+000299.png,3,Benign.
+000299.png,4,benign
+000299.png,5,"I'm sorry, but I cannot"
+000299.png,6,benign
+000299.png,7,Benign.
+000300.png,0,"I'm sorry, I can't"
+000300.png,1,"I'm sorry, but I cannot"
+000300.png,2,"I'm sorry, I can't"
+000300.png,3,"I'm sorry, but I cannot"
+000300.png,4,"I'm sorry, I can't"
+000300.png,5,"I'm sorry, I can't"
+000300.png,6,Malignant
+000300.png,7,Malignant
+000301.png,0,"I'm sorry, I'm not"
+000301.png,1,"I'm sorry, I'm not"
+000301.png,2,"I'm sorry, I can't"
+000301.png,3,Benign.
+000301.png,4,"I'm sorry, I can't"
+000301.png,5,benign
+000301.png,6,Malignant
+000301.png,7,Malignant
+000302.png,0,"I'm sorry, I can't"
+000302.png,1,"I'm sorry, I can't"
+000302.png,2,"I'm sorry, I can't"
+000302.png,3,Benign.
+000302.png,4,"I'm sorry, I can't"
+000302.png,5,benign
+000302.png,6,"I'm sorry, but I can"
+000302.png,7,Malignant
+000303.png,0,"I'm sorry, I cannot provide"
+000303.png,1,"I'm sorry, but I can"
+000303.png,2,"I'm sorry, but I can"
+000303.png,3,Benign.
+000303.png,4,"I'm sorry, but I cannot"
+000303.png,5,Unable to determine.
+000303.png,6,"I'm sorry, I can't"
+000303.png,7,Benign.
+000304.png,0,"I'm sorry, but I am"
+000304.png,1,"I'm sorry, I can't"
+000304.png,2,"I'm sorry, I can't"
+000304.png,3,Malignant
+000304.png,4,benign
+000304.png,5,"I'm sorry, I can't"
+000304.png,6,Malignant.
+000304.png,7,Malignant
+000305.png,0,"I'm sorry, but I'm"
+000305.png,1,"I'm sorry, but I'm"
+000305.png,2,"I'm sorry, I can't"
+000305.png,3,Benign
+000305.png,4,Benign.
+000305.png,5,"I'm sorry, I'm not"
+000305.png,6,Benign.
+000305.png,7,Benign
+000306.png,0,"I'm sorry, I can't"
+000306.png,1,"I'm sorry, I cannot provide"
+000306.png,2,"I'm sorry, but I cannot"
+000306.png,3,"I'm sorry, but I can"
+000306.png,4,"I'm sorry, I can't"
+000306.png,5,benign
+000306.png,6,benign
+000306.png,7,Benign
+000307.png,0,"I'm sorry, but I cannot"
+000307.png,1,"I'm sorry, I can't"
+000307.png,2,"I'm sorry, I can't"
+000307.png,3,"I'm sorry, I can't"
+000307.png,4,benign
+000307.png,5,benign
+000307.png,6,Malignant
+000307.png,7,Malignant
+000308.png,0,"I'm sorry, I cannot provide"
+000308.png,1,"I'm sorry, but I cannot"
+000308.png,2,"I'm sorry, I can't"
+000308.png,3,benign
+000308.png,4,benign
+000308.png,5,"I'm sorry, I can't"
+000308.png,6,Malignant
+000308.png,7,Malignant
+000309.png,0,"I'm sorry, but I can"
+000309.png,1,"I'm sorry, I can't"
+000309.png,2,"I'm sorry, I can't"
+000309.png,3,"I'm sorry, I can't"
+000309.png,4,benign
+000309.png,5,"I'm sorry, I can't"
+000309.png,6,Malignant
+000309.png,7,Malignant
+000310.png,0,"I'm sorry, but I can"
+000310.png,1,"I'm sorry, but I cannot"
+000310.png,2,"I'm sorry, I can't"
+000310.png,3,Benign.
+000310.png,4,benign
+000310.png,5,"I'm sorry, I cannot assist"
+000310.png,6,Benign.
+000310.png,7,Benign.
+000311.png,0,"I'm sorry, but I can"
+000311.png,1,"I'm sorry, I can't"
+000311.png,2,"I'm sorry, I can't"
+000311.png,3,"I'm sorry, but I cannot"
+000311.png,4,"I'm sorry, I can't"
+000311.png,5,"I'm sorry, I'm not"
+000311.png,6,"I'm sorry, I can't"
+000311.png,7,Malignant
+000312.png,0,"I'm sorry, but I can"
+000312.png,1,"I'm sorry, but I cannot"
+000312.png,2,"I'm sorry, I cannot assist"
+000312.png,3,Malignant
+000312.png,4,Benign.
+000312.png,5,"I'm sorry, I can't"
+000312.png,6,Malignant
+000312.png,7,Malignant.
+000313.png,0,"I'm sorry, I can't"
+000313.png,1,"I'm sorry, but I cannot"
+000313.png,2,"I'm sorry, I cannot provide"
+000313.png,3,Benign.
+000313.png,4,"I'm sorry, I can't"
+000313.png,5,"I'm sorry, I can't"
+000313.png,6,"I'm sorry, I can't"
+000313.png,7,Benign.
+000314.png,0,"I'm sorry, I cannot provide"
+000314.png,1,"I'm sorry, but I can"
+000314.png,2,Benign.
+000314.png,3,Benign.
+000314.png,4,"I'm sorry, but I'm"
+000314.png,5,benign
+000314.png,6,Benign.
+000314.png,7,Benign.
+000315.png,0,"I'm sorry, but I'm"
+000315.png,1,"I'm sorry, but I'm"
+000315.png,2,benign
+000315.png,3,benign
+000315.png,4,"I'm sorry, I'm not"
+000315.png,5,"I'm sorry, I can't"
+000315.png,6,benign
+000315.png,7,Benign.
+000316.png,0,"I'm sorry, I cannot provide"
+000316.png,1,"I'm sorry, I can't"
+000316.png,2,"I'm sorry, but I can"
+000316.png,3,"I'm sorry, but I cannot"
+000316.png,4,"I'm sorry, I can't"
+000316.png,5,"I'm sorry, but I cannot"
+000316.png,6,"I'm sorry, I can't"
+000316.png,7,Malignant
+000317.png,0,"I'm sorry, but I can"
+000317.png,1,"I'm sorry, but as an"
+000317.png,2,"I'm sorry, I can't"
+000317.png,3,"I'm sorry, I can't"
+000317.png,4,"I'm sorry, I can't"
+000317.png,5,"I'm sorry, I cannot provide"
+000317.png,6,Benign.
+000317.png,7,Benign
+000318.png,0,"I'm sorry, I can't"
+000318.png,1,"I'm sorry, I can't"
+000318.png,2,"I'm sorry, but I can"
+000318.png,3,"I'm sorry, I can't"
+000318.png,4,"I'm sorry, I can't"
+000318.png,5,"I'm sorry, I'm not"
+000318.png,6,Malignant
+000318.png,7,Malignant
+000319.png,0,"I'm sorry, I can't"
+000319.png,1,"I'm sorry, I'm not"
+000319.png,2,"I'm sorry, I can't"
+000319.png,3,"I'm sorry, I can't"
+000319.png,4,"I'm sorry, I cannot provide"
+000319.png,5,benign
+000319.png,6,"I'm sorry, I can't"
+000319.png,7,Malignant
+000320.png,0,"I'm sorry, but I cannot"
+000320.png,1,"I'm sorry, I can't"
+000320.png,2,"I'm sorry, I can't"
+000320.png,3,Benign.
+000320.png,4,benign
+000320.png,5,benign
+000320.png,6,Benign
+000320.png,7,Benign.
+000321.png,0,"I'm sorry, I can't"
+000321.png,1,"I'm sorry, I can't"
+000321.png,2,benign
+000321.png,3,"I'm sorry, I can't"
+000321.png,4,benign
+000321.png,5,Benign.
+000321.png,6,benign
+000321.png,7,Malignant
+000322.png,0,"I'm sorry, I can't"
+000322.png,1,"I'm sorry, I cannot provide"
+000322.png,2,"I'm sorry, but I cannot"
+000322.png,3,benign
+000322.png,4,"I'm sorry, I can't"
+000322.png,5,Unable to determine
+000322.png,6,Benign.
+000322.png,7,Benign.
+000323.png,0,"I'm sorry, I can't"
+000323.png,1,"I'm sorry, but I'm"
+000323.png,2,Malignant
+000323.png,3,Malignant
+000323.png,4,"I'm sorry, but I cannot"
+000323.png,5,"I'm sorry, I can't"
+000323.png,6,Malignant.
+000323.png,7,Malignant
+000324.png,0,"I'm sorry, I can't"
+000324.png,1,"I'm sorry, I can't"
+000324.png,2,"I'm sorry, but I can"
+000324.png,3,benign
+000324.png,4,"I'm sorry, I can't"
+000324.png,5,"I'm sorry, I can't"
+000324.png,6,"I'm sorry, I can't"
+000324.png,7,Benign.
+000325.png,0,"I'm sorry, but I cannot"
+000325.png,1,"I'm sorry, but I cannot"
+000325.png,2,"I'm sorry, but I cannot"
+000325.png,3,Benign
+000325.png,4,"I'm sorry, but I can"
+000325.png,5,"I'm sorry, I can't"
+000325.png,6,Benign.
+000325.png,7,Benign
+000326.png,0,"I'm sorry, I can't"
+000326.png,1,"I'm sorry, but I cannot"
+000326.png,2,Benign.
+000326.png,3,benign
+000326.png,4,benign
+000326.png,5,"I'm sorry, I can't"
+000326.png,6,Benign.
+000326.png,7,Malignant
+000327.png,0,"I'm sorry, but I'm"
+000327.png,1,"I'm sorry, but I cannot"
+000327.png,2,"I'm sorry, I can't"
+000327.png,3,Benign.
+000327.png,4,benign
+000327.png,5,"I'm sorry, I can't"
+000327.png,6,"I'm sorry, I can't"
+000327.png,7,Benign.
+000328.png,0,"I'm sorry, I can't"
+000328.png,1,"I'm sorry, I can't"
+000328.png,2,"I'm sorry, I can't"
+000328.png,3,Benign.
+000328.png,4,"I'm sorry, I can't"
+000328.png,5,"I'm sorry, I can't"
+000328.png,6,Benign
+000328.png,7,Benign.
+000329.png,0,"I'm sorry, but I'm"
+000329.png,1,"I'm sorry, I can't"
+000329.png,2,"I'm sorry, I can't"
+000329.png,3,"I'm sorry, I can't"
+000329.png,4,"I'm sorry, I can't"
+000329.png,5,"I'm sorry, I can't"
+000329.png,6,benign
+000329.png,7,Benign.
+000330.png,0,"Sorry, I can't assist with"
+000330.png,1,"I'm sorry, I'm not"
+000330.png,2,"I'm sorry, but I cannot"
+000330.png,3,benign
+000330.png,4,"I'm sorry, I can't"
+000330.png,5,"I'm sorry, I cannot provide"
+000330.png,6,Benign.
+000330.png,7,benign
+000331.png,0,"I'm sorry, I can't"
+000331.png,1,"I'm sorry, I cannot provide"
+000331.png,2,"I'm sorry, I can't"
+000331.png,3,Benign.
+000331.png,4,"I'm sorry, I can't"
+000331.png,5,"I'm sorry, I can't"
+000331.png,6,Benign
+000331.png,7,Benign.
+000332.png,0,"I'm sorry, but I'm"
+000332.png,1,"I'm sorry, but I cannot"
+000332.png,2,"I'm sorry, I can't"
+000332.png,3,Malignant
+000332.png,4,"I'm sorry, I can't"
+000332.png,5,benign
+000332.png,6,Benign.
+000332.png,7,Malignant
+000333.png,0,"I'm sorry, but I'm"
+000333.png,1,"I'm sorry, but I cannot"
+000333.png,2,"I'm sorry, I can't"
+000333.png,3,benign
+000333.png,4,Benign.
+000333.png,5,"Sorry, I can't help with"
+000333.png,6,benign
+000333.png,7,Benign
+000334.png,0,"I'm sorry, I can't"
+000334.png,1,"I'm sorry, I'm not"
+000334.png,2,Benign
+000334.png,3,"I'm sorry, I can't"
+000334.png,4,Benign.
+000334.png,5,"I'm sorry, I'm not"
+000334.png,6,Benign
+000334.png,7,Benign
+000335.png,0,"I'm sorry, but I'm"
+000335.png,1,"I'm sorry, but I cannot"
+000335.png,2,benign
+000335.png,3,"I'm sorry, but I can"
+000335.png,4,benign
+000335.png,5,"I'm sorry, I can't"
+000335.png,6,Benign
+000335.png,7,Benign.
+000336.png,0,"I'm sorry, but I cannot"
+000336.png,1,"I'm sorry, I can't"
+000336.png,2,Benign.
+000336.png,3,Benign.
+000336.png,4,benign
+000336.png,5,"I'm sorry, I can't"
+000336.png,6,Benign.
+000336.png,7,benign
+000337.png,0,"I'm sorry, I can't"
+000337.png,1,"I'm sorry, but I'm"
+000337.png,2,"I'm sorry, but I can"
+000337.png,3,Benign.
+000337.png,4,"I'm sorry, I can't"
+000337.png,5,"Sorry, I can't help with"
+000337.png,6,benign
+000337.png,7,benign
+000338.png,0,"I'm sorry, but I cannot"
+000338.png,1,"I'm sorry, I can't"
+000338.png,2,benign
+000338.png,3,"Sorry, I can't help with"
+000338.png,4,"I'm sorry, I can't"
+000338.png,5,"I'm sorry, I can't"
+000338.png,6,Benign.
+000338.png,7,Benign.
+000339.png,0,"I'm sorry, but I can"
+000339.png,1,"I'm sorry, I can't"
+000339.png,2,benign
+000339.png,3,Benign.
+000339.png,4,Benign.
+000339.png,5,"I'm sorry, I can't"
+000339.png,6,Benign
+000339.png,7,Benign.
+000340.png,0,"I'm sorry, but I'm"
+000340.png,1,"I'm sorry, I can't"
+000340.png,2,"I'm sorry, but I can"
+000340.png,3,"I'm sorry, but I cannot"
+000340.png,4,"I'm sorry, I can't"
+000340.png,5,"I'm sorry, I can't"
+000340.png,6,"I'm sorry, I can't"
+000340.png,7,Malignant
+000341.png,0,"I'm sorry, but I cannot"
+000341.png,1,"I'm sorry, but I cannot"
+000341.png,2,benign
+000341.png,3,Malignant
+000341.png,4,"I'm sorry, but I can"
+000341.png,5,"I'm sorry, I can't"
+000341.png,6,"I'm sorry, I can't"
+000341.png,7,Malignant
+000342.png,0,"I'm sorry, I can't"
+000342.png,1,"I'm sorry, I can't"
+000342.png,2,"I'm sorry, but I can"
+000342.png,3,Malignant
+000342.png,4,"I'm sorry, I can't"
+000342.png,5,"I'm sorry, but I can"
+000342.png,6,Benign.
+000342.png,7,Malignant
+000343.png,0,"I'm sorry, but I'm"
+000343.png,1,"I'm sorry, I'm not"
+000343.png,2,"I'm sorry, I can't"
+000343.png,3,Benign.
+000343.png,4,"I'm sorry, I can't"
+000343.png,5,"I'm sorry, I can't"
+000343.png,6,Benign.
+000343.png,7,Benign.
+000344.png,0,"I'm sorry, I can't"
+000344.png,1,"I'm sorry, but I'm"
+000344.png,2,Benign.
+000344.png,3,Malignant
+000344.png,4,"I'm sorry, I can't"
+000344.png,5,"I'm sorry, I can't"
+000344.png,6,Malignant
+000344.png,7,Malignant
+000345.png,0,"I'm sorry, I can't"
+000345.png,1,"I'm sorry, I'm not"
+000345.png,2,"I'm sorry, but I cannot"
+000345.png,3,"I'm sorry, but I can"
+000345.png,4,benign
+000345.png,5,"I'm sorry, I can't"
+000345.png,6,Benign
+000345.png,7,Malignant
+000346.png,0,"I'm sorry, but I cannot"
+000346.png,1,"I'm sorry, I can't"
+000346.png,2,benign
+000346.png,3,"I'm sorry, I can't"
+000346.png,4,"I'm sorry, but I can"
+000346.png,5,"I'm sorry, but I can"
+000346.png,6,benign
+000346.png,7,Benign.
+000347.png,0,"I'm sorry, I can't"
+000347.png,1,"I'm sorry, but I can"
+000347.png,2,benign
+000347.png,3,Benign.
+000347.png,4,benign
+000347.png,5,"I'm sorry, I can't"
+000347.png,6,Benign.
+000347.png,7,Benign.
+000348.png,0,"I'm sorry, I can't"
+000348.png,1,"I'm sorry, but as an"
+000348.png,2,"I'm sorry, I can't"
+000348.png,3,"I'm sorry, I am not"
+000348.png,4,"I'm sorry, I can't"
+000348.png,5,"Sorry, I can't assist with"
+000348.png,6,Benign
+000348.png,7,Benign.
+000349.png,0,"I'm sorry, but I cannot"
+000349.png,1,"I'm sorry, but I cannot"
+000349.png,2,"I'm sorry, but I can"
+000349.png,3,benign
+000349.png,4,"I'm sorry, I can't"
+000349.png,5,"I'm sorry, I can't"
+000349.png,6,Malignant
+000349.png,7,benign
+000350.png,0,"I'm sorry, I can't"
+000350.png,1,"I'm sorry, but I cannot"
+000350.png,2,Benign.
+000350.png,3,Benign.
+000350.png,4,Benign.
+000350.png,5,"I'm sorry, but I cannot"
+000350.png,6,Benign
+000350.png,7,Benign.
+000351.png,0,"I'm sorry, but I can"
+000351.png,1,"I'm sorry, but I can"
+000351.png,2,benign
+000351.png,3,"I'm sorry, but I am"
+000351.png,4,"I'm sorry, but I'm"
+000351.png,5,"I'm sorry, I can't"
+000351.png,6,"I'm sorry, I can't"
+000351.png,7,Malignant
+000352.png,0,"I'm sorry, but I'm"
+000352.png,1,"I'm sorry, but I can"
+000352.png,2,benign
+000352.png,3,"I'm sorry, I can't"
+000352.png,4,"I'm sorry, I can't"
+000352.png,5,"I'm sorry, I'm not"
+000352.png,6,benign
+000352.png,7,Malignant
+000353.png,0,"I'm sorry, I can't"
+000353.png,1,"I'm sorry, I'm not"
+000353.png,2,"I'm sorry, I can't"
+000353.png,3,Benign
+000353.png,4,"I'm sorry, I can't"
+000353.png,5,Benign.
+000353.png,6,benign
+000353.png,7,Benign.
+000354.png,0,"I'm sorry, but I am"
+000354.png,1,"I'm sorry, but I can"
+000354.png,2,"I'm sorry, but I can"
+000354.png,3,"I'm sorry, but I cannot"
+000354.png,4,Benign.
+000354.png,5,Benign.
+000354.png,6,"I'm sorry, I can't"
+000354.png,7,Malignant
+000355.png,0,"I'm sorry, I can't"
+000355.png,1,"I'm sorry, but I'm"
+000355.png,2,"I'm sorry, I can't"
+000355.png,3,Benign
+000355.png,4,"I'm sorry, I can't"
+000355.png,5,"I'm sorry, I can't"
+000355.png,6,"I'm sorry, I can't"
+000355.png,7,Benign
+000356.png,0,"I'm sorry, I can't"
+000356.png,1,"I'm sorry, but I cannot"
+000356.png,2,"I'm sorry, I can't"
+000356.png,3,"I'm sorry, I can't"
+000356.png,4,"I'm sorry, but I can"
+000356.png,5,"I'm sorry, I cannot provide"
+000356.png,6,benign
+000356.png,7,Malignant
+000357.png,0,"I'm sorry, but I'm"
+000357.png,1,"I'm sorry, but I'm"
+000357.png,2,"I'm sorry, I can't"
+000357.png,3,"I'm sorry, I can't"
+000357.png,4,"I'm sorry, I can't"
+000357.png,5,"I'm sorry, I cannot assist"
+000357.png,6,"I'm sorry, I can't"
+000357.png,7,benign
+000358.png,0,"I'm sorry, I can't"
+000358.png,1,"I'm sorry, but I cannot"
+000358.png,2,"I'm sorry, I can't"
+000358.png,3,benign
+000358.png,4,"I'm sorry, I can't"
+000358.png,5,"I'm sorry, but I cannot"
+000358.png,6,"I'm sorry, I can't"
+000358.png,7,Malignant
+000359.png,0,"I'm sorry, but I can"
+000359.png,1,"I'm sorry, I can't"
+000359.png,2,"I'm sorry, I can't"
+000359.png,3,Malignant
+000359.png,4,"I'm sorry, I can't"
+000359.png,5,"I'm sorry, but I cannot"
+000359.png,6,Malignant
+000359.png,7,Malignant
+000360.png,0,"I'm sorry, but I cannot"
+000360.png,1,"I'm sorry, I cannot assist"
+000360.png,2,"I'm sorry, but I can"
+000360.png,3,"I'm sorry, but I cannot"
+000360.png,4,benign
+000360.png,5,"I'm sorry, but I cannot"
+000360.png,6,Benign.
+000360.png,7,Malignant
+000361.png,0,"I'm sorry, but I cannot"
+000361.png,1,"I'm sorry, I can't"
+000361.png,2,"I'm sorry, I can't"
+000361.png,3,benign
+000361.png,4,Benign.
+000361.png,5,"I'm sorry, I can't"
+000361.png,6,Malignant
+000361.png,7,Benign.
+000362.png,0,"I'm sorry, I can't"
+000362.png,1,"I'm sorry, but I'm"
+000362.png,2,"I'm sorry, I can't"
+000362.png,3,"I'm sorry, but I cannot"
+000362.png,4,"I'm sorry, I can't"
+000362.png,5,"I'm sorry, I can't"
+000362.png,6,"I'm sorry, I can't"
+000362.png,7,benign
+000363.png,0,"I'm sorry, but I'm"
+000363.png,1,"I'm sorry, I can't"
+000363.png,2,benign
+000363.png,3,"I'm sorry, I can't"
+000363.png,4,"Sorry, I can't assist with"
+000363.png,5,"I'm sorry, but I cannot"
+000363.png,6,benign
+000363.png,7,Benign
+000364.png,0,"I'm sorry, but I'm"
+000364.png,1,"I'm sorry, but I'm"
+000364.png,2,"I'm sorry, I can't"
+000364.png,3,"I'm sorry, but I can"
+000364.png,4,"I'm sorry, I cannot assist"
+000364.png,5,"I'm sorry, but I cannot"
+000364.png,6,"I'm sorry, I'm not"
+000364.png,7,Benign.
+000365.png,0,"I'm sorry, but I cannot"
+000365.png,1,"I'm sorry, but I am"
+000365.png,2,"I'm sorry, but I can"
+000365.png,3,Benign.
+000365.png,4,benign
+000365.png,5,"I'm sorry, I can't"
+000365.png,6,Benign.
+000365.png,7,Benign.
+000366.png,0,"I'm sorry, I cannot provide"
+000366.png,1,"I'm sorry, but I cannot"
+000366.png,2,benign
+000366.png,3,benign
+000366.png,4,"I'm sorry, but I cannot"
+000366.png,5,"I'm sorry, I cannot provide"
+000366.png,6,Benign.
+000366.png,7,Benign
+000367.png,0,"I'm sorry, but I can"
+000367.png,1,"I'm sorry, but I cannot"
+000367.png,2,"I'm sorry, I can't"
+000367.png,3,"I'm sorry, I can't"
+000367.png,4,"I'm sorry, I can't"
+000367.png,5,"I'm sorry, I can't"
+000367.png,6,Benign.
+000367.png,7,benign
+000368.png,0,"I'm sorry, I can't"
+000368.png,1,"I'm sorry, but I'm"
+000368.png,2,benign
+000368.png,3,Benign.
+000368.png,4,"I'm sorry, I can't"
+000368.png,5,"I'm sorry, I can't"
+000368.png,6,"I'm sorry, I can't"
+000368.png,7,Benign.
+000369.png,0,"I'm sorry, I can't"
+000369.png,1,"I'm sorry, but I cannot"
+000369.png,2,"I'm sorry, but I cannot"
+000369.png,3,Benign.
+000369.png,4,benign
+000369.png,5,benign
+000369.png,6,benign
+000369.png,7,Benign.
+000370.png,0,"I'm sorry, but I cannot"
+000370.png,1,"I'm sorry, but I'm"
+000370.png,2,"I'm sorry, I can't"
+000370.png,3,Benign
+000370.png,4,benign
+000370.png,5,Benign.
+000370.png,6,Benign
+000370.png,7,Benign.
+000371.png,0,"I'm sorry, but I cannot"
+000371.png,1,"I'm sorry, but I cannot"
+000371.png,2,"I'm sorry, I can't"
+000371.png,3,"I'm sorry, but I cannot"
+000371.png,4,"I'm sorry, but I cannot"
+000371.png,5,"I'm sorry, I can't"
+000371.png,6,"I'm sorry, I can't"
+000371.png,7,Malignant
+000372.png,0,"I'm sorry, but I'm"
+000372.png,1,"I'm sorry, I can't"
+000372.png,2,benign
+000372.png,3,benign
+000372.png,4,benign
+000372.png,5,"I'm sorry, I cannot provide"
+000372.png,6,"I'm sorry, I can't"
+000372.png,7,Malignant
+000373.png,0,"I'm sorry, I cannot provide"
+000373.png,1,"I'm sorry, but I can"
+000373.png,2,"I'm sorry, I'm not"
+000373.png,3,Benign.
+000373.png,4,benign
+000373.png,5,"I'm sorry, I can't"
+000373.png,6,"I'm sorry, I can't"
+000373.png,7,Malignant
+000374.png,0,"I'm sorry, but I cannot"
+000374.png,1,"I'm sorry, but as an"
+000374.png,2,"I'm sorry, I cannot assist"
+000374.png,3,"I'm sorry, I can't"
+000374.png,4,Benign.
+000374.png,5,benign
+000374.png,6,"I'm sorry, I can't"
+000374.png,7,Benign.
+000375.png,0,"I'm sorry, but I can"
+000375.png,1,"I'm sorry, but I can"
+000375.png,2,"I'm sorry, but I cannot"
+000375.png,3,Benign.
+000375.png,4,Benign.
+000375.png,5,Benign.
+000375.png,6,Malignant
+000375.png,7,Malignant
+000376.png,0,"I'm sorry, I cannot provide"
+000376.png,1,"I'm sorry, but I cannot"
+000376.png,2,"I'm sorry, I can't"
+000376.png,3,Benign.
+000376.png,4,"I'm sorry, I can't"
+000376.png,5,"I'm sorry, but as an"
+000376.png,6,Benign.
+000376.png,7,Benign.
+000377.png,0,"I'm sorry, but I'm"
+000377.png,1,"I'm sorry, but I cannot"
+000377.png,2,"I'm sorry, but I can"
+000377.png,3,Malignant
+000377.png,4,"I'm sorry, I cannot provide"
+000377.png,5,"Sorry, but I can't provide"
+000377.png,6,Malignant
+000377.png,7,Malignant
+000378.png,0,"I'm sorry, I can't"
+000378.png,1,"I'm sorry, I can't"
+000378.png,2,"I'm sorry, I can't"
+000378.png,3,Malignant
+000378.png,4,"I'm sorry, I can't"
+000378.png,5,"I'm sorry, but I cannot"
+000378.png,6,"I'm sorry, but I cannot"
+000378.png,7,Malignant
+000379.png,0,"I'm sorry, I can't"
+000379.png,1,"I'm sorry, but I cannot"
+000379.png,2,benign
+000379.png,3,Benign.
+000379.png,4,benign
+000379.png,5,Benign.
+000379.png,6,Benign
+000379.png,7,Benign.
+000380.png,0,"I'm sorry, I can't"
+000380.png,1,"I'm sorry, I can't"
+000380.png,2,"I'm sorry, I can't"
+000380.png,3,"I'm sorry, I can't"
+000380.png,4,"I'm sorry, I can't"
+000380.png,5,As an AI developed by OpenAI
+000380.png,6,benign
+000380.png,7,Malignant.
+000381.png,0,"I'm sorry, I can't"
+000381.png,1,"I'm sorry, but I cannot"
+000381.png,2,"I'm sorry, I can't"
+000381.png,3,"I'm sorry, I can't"
+000381.png,4,"I'm sorry, I can't"
+000381.png,5,"I'm sorry, but I'm"
+000381.png,6,Benign
+000381.png,7,Malignant
+000382.png,0,"I'm sorry, I cannot provide"
+000382.png,1,"I'm sorry, I can't"
+000382.png,2,"I'm sorry, but I cannot"
+000382.png,3,"I'm sorry, but I cannot"
+000382.png,4,"I'm sorry, I can't"
+000382.png,5,"I'm sorry, I can't"
+000382.png,6,"I'm sorry, I can't"
+000382.png,7,Malignant
+000383.png,0,"I'm sorry, but I am"
+000383.png,1,"I'm sorry, I can't"
+000383.png,2,"I'm sorry, I can't"
+000383.png,3,"I'm sorry, I can't"
+000383.png,4,"I'm sorry, I can't"
+000383.png,5,"I'm sorry, I cannot provide"
+000383.png,6,"I'm sorry, I can't"
+000383.png,7,Malignant
+000384.png,0,"I'm sorry, I cannot assist"
+000384.png,1,"I'm sorry, but I'm"
+000384.png,2,"Sorry, I can't assist with"
+000384.png,3,Benign.
+000384.png,4,benign
+000384.png,5,"I'm sorry, I can't"
+000384.png,6,"I'm sorry, I can't"
+000384.png,7,benign
+000385.png,0,"I'm sorry, I can't"
+000385.png,1,"I'm sorry, but I'm"
+000385.png,2,"I'm sorry, but I can"
+000385.png,3,"I'm sorry, I can't"
+000385.png,4,"I'm sorry, but I'm"
+000385.png,5,"I'm sorry, I can't"
+000385.png,6,benign
+000385.png,7,Malignant
+000386.png,0,"I'm sorry, I can't"
+000386.png,1,"I'm sorry, I'm not"
+000386.png,2,"I'm sorry, I can't"
+000386.png,3,Malignant
+000386.png,4,"I'm sorry, I can't"
+000386.png,5,benign
+000386.png,6,Benign.
+000386.png,7,Malignant
+000387.png,0,"I'm sorry, I'm not"
+000387.png,1,"I'm sorry, but I can"
+000387.png,2,"I'm sorry, I can't"
+000387.png,3,benign
+000387.png,4,"I'm sorry, I can't"
+000387.png,5,"I'm sorry, I can't"
+000387.png,6,Malignant
+000387.png,7,benign
+000388.png,0,"I'm sorry, I can't"
+000388.png,1,"I'm sorry, but I can"
+000388.png,2,"I'm sorry, but I cannot"
+000388.png,3,Benign.
+000388.png,4,Benign.
+000388.png,5,"I'm sorry, I can't"
+000388.png,6,Benign
+000388.png,7,Benign.
+000389.png,0,"I'm sorry, I'm not"
+000389.png,1,"I'm sorry, I can't"
+000389.png,2,"I'm sorry, I can't"
+000389.png,3,"I'm sorry, I can't"
+000389.png,4,"I'm sorry, I can't"
+000389.png,5,benign
+000389.png,6,Benign.
+000389.png,7,Benign.
+000390.png,0,"I'm sorry, but I'm"
+000390.png,1,"I'm sorry, but I'm"
+000390.png,2,"I'm sorry, I can't"
+000390.png,3,Benign.
+000390.png,4,"I'm sorry, I can't"
+000390.png,5,"I'm sorry, but I cannot"
+000390.png,6,Malignant.
+000390.png,7,Malignant
+000391.png,0,"I'm sorry, I can't"
+000391.png,1,"I'm sorry, but I cannot"
+000391.png,2,"I'm sorry, I can't"
+000391.png,3,"I'm sorry, I can't"
+000391.png,4,"I'm sorry, I can't"
+000391.png,5,"I'm sorry, I can't"
+000391.png,6,Benign.
+000391.png,7,Benign.
+000392.png,0,"I'm sorry, but I'm"
+000392.png,1,"I'm sorry, but I can"
+000392.png,2,Benign
+000392.png,3,"I'm sorry, I can't"
+000392.png,4,"I'm sorry, but I cannot"
+000392.png,5,"I'm sorry, I can't"
+000392.png,6,"I'm sorry, I can't"
+000392.png,7,benign
+000393.png,0,"I'm sorry, but I cannot"
+000393.png,1,"I'm sorry, I can't"
+000393.png,2,"I'm sorry, but I can"
+000393.png,3,"I'm sorry, but I cannot"
+000393.png,4,"I'm sorry, I can't"
+000393.png,5,"I'm sorry, but I'm"
+000393.png,6,Malignant
+000393.png,7,Malignant
+000394.png,0,"I'm sorry, but I cannot"
+000394.png,1,"I'm sorry, I can't"
+000394.png,2,"I'm sorry, I can't"
+000394.png,3,Benign.
+000394.png,4,"I'm sorry, I can't"
+000394.png,5,"I'm sorry, but I can"
+000394.png,6,"I'm sorry, I can't"
+000394.png,7,Benign
+000395.png,0,"I'm sorry, but I can"
+000395.png,1,"I'm sorry, but I'm"
+000395.png,2,"I'm sorry, I can't"
+000395.png,3,benign
+000395.png,4,"I'm sorry, I can't"
+000395.png,5,"I'm sorry, I can't"
+000395.png,6,"I'm sorry, I can't"
+000395.png,7,Malignant
+000396.png,0,"I'm sorry, I can't"
+000396.png,1,"I'm sorry, but I cannot"
+000396.png,2,Benign
+000396.png,3,"I'm sorry, I can't"
+000396.png,4,"I'm sorry, I can't"
+000396.png,5,benign
+000396.png,6,"I'm sorry, I can't"
+000396.png,7,"I'm sorry, I cannot provide"
+000397.png,0,"I'm sorry, but I cannot"
+000397.png,1,"I'm sorry, but I cannot"
+000397.png,2,"I'm sorry, I can't"
+000397.png,3,"I'm sorry, I can't"
+000397.png,4,benign
+000397.png,5,"I'm sorry, I can't"
+000397.png,6,"I'm sorry, I can't"
+000397.png,7,Benign.
+000398.png,0,"I'm sorry, I'm not"
+000398.png,1,"I'm sorry, I can't"
+000398.png,2,"I'm sorry, I can't"
+000398.png,3,"I'm sorry, I can't"
+000398.png,4,"I'm sorry, I can't"
+000398.png,5,"I'm sorry, I can't"
+000398.png,6,Malignant
+000398.png,7,Malignant
+000399.png,0,"I'm sorry, but I cannot"
+000399.png,1,"I'm sorry, I can't"
+000399.png,2,"I'm sorry, but I cannot"
+000399.png,3,"I'm sorry, I cannot provide"
+000399.png,4,"I'm sorry, I can't"
+000399.png,5,"I'm sorry, I cannot provide"
+000399.png,6,"I'm sorry, I can't"
+000399.png,7,benign
+000400.png,0,"I'm sorry, I can't"
+000400.png,1,"I'm sorry, but I'm"
+000400.png,2,"I'm sorry, I can't"
+000400.png,3,Malignant
+000400.png,4,"I'm sorry, I can't"
+000400.png,5,"I'm sorry, I cannot provide"
+000400.png,6,"I'm sorry, I can't"
+000400.png,7,Malignant
+000401.png,0,"I'm sorry, but I'm"
+000401.png,1,"I'm sorry, I cannot provide"
+000401.png,2,"I'm sorry, but I cannot"
+000401.png,3,"I'm sorry, but I cannot"
+000401.png,4,"I'm sorry, I can't"
+000401.png,5,"I'm sorry, but I can"
+000401.png,6,Malignant
+000401.png,7,Malignant.
+000402.png,0,"I'm sorry, but I'm"
+000402.png,1,"I'm sorry, I can't"
+000402.png,2,"I'm sorry, I can't"
+000402.png,3,Malignant
+000402.png,4,benign
+000402.png,5,"I'm sorry, I can't"
+000402.png,6,Malignant
+000402.png,7,Malignant
+000403.png,0,"I'm sorry, I can't"
+000403.png,1,"I'm sorry, but I can"
+000403.png,2,"I'm sorry, I can't"
+000403.png,3,"I'm sorry, I can't"
+000403.png,4,"I'm sorry, I can't"
+000403.png,5,"I'm sorry, I can't"
+000403.png,6,Benign
+000403.png,7,Benign
+000404.png,0,"I'm sorry, I can't"
+000404.png,1,"I'm sorry, but I cannot"
+000404.png,2,"I'm sorry, I can't"
+000404.png,3,"I'm sorry, but I can"
+000404.png,4,"I'm sorry, I can't"
+000404.png,5,"I'm sorry, but I am"
+000404.png,6,"I'm sorry, I can't"
+000404.png,7,Benign.
+000405.png,0,"I'm sorry, I can't"
+000405.png,1,"I'm sorry, I can't"
+000405.png,2,"I'm sorry, I can't"
+000405.png,3,Malignant
+000405.png,4,"I'm sorry, I can't"
+000405.png,5,"I'm sorry, I can't"
+000405.png,6,Malignant
+000405.png,7,Malignant
+000406.png,0,"I'm sorry, but I can"
+000406.png,1,"I'm sorry, but I'm"
+000406.png,2,"I'm sorry, I can't"
+000406.png,3,"I'm sorry, I can't"
+000406.png,4,Benign.
+000406.png,5,"I'm sorry, I can't"
+000406.png,6,Benign.
+000406.png,7,Malignant
+000407.png,0,"I'm sorry, I can't"
+000407.png,1,"I'm sorry, I'm not"
+000407.png,2,"I'm sorry, I can't"
+000407.png,3,Benign.
+000407.png,4,"I'm sorry, I can't"
+000407.png,5,"I'm sorry, but I can"
+000407.png,6,benign
+000407.png,7,Malignant
+000408.png,0,"I'm sorry, but I can"
+000408.png,1,"I'm sorry, but I can"
+000408.png,2,"I'm sorry, I can't"
+000408.png,3,"I'm sorry, I can't"
+000408.png,4,"I'm sorry, I can't"
+000408.png,5,"I'm sorry, I can't"
+000408.png,6,malignant
+000408.png,7,Malignant
+000409.png,0,"I'm sorry, but I'm"
+000409.png,1,"I'm sorry, I'm not"
+000409.png,2,"I'm sorry, I can't"
+000409.png,3,"I'm sorry, but I can"
+000409.png,4,"I'm sorry, but I can"
+000409.png,5,"I'm sorry, but I cannot"
+000409.png,6,Malignant
+000409.png,7,Malignant.
+000410.png,0,"I'm sorry, but I cannot"
+000410.png,1,"I'm sorry, I can't"
+000410.png,2,"I'm sorry, I can't"
+000410.png,3,"I'm sorry, I can't"
+000410.png,4,"I'm sorry, but I cannot"
+000410.png,5,"I'm sorry, but I can"
+000410.png,6,"Sorry, I can't provide assistance"
+000410.png,7,benign
+000411.png,0,"I'm sorry, I'm not"
+000411.png,1,"I'm sorry, but I can"
+000411.png,2,"I'm sorry, I cannot assist"
+000411.png,3,Benign.
+000411.png,4,"I'm sorry, but I cannot"
+000411.png,5,"I'm sorry, but I can"
+000411.png,6,Benign.
+000411.png,7,Benign.
+000412.png,0,"I'm sorry, I'm not"
+000412.png,1,"I'm sorry, I can't"
+000412.png,2,"I'm sorry, I can't"
+000412.png,3,"I'm sorry, I can't"
+000412.png,4,"I'm sorry, I can't"
+000412.png,5,"I'm sorry, but I cannot"
+000412.png,6,"I'm sorry, I can't"
+000412.png,7,Benign.
+000413.png,0,"I'm sorry, but I cannot"
+000413.png,1,"I'm sorry, I'm not"
+000413.png,2,"I'm sorry, but I can"
+000413.png,3,Malignant
+000413.png,4,"I'm sorry, but I cannot"
+000413.png,5,"I'm sorry, I cannot provide"
+000413.png,6,"I'm sorry, I can't"
+000413.png,7,Malignant.
+000414.png,0,"I'm sorry, I can't"
+000414.png,1,"I'm sorry, I'm not"
+000414.png,2,"I'm sorry, I can't"
+000414.png,3,"I'm sorry, but I cannot"
+000414.png,4,"I'm sorry, I can't"
+000414.png,5,"I'm sorry, I cannot provide"
+000414.png,6,"I'm sorry, I can't"
+000414.png,7,Benign.
+000415.png,0,"I'm sorry, I can't"
+000415.png,1,"I'm sorry, I can't"
+000415.png,2,"I'm sorry, I can't"
+000415.png,3,"I'm sorry, but as an"
+000415.png,4,"I'm sorry, I can't"
+000415.png,5,benign
+000415.png,6,benign
+000415.png,7,Malignant.
+000416.png,0,"I'm sorry, but I cannot"
+000416.png,1,"I'm sorry, but I can"
+000416.png,2,"I'm sorry, I can't"
+000416.png,3,"I'm sorry, I can't"
+000416.png,4,"I'm sorry, I can't"
+000416.png,5,"I'm sorry, I cannot provide"
+000416.png,6,"I'm sorry, I can't"
+000416.png,7,Malignant
+000417.png,0,"I'm sorry, I can't"
+000417.png,1,"I'm sorry, I can't"
+000417.png,2,"I'm sorry, I can't"
+000417.png,3,"I'm sorry, but I cannot"
+000417.png,4,"I'm sorry, I can't"
+000417.png,5,"I'm sorry, I can't"
+000417.png,6,"I'm sorry, but I'm"
+000417.png,7,"I'm sorry, but I can"
+000418.png,0,"I'm sorry, but I cannot"
+000418.png,1,"I'm sorry, I can't"
+000418.png,2,"I'm sorry, I can't"
+000418.png,3,Malignant
+000418.png,4,"I'm sorry, I can't"
+000418.png,5,"I'm sorry, I can't"
+000418.png,6,Malignant
+000418.png,7,Malignant
+000419.png,0,"I'm sorry, I can't"
+000419.png,1,"Sorry, I'm not able to"
+000419.png,2,"I'm sorry, but I can"
+000419.png,3,Benign
+000419.png,4,"I'm sorry, but I cannot"
+000419.png,5,"I'm sorry, I can't"
+000419.png,6,"I'm sorry, I can't"
+000419.png,7,Malignant
+000420.png,0,"I'm sorry, but I cannot"
+000420.png,1,"I'm sorry, but I cannot"
+000420.png,2,"I'm sorry, I can't"
+000420.png,3,"I'm sorry, I can't"
+000420.png,4,"I'm sorry, but I can"
+000420.png,5,"I'm sorry, I can't"
+000420.png,6,"I'm sorry, I can't"
+000420.png,7,Malignant
+000421.png,0,"I'm sorry, I can't"
+000421.png,1,"I'm sorry, I can't"
+000421.png,2,"I'm sorry, I can't"
+000421.png,3,Malignant
+000421.png,4,benign
+000421.png,5,"I'm sorry, I'm not"
+000421.png,6,Malignant
+000421.png,7,Malignant
+000422.png,0,"I'm sorry, I am not"
+000422.png,1,"I'm sorry, but as an"
+000422.png,2,"I'm sorry, but I'm"
+000422.png,3,"I'm sorry, I cannot provide"
+000422.png,4,"I'm sorry, but I can"
+000422.png,5,benign
+000422.png,6,Benign.
+000422.png,7,"I'm sorry, I cannot provide"
+000423.png,0,"I'm sorry, I cannot provide"
+000423.png,1,"I'm sorry, I can't"
+000423.png,2,"I'm sorry, I'm not"
+000423.png,3,benign
+000423.png,4,Benign.
+000423.png,5,"I'm sorry, I can't"
+000423.png,6,Malignant
+000423.png,7,Malignant
+000424.png,0,"I'm sorry, but I cannot"
+000424.png,1,"I'm sorry, but I cannot"
+000424.png,2,"I'm sorry, I can't"
+000424.png,3,Malignant
+000424.png,4,"I'm sorry, I can't"
+000424.png,5,"I'm sorry, I can't"
+000424.png,6,Malignant
+000424.png,7,Benign.
+000425.png,0,"I'm sorry, but I'm"
+000425.png,1,"I'm sorry, I can't"
+000425.png,2,"I'm sorry, I can't"
+000425.png,3,"I'm sorry, I can't"
+000425.png,4,"I'm sorry, I can't"
+000425.png,5,Benign.
+000425.png,6,"I'm sorry, I can't"
+000425.png,7,benign
+000426.png,0,"I'm sorry, but I'm"
+000426.png,1,"I'm sorry, but I cannot"
+000426.png,2,"I'm sorry, I can't"
+000426.png,3,"I'm sorry, but I can"
+000426.png,4,"I'm sorry, I can't"
+000426.png,5,"I'm sorry, but I cannot"
+000426.png,6,Benign.
+000426.png,7,benign
+000427.png,0,"I'm sorry, but I cannot"
+000427.png,1,"I'm sorry, I'm not"
+000427.png,2,"I'm sorry, but I cannot"
+000427.png,3,"I'm sorry, I can't"
+000427.png,4,"I'm sorry, but making assessments"
+000427.png,5,"I'm sorry, I can't"
+000427.png,6,Malignant.
+000427.png,7,Malignant
+000428.png,0,"I'm sorry, I can't"
+000428.png,1,"I'm sorry, but I cannot"
+000428.png,2,"I'm sorry, I can't"
+000428.png,3,"I'm sorry, but I can"
+000428.png,4,"I'm sorry, I cannot assist"
+000428.png,5,"Sorry, I can't provide help"
+000428.png,6,"I'm sorry, but I can"
+000428.png,7,"I'm sorry, I can't"
+000429.png,0,"I'm sorry, I'm not"
+000429.png,1,"I'm sorry, but I cannot"
+000429.png,2,"I'm sorry, I can't"
+000429.png,3,"I'm sorry, I can't"
+000429.png,4,benign
+000429.png,5,"I'm sorry, I'm not"
+000429.png,6,benign
+000429.png,7,Benign.
+000430.png,0,"I'm sorry, but I cannot"
+000430.png,1,"I'm sorry, I can't"
+000430.png,2,"I'm sorry, I can't"
+000430.png,3,Benign.
+000430.png,4,benign
+000430.png,5,benign
+000430.png,6,benign
+000430.png,7,Benign
+000431.png,0,"I'm sorry, but I can"
+000431.png,1,"I'm sorry, I'm not"
+000431.png,2,"I'm sorry, I can't"
+000431.png,3,Benign.
+000431.png,4,benign
+000431.png,5,benign
+000431.png,6,"I'm sorry, I can't"
+000431.png,7,Benign.
+000432.png,0,"I'm sorry, but I'm"
+000432.png,1,"I'm sorry, I can't"
+000432.png,2,"I'm sorry, I can't"
+000432.png,3,Malignant.
+000432.png,4,"I'm sorry, but I can"
+000432.png,5,"I'm sorry, I can't"
+000432.png,6,Malignant
+000432.png,7,Malignant
+000433.png,0,"I'm sorry, but I'm"
+000433.png,1,"I'm sorry, but I cannot"
+000433.png,2,"I'm sorry, I can't"
+000433.png,3,Benign.
+000433.png,4,benign
+000433.png,5,"I'm sorry, I can't"
+000433.png,6,benign
+000433.png,7,Benign.
+000434.png,0,"I'm sorry, I'm not"
+000434.png,1,"I'm sorry, I can't"
+000434.png,2,"I'm sorry, but I can"
+000434.png,3,"I'm sorry, I can't"
+000434.png,4,benign
+000434.png,5,"I'm sorry, but I am"
+000434.png,6,Malignant
+000434.png,7,Malignant
+000435.png,0,"I'm sorry, but I'm"
+000435.png,1,"I'm sorry, I can't"
+000435.png,2,"I'm sorry, I can't"
+000435.png,3,"I'm sorry, I can't"
+000435.png,4,"I'm sorry, I can't"
+000435.png,5,"I'm sorry, I can't"
+000435.png,6,Malignant
+000435.png,7,"I'm sorry, I can't"
+000436.png,0,"I'm sorry, I can't"
+000436.png,1,"I'm sorry, I can't"
+000436.png,2,"I'm sorry, I can't"
+000436.png,3,"I'm sorry, I cannot assist"
+000436.png,4,"I'm sorry, I can't"
+000436.png,5,"I'm sorry, I cannot assist"
+000436.png,6,"I'm sorry, I can't"
+000436.png,7,"I'm sorry, but I cannot"
+000437.png,0,"I'm sorry, but I cannot"
+000437.png,1,"I'm sorry, but as an"
+000437.png,2,"I'm sorry, I can't"
+000437.png,3,Malignant
+000437.png,4,"I'm sorry, but I cannot"
+000437.png,5,"I'm sorry, I can't"
+000437.png,6,benign
+000437.png,7,Malignant.
+000438.png,0,"I'm sorry, I can't"
+000438.png,1,"I'm sorry, I can't"
+000438.png,2,benign
+000438.png,3,"I'm sorry, I can't"
+000438.png,4,benign
+000438.png,5,benign
+000438.png,6,Benign.
+000438.png,7,Benign
+000439.png,0,"I'm sorry, I can't"
+000439.png,1,"I'm sorry, I cannot provide"
+000439.png,2,"I'm sorry, I can't"
+000439.png,3,Benign.
+000439.png,4,"I'm sorry, I can't"
+000439.png,5,"I'm sorry, but I'm"
+000439.png,6,benign
+000439.png,7,Malignant
+000440.png,0,"I'm sorry, but I cannot"
+000440.png,1,"I'm sorry, I'm not"
+000440.png,2,"I'm sorry, I can't"
+000440.png,3,"I'm sorry, I can't"
+000440.png,4,"I'm sorry, I can't"
+000440.png,5,"I'm sorry, I can't"
+000440.png,6,Malignant
+000440.png,7,Malignant
+000441.png,0,"I'm sorry, I can't"
+000441.png,1,"I'm sorry, but I am"
+000441.png,2,"I'm sorry, I can't"
+000441.png,3,Benign.
+000441.png,4,"I'm sorry, I can't"
+000441.png,5,benign
+000441.png,6,Malignant
+000441.png,7,Benign
+000442.png,0,"I'm sorry, but I'm"
+000442.png,1,"I'm sorry, but I am"
+000442.png,2,"I'm sorry, I can't"
+000442.png,3,"I'm sorry, I can't"
+000442.png,4,benign
+000442.png,5,benign
+000442.png,6,benign
+000442.png,7,Benign.
+000443.png,0,"I'm sorry, I can't"
+000443.png,1,"I'm sorry, but I can"
+000443.png,2,"I'm sorry, I can't"
+000443.png,3,Malignant
+000443.png,4,benign
+000443.png,5,"I'm sorry, I cannot provide"
+000443.png,6,Malignant
+000443.png,7,Malignant
+000444.png,0,"I'm sorry, but I cannot"
+000444.png,1,"I'm sorry, I cannot provide"
+000444.png,2,"I'm sorry, I can't"
+000444.png,3,"I'm sorry, I can't"
+000444.png,4,"I'm sorry, I can't"
+000444.png,5,"Sorry, I can't help with"
+000444.png,6,benign
+000444.png,7,benign
+000445.png,0,"I'm sorry, I cannot provide"
+000445.png,1,"I'm sorry, but I'm"
+000445.png,2,"I'm sorry, I can't"
+000445.png,3,"I'm sorry, but I can"
+000445.png,4,Benign.
+000445.png,5,"I'm sorry, I cannot assist"
+000445.png,6,benign
+000445.png,7,malignant
+000446.png,0,"I'm sorry, I can't"
+000446.png,1,"I'm sorry, I can't"
+000446.png,2,"I'm sorry, I can't"
+000446.png,3,benign
+000446.png,4,"I'm sorry, but I'm"
+000446.png,5,"I'm sorry, I can't"
+000446.png,6,"I'm sorry, I can't"
+000446.png,7,"I'm sorry, I can't"
+000447.png,0,"I'm sorry, I can't"
+000447.png,1,"I'm sorry, I can't"
+000447.png,2,"I'm sorry, but I cannot"
+000447.png,3,Malignant
+000447.png,4,"I'm sorry, I can't"
+000447.png,5,"I'm sorry, but I can"
+000447.png,6,Malignant
+000447.png,7,Malignant
+000448.png,0,"I'm sorry, I can't"
+000448.png,1,benign
+000448.png,2,"I'm sorry, I cannot assist"
+000448.png,3,"I'm sorry, I can't"
+000448.png,4,"I'm sorry, I can't"
+000448.png,5,"I'm sorry, I can't"
+000448.png,6,benign
+000448.png,7,benign
+000449.png,0,"I'm sorry, but I am"
+000449.png,1,"I'm sorry, but I am"
+000449.png,2,benign
+000449.png,3,"I'm sorry, I can't"
+000449.png,4,"I'm sorry, but I cannot"
+000449.png,5,"Sorry, I can't help with"
+000449.png,6,"I'm sorry, I can't"
+000449.png,7,Benign.
+000450.png,0,"I'm sorry, but I'm"
+000450.png,1,"I'm sorry, I can't"
+000450.png,2,"I'm sorry, I can't"
+000450.png,3,"I'm sorry, but I'm"
+000450.png,4,benign
+000450.png,5,"I'm sorry, I can't"
+000450.png,6,benign
+000450.png,7,"I'm sorry, but I can"
+000451.png,0,"I'm sorry, but I'm"
+000451.png,1,"I'm sorry, I'm not"
+000451.png,2,"I'm sorry, but I cannot"
+000451.png,3,"I'm sorry, I can't"
+000451.png,4,"I'm sorry, I can't"
+000451.png,5,"I'm sorry, I can't"
+000451.png,6,"I'm sorry, I can't"
+000451.png,7,Benign
+000452.png,0,"I'm sorry, I'm not"
+000452.png,1,"I'm sorry, I can't"
+000452.png,2,benign
+000452.png,3,"I'm sorry, but I can"
+000452.png,4,"I'm sorry, but I can"
+000452.png,5,"I'm sorry, but I cannot"
+000452.png,6,Benign.
+000452.png,7,Malignant
+000453.png,0,"I'm sorry, I can't"
+000453.png,1,"I'm sorry, I'm not"
+000453.png,2,"I'm sorry, but I'm"
+000453.png,3,Benign.
+000453.png,4,"I'm sorry, I can't"
+000453.png,5,"I'm sorry, I can't"
+000453.png,6,Malignant
+000453.png,7,Malignant
+000454.png,0,"I'm sorry, but I am"
+000454.png,1,"I'm sorry, I can't"
+000454.png,2,"I'm sorry, I can't"
+000454.png,3,"I'm sorry, I can't"
+000454.png,4,benign
+000454.png,5,"I'm sorry, but I can"
+000454.png,6,Malignant
+000454.png,7,Malignant
+000455.png,0,"I'm sorry, I can't"
+000455.png,1,"I'm sorry, but I cannot"
+000455.png,2,"I'm sorry, but I cannot"
+000455.png,3,Benign.
+000455.png,4,benign
+000455.png,5,benign
+000455.png,6,Benign.
+000455.png,7,Benign
+000456.png,0,"I'm sorry, I can't"
+000456.png,1,"I'm sorry, but I am"
+000456.png,2,"I'm sorry, I can't"
+000456.png,3,"I'm sorry, but I can"
+000456.png,4,benign
+000456.png,5,"I'm sorry, I can't"
+000456.png,6,Benign.
+000456.png,7,benign
+000457.png,0,"I'm sorry, I can't"
+000457.png,1,"I'm sorry, but I cannot"
+000457.png,2,"I'm sorry, I can't"
+000457.png,3,malignant
+000457.png,4,benign
+000457.png,5,"I'm sorry, I can't"
+000457.png,6,Malignant
+000457.png,7,Malignant
+000458.png,0,"I'm sorry, I can't"
+000458.png,1,"I'm sorry, I can't"
+000458.png,2,"I'm sorry, I can't"
+000458.png,3,Malignant
+000458.png,4,benign
+000458.png,5,"I'm sorry, I can't"
+000458.png,6,"I'm sorry, I can't"
+000458.png,7,"I'm sorry, I can't"
+000459.png,0,"I'm sorry, I can't"
+000459.png,1,"Sorry, I can't help with"
+000459.png,2,benign
+000459.png,3,benign
+000459.png,4,benign
+000459.png,5,"I'm sorry, I can't"
+000459.png,6,benign
+000459.png,7,Malignant
+000460.png,0,"I'm sorry, I can't"
+000460.png,1,"I'm sorry, I cannot provide"
+000460.png,2,benign
+000460.png,3,Benign.
+000460.png,4,benign
+000460.png,5,"I'm sorry, I can't"
+000460.png,6,Benign.
+000460.png,7,Benign.
+000461.png,0,"I'm sorry, but I can"
+000461.png,1,"I'm sorry, but as an"
+000461.png,2,"I'm sorry, I can't"
+000461.png,3,"I'm sorry, but I can"
+000461.png,4,"I'm sorry, I can't"
+000461.png,5,benign
+000461.png,6,benign
+000461.png,7,Benign.
+000462.png,0,"I'm sorry, I can't"
+000462.png,1,"I'm sorry, but I cannot"
+000462.png,2,"I'm sorry, I can't"
+000462.png,3,benign
+000462.png,4,benign
+000462.png,5,"I'm sorry, I can't"
+000462.png,6,benign
+000462.png,7,benign
+000463.png,0,"I'm sorry, but I'm"
+000463.png,1,"I'm sorry, I cannot provide"
+000463.png,2,"I'm sorry, I can't"
+000463.png,3,benign
+000463.png,4,"I'm sorry, I can't"
+000463.png,5,"I'm sorry, I can't"
+000463.png,6,benign
+000463.png,7,benign
+000464.png,0,"I'm sorry, I'm not"
+000464.png,1,"I'm sorry, I cannot provide"
+000464.png,2,"I'm sorry, but I cannot"
+000464.png,3,"I'm sorry, but I am"
+000464.png,4,benign
+000464.png,5,"I'm sorry, I can't"
+000464.png,6,benign
+000464.png,7,benign
+000465.png,0,"I'm sorry, I'm not"
+000465.png,1,"I'm sorry, I'm not"
+000465.png,2,"I'm sorry, I can't"
+000465.png,3,"I'm sorry, I can't"
+000465.png,4,"I'm sorry, I can't"
+000465.png,5,"I'm sorry, I can't"
+000465.png,6,"I'm sorry, but I'm"
+000465.png,7,Benign.
+000466.png,0,"I'm sorry, but I can"
+000466.png,1,"I'm sorry, but I cannot"
+000466.png,2,"I'm sorry, I cannot provide"
+000466.png,3,"I'm sorry, I can't"
+000466.png,4,"I'm sorry, but I cannot"
+000466.png,5,"I'm sorry, but I can"
+000466.png,6,Malignant
+000466.png,7,Malignant
+000467.png,0,"I'm sorry, but I'm"
+000467.png,1,"I'm sorry, but I'm"
+000467.png,2,benign
+000467.png,3,benign
+000467.png,4,benign
+000467.png,5,benign
+000467.png,6,benign
+000467.png,7,Benign.
+000468.png,0,"I'm sorry, I can't"
+000468.png,1,"I'm sorry, but I cannot"
+000468.png,2,"I'm sorry, I can't"
+000468.png,3,"I'm sorry, I can't"
+000468.png,4,"I'm sorry, I can't"
+000468.png,5,"I'm sorry, but I can"
+000468.png,6,Benign
+000468.png,7,Benign.
+000469.png,0,"I'm sorry, I can't"
+000469.png,1,"I'm sorry, but as an"
+000469.png,2,Benign
+000469.png,3,benign
+000469.png,4,"I'm sorry, I can't"
+000469.png,5,"I'm sorry, I can't"
+000469.png,6,benign
+000469.png,7,Benign.
+000470.png,0,"I'm sorry, but I cannot"
+000470.png,1,"I'm sorry, but I'm"
+000470.png,2,benign
+000470.png,3,benign
+000470.png,4,"I'm sorry, I can't"
+000470.png,5,"I'm sorry, I can't"
+000470.png,6,benign
+000470.png,7,benign
+000471.png,0,"I'm sorry, I can't"
+000471.png,1,"I'm sorry, I can't"
+000471.png,2,"I'm sorry, I can't"
+000471.png,3,"I'm sorry, I can't"
+000471.png,4,benign
+000471.png,5,"I'm sorry, but I cannot"
+000471.png,6,benign
+000471.png,7,benign
+000472.png,0,"I'm sorry, I'm not"
+000472.png,1,"I'm sorry, but I can"
+000472.png,2,"I'm sorry, but I can"
+000472.png,3,Benign
+000472.png,4,benign
+000472.png,5,"I'm sorry, I can't"
+000472.png,6,Benign
+000472.png,7,Benign
+000473.png,0,"I'm sorry, but I'm"
+000473.png,1,"I'm sorry, I can't"
+000473.png,2,"I'm sorry, but I cannot"
+000473.png,3,"I'm sorry, I can't"
+000473.png,4,"I'm sorry, I can't"
+000473.png,5,"I'm sorry, I can't"
+000473.png,6,Malignant
+000473.png,7,Malignant.
+000474.png,0,"I'm sorry, I'm not"
+000474.png,1,"I'm sorry, but I cannot"
+000474.png,2,"I'm sorry, but I can"
+000474.png,3,"I'm sorry, but I can"
+000474.png,4,"I'm sorry, I can't"
+000474.png,5,"I'm sorry, but I can"
+000474.png,6,"I'm sorry, I can't"
+000474.png,7,Malignant
+000475.png,0,"I'm sorry, but I can"
+000475.png,1,"I'm sorry, but I cannot"
+000475.png,2,"I'm sorry, I can't"
+000475.png,3,"I'm sorry, I can't"
+000475.png,4,benign
+000475.png,5,"Sorry, I can't help with"
+000475.png,6,"I'm sorry, I can't"
+000475.png,7,benign
+000476.png,0,"I'm sorry, I'm not"
+000476.png,1,"I'm sorry, I can't"
+000476.png,2,"I'm sorry, I can't"
+000476.png,3,Malignant
+000476.png,4,"I'm sorry, I can't"
+000476.png,5,benign
+000476.png,6,Malignant
+000476.png,7,Malignant.
+000477.png,0,"I'm sorry, I can't"
+000477.png,1,"I'm sorry, but I can"
+000477.png,2,"I'm sorry, I can't"
+000477.png,3,benign
+000477.png,4,benign
+000477.png,5,benign
+000477.png,6,benign
+000477.png,7,Benign.
+000478.png,0,"I'm sorry, but I am"
+000478.png,1,"I'm sorry, I cannot provide"
+000478.png,2,"I'm sorry, I can't"
+000478.png,3,malignant
+000478.png,4,benign
+000478.png,5,"I'm sorry, I can't"
+000478.png,6,Malignant
+000478.png,7,Malignant
+000479.png,0,"I'm sorry, but I cannot"
+000479.png,1,"I'm sorry, but I cannot"
+000479.png,2,"I'm sorry, but I can"
+000479.png,3,benign
+000479.png,4,"I'm sorry, I can't"
+000479.png,5,"I'm sorry, I can't"
+000479.png,6,"I'm sorry, I can't"
+000479.png,7,benign
+000480.png,0,"I'm sorry, I'm not"
+000480.png,1,"I'm sorry, but I'm"
+000480.png,2,"I'm sorry, I can't"
+000480.png,3,Benign.
+000480.png,4,Benign
+000480.png,5,"Sorry, I can't provide assistance"
+000480.png,6,Malignant
+000480.png,7,Malignant
+000481.png,0,"I'm sorry, I cannot provide"
+000481.png,1,"I'm sorry, I can't"
+000481.png,2,"I'm sorry, I can't"
+000481.png,3,"I'm sorry, I can't"
+000481.png,4,benign
+000481.png,5,"I'm sorry, but I can"
+000481.png,6,Benign.
+000481.png,7,Malignant.
+000482.png,0,"I'm sorry, but I can"
+000482.png,1,"I'm sorry, but I can"
+000482.png,2,benign
+000482.png,3,Malignant.
+000482.png,4,benign
+000482.png,5,"I'm sorry, I cannot assist"
+000482.png,6,Malignant
+000482.png,7,Malignant
+000483.png,0,"I'm sorry, I cannot provide"
+000483.png,1,"I'm sorry, I can't"
+000483.png,2,"I'm sorry, I can't"
+000483.png,3,Malignant.
+000483.png,4,"I'm sorry, I can't"
+000483.png,5,benign
+000483.png,6,"I'm sorry, but I cannot"
+000483.png,7,Malignant
+000484.png,0,"I'm sorry, I'm not"
+000484.png,1,"I'm sorry, I'm not"
+000484.png,2,"I'm sorry, I can't"
+000484.png,3,"I'm sorry, I can't"
+000484.png,4,"I'm sorry, I can't"
+000484.png,5,"I'm sorry, I can't"
+000484.png,6,"I'm sorry, but I cannot"
+000484.png,7,"I'm sorry, I can't"
+000485.png,0,"I'm sorry, I can't"
+000485.png,1,"I'm sorry, but as an"
+000485.png,2,"I'm sorry, I can't"
+000485.png,3,"I'm sorry, I can't"
+000485.png,4,"I'm sorry, but I can"
+000485.png,5,"I'm sorry, I can't"
+000485.png,6,Malignant
+000485.png,7,Malignant.
+000486.png,0,"I'm sorry, I cannot provide"
+000486.png,1,"I'm sorry, I can't"
+000486.png,2,benign
+000486.png,3,Benign.
+000486.png,4,"I'm sorry, I can't"
+000486.png,5,"I'm sorry, I can't"
+000486.png,6,benign
+000486.png,7,Malignant
+000487.png,0,"I'm sorry, but I cannot"
+000487.png,1,"I'm sorry, I can't"
+000487.png,2,"I'm sorry, I can't"
+000487.png,3,"I'm sorry, I can't"
+000487.png,4,"I'm sorry, I cannot provide"
+000487.png,5,"I'm sorry, I can't"
+000487.png,6,"I'm sorry, but I can"
+000487.png,7,Benign.
+000488.png,0,"I'm sorry, I cannot provide"
+000488.png,1,"I'm sorry, but I can"
+000488.png,2,"I'm sorry, I can't"
+000488.png,3,Malignant.
+000488.png,4,benign
+000488.png,5,"I'm sorry, I can't"
+000488.png,6,Malignant
+000488.png,7,Malignant
+000489.png,0,"I'm sorry, but I can"
+000489.png,1,"I'm sorry, but I cannot"
+000489.png,2,"I'm sorry, I can't"
+000489.png,3,Benign.
+000489.png,4,benign
+000489.png,5,"I'm sorry, I can't"
+000489.png,6,benign
+000489.png,7,benign
+000490.png,0,"I'm sorry, but I'm"
+000490.png,1,"I'm sorry, but I'm"
+000490.png,2,Benign
+000490.png,3,benign
+000490.png,4,benign
+000490.png,5,"I'm sorry, I can't"
+000490.png,6,benign
+000490.png,7,"I'm sorry, I can't"
+000491.png,0,"I'm sorry, but I'm"
+000491.png,1,"I'm sorry, I can't"
+000491.png,2,"I'm sorry, I can't"
+000491.png,3,benign
+000491.png,4,benign
+000491.png,5,benign
+000491.png,6,benign
+000491.png,7,benign
+000492.png,0,"I'm sorry, I can't"
+000492.png,1,"I'm sorry, but I can"
+000492.png,2,"I'm sorry, I can't"
+000492.png,3,"I'm sorry, I can't"
+000492.png,4,benign
+000492.png,5,"I'm sorry, I can't"
+000492.png,6,benign
+000492.png,7,benign
+000493.png,0,"I'm sorry, but I'm"
+000493.png,1,"I'm sorry, I can't"
+000493.png,2,benign
+000493.png,3,"I'm sorry, I cannot provide"
+000493.png,4,"I'm sorry, I can't"
+000493.png,5,"I'm sorry, I can't"
+000493.png,6,Malignant
+000493.png,7,Malignant
+000494.png,0,"I'm sorry, but I cannot"
+000494.png,1,"I'm sorry, but I can"
+000494.png,2,"I'm sorry, I can't"
+000494.png,3,"I'm sorry, I can't"
+000494.png,4,benign
+000494.png,5,"Sorry, I can't help with"
+000494.png,6,Malignant
+000494.png,7,Malignant
+000495.png,0,"I'm sorry, I cannot provide"
+000495.png,1,"I'm sorry, but I'm"
+000495.png,2,"I'm sorry, I can't"
+000495.png,3,"I'm sorry, but I can"
+000495.png,4,"I'm sorry, I can't"
+000495.png,5,"Sorry, I can't provide assistance"
+000495.png,6,malignant
+000495.png,7,Malignant
+000496.png,0,"I'm sorry, but I'm"
+000496.png,1,"I'm sorry, I can't"
+000496.png,2,"I'm sorry, I can't"
+000496.png,3,"I'm sorry, but I can"
+000496.png,4,"I'm sorry, I cannot provide"
+000496.png,5,"I'm sorry, I can't"
+000496.png,6,benign
+000496.png,7,Benign.
+000497.png,0,"I'm sorry, I can't"
+000497.png,1,"I'm sorry, but I can"
+000497.png,2,"I'm sorry, I can't"
+000497.png,3,"I'm sorry, I can't"
+000497.png,4,benign
+000497.png,5,"I'm sorry, I can't"
+000497.png,6,Benign.
+000497.png,7,Benign.
+000498.png,0,"I'm sorry, but I am"
+000498.png,1,"I'm sorry, but I cannot"
+000498.png,2,"I'm sorry, I can't"
+000498.png,3,benign
+000498.png,4,benign
+000498.png,5,benign
+000498.png,6,benign
+000498.png,7,benign
+000499.png,0,"I'm sorry, but I cannot"
+000499.png,1,"I'm sorry, but I'm"
+000499.png,2,"I'm sorry, I can't"
+000499.png,3,Malignant
+000499.png,4,benign
+000499.png,5,"I'm sorry, I can't"
+000499.png,6,malignant
+000499.png,7,Malignant
+000500.png,0,"I'm sorry, but I'm"
+000500.png,1,"I'm sorry, I cannot provide"
+000500.png,2,"I'm sorry, but I can"
+000500.png,3,"I'm sorry, I can't"
+000500.png,4,"I'm sorry, I cannot provide"
+000500.png,5,"I'm sorry, but I cannot"
+000500.png,6,Malignant
+000500.png,7,Malignant
+000501.png,0,"I'm sorry, I can't"
+000501.png,1,"I'm sorry, but I can"
+000501.png,2,"I'm sorry, I can't"
+000501.png,3,Benign.
+000501.png,4,Benign
+000501.png,5,"I'm sorry, I can't"
+000501.png,6,benign
+000501.png,7,Benign.
+000502.png,0,"I'm sorry, but I can"
+000502.png,1,"I'm sorry, I'm not"
+000502.png,2,"I'm sorry, I can't"
+000502.png,3,"I'm sorry, I can't"
+000502.png,4,"I'm sorry, but I cannot"
+000502.png,5,"I'm sorry, I can't"
+000502.png,6,Malignant
+000502.png,7,Malignant
+000503.png,0,"I'm sorry, I can't"
+000503.png,1,"I'm sorry, but I'm"
+000503.png,2,"I'm sorry, I can't"
+000503.png,3,Malignant
+000503.png,4,"I'm sorry, but I am"
+000503.png,5,"I'm sorry, I can't"
+000503.png,6,Malignant
+000503.png,7,Malignant
+000504.png,0,"I'm sorry, I can't"
+000504.png,1,"I'm sorry, but I cannot"
+000504.png,2,Benign.
+000504.png,3,Benign.
+000504.png,4,"I'm sorry, but I cannot"
+000504.png,5,benign
+000504.png,6,Benign.
+000504.png,7,Benign.
+000505.png,0,"I'm sorry, I can't"
+000505.png,1,"I'm sorry, but I cannot"
+000505.png,2,"I'm sorry, I can't"
+000505.png,3,Benign.
+000505.png,4,"I'm sorry, but I cannot"
+000505.png,5,"I'm sorry, but I cannot"
+000505.png,6,"I'm sorry, I can't"
+000505.png,7,Benign.
+000506.png,0,"I'm sorry, I cannot provide"
+000506.png,1,"I'm sorry, but I cannot"
+000506.png,2,"I'm sorry, but I can"
+000506.png,3,Benign
+000506.png,4,"I'm sorry, I can't"
+000506.png,5,"I'm sorry, but I'm"
+000506.png,6,"I'm sorry, I can't"
+000506.png,7,Benign.
+000507.png,0,"I'm sorry, I can't"
+000507.png,1,"I'm sorry, but I'm"
+000507.png,2,"I'm sorry, I can't"
+000507.png,3,Benign.
+000507.png,4,"I'm sorry, I can't"
+000507.png,5,"I'm sorry, I can't"
+000507.png,6,Benign.
+000507.png,7,Benign
+000508.png,0,"I'm sorry, but I can"
+000508.png,1,"I'm sorry, I'm not"
+000508.png,2,"I'm sorry, I can't"
+000508.png,3,benign
+000508.png,4,"I'm sorry, I'm not"
+000508.png,5,"I'm sorry, but I'm"
+000508.png,6,Benign
+000508.png,7,Benign.
+000509.png,0,"I'm sorry, I can't"
+000509.png,1,"I'm sorry, I can't"
+000509.png,2,"I'm sorry, but I cannot"
+000509.png,3,"I'm sorry, I can't"
+000509.png,4,"I'm sorry, I can't"
+000509.png,5,Unable to answer.
+000509.png,6,"I'm sorry, I can't"
+000509.png,7,"I'm sorry, I can't"
+000510.png,0,"I'm sorry, I can't"
+000510.png,1,"I'm sorry, I can't"
+000510.png,2,Benign
+000510.png,3,Malignant
+000510.png,4,"I'm sorry, I can't"
+000510.png,5,"I'm sorry, I can't"
+000510.png,6,Malignant
+000510.png,7,Malignant
+000511.png,0,"I'm sorry, but I am"
+000511.png,1,"I'm sorry, but I'm"
+000511.png,2,"I'm sorry, but I cannot"
+000511.png,3,Malignant
+000511.png,4,"I'm sorry, I can't"
+000511.png,5,"I'm sorry, I can't"
+000511.png,6,Malignant
+000511.png,7,Malignant
+000512.png,0,"I'm sorry, I'm not"
+000512.png,1,"I'm sorry, but I cannot"
+000512.png,2,"Sorry, I can't provide assistance"
+000512.png,3,"I'm sorry, I can't"
+000512.png,4,"I'm sorry, but I cannot"
+000512.png,5,"I'm sorry, I can't"
+000512.png,6,"I'm sorry, I can't"
+000512.png,7,"I'm sorry, I can't"
+000513.png,0,"I'm sorry, but I can"
+000513.png,1,"I'm sorry, but I'm"
+000513.png,2,"I'm sorry, I can't"
+000513.png,3,Benign.
+000513.png,4,Unable to determine.
+000513.png,5,"I'm sorry, but as an"
+000513.png,6,benign
+000513.png,7,Benign
+000514.png,0,"I'm sorry, but I'm"
+000514.png,1,"I'm sorry, but I'm"
+000514.png,2,"I'm sorry, I cannot provide"
+000514.png,3,Benign
+000514.png,4,"I'm sorry, I can't"
+000514.png,5,"I'm sorry, I can't"
+000514.png,6,Benign.
+000514.png,7,Benign.
+000515.png,0,"I'm sorry, but I cannot"
+000515.png,1,"I'm sorry, I can't"
+000515.png,2,"I'm sorry, I can't"
+000515.png,3,Benign
+000515.png,4,"I'm sorry, but I'm"
+000515.png,5,Benign.
+000515.png,6,benign
+000515.png,7,Benign.
+000516.png,0,"I'm sorry, I cannot provide"
+000516.png,1,"I'm sorry, but I can"
+000516.png,2,"I'm sorry, but I'm"
+000516.png,3,"I'm sorry, I can't"
+000516.png,4,"I'm sorry, I can't"
+000516.png,5,"I'm sorry, I cannot assist"
+000516.png,6,Malignant
+000516.png,7,Malignant
+000517.png,0,"I'm sorry, but I cannot"
+000517.png,1,"Sorry, I'm not able to"
+000517.png,2,"I'm sorry, I can't"
+000517.png,3,Malignant
+000517.png,4,benign
+000517.png,5,"I'm sorry, I can't"
+000517.png,6,Malignant
+000517.png,7,Malignant
+000518.png,0,"I'm sorry, I can't"
+000518.png,1,"I'm sorry, but I cannot"
+000518.png,2,"I'm sorry, I can't"
+000518.png,3,Benign
+000518.png,4,"I'm sorry, I can't"
+000518.png,5,"I'm sorry, I can't"
+000518.png,6,"I'm sorry, I can't"
+000518.png,7,Benign.
+000519.png,0,"I'm sorry, I can't"
+000519.png,1,"Sorry, I can't provide help"
+000519.png,2,"I'm sorry, but I'm"
+000519.png,3,Benign
+000519.png,4,"I'm sorry, I cannot provide"
+000519.png,5,I'm unable to provide medical diagnoses
+000519.png,6,Benign.
+000519.png,7,Benign.
+000520.png,0,"I'm sorry, I can't"
+000520.png,1,"I'm sorry, but I cannot"
+000520.png,2,"I'm sorry, I can't"
+000520.png,3,"I'm sorry, I can't"
+000520.png,4,"I'm sorry, but I can"
+000520.png,5,"I'm sorry, I'm not"
+000520.png,6,Malignant
+000520.png,7,Malignant.
+000521.png,0,"I'm sorry, but I cannot"
+000521.png,1,"I'm sorry, I cannot provide"
+000521.png,2,"I'm sorry, I can't"
+000521.png,3,"I'm sorry, I can't"
+000521.png,4,"I'm sorry, I cannot provide"
+000521.png,5,benign
+000521.png,6,Malignant
+000521.png,7,Malignant
+000522.png,0,"I'm sorry, I can't"
+000522.png,1,"I'm sorry, but I'm"
+000522.png,2,"I'm sorry, I can't"
+000522.png,3,benign
+000522.png,4,"I'm sorry, I can't"
+000522.png,5,benign
+000522.png,6,Benign
+000522.png,7,Benign.
+000523.png,0,"I'm sorry, but I'm"
+000523.png,1,"I'm sorry, but I cannot"
+000523.png,2,"I'm sorry, but I cannot"
+000523.png,3,"I'm sorry, but I can"
+000523.png,4,"Sorry, I'm not able to"
+000523.png,5,"I'm sorry, I can't"
+000523.png,6,"I'm sorry, I can't"
+000523.png,7,Malignant
+000524.png,0,"I'm sorry, but I cannot"
+000524.png,1,"I'm sorry, but I cannot"
+000524.png,2,"I'm sorry, but I'm"
+000524.png,3,benign
+000524.png,4,"I'm sorry, I can't"
+000524.png,5,"I'm sorry, but I can"
+000524.png,6,Benign
+000524.png,7,"I'm sorry, I can't"
+000525.png,0,"I'm sorry, I can't"
+000525.png,1,"I'm sorry, I can't"
+000525.png,2,"I'm sorry, I can't"
+000525.png,3,"I'm sorry, but I can"
+000525.png,4,"I'm sorry, I can't"
+000525.png,5,"I'm sorry, I can't"
+000525.png,6,benign
+000525.png,7,Benign.
+000526.png,0,"I'm sorry, I can't"
+000526.png,1,"I'm sorry, but I cannot"
+000526.png,2,"I'm sorry, but I can"
+000526.png,3,Benign
+000526.png,4,"Sorry, I can't provide assistance"
+000526.png,5,"I'm sorry, but I cannot"
+000526.png,6,Malignant
+000526.png,7,Malignant
+000527.png,0,"I'm sorry, I can't"
+000527.png,1,"I'm sorry, but I am"
+000527.png,2,"I'm sorry, I can't"
+000527.png,3,benign
+000527.png,4,benign
+000527.png,5,"I'm sorry, I can't"
+000527.png,6,benign
+000527.png,7,Benign.
+000528.png,0,"I'm sorry, I cannot provide"
+000528.png,1,"I'm sorry, but I cannot"
+000528.png,2,"I'm sorry, I can't"
+000528.png,3,benign
+000528.png,4,"I'm sorry, I can't"
+000528.png,5,"I'm sorry, but I cannot"
+000528.png,6,benign
+000528.png,7,Benign.
+000529.png,0,"I'm sorry, but I can"
+000529.png,1,"I'm sorry, I'm not"
+000529.png,2,"I'm sorry, but I cannot"
+000529.png,3,"I'm sorry, but I am"
+000529.png,4,"I'm sorry, I can't"
+000529.png,5,"I'm sorry, I can't"
+000529.png,6,Malignant
+000529.png,7,Malignant
+000530.png,0,"I'm sorry, but I cannot"
+000530.png,1,"I'm sorry, but I cannot"
+000530.png,2,"I'm sorry, I can't"
+000530.png,3,"I'm sorry, I can't"
+000530.png,4,"I'm sorry, I can't"
+000530.png,5,"I'm sorry, I can't"
+000530.png,6,"I'm sorry, I can't"
+000530.png,7,"I'm sorry, I can't"
+000531.png,0,"I'm sorry, I can't"
+000531.png,1,"I'm sorry, I'm not"
+000531.png,2,"I'm sorry, I can't"
+000531.png,3,benign
+000531.png,4,"I'm sorry, I can't"
+000531.png,5,"Sorry, I'm not able to"
+000531.png,6,"I'm sorry, I can't"
+000531.png,7,Malignant
+000532.png,0,"I'm sorry, but I'm"
+000532.png,1,"I'm sorry, I can't"
+000532.png,2,"I'm sorry, I can't"
+000532.png,3,Benign.
+000532.png,4,"I'm sorry, but I can"
+000532.png,5,"I'm sorry, I cannot provide"
+000532.png,6,Malignant
+000532.png,7,Malignant
+000533.png,0,"I'm sorry, I can't"
+000533.png,1,"I'm sorry, I can't"
+000533.png,2,"I'm sorry, I can't"
+000533.png,3,"I'm sorry, I can't"
+000533.png,4,Benign.
+000533.png,5,"I'm sorry, but I can"
+000533.png,6,benign
+000533.png,7,Malignant.
+000534.png,0,"I'm sorry, I'm not"
+000534.png,1,"I'm sorry, but I can"
+000534.png,2,"I'm sorry, I can't"
+000534.png,3,"I'm sorry, I can't"
+000534.png,4,"I'm sorry, but I cannot"
+000534.png,5,"I'm sorry, I can't"
+000534.png,6,"I'm sorry, I can't"
+000534.png,7,Malignant
+000535.png,0,"Sorry, I can't help with"
+000535.png,1,"I'm sorry, but I cannot"
+000535.png,2,benign
+000535.png,3,Malignant
+000535.png,4,benign
+000535.png,5,"I'm sorry, I can't"
+000535.png,6,"I'm sorry, I can't"
+000535.png,7,malignant
+000536.png,0,"I'm sorry, I can't"
+000536.png,1,"I'm sorry, I can't"
+000536.png,2,"I'm sorry, I can't"
+000536.png,3,"I'm sorry, but I can"
+000536.png,4,"I'm sorry, I'm not"
+000536.png,5,"I'm sorry, I cannot assist"
+000536.png,6,Malignant
+000536.png,7,Malignant.
+000537.png,0,"I'm sorry, but I’m"
+000537.png,1,"I'm sorry, but I can"
+000537.png,2,"I'm sorry, I can't"
+000537.png,3,"I'm sorry, I can't"
+000537.png,4,"Sorry, I can't assist with"
+000537.png,5,"I'm sorry, I can't"
+000537.png,6,"I'm sorry, I can't"
+000537.png,7,Benign.
+000538.png,0,"I'm sorry, but I cannot"
+000538.png,1,"I'm sorry, I'm not"
+000538.png,2,benign
+000538.png,3,"I'm sorry, I can't"
+000538.png,4,"I'm sorry, I can't"
+000538.png,5,"I'm sorry, but I cannot"
+000538.png,6,"I'm sorry, I can't"
+000538.png,7,Benign.
+000539.png,0,"I'm sorry, but I'm"
+000539.png,1,"I'm sorry, but I can"
+000539.png,2,"I'm sorry, I can't"
+000539.png,3,Benign
+000539.png,4,"I'm sorry, I can't"
+000539.png,5,Benign.
+000539.png,6,Benign.
+000539.png,7,Benign.
+000540.png,0,"I'm sorry, but I cannot"
+000540.png,1,"I'm sorry, but I cannot"
+000540.png,2,"I'm sorry, I can't"
+000540.png,3,"I'm sorry, I can't"
+000540.png,4,"I'm sorry, but as an"
+000540.png,5,"I'm sorry, I'm not"
+000540.png,6,Benign
+000540.png,7,Malignant
+000541.png,0,"I'm sorry, I'm not"
+000541.png,1,"I'm sorry, I cannot provide"
+000541.png,2,"I'm sorry, but I cannot"
+000541.png,3,Benign.
+000541.png,4,"I'm sorry, I can't"
+000541.png,5,"I'm sorry, I can't"
+000541.png,6,"I'm sorry, I can't"
+000541.png,7,benign
+000542.png,0,"I'm sorry, I can't"
+000542.png,1,"I'm sorry, but I cannot"
+000542.png,2,"I'm sorry, but I can"
+000542.png,3,Malignant
+000542.png,4,"I'm sorry, I can't"
+000542.png,5,Malignant
+000542.png,6,Malignant.
+000542.png,7,Malignant
+000543.png,0,"I'm sorry, I can't"
+000543.png,1,"I'm sorry, but I cannot"
+000543.png,2,"I'm sorry, I can't"
+000543.png,3,Malignant
+000543.png,4,"I'm sorry, I can't"
+000543.png,5,"I'm sorry, I can't"
+000543.png,6,Malignant
+000543.png,7,malignant
+000544.png,0,"I'm sorry, I'm not"
+000544.png,1,"I'm sorry, I can't"
+000544.png,2,"I'm sorry, I cannot provide"
+000544.png,3,"I'm sorry, I can't"
+000544.png,4,"I'm sorry, I can't"
+000544.png,5,"I'm sorry, I can't"
+000544.png,6,"I'm sorry, I can't"
+000544.png,7,Benign.
+000545.png,0,"I'm sorry, but I can"
+000545.png,1,"I'm sorry, but I'm"
+000545.png,2,"I'm sorry, I can't"
+000545.png,3,Benign.
+000545.png,4,benign
+000545.png,5,"I'm sorry, I can't"
+000545.png,6,benign
+000545.png,7,Benign.
+000546.png,0,"I'm sorry, I'm not"
+000546.png,1,"I'm sorry, but I cannot"
+000546.png,2,"I'm sorry, I cannot assist"
+000546.png,3,benign
+000546.png,4,"I'm sorry, I can't"
+000546.png,5,"I'm sorry, but as an"
+000546.png,6,"I'm sorry, I can't"
+000546.png,7,Benign
+000547.png,0,"I'm sorry, but I'm"
+000547.png,1,"I'm sorry, I'm not"
+000547.png,2,Benign
+000547.png,3,"I'm sorry, I can't"
+000547.png,4,benign
+000547.png,5,"I'm sorry, I can't"
+000547.png,6,Benign
+000547.png,7,Benign
+000548.png,0,"I'm sorry, but I cannot"
+000548.png,1,"I'm sorry, but I'm"
+000548.png,2,"I'm sorry, I can't"
+000548.png,3,"I'm sorry, I can't"
+000548.png,4,"I'm sorry, I can't"
+000548.png,5,"I'm sorry, I can't"
+000548.png,6,"I'm sorry, I can't"
+000548.png,7,"I'm sorry, but as an"
+000549.png,0,"I'm sorry, but I can"
+000549.png,1,"I'm sorry, I can't"
+000549.png,2,"I'm sorry, but I'm"
+000549.png,3,"I'm sorry, I can't"
+000549.png,4,benign
+000549.png,5,"I'm sorry, but I can"
+000549.png,6,"I'm sorry, I can't"
+000549.png,7,Benign
+000550.png,0,"I'm sorry, but I'm"
+000550.png,1,"I'm sorry, but I'm"
+000550.png,2,"I'm sorry, I can't"
+000550.png,3,"I'm sorry, I can't"
+000550.png,4,"I'm sorry, but I cannot"
+000550.png,5,"I'm sorry, I cannot provide"
+000550.png,6,"I'm sorry, I can't"
+000550.png,7,benign
+000551.png,0,"I'm sorry, I cannot provide"
+000551.png,1,"I'm sorry, but I cannot"
+000551.png,2,"I'm sorry, I can't"
+000551.png,3,"I'm sorry, I can't"
+000551.png,4,"I'm sorry, but I can"
+000551.png,5,"I'm sorry, I can't"
+000551.png,6,"I'm sorry, I can't"
+000551.png,7,Malignant
+000552.png,0,"I'm sorry, I can't"
+000552.png,1,"I'm sorry, but I'm"
+000552.png,2,"Sorry, I can't assist with"
+000552.png,3,"I'm sorry, I can't"
+000552.png,4,"I'm sorry, I can't"
+000552.png,5,"I'm sorry, but as an"
+000552.png,6,Malignant.
+000552.png,7,Malignant.
+000553.png,0,"I'm sorry, but I'm"
+000553.png,1,"I'm sorry, I'm not"
+000553.png,2,benign
+000553.png,3,Benign
+000553.png,4,"I'm sorry, but I can"
+000553.png,5,"I'm sorry, but I can"
+000553.png,6,Benign.
+000553.png,7,Benign.
+000554.png,0,"I'm sorry, but I cannot"
+000554.png,1,"I'm sorry, I can't"
+000554.png,2,"I'm sorry, I can't"
+000554.png,3,Benign.
+000554.png,4,"I'm sorry, I can't"
+000554.png,5,"I'm sorry, I can't"
+000554.png,6,"I'm sorry, I can't"
+000554.png,7,Malignant
+000555.png,0,"I'm sorry, but I'm"
+000555.png,1,"I'm sorry, but I can"
+000555.png,2,"I'm sorry, but I'm"
+000555.png,3,"I'm sorry, but I cannot"
+000555.png,4,"I'm sorry, I can't"
+000555.png,5,"I'm sorry, I can't"
+000555.png,6,benign
+000555.png,7,Benign
+000556.png,0,"I'm sorry, I can't"
+000556.png,1,"I'm sorry, I can't"
+000556.png,2,"I'm sorry, I can't"
+000556.png,3,Benign.
+000556.png,4,"I'm sorry, I can't"
+000556.png,5,Benign.
+000556.png,6,Benign.
+000556.png,7,benign
+000557.png,0,"I'm sorry, but I can"
+000557.png,1,"I'm sorry, I can't"
+000557.png,2,"I'm sorry, but I can"
+000557.png,3,Benign.
+000557.png,4,"I'm sorry, I can't"
+000557.png,5,benign
+000557.png,6,Malignant
+000557.png,7,Malignant
+000558.png,0,"I'm sorry, I can't"
+000558.png,1,"I'm sorry, I can't"
+000558.png,2,"I'm sorry, I can't"
+000558.png,3,"I'm sorry, I can't"
+000558.png,4,"I'm sorry, I can't"
+000558.png,5,benign
+000558.png,6,Benign.
+000558.png,7,Malignant
+000559.png,0,"I'm sorry, but I cannot"
+000559.png,1,"I'm sorry, I cannot provide"
+000559.png,2,"I'm sorry, I can't"
+000559.png,3,Malignant
+000559.png,4,"I'm sorry, but I can"
+000559.png,5,"I'm sorry, I can't"
+000559.png,6,Malignant
+000559.png,7,Malignant
+000560.png,0,"I'm sorry, I cannot provide"
+000560.png,1,"I'm sorry, but I can"
+000560.png,2,"I'm sorry, I can't"
+000560.png,3,"I'm sorry, I can't"
+000560.png,4,"I'm sorry, I can't"
+000560.png,5,"I'm sorry, I can't"
+000560.png,6,Benign.
+000560.png,7,"I'm sorry, I can't"
+000561.png,0,"I'm sorry, I'm not"
+000561.png,1,"I'm sorry, I can't"
+000561.png,2,benign
+000561.png,3,Benign.
+000561.png,4,"I'm sorry, I can't"
+000561.png,5,"I'm sorry, but I cannot"
+000561.png,6,"I'm sorry, I can't"
+000561.png,7,Benign.
+000562.png,0,"I'm sorry, I can't"
+000562.png,1,"I'm sorry, but I can"
+000562.png,2,"I'm sorry, but I cannot"
+000562.png,3,Malignant
+000562.png,4,benign
+000562.png,5,"I'm sorry, I'm not"
+000562.png,6,Malignant
+000562.png,7,Malignant.
+000563.png,0,"I'm sorry, but I'm"
+000563.png,1,"I'm sorry, but I cannot"
+000563.png,2,benign
+000563.png,3,Benign
+000563.png,4,"I'm sorry, but I cannot"
+000563.png,5,"Sorry, I can't provide assistance"
+000563.png,6,benign
+000563.png,7,Benign.
+000564.png,0,"I'm sorry, but I can"
+000564.png,1,"I'm sorry, but I'm"
+000564.png,2,"I'm sorry, I can't"
+000564.png,3,"I'm sorry, I cannot provide"
+000564.png,4,"I'm sorry, I can't"
+000564.png,5,"I'm sorry, I can't"
+000564.png,6,benign
+000564.png,7,Benign.
+000565.png,0,"I'm sorry, but I cannot"
+000565.png,1,"I'm sorry, but I cannot"
+000565.png,2,"I'm sorry, I can't"
+000565.png,3,benign
+000565.png,4,"I'm sorry, I can't"
+000565.png,5,"I'm sorry, I can't"
+000565.png,6,"I'm sorry, I can't"
+000565.png,7,Benign
+000566.png,0,"I'm sorry, I can't"
+000566.png,1,"I'm sorry, but I cannot"
+000566.png,2,"I'm sorry, I can't"
+000566.png,3,Benign.
+000566.png,4,"I'm sorry, I can't"
+000566.png,5,"I'm sorry, I can't"
+000566.png,6,"I'm sorry, I can't"
+000566.png,7,Malignant
+000567.png,0,"I'm sorry, but I cannot"
+000567.png,1,"I'm sorry, but I cannot"
+000567.png,2,"I'm sorry, I can't"
+000567.png,3,Malignant
+000567.png,4,"I'm sorry, I cannot assist"
+000567.png,5,"I'm sorry, but I'm"
+000567.png,6,"I'm sorry, I can't"
+000567.png,7,Malignant
+000568.png,0,"I'm sorry, but I am"
+000568.png,1,"I'm sorry, but I can"
+000568.png,2,Malignant
+000568.png,3,Malignant
+000568.png,4,benign
+000568.png,5,"I'm sorry, I can't"
+000568.png,6,Malignant
+000568.png,7,Malignant.
+000569.png,0,"I'm sorry, I'm not"
+000569.png,1,"I'm sorry, but I cannot"
+000569.png,2,"I'm sorry, I can't"
+000569.png,3,"I'm sorry, I can't"
+000569.png,4,"I'm sorry, but I cannot"
+000569.png,5,"I'm sorry, I can't"
+000569.png,6,benign
+000569.png,7,Benign.
+000570.png,0,"I'm sorry, I'm not"
+000570.png,1,"I'm sorry, but I can"
+000570.png,2,"I'm sorry, but I can"
+000570.png,3,benign
+000570.png,4,benign
+000570.png,5,Benign.
+000570.png,6,Benign
+000570.png,7,Benign.
+000571.png,0,"I'm sorry, I can't"
+000571.png,1,"Sorry, I'm not able to"
+000571.png,2,"I'm sorry, I can't"
+000571.png,3,Benign.
+000571.png,4,"I'm sorry, I can't"
+000571.png,5,"Sorry, I can't provide this"
+000571.png,6,Benign.
+000571.png,7,Benign.
+000572.png,0,"I'm sorry, I can't"
+000572.png,1,"I'm sorry, but I can"
+000572.png,2,"I'm sorry, I can't"
+000572.png,3,"I'm sorry, but I cannot"
+000572.png,4,"I'm sorry, I cannot provide"
+000572.png,5,"I'm sorry, I can't"
+000572.png,6,"I'm sorry, I can't"
+000572.png,7,Benign.
+000573.png,0,"I'm sorry, I'm not"
+000573.png,1,"I'm sorry, I can't"
+000573.png,2,"I'm sorry, I can't"
+000573.png,3,Benign.
+000573.png,4,benign
+000573.png,5,"I'm sorry, I can't"
+000573.png,6,benign
+000573.png,7,benign
+000574.png,0,"I'm sorry, but I'm"
+000574.png,1,"I'm sorry, but I cannot"
+000574.png,2,"I'm sorry, I can't"
+000574.png,3,"I'm sorry, but I cannot"
+000574.png,4,"I'm sorry, I can't"
+000574.png,5,"I'm sorry, but I can"
+000574.png,6,"I'm sorry, I can't"
+000574.png,7,Malignant
+000575.png,0,"I'm sorry, but I cannot"
+000575.png,1,"I'm sorry, I can't"
+000575.png,2,"I'm sorry, but I cannot"
+000575.png,3,"I'm sorry, I can't"
+000575.png,4,benign
+000575.png,5,"Sorry, I can't provide this"
+000575.png,6,Benign
+000575.png,7,Malignant
+000576.png,0,"I'm sorry, I'm not"
+000576.png,1,"I'm sorry, I cannot assist"
+000576.png,2,"I'm sorry, I'm not"
+000576.png,3,"I'm sorry, I can't"
+000576.png,4,"I'm sorry, I can't"
+000576.png,5,"I'm sorry, I can't"
+000576.png,6,Malignant
+000576.png,7,Malignant
+000577.png,0,"I'm sorry, I can't"
+000577.png,1,"I'm sorry, I'm not"
+000577.png,2,"I'm sorry, I can't"
+000577.png,3,"I'm sorry, I can't"
+000577.png,4,"Sorry, I can't provide the"
+000577.png,5,"Sorry, I can't provide assistance"
+000577.png,6,benign
+000577.png,7,benign
+000578.png,0,"I'm sorry, I can't"
+000578.png,1,"I'm sorry, I can't"
+000578.png,2,"I'm sorry, I can't"
+000578.png,3,benign
+000578.png,4,"I'm sorry, I can't"
+000578.png,5,"I'm sorry, I cannot provide"
+000578.png,6,Malignant
+000578.png,7,Malignant
+000579.png,0,"I'm sorry, but I cannot"
+000579.png,1,"I'm sorry, I cannot provide"
+000579.png,2,"I'm sorry, but I cannot"
+000579.png,3,benign
+000579.png,4,"I'm sorry, but I can"
+000579.png,5,"I'm sorry, I can't"
+000579.png,6,"I'm sorry, I can't"
+000579.png,7,Benign.
+000580.png,0,"I'm sorry, but I'm"
+000580.png,1,"I'm sorry, I cannot assist"
+000580.png,2,"I'm sorry, I can't"
+000580.png,3,"I'm sorry, I'm not"
+000580.png,4,"I'm sorry, but I cannot"
+000580.png,5,"I'm sorry, I can't"
+000580.png,6,Malignant
+000580.png,7,Malignant
+000581.png,0,"I'm sorry, but I cannot"
+000581.png,1,"I'm sorry, I can't"
+000581.png,2,"I'm sorry, I can't"
+000581.png,3,Malignant
+000581.png,4,"I'm sorry, I can't"
+000581.png,5,"I'm sorry, I cannot assist"
+000581.png,6,"I'm sorry, I can't"
+000581.png,7,Malignant
+000582.png,0,"I'm sorry, I can't"
+000582.png,1,"I'm sorry, but I can"
+000582.png,2,Benign.
+000582.png,3,Malignant
+000582.png,4,"I'm sorry, I can't"
+000582.png,5,"I'm sorry, but I can"
+000582.png,6,"I'm sorry, I can't"
+000582.png,7,Malignant
+000583.png,0,"I'm sorry, but I'm"
+000583.png,1,"I'm sorry, but I can"
+000583.png,2,benign
+000583.png,3,"I'm sorry, I can't"
+000583.png,4,"I'm sorry, I can't"
+000583.png,5,"I'm sorry, I'm not"
+000583.png,6,"I'm sorry, but I cannot"
+000583.png,7,"I'm sorry, I can't"
+000584.png,0,"I'm sorry, but I am"
+000584.png,1,"I'm sorry, but I cannot"
+000584.png,2,"I'm sorry, I can't"
+000584.png,3,Benign.
+000584.png,4,"Sorry, I can't assist with"
+000584.png,5,"Sorry, I can't assist with"
+000584.png,6,"I'm sorry, I can't"
+000584.png,7,benign
+000585.png,0,"I'm sorry, I can't"
+000585.png,1,"I'm sorry, but I cannot"
+000585.png,2,"I'm sorry, I can't"
+000585.png,3,"I'm sorry, I can't"
+000585.png,4,"I'm sorry, but I can"
+000585.png,5,Benign.
+000585.png,6,"I'm sorry, but I can"
+000585.png,7,Benign.
+000586.png,0,"I'm sorry, but I'm"
+000586.png,1,"I'm sorry, but I'm"
+000586.png,2,"I'm sorry, I can't"
+000586.png,3,Benign.
+000586.png,4,"I'm sorry, I can't"
+000586.png,5,"I'm sorry, I can't"
+000586.png,6,"I'm sorry, I can't"
+000586.png,7,Benign.
+000587.png,0,"I'm sorry, I cannot provide"
+000587.png,1,"I'm sorry, I cannot provide"
+000587.png,2,"I'm sorry, but I cannot"
+000587.png,3,Malignant
+000587.png,4,"I'm sorry, I can't"
+000587.png,5,"I'm sorry, I can't"
+000587.png,6,Malignant
+000587.png,7,Malignant
+000588.png,0,"I'm sorry, but I cannot"
+000588.png,1,"I'm sorry, I can't"
+000588.png,2,"I'm sorry, but I cannot"
+000588.png,3,"I'm sorry, I can't"
+000588.png,4,"I'm sorry, I can't"
+000588.png,5,"I'm sorry, I can't"
+000588.png,6,"I'm sorry, I can't"
+000588.png,7,Malignant
+000589.png,0,"I'm sorry, I can't"
+000589.png,1,"I'm sorry, but I'm"
+000589.png,2,"I'm sorry, I can't"
+000589.png,3,"I'm sorry, I can't"
+000589.png,4,"I'm sorry, I can't"
+000589.png,5,"I'm sorry, I cannot assist"
+000589.png,6,Benign.
+000589.png,7,Benign.
+000590.png,0,"I'm sorry, I can't"
+000590.png,1,"I'm sorry, but I can"
+000590.png,2,benign
+000590.png,3,"I'm sorry, I can't"
+000590.png,4,"I'm sorry, I can't"
+000590.png,5,"I'm sorry, I can't"
+000590.png,6,Benign.
+000590.png,7,Benign.
+000591.png,0,"I'm sorry, but I cannot"
+000591.png,1,"I'm sorry, but I can"
+000591.png,2,"I'm sorry, I can't"
+000591.png,3,"I'm sorry, I can't"
+000591.png,4,"I'm sorry, I can't"
+000591.png,5,"I'm sorry, I can't"
+000591.png,6,Benign
+000591.png,7,Benign
+000592.png,0,"I'm sorry, but I can"
+000592.png,1,"I'm sorry, I can't"
+000592.png,2,"I'm sorry, I can't"
+000592.png,3,"I'm sorry, I can't"
+000592.png,4,"I'm sorry, but I cannot"
+000592.png,5,"I'm sorry, I can't"
+000592.png,6,benign
+000592.png,7,Benign.
+000593.png,0,"I'm sorry, I can't"
+000593.png,1,"I'm sorry, I can't"
+000593.png,2,"I'm sorry, I can't"
+000593.png,3,Benign.
+000593.png,4,"I'm sorry, I can't"
+000593.png,5,Benign.
+000593.png,6,Benign.
+000593.png,7,Benign.
+000594.png,0,"I'm sorry, I can't"
+000594.png,1,"I'm sorry, but I cannot"
+000594.png,2,"I'm sorry, I can't"
+000594.png,3,Benign.
+000594.png,4,Benign
+000594.png,5,Malignant
+000594.png,6,Malignant
+000594.png,7,Malignant
+000595.png,0,"I'm sorry, but I'm"
+000595.png,1,"I'm sorry, but I'm"
+000595.png,2,Malignant
+000595.png,3,Malignant
+000595.png,4,"I'm sorry, but I can"
+000595.png,5,"I'm sorry, but I can"
+000595.png,6,Malignant
+000595.png,7,Malignant
+000596.png,0,"I'm sorry, I can't"
+000596.png,1,"I'm sorry, I can't"
+000596.png,2,"I'm sorry, I can't"
+000596.png,3,"I'm sorry, but I can"
+000596.png,4,"I'm sorry, I can't"
+000596.png,5,"I'm sorry, I can't"
+000596.png,6,"I'm sorry, I can't"
+000596.png,7,Benign.
+000597.png,0,"I'm sorry, but I cannot"
+000597.png,1,"I'm sorry, I can't"
+000597.png,2,"I'm sorry, but I can"
+000597.png,3,Malignant.
+000597.png,4,Malignant
+000597.png,5,Malignant
+000597.png,6,Malignant
+000597.png,7,Malignant
+000598.png,0,"I'm sorry, but I'm"
+000598.png,1,"I'm sorry, but I cannot"
+000598.png,2,"I'm sorry, I can't"
+000598.png,3,Benign
+000598.png,4,"I'm sorry, I can't"
+000598.png,5,"I'm sorry, I can't"
+000598.png,6,"I'm sorry, I can't"
+000598.png,7,Malignant
+000599.png,0,"I'm sorry, but I cannot"
+000599.png,1,"I'm sorry, I'm not"
+000599.png,2,"I'm sorry, I can't"
+000599.png,3,Malignant
+000599.png,4,"I'm sorry, I can't"
+000599.png,5,"I'm sorry, I can't"
+000599.png,6,"I'm sorry, I can't"
+000599.png,7,Malignant
+000600.png,0,"I'm sorry, but I'm"
+000600.png,1,"I'm sorry, I can't"
+000600.png,2,Benign.
+000600.png,3,"I'm sorry, I can't"
+000600.png,4,"I'm sorry, I can't"
+000600.png,5,"Sorry, I can't assist with"
+000600.png,6,"I'm sorry, I can't"
+000600.png,7,"I'm sorry, I can't"
+000601.png,0,"I'm sorry, but I'm"
+000601.png,1,"I'm sorry, I'm not"
+000601.png,2,Benign.
+000601.png,3,Benign
+000601.png,4,"I'm sorry, I can't"
+000601.png,5,"I'm sorry, but I cannot"
+000601.png,6,Benign.
+000601.png,7,Benign.
+000602.png,0,"I'm sorry, I can't"
+000602.png,1,"I'm sorry, I can't"
+000602.png,2,"I'm sorry, I can't"
+000602.png,3,benign
+000602.png,4,"I'm sorry, I cannot provide"
+000602.png,5,"I'm sorry, but I cannot"
+000602.png,6,"I'm sorry, I can't"
+000602.png,7,benign
+000603.png,0,"I'm sorry, I'm not"
+000603.png,1,"I'm sorry, but I am"
+000603.png,2,"I'm sorry, I can't"
+000603.png,3,"I'm sorry, I can't"
+000603.png,4,"I'm sorry, but I cannot"
+000603.png,5,"I'm sorry, I cannot provide"
+000603.png,6,Benign
+000603.png,7,Benign.
+000604.png,0,"I'm sorry, I cannot provide"
+000604.png,1,"Sorry, I can't provide a"
+000604.png,2,Benign.
+000604.png,3,benign
+000604.png,4,"I'm sorry, I can't"
+000604.png,5,"I'm sorry, I can't"
+000604.png,6,"I'm sorry, I can't"
+000604.png,7,Benign.
+000605.png,0,"I'm sorry, I can't"
+000605.png,1,"I'm sorry, I'm not"
+000605.png,2,Benign
+000605.png,3,Benign.
+000605.png,4,"I'm sorry, I can't"
+000605.png,5,"I'm sorry, I can't"
+000605.png,6,Benign
+000605.png,7,Malignant
+000606.png,0,"I'm sorry, but I can"
+000606.png,1,"I'm sorry, but I cannot"
+000606.png,2,"I'm sorry, I can't"
+000606.png,3,"I'm sorry, I can't"
+000606.png,4,"I'm sorry, I can't"
+000606.png,5,"I'm sorry, I can't"
+000606.png,6,"I'm sorry, but I can"
+000606.png,7,Malignant
+000607.png,0,"I'm sorry, I'm not"
+000607.png,1,"I'm sorry, I'm not"
+000607.png,2,Benign.
+000607.png,3,Benign.
+000607.png,4,benign
+000607.png,5,"I'm sorry, I can't"
+000607.png,6,Benign
+000607.png,7,Benign.
+000608.png,0,"I'm sorry, I'm not"
+000608.png,1,"I'm sorry, I'm not"
+000608.png,2,"I'm sorry, I cannot provide"
+000608.png,3,"I'm sorry, I can't"
+000608.png,4,"I'm sorry, I can't"
+000608.png,5,"I'm sorry, but as an"
+000608.png,6,"I'm sorry, I can't"
+000608.png,7,Benign.
+000609.png,0,"I'm sorry, I can't"
+000609.png,1,"I'm sorry, I'm not"
+000609.png,2,"I'm sorry, I can't"
+000609.png,3,Benign.
+000609.png,4,"I'm sorry, I cannot assist"
+000609.png,5,"I'm sorry, but I'm"
+000609.png,6,Benign.
+000609.png,7,Benign.
+000610.png,0,"I'm sorry, but I cannot"
+000610.png,1,"I'm sorry, I'm not"
+000610.png,2,"I'm sorry, but I can"
+000610.png,3,"I'm sorry, I can't"
+000610.png,4,"I'm sorry, I'm not"
+000610.png,5,"I'm sorry, but as an"
+000610.png,6,Malignant
+000610.png,7,Benign.
+000611.png,0,"I'm sorry, I can't"
+000611.png,1,"I'm sorry, but I can"
+000611.png,2,"I'm sorry, I can't"
+000611.png,3,Benign
+000611.png,4,benign
+000611.png,5,"I'm sorry, but I cannot"
+000611.png,6,Benign.
+000611.png,7,Benign.
+000612.png,0,"I'm sorry, but I cannot"
+000612.png,1,"I'm sorry, but I can"
+000612.png,2,"I'm sorry, I can't"
+000612.png,3,"I'm sorry, I cannot assist"
+000612.png,4,"I'm sorry, I can't"
+000612.png,5,"I'm sorry, but I am"
+000612.png,6,"I'm sorry, I can't"
+000612.png,7,benign
+000613.png,0,"I'm sorry, but I can"
+000613.png,1,"I'm sorry, I can't"
+000613.png,2,"I'm sorry, I can't"
+000613.png,3,"I'm sorry, I can't"
+000613.png,4,"I'm sorry, I can't"
+000613.png,5,"I'm sorry, I can't"
+000613.png,6,"I'm sorry, but I can"
+000613.png,7,Benign
+000614.png,0,"I'm sorry, but I'm"
+000614.png,1,"I'm sorry, but I cannot"
+000614.png,2,"I'm sorry, I can't"
+000614.png,3,Benign.
+000614.png,4,"I'm sorry, I can't"
+000614.png,5,"I'm sorry, I can't"
+000614.png,6,benign
+000614.png,7,Malignant
+000615.png,0,"I'm sorry, I can't"
+000615.png,1,"I'm sorry, but I cannot"
+000615.png,2,"I'm sorry, I can't"
+000615.png,3,"I'm sorry, I can't"
+000615.png,4,"I'm sorry, I cannot provide"
+000615.png,5,"I'm sorry, I cannot provide"
+000615.png,6,Malignant.
+000615.png,7,Malignant
+000616.png,0,"I'm sorry, I can't"
+000616.png,1,"I'm sorry, but I'm"
+000616.png,2,"I'm sorry, I can't"
+000616.png,3,benign
+000616.png,4,"Sorry, I can't help with"
+000616.png,5,"I'm sorry, I can't"
+000616.png,6,benign
+000616.png,7,Malignant
+000617.png,0,"I'm sorry, but I am"
+000617.png,1,"I'm sorry, but I cannot"
+000617.png,2,"I'm sorry, I can't"
+000617.png,3,"I'm sorry, but I can"
+000617.png,4,"I'm sorry, I can't"
+000617.png,5,"I'm sorry, I can't"
+000617.png,6,Benign.
+000617.png,7,Benign
+000618.png,0,"I'm sorry, but I cannot"
+000618.png,1,"I'm sorry, but I am"
+000618.png,2,Benign.
+000618.png,3,Benign.
+000618.png,4,benign
+000618.png,5,Benign.
+000618.png,6,Benign.
+000618.png,7,Benign.
+000619.png,0,"I'm sorry, I cannot provide"
+000619.png,1,"I'm sorry, I cannot provide"
+000619.png,2,"I'm sorry, but I cannot"
+000619.png,3,"I'm sorry, I can't"
+000619.png,4,benign
+000619.png,5,"I'm sorry, but I can"
+000619.png,6,Malignant
+000619.png,7,Benign.
+000620.png,0,"I'm sorry, but I cannot"
+000620.png,1,"I'm sorry, but I can"
+000620.png,2,"I'm sorry, I can't"
+000620.png,3,Benign.
+000620.png,4,Benign.
+000620.png,5,"I'm sorry, I can't"
+000620.png,6,benign
+000620.png,7,Benign.
+000621.png,0,"I'm sorry, but I'm"
+000621.png,1,"I'm sorry, I can't"
+000621.png,2,"I'm sorry, I cannot assist"
+000621.png,3,benign
+000621.png,4,Benign.
+000621.png,5,"I'm sorry, I can't"
+000621.png,6,"I'm sorry, I can't"
+000621.png,7,Benign.
+000622.png,0,"I'm sorry, but I cannot"
+000622.png,1,"I'm sorry, I can't"
+000622.png,2,"I'm sorry, but I cannot"
+000622.png,3,"I'm sorry, but I cannot"
+000622.png,4,"I'm sorry, I can't"
+000622.png,5,"I'm sorry, I can't"
+000622.png,6,Malignant
+000622.png,7,Malignant
+000623.png,0,"I'm sorry, but I can"
+000623.png,1,"I'm sorry, but as an"
+000623.png,2,"I'm sorry, but I can"
+000623.png,3,"I'm sorry, I can't"
+000623.png,4,"I'm sorry, I can't"
+000623.png,5,"I'm sorry, I can't"
+000623.png,6,"I'm sorry, I can't"
+000623.png,7,"I'm sorry, I can't"
+000624.png,0,"I'm sorry, but I'm"
+000624.png,1,"I'm sorry, but I can"
+000624.png,2,"I'm sorry, I can't"
+000624.png,3,Benign.
+000624.png,4,"I'm sorry, I can't"
+000624.png,5,"I'm sorry, I can't"
+000624.png,6,Benign.
+000624.png,7,Benign.
+000625.png,0,"I'm sorry, but I'm"
+000625.png,1,"I'm sorry, but I cannot"
+000625.png,2,"I'm sorry, I can't"
+000625.png,3,Benign
+000625.png,4,benign
+000625.png,5,benign
+000625.png,6,Benign.
+000625.png,7,Malignant
+000626.png,0,"I'm sorry, I'm not"
+000626.png,1,"I'm sorry, but I can"
+000626.png,2,benign
+000626.png,3,Malignant
+000626.png,4,"I'm sorry, I can't"
+000626.png,5,"I'm sorry, but I can"
+000626.png,6,benign
+000626.png,7,malignant
+000627.png,0,"I'm sorry, I can't"
+000627.png,1,"I'm sorry, I can't"
+000627.png,2,"I'm sorry, but I can"
+000627.png,3,benign
+000627.png,4,benign
+000627.png,5,benign
+000627.png,6,benign
+000627.png,7,benign
+000628.png,0,"I'm sorry, I can't"
+000628.png,1,"Sorry, I can't help with"
+000628.png,2,"Sorry, I can't assist with"
+000628.png,3,Benign.
+000628.png,4,"I'm sorry, I can't"
+000628.png,5,"I'm sorry, I can't"
+000628.png,6,benign
+000628.png,7,Benign.
+000629.png,0,"I'm sorry, I can't"
+000629.png,1,"I'm sorry, I'm not"
+000629.png,2,"I'm sorry, but I can"
+000629.png,3,benign
+000629.png,4,Benign.
+000629.png,5,benign
+000629.png,6,Benign
+000629.png,7,Benign
+000630.png,0,"I'm sorry, I can't"
+000630.png,1,"I'm sorry, but I cannot"
+000630.png,2,"I'm sorry, I can't"
+000630.png,3,Benign.
+000630.png,4,"I'm sorry, I can't"
+000630.png,5,"Sorry, I can't provide this"
+000630.png,6,Benign
+000630.png,7,benign
+000631.png,0,"I'm sorry, but I cannot"
+000631.png,1,"I'm sorry, but I can"
+000631.png,2,"I'm sorry, I can't"
+000631.png,3,"I'm sorry, but I cannot"
+000631.png,4,"I'm sorry, I can't"
+000631.png,5,"I'm sorry, I can't"
+000631.png,6,"I'm sorry, I can't"
+000631.png,7,Malignant
+000632.png,0,"I'm sorry, but I'm"
+000632.png,1,"I'm sorry, but I'm"
+000632.png,2,"I'm sorry, I can't"
+000632.png,3,Benign
+000632.png,4,Benign.
+000632.png,5,"I'm sorry, I can't"
+000632.png,6,Malignant.
+000632.png,7,Malignant
+000633.png,0,"I'm sorry, I can't"
+000633.png,1,"I'm sorry, but I cannot"
+000633.png,2,"I'm sorry, I can't"
+000633.png,3,"I'm sorry, but I can"
+000633.png,4,"I'm sorry, I can't"
+000633.png,5,"I'm sorry, I'm not"
+000633.png,6,Benign
+000633.png,7,Malignant
+000634.png,0,"I'm sorry, I can't"
+000634.png,1,"I'm sorry, I can't"
+000634.png,2,"I'm sorry, I can't"
+000634.png,3,Benign
+000634.png,4,"I'm sorry, I can't"
+000634.png,5,"I'm sorry, I can't"
+000634.png,6,"I'm sorry, but as an"
+000634.png,7,Benign
+000635.png,0,"I'm sorry, I'm not"
+000635.png,1,"I'm sorry, I can't"
+000635.png,2,"I'm sorry, I can't"
+000635.png,3,"I'm sorry, I can't"
+000635.png,4,"I'm sorry, I can't"
+000635.png,5,benign
+000635.png,6,Malignant
+000635.png,7,Malignant
+000636.png,0,"I'm sorry, I cannot provide"
+000636.png,1,"I'm sorry, but I cannot"
+000636.png,2,"I'm sorry, I can't"
+000636.png,3,"I'm sorry, I can't"
+000636.png,4,"I'm sorry, I can't"
+000636.png,5,"I'm sorry, I'm not"
+000636.png,6,Benign
+000636.png,7,Benign.
+000637.png,0,"I'm sorry, I'm not"
+000637.png,1,"I'm sorry, I cannot assist"
+000637.png,2,"I'm sorry, but I cannot"
+000637.png,3,Malignant
+000637.png,4,"I'm sorry, I can't"
+000637.png,5,Benign.
+000637.png,6,Benign.
+000637.png,7,Malignant
+000638.png,0,"I'm sorry, but I cannot"
+000638.png,1,"I'm sorry, but as an"
+000638.png,2,"I'm sorry, but I'm"
+000638.png,3,Benign
+000638.png,4,benign
+000638.png,5,"I'm sorry, I'm not"
+000638.png,6,Benign.
+000638.png,7,Benign.
+000639.png,0,"I'm sorry, but I'm"
+000639.png,1,"I'm sorry, but I'm"
+000639.png,2,"I'm sorry, I can't"
+000639.png,3,Benign.
+000639.png,4,"I'm sorry, I can't"
+000639.png,5,benign
+000639.png,6,Benign.
+000639.png,7,Benign.
+000640.png,0,"I'm sorry, I can't"
+000640.png,1,"I'm sorry, I cannot provide"
+000640.png,2,"I'm sorry, I can't"
+000640.png,3,Benign.
+000640.png,4,"I'm sorry, I can't"
+000640.png,5,"I'm sorry, I can't"
+000640.png,6,"I'm sorry, I cannot provide"
+000640.png,7,Benign.
+000641.png,0,"I'm sorry, but I can"
+000641.png,1,"I'm sorry, but I can"
+000641.png,2,"I'm sorry, I can't"
+000641.png,3,"I'm sorry, but I can"
+000641.png,4,"I'm sorry, but I can"
+000641.png,5,"I'm sorry, I can't"
+000641.png,6,Benign
+000641.png,7,Benign.
+000642.png,0,"I'm sorry, but I can"
+000642.png,1,"I'm sorry, I can't"
+000642.png,2,benign
+000642.png,3,Benign.
+000642.png,4,benign
+000642.png,5,"I'm sorry, I can't"
+000642.png,6,Benign.
+000642.png,7,Benign.
+000643.png,0,"I'm sorry, but I'm"
+000643.png,1,"I'm sorry, but I cannot"
+000643.png,2,"I'm sorry, but I cannot"
+000643.png,3,Benign.
+000643.png,4,"I'm sorry, I can't"
+000643.png,5,Benign.
+000643.png,6,benign
+000643.png,7,Benign.
+000644.png,0,"I'm sorry, I can't"
+000644.png,1,"I'm sorry, but I can"
+000644.png,2,"I'm sorry, I can't"
+000644.png,3,"I'm sorry, but I can"
+000644.png,4,"I'm sorry, I can't"
+000644.png,5,"I'm sorry, I can't"
+000644.png,6,benign
+000644.png,7,benign
+000645.png,0,"I'm sorry, but I cannot"
+000645.png,1,"I'm sorry, I can't"
+000645.png,2,"I'm sorry, I can't"
+000645.png,3,"I'm sorry, I can't"
+000645.png,4,"I'm sorry, I cannot provide"
+000645.png,5,"I'm sorry, but I cannot"
+000645.png,6,"I'm sorry, I can't"
+000645.png,7,benign
+000646.png,0,"I'm sorry, I can't"
+000646.png,1,"I'm sorry, I'm not"
+000646.png,2,benign
+000646.png,3,Benign.
+000646.png,4,"I'm sorry, I can't"
+000646.png,5,"I'm sorry, but I can"
+000646.png,6,benign
+000646.png,7,Malignant
+000647.png,0,"I'm sorry, but I cannot"
+000647.png,1,"I'm sorry, but I can"
+000647.png,2,"I'm sorry, I can't"
+000647.png,3,"I'm sorry, I can't"
+000647.png,4,"I'm sorry, I can't"
+000647.png,5,"I'm sorry, but I cannot"
+000647.png,6,"I'm sorry, I can't"
+000647.png,7,"I'm sorry, I can't"
+000648.png,0,"I'm sorry, I can't"
+000648.png,1,"I'm sorry, I'm not"
+000648.png,2,"I'm sorry, I can't"
+000648.png,3,benign
+000648.png,4,Unable to comply with request.
+000648.png,5,"I'm sorry, I can't"
+000648.png,6,Benign.
+000648.png,7,Malignant
+000649.png,0,"I'm sorry, I can't"
+000649.png,1,"I'm sorry, I can't"
+000649.png,2,"I'm sorry, I can't"
+000649.png,3,"I'm sorry, but I cannot"
+000649.png,4,benign
+000649.png,5,"Sorry, I can't assist with"
+000649.png,6,Benign.
+000649.png,7,benign
+000650.png,0,"I'm sorry, I can't"
+000650.png,1,"I'm sorry, but as an"
+000650.png,2,"I'm sorry, but I can"
+000650.png,3,benign
+000650.png,4,"Sorry, I can't provide that"
+000650.png,5,"I'm sorry, I can't"
+000650.png,6,Benign.
+000650.png,7,Benign.
+000651.png,0,"I'm sorry, but I am"
+000651.png,1,"I'm sorry, but I cannot"
+000651.png,2,"I'm sorry, but I'm"
+000651.png,3,"I'm sorry, but I cannot"
+000651.png,4,benign
+000651.png,5,"I'm sorry, but I can"
+000651.png,6,"I'm sorry, I can't"
+000651.png,7,Benign
+000652.png,0,"I'm sorry, I can't"
+000652.png,1,"I'm sorry, I can't"
+000652.png,2,"I'm sorry, I can't"
+000652.png,3,Benign.
+000652.png,4,"I'm sorry, I can't"
+000652.png,5,"I'm sorry, I can't"
+000652.png,6,"I'm sorry, I can't"
+000652.png,7,Malignant.
+000653.png,0,"I'm sorry, I'm not"
+000653.png,1,"I'm sorry, I'm not"
+000653.png,2,"I'm sorry, I can't"
+000653.png,3,"I'm sorry, but I am"
+000653.png,4,"I'm sorry, but I can"
+000653.png,5,"I'm sorry, I can't"
+000653.png,6,Benign
+000653.png,7,Benign
+000654.png,0,"I'm sorry, I cannot provide"
+000654.png,1,"I'm sorry, but as an"
+000654.png,2,"I'm sorry, I can't"
+000654.png,3,Benign.
+000654.png,4,"I'm sorry, I can't"
+000654.png,5,"I'm sorry, I can't"
+000654.png,6,Benign.
+000654.png,7,Benign.
+000655.png,0,"I'm sorry, but I'm"
+000655.png,1,"I'm sorry, but I can"
+000655.png,2,"I'm sorry, I can't"
+000655.png,3,Malignant
+000655.png,4,"I'm sorry, but I can"
+000655.png,5,"I'm sorry, I can't"
+000655.png,6,Malignant
+000655.png,7,Malignant
+000656.png,0,"I'm sorry, I cannot provide"
+000656.png,1,"I'm sorry, I cannot provide"
+000656.png,2,"I'm sorry, I can't"
+000656.png,3,"I'm sorry, I can't"
+000656.png,4,"I'm sorry, I can't"
+000656.png,5,"I'm sorry, but I'm"
+000656.png,6,benign
+000656.png,7,benign

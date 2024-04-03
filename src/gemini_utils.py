@@ -60,6 +60,7 @@ def main():
     date = time.strftime("%Y%m%d")
     date = '20240312'
     csvfile_path = f"../data/{department}/apiResults/gemini_chexpert_results_20240312.csv"
+    #csvfile_path = f"data/{department}/gemini_ddi_results_{date}_single_word_errors.csv"
 
     processed_count = 0
     
@@ -95,6 +96,7 @@ def main():
                 try:
                     model = load_model(config)
                     response = process_image(config, model, file_name, text_prompt, config.safety_settings)
+                    #response = process_image(config, file_name, text_prompt, config.safety_settings)
                     csv_writer.writerow({"Filename": response[0], "PromptID": prompt_id, "Response": response[2]})
                     csvfile.flush()
                 except Exception as exc:
@@ -102,7 +104,7 @@ def main():
                 processed_count += 1
                 if processed_count >= 50:
                     logging.info("Rate limit reached. Sleeping for 60 seconds.")
-                    time.sleep(60)
+                    time.sleep(10)
                     processed_count = 0 
     
 if __name__ == "__main__":

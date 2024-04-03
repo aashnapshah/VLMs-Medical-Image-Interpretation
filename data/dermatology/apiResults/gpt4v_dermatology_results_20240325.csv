@@ -52,7 +52,7 @@ Filename,PromptID,Response
 000007.png,2,"I'm sorry, I can't"
 000007.png,3,"I'm sorry, I cannot provide"
 000007.png,4,"I'm sorry, I cannot provide"
-000007.png,5,The image you've provided appears to
+000007.png,5,"I'm sorry, I can't"
 000007.png,6,"Sorry, I can't assist with"
 000007.png,7,Malignant
 000008.png,0,"I'm sorry, but I can"
@@ -614,7 +614,7 @@ Please note this"
 000077.png,2,"I'm sorry, but I cannot"
 000077.png,3,"I'm sorry, I'm not"
 000077.png,4,"Sorry, I can't provide help"
-000077.png,5,The image you provided appears to be
+000077.png,5,"I'm sorry, I can't"
 000077.png,6,"I'm sorry, but I can"
 000077.png,7,benign
 000078.png,0,"I'm sorry, but I'm"
@@ -826,7 +826,7 @@ Please note this"
 000103.png,6,"I'm sorry, I can't"
 000103.png,7,Malignant
 000104.png,0,"I'm sorry, but I'm"
-000104.png,1,
+000104.png,1,"I'm sorry, I can't"
 000104.png,2,"I'm sorry, but I cannot"
 000104.png,3,"I'm sorry, but I can"
 000104.png,4,"I'm sorry, I cannot provide"
@@ -2205,7 +2205,7 @@ Please note this"
 000276.png,1,"Sorry, I can't help with"
 000276.png,2,"I'm sorry, I can't"
 000276.png,3,"I'm sorry, I can't"
-000276.png,4,The image you provided does not show
+000276.png,4,"I'm sorry, but I cannot"
 000276.png,5,"I'm sorry, I cannot provide"
 000276.png,6,"I'm sorry, but I cannot"
 000276.png,7,"I'm sorry, I can't"
@@ -2321,7 +2321,7 @@ Please note this"
 000290.png,5,"I'm sorry, but as an"
 000290.png,6,"I'm sorry, I can't"
 000290.png,7,benign
-000291.png,0,
+000291.png,0,"I'm sorry, but I cannot"
 000291.png,1,"I'm sorry, but I cannot"
 000291.png,2,"I'm sorry, but I cannot"
 000291.png,3,Benign.
@@ -2579,7 +2579,7 @@ Please note this"
 000322.png,7,"I'm sorry, I can't"
 000323.png,0,"I'm sorry, I cannot provide"
 000323.png,1,"I'm sorry, but I cannot"
-000323.png,2,The image provided appears to show a
+000323.png,2,Malignant
 000323.png,3,malignant
 000323.png,4,"I'm sorry, but I cannot"
 000323.png,5,"I'm sorry, I can't"
@@ -3364,7 +3364,7 @@ Please note this"
 000421.png,0,"I'm sorry, but I'm"
 000421.png,1,"I'm sorry, but as an"
 000421.png,2,"I'm sorry, I can't"
-000421.png,3,
+000421.png,3,Malignant.
 000421.png,4,"I'm sorry, but I cannot"
 000421.png,5,"I'm sorry, I cannot provide"
 000421.png,6,Malignant
@@ -3806,7 +3806,7 @@ Please note this"
 000476.png,2,"I'm sorry, I can't"
 000476.png,3,Malignant.
 000476.png,4,"I'm sorry, but I cannot"
-000476.png,5,
+000476.png,5,"I'm sorry, I cannot assist"
 000476.png,6,malignant
 000476.png,7,Malignant.
 000477.png,0,"I'm sorry, but I cannot"
@@ -4542,7 +4542,7 @@ Please remember that"
 000568.png,0,"Sorry, I can't assist with"
 000568.png,1,"I'm sorry, but I'm"
 000568.png,2,"I'm sorry, but I can"
-000568.png,3,The lesion in the image could possibly
+000568.png,3,Malignant
 000568.png,4,"I'm sorry, but I can"
 000568.png,5,"Sorry, I can't help with"
 000568.png,6,"I'm sorry, but I'm"

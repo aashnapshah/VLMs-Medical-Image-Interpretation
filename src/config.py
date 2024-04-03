@@ -1,6 +1,7 @@
 import os
 import sys
 import pandas as pd
+import google.generativeai as genai
 from dotenv import load_dotenv
 
 import sys
@@ -22,7 +23,7 @@ class Config:
     def load_department_settings(self):
         if self.department == "dermatology":
             self.folder_path = "data/dermatology/DDI"
-            self.image_paths = pd.read_csv('data/dermatology/DDI/ddi_metadata.csv')['DDI_file']
+            self.image_paths = pd.read_csv('data/dermatology/DDI/gemini_errors.csv')['DDI_file']
             self.prompts_dict = pd.read_csv('data/dermatology/prompts.csv')['Prompt'].to_dict()
             # Additional dermatology-specific settings can be added here
         elif self.department == "radiology":
@@ -54,6 +55,8 @@ class Config:
             {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
             {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
         ]
+
+main
             # Add any Google API specific settings or initializations here
        # else:
        #     # Default or error handling

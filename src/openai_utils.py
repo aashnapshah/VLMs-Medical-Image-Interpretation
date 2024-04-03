@@ -88,6 +88,8 @@ def main():
     date = time.strftime("%Y%m%d")
     date = '20240328'
     csvfile_path = f"../data/{department}/apiResults/gpt4v_{department}_results_{date}.csv"
+    #date = '20240318'
+    #csvfile_path = f"data/{department}/gpt4v_{department}_results_{date}_single_word.csv"
 
     processed_count = 0
     print(os.path.exists(csvfile_path))
