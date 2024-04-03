@@ -2,6 +2,7 @@ import os
 import sys
 import pandas as pd
 from dotenv import load_dotenv
+
 import sys
 sys.path.append('../')
 # Load environment variables
@@ -35,25 +36,25 @@ class Config:
         # Identify the main script name
         main_script_name = os.path.basename(sys.argv[0])
 
-        if "openai" in main_script_name:
+        #if "openai" in main_script_name:
             # Configure for OpenAI
-            self.headers = {
-            "Content-Type": "application/json",
-            "Authorization": f"Bearer {self.OPENAI_API_KEY}",
-            }
+        self.headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {self.OPENAI_API_KEY}",
+        }
             # You can add more OpenAI specific settings here
-        elif "gemini" in main_script_name:
+        #elif "gemini" in main_script_name:
             # Configure for Google Gemini
             
-            self.model_name = "gemini-1.0-pro-vision-latest"
-            self.safety_settings = [
-                {"category": "HARM_CATEGORY_DANGEROUS", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
-                {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
-            ]
+        self.model_name = "gemini-1.0-pro-vision-latest"
+        self.safety_settings = [
+            {"category": "HARM_CATEGORY_DANGEROUS", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
+        ]
             # Add any Google API specific settings or initializations here
-        else:
-            # Default or error handling
-            raise ValueError(f"Script name '{main_script_name}' does not match any known configurations.")
+       # else:
+       #     # Default or error handling
+       #     raise ValueError(f"Script name '{main_script_name}' does not match any known configurations.")

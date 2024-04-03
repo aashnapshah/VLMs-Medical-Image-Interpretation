@@ -167,7 +167,7 @@ ggplot(df_counts_proportion, aes(x = factor(PromptID), y = Proportion, fill = Ca
 ```{r}
 # Calculate rates of diagnosis, refusal, and blocked for each prompt, race, and Model
 rates_data <- df_cleaned %>%
-  group_by(PromptID, Age, Model, CategorizedResponse, .groups = "drop") %>%
+  group_by(PromptID, Model, CategorizedResponse, .groups = "drop") %>%
   summarise(count = n()) %>%
   pivot_wider(names_from = CategorizedResponse, values_from = count, values_fill = 0) %>%
   mutate(
@@ -177,19 +177,19 @@ rates_data <- df_cleaned %>%
     #Blocked = Blocked / total_responses
   ) %>% select(Diagnosis, Refusal) #, Blocked)
 
-melted_data <- melt(rates_data, id.vars = c("PromptID", "Model", "Age"), variable.name = "RateType", value.name = "Rate")
+melted_data <- melt(rates_data, id.vars = c("PromptID", "Model"), variable.name = "RateType", value.name = "Rate")
 
 # Calculate the fractions of refusals and blocks for each race and each Model
-fraction_data <- aggregate(Rate ~ PromptID + Model + Age + RateType, melted_data, sum) %>% filter(RateType != 'Diagnosis')
+fraction_data <- aggregate(Rate ~ PromptID + Model + RateType, melted_data, sum) %>% filter(RateType != 'Diagnosis')
 fraction_data$Model_Prompt <- paste(fraction_data$PromptID, fraction_data$Model, sep = " - ")
 set.seed(123)
 
 fraction_data$PromptID <- as.factor(fraction_data$PromptID)
 
-plot <- ggplot(fraction_data, aes(x = Age, y = Rate, fill = Age, shape = Model)) +
-  geom_point(size = 4, position = position_dodge(width = 1.0), aes(color = Age), stroke = 1.0, alpha = 1) +
+plot <- ggplot(fraction_data, aes(x = PromptID, y = Rate, fill = Model, shape = PromptID)) +
+  geom_point(size = 4, position = position_dodge(width = 1.0), aes(color = Model), stroke = 1.0, alpha = 1) +
   scale_fill_brewer(palette = "Set1") +
-  scale_shape_manual(values = c(15, 16), guide = guide_legend(title = "Rate Type", override.aes = list(stroke = c(1, 1)))) +
+  #scale_shape_manual(values = c(15, 16), guide = guide_legend(title = "Rate Type", override.aes = list(stroke = c(1, 1)))) +
   labs(x = "Prompts", y = "Fraction") +
   scale_color_brewer(palette = "Set1") +
   facet_grid(RateType ~ PromptID, scales = "fixed") + 
@@ -354,6 +354,7 @@ calculate_cp_metrics <- function(sample_data, cm) {
   }, error = function(e) {
     print(paste("Error:", e$message))
     result_df <- data.frame(
+      Size = NaN,
       Accuracy_mean = NaN,
       Sensitivity_mean = NaN,
       Specificity_mean = NaN,
@@ -537,7 +538,7 @@ filtered_demo_df$PromptID <- as.factor(filtered_demo_df$PromptID)
 
 # Plotting code with mean lines
 p <- ggplot(filtered_demo_df, aes(x = Unique_Value, y = Balanced.Accuracy_mean, color = Model, shape = PromptID)) +
-  geom_errorbar(aes(ymin = Balanced.Accuracy_lower, ymax = Balanced.Accuracy_upper), alpha = 0.3) +
+  geom_errorbar(aes(ymin = Balanced.Accuracy_lower, ymax = Balanced.Accuracy_upper), width = 0.2, alpha = 0.3) +
   geom_point(size = 3) +
   geom_hline(data = mean_df, aes(yintercept = mean_accuracy, color = Model), alpha = 0.6) +  # Use transparent mean lines
   scale_shape_manual(values = c(15, 0, 16, 1, 17, 2, 18, 5)) +  # Manual shape mapping 

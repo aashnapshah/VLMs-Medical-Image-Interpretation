@@ -110,7 +110,6 @@ def main():
     with ThreadPoolExecutor() as executor:
         results = list(executor.map(lambda pair: process_pair(pair, config), image_prompt_pairs))
 
-
     with open(csvfile_path, mode, newline='') as csvfile:
         fieldnames = ["Filename", "PromptID", "Response"]
         csv_writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
