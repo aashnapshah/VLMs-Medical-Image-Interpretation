@@ -83,7 +83,7 @@ combined_wide <- bind_rows(gemini_wide, gpt4_wide) %>%
   select(!contains("..."))
 
 #### Bootstrap Metrics Functions w/CIs ####
-calculate_metrics_with_CI <- function(data, model, FST, column_name, n_bootstrap = 1000) {
+calculate_metrics_with_CI <- function(data, FST, column_name, n_bootstrap = 1000) {
   if (!column_name %in% names(data)) {
     print("column name not found")
     return(data.frame(Accuracy = NA, Sensitivity = NA, Specificity = NA, Precision = NA, Recall = NA, F1 = NA, `Balanced Accuracy` = NA))
@@ -92,7 +92,6 @@ calculate_metrics_with_CI <- function(data, model, FST, column_name, n_bootstrap
   calculate_single_sample <- function() {
     sample_data <- data %>% 
       filter(skin_tone == FST) %>% 
-      filter(model == model) %>% 
       drop_na({{column_name}}, malignant) %>%
       sample_frac(1, replace = TRUE)
     
@@ -118,18 +117,68 @@ calculate_metrics_with_CI <- function(data, model, FST, column_name, n_bootstrap
     summarise(across(everything(), list(mean = ~mean(., na.rm = TRUE), 
                                         lower = ~quantile(., 0.025, na.rm = TRUE), 
                                         upper = ~quantile(., 0.975, na.rm = TRUE))))
+
   
   return(metrics_with_CI)
 }
 
-calculate_metrics_overall <- function(data, model, column_name, n_bootstrap = 1000) {
+calculate_metrics_with_CI_CP <- function(data, model_filter, FST, column_name) {
+  if (!column_name %in% names(data)) {
+    print("column name not found")
+    return(data.frame(Accuracy = NA, Sensitivity = NA, Specificity = NA, Precision = NA))
+  }
+  
+  filtered_data <- data %>%
+    filter(skin_tone == FST, model == model_filter) %>%
+    drop_na({{column_name}}, malignant)
+  
+  # Ensure that both TRUE and FALSE levels exist for prediction and actual
+  filtered_data[[column_name]] <- factor(filtered_data[[column_name]], levels = c("FALSE", "TRUE"))
+  filtered_data$malignant <- factor(filtered_data$malignant, levels = c("FALSE", "TRUE"))
+  
+  # Confusion Matrix
+  cm <- confusionMatrix(as.factor(filtered_data[[column_name]]), as.factor(filtered_data$malignant), positive = "TRUE")
+  
+  # Clopper-Pearson CI for proportions
+  calculate_cp_ci <- function(successes, total) {
+    ci <- binom.test(successes, total, conf.level = 0.95)$conf.int
+    return(ci)
+  }
+  
+  # Calculate CI for Sensitivity, Specificity, Precision
+  sensitivity_ci <- calculate_cp_ci(cm$byClass["Sensitivity"] * cm$table["TRUE", "TRUE"], sum(cm$table["TRUE",]))
+  specificity_ci <- calculate_cp_ci(cm$byClass["Specificity"] * cm$table["FALSE", "FALSE"], sum(cm$table["FALSE",]))
+  precision_ci <- calculate_cp_ci(cm$byClass["Precision"] * cm$table["TRUE", "TRUE"], sum(cm$table[,"TRUE"]))
+  
+  # Calculate overall Accuracy
+  accuracy_ci <- calculate_cp_ci(sum(diag(cm$table)), sum(cm$table))
+  
+  # Compile results
+  metrics_with_CI <- tibble(
+    Accuracy = cm$overall['Accuracy'],
+    Sensitivity = cm$byClass['Sensitivity'],
+    Specificity = cm$byClass['Specificity'],
+    Precision = cm$byClass['Precision'],
+    Sensitivity_Lower = sensitivity_ci[1],
+    Sensitivity_Upper = sensitivity_ci[2],
+    Specificity_Lower = specificity_ci[1],
+    Specificity_Upper = specificity_ci[2],
+    Precision_Lower = precision_ci[1],
+    Precision_Upper = precision_ci[2],
+    Accuracy_Lower = accuracy_ci[1],
+    Accuracy_Upper = accuracy_ci[2]
+  )
+  
+  return(metrics_with_CI)
+}
+
+calculate_metrics_overall <- function(data, column_name, n_bootstrap = 1000) {
   if (!column_name %in% names(data)) {
     return(data.frame(Accuracy = NA, Sensitivity = NA, Specificity = NA, Precision = NA, Recall = NA, F1 = NA, `Balanced Accuracy` = NA))
   }
   
   calculate_single_sample <- function() {
     sample_data <- data %>% 
-      filter(model == model) %>% 
       drop_na({{column_name}}, malignant) %>%
       sample_frac(1, replace = TRUE)
     
@@ -159,42 +208,108 @@ calculate_metrics_overall <- function(data, model, column_name, n_bootstrap = 10
   return(metrics_with_CI)
 }
 
+calculate_metrics_overall_CP <- function(data, model_filter, column_name) {
+  if (!column_name %in% names(data)) {
+    return(data.frame(Accuracy = NA, Sensitivity = NA, Specificity = NA, Precision = NA))
+  }
+  
+  filtered_data <- data %>%
+    filter(model == model_filter) %>%
+    drop_na({{column_name}}, malignant)
+  
+  # Ensure that both TRUE and FALSE levels exist for prediction and actual
+  filtered_data[[column_name]] <- factor(filtered_data[[column_name]], levels = c("FALSE", "TRUE"))
+  filtered_data$malignant <- factor(filtered_data$malignant, levels = c("FALSE", "TRUE"))
+  
+  # Confusion Matrix
+  cm <- confusionMatrix(as.factor(filtered_data[[column_name]]), as.factor(filtered_data$malignant), positive = "TRUE")
+  
+  # Clopper-Pearson CI for proportions
+  calculate_cp_ci <- function(successes, total) {
+    ci <- binom.test(successes, total, conf.level = 0.95)$conf.int
+    return(ci)
+  }
+  
+  # Calculate CI for Sensitivity, Specificity, Precision
+  sensitivity_ci <- calculate_cp_ci(cm$byClass["Sensitivity"] * cm$table["TRUE", "TRUE"], sum(cm$table["TRUE",]))
+  specificity_ci <- calculate_cp_ci(cm$byClass["Specificity"] * cm$table["FALSE", "FALSE"], sum(cm$table["FALSE",]))
+  precision_ci <- calculate_cp_ci(cm$byClass["Precision"] * cm$table["TRUE", "TRUE"], sum(cm$table[,"TRUE"]))
+  
+  # Calculate overall Accuracy
+  accuracy_ci <- calculate_cp_ci(sum(diag(cm$table)), sum(cm$table))
+  
+  # Compile results
+  metrics_with_CI_CP <- tibble(
+    Accuracy = cm$overall['Accuracy'],
+    Sensitivity = cm$byClass['Sensitivity'],
+    Specificity = cm$byClass['Specificity'],
+    Precision = cm$byClass['Precision'],
+    Sensitivity_Lower = sensitivity_ci[1],
+    Sensitivity_Upper = sensitivity_ci[2],
+    Specificity_Lower = specificity_ci[1],
+    Specificity_Upper = specificity_ci[2],
+    Precision_Lower = precision_ci[1],
+    Precision_Upper = precision_ci[2],
+    Accuracy_Lower = accuracy_ci[1],
+    Accuracy_Upper = accuracy_ci[2]
+  )
+  
+  return(metrics_with_CI_CP)
+}
+
 #### Create eval datasets ####
-model_names <- c("Gemini-Pro-Vision", "GPT-4V")
 skin_tones <- c('12', '34', '56')
 columns <- c('one_word_P1', 'one_word_P2', 'one_word_P3', 'one_word_P4', 'one_word_P5', 'one_word_P6', 'one_word_P7', 'one_word_P8')
 
-results <- expand.grid(model_name = model_names, FST = skin_tones, column = columns) %>%
-  mutate(metrics = pmap(list(model_name, FST, column), 
-                        ~calculate_metrics_with_CI(combined_wide,..1, ..2, ..3))) %>%
-  unnest(metrics)
+gemini_metrics <- expand.grid(FST = skin_tones, column = columns) %>%
+  mutate(metrics = pmap(list(FST, column), 
+                        ~calculate_metrics_with_CI(gemini_wide,..1, ..2))) %>%
+  unnest(metrics) %>% 
+  mutate(model = "Gemini-Pro-Vision")
+
+gpt4_metrics <- expand.grid(FST = skin_tones, column = columns) %>%
+  mutate(metrics = pmap(list(FST, column), 
+                        ~calculate_metrics_with_CI(gpt4_wide,..1, ..2))) %>%
+  unnest(metrics) %>% 
+  mutate(model = "GPT-4V")
+
+results <- bind_rows(gemini_metrics, gpt4_metrics)
 
 results <- results %>% 
   mutate(Model = case_when(
-    grepl("gemini", model_name, ignore.case = TRUE) ~ "Gemini Pro Vision",
-    grepl("gpt", model_name, ignore.case = TRUE) ~ "GPT-4 with Vision",
+    grepl("gemini", model, ignore.case = TRUE) ~ "Gemini Pro Vision",
+    grepl("gpt", model, ignore.case = TRUE) ~ "GPT-4 with Vision",
     TRUE ~ NA_character_ # Default case if neither pattern is found
   )) %>% 
   mutate(Prompt = str_replace(column, "one_word_", "")) %>%
   drop_na(Accuracy_mean)
 
 
-results_overall <- expand.grid(model_name = model_names, column = columns) %>%
-  mutate(metrics = pmap(list(model_name, column), 
-                        ~calculate_metrics_overall(combined_wide, ..1, ..2))) %>%
-  unnest(metrics)
+gemini_overall <- expand.grid(column = columns) %>%
+  mutate(metrics = pmap(list(column), 
+                        ~calculate_metrics_overall(gemini_wide, ..1))) %>%
+  unnest(metrics) %>% 
+  mutate(model = "Gemini-Pro-Vision")
+
+gpt4_overall <- expand.grid(column = columns) %>%
+  mutate(metrics = pmap(list(column), 
+                        ~calculate_metrics_overall(gpt4_wide, ..1))) %>%
+  unnest(metrics) %>% 
+  mutate(model = "GPT-4V")
+
+results_overall <- bind_rows(gemini_overall, gpt4_overall)
 
 results_overall <- results_overall %>% 
   mutate(Model = case_when(
-    grepl("gemini", model_name, ignore.case = TRUE) ~ "Gemini Pro Vision",
-    grepl("gpt", model_name, ignore.case = TRUE) ~ "GPT-4 with Vision",
+    grepl("gemini", model, ignore.case = TRUE) ~ "Gemini Pro Vision",
+    grepl("gpt", model, ignore.case = TRUE) ~ "GPT-4 with Vision",
     TRUE ~ NA_character_ # Default case if neither pattern is found
   )) %>% 
   mutate(Prompt = str_replace(column, "one_word_", "")) %>%
   drop_na(Accuracy_mean)
 
 # Format and write summary results
-results_overall <- results_overall %>%
+results_overall_formatted <- results_overall %>%
   select(Model, Prompt, starts_with("Sensitivity_"), starts_with("Specificity_"), starts_with("Balanced.Accuracy_")) %>%
   group_by(Model, Prompt) %>%
   summarise(
@@ -267,35 +382,141 @@ p <- results %>%
   scale_shape_manual(values = c("P1" = 16, "P2" = 1, "P3" = 15, "P4" = 0, "P5" = 17, "P6" = 2, "P7" = 18, "P8" = 5, "Dermatologist Ensemble" = 4)) +  # Manual shape mapping
   scale_color_brewer(palette = "Set1") +
   guides(shape = guide_legend(override.aes = list(color = "black")))+
-  guides(color = guide_legend(nrow = 2, byrow = TRUE),  # Adjust the number of rows and orientation for the color legend
-         shape = guide_legend(nrow = 2, byrow = TRUE))
+  guides(color = guide_legend(ncol = 4, byrow = TRUE),  # Adjust the number of rows and orientation for the color legend
+         shape = guide_legend(ncol = 4, byrow = TRUE))
 
 p
 
+#### Balanced Accuracy Plot ####
+# Plotting code with mean lines
+prompt_means <- results_overall %>% 
+  select(column, Model,Prompt, Balanced.Accuracy_mean)
+  
+
+p2 <- results %>% 
+  mutate(FST = case_when(FST == "12" ~ "I-II", FST == "34" ~ "III-IV", FST == "56" ~ "V-VI")) %>% 
+  ggplot(aes(x = FST, y = Balanced.Accuracy_mean, color = Model, shape = Prompt)) +
+  geom_errorbar(aes(ymin = Balanced.Accuracy_lower, ymax = Balanced.Accuracy_upper), alpha = 0.5, width=0.5) +
+  geom_point(size = 3) +
+  geom_hline(data = prompt_means, aes(yintercept = Balanced.Accuracy_mean, color = Model), alpha = 0.3, lty=2) +  # Use transparent mean lines
+  scale_shape_manual(values = c(15, 0, 16, 1, 17, 2, 18, 5)) +  # Manual shape mapping 
+  # theme_minimal() +
+  facet_grid(~ Prompt) +
+  scale_color_brewer(palette = "Set1") + 
+  theme(
+    legend.text = element_text(size = 10), 
+    panel.background = element_rect(fill = "white"),  # Set background color to white
+    panel.grid.major = element_line(color = "gray93"), # Customize major grid lines color and transparency
+    panel.border = element_rect(color = "gray", fill = NA, linewidth = 0.1),
+    strip.background = element_blank(),  # Remove background color for facet titles
+    strip.text = element_text(color = "black", face = "bold", angle = 0, hjust = 0.5, vjust = 0.5),  # Customize facet title appearance
+    legend.position = "bottom"  # Move legend to the bottom
+  ) + 
+  labs(y = "Balanced Accuracy", x="FST Group", shape = "Prompt", color = "Model") +
+  guides(color = guide_legend(nrow = 2, byrow = TRUE),  
+         shape = guide_legend(nrow = 2, byrow = TRUE)) +  
+  guides(shape = guide_legend(override.aes = list(color = "black")))
+
+p2
+
+#### Save Results ####
 write_csv(results, paste0("../../data/dermatology/classification_results/bootstrapped_fst_metrics_all.csv"))
 write_csv(results_overall, paste0("../../data/dermatology/classification_results/overall_metrics_all.csv"))
 write_csv(formatted_results, paste0("../../data/dermatology/classification_results/metric_tables_all.csv"))
-ggsave("figures/TPR_x_FPR.png", plot = p, width = 10, height = 6)
+ggsave("../../figures/dermatology/TPR_x_FPR_all.png", plot = p, width = 10, height = 6)
+ggsave("../../figures/dermatology/balanced_accuracy_comparison_all.png", plot = p2, width = 15, height = 7)
 
 # Response rates ####
 combined_wide %>% 
   select(Filename, model, skin_tone, contains("responded"))
 
-gemini_wide %>% count(responded_P8)
-
-gemini_wide %>%
+gemini_response_rate <- gemini_wide %>%
   pivot_longer(cols = starts_with("responded_P"), 
                names_to = "responded", 
                values_to = "value") %>%
-  group_by(model, responded, value) %>%
+  group_by(model, responded, skin_tone, value) %>%
   summarise(count = n(), .groups = 'drop') %>% 
   pivot_wider(names_from = value, values_from = count)
 
-gpt4_wide %>%
+gpt4_response_rate <- gpt4_wide %>%
   pivot_longer(cols = starts_with("responded_P"), 
                names_to = "responded", 
                values_to = "value") %>%
-  group_by(model, responded, value) %>%
+  group_by(model, responded, skin_tone, value) %>%
   summarise(count = n(), .groups = 'drop') %>% 
   pivot_wider(names_from = value, values_from = count)
 
+
+response_rate <- bind_rows(gemini_response_rate, gpt4_response_rate)
+
+#### Refusal breakdown plot ####
+
+# Calculate the fractions of refusals and blocks for each race and each Model
+fraction_data <- response_rate %>%
+  rename(Refused = `Refused/Undetermined`) %>% 
+  replace_na(list(Refused = 0, Blocked = 0, Satisfactory = 0)) %>% 
+  mutate(total_per_subgroup = Blocked + Satisfactory + Refused) %>% 
+  group_by(model, responded) %>% 
+  mutate(sum_refused = sum(Refused, na.rm = T)) %>% 
+  mutate(sum_blocked = sum(Blocked, na.rm = T)) %>% 
+  ungroup() %>% 
+  mutate(Fraction_refused = Refused/total_per_subgroup) %>% 
+  mutate(Fraction_blocked = Blocked/total_per_subgroup)
+
+p3 <- fraction_data %>% 
+  mutate(Model = case_when(
+    grepl("gemini", model, ignore.case = TRUE) ~ "Gemini Pro Vision",
+    grepl("gpt", model, ignore.case = TRUE) ~ "GPT-4 with Vision",
+    TRUE ~ NA_character_ # Default case if neither pattern is found
+  )) %>% 
+  mutate(FST = case_when(skin_tone == "12" ~ "I-II", skin_tone == "34" ~ "III-IV", skin_tone == "56" ~ "V-VI")) %>% 
+  mutate(Prompt = str_sub(responded, -2)) %>% 
+  ggplot(aes(x = FST, y = Fraction_refused, fill = FST, shape = Model)) +
+  geom_point(size = 4, position = position_dodge(width = 1.0), aes(color = FST), stroke = 1.0, alpha = 1) +
+  scale_fill_brewer(palette = "Set1") +
+  scale_shape_manual(values = c(15, 16), guide = guide_legend(title = "Rate Type", override.aes = list(stroke = c(1, 1)))) +
+  labs(x = "Prompts", y = "# Refused") +
+  scale_color_brewer(palette = "Set1") +
+  facet_wrap(~Prompt, scales = "fixed", nrow = 1) + 
+  theme_minimal() +# Adjusted facet_grid layout
+  theme(
+    legend.text = element_text(size = 10), 
+    panel.background = element_rect(fill = "white"),  # Set background color to white
+    panel.grid.major = element_line(color = "gray93"), # Customize major grid lines color and transparency
+    panel.border = element_rect(color = "gray", fill = NA, size = 0.5),
+    strip.background = element_blank(),  # Remove background color for facet titles
+    strip.text = element_text(color = "black", face = "bold", angle = 0, hjust = 0.5, vjust = 0.5),  # Customize facet title appearance
+    legend.position = "bottom"  # Move legend to the bottom
+  ) +
+  guides(color = guide_legend(nrow = 2, byrow = TRUE),  
+         shape = guide_legend(nrow = 2, byrow = TRUE))
+p3
+
+p4 <- fraction_data %>% 
+  mutate(Model = case_when(
+    grepl("gemini", model, ignore.case = TRUE) ~ "Gemini Pro Vision",
+    grepl("gpt", model, ignore.case = TRUE) ~ "GPT-4 with Vision",
+    TRUE ~ NA_character_ # Default case if neither pattern is found
+  )) %>% 
+  mutate(FST = case_when(skin_tone == "12" ~ "I-II", skin_tone == "34" ~ "III-IV", skin_tone == "56" ~ "V-VI")) %>% 
+  mutate(Prompt = str_sub(responded, -2)) %>% 
+  ggplot(aes(x = FST, y = Blocked, fill = FST, shape = Model)) +
+  geom_point(size = 4, position = position_dodge(width = 1.0), aes(color = FST), stroke = 1.0, alpha = 1) +
+  scale_fill_brewer(palette = "Set1") +
+  scale_shape_manual(values = c(15, 16), guide = guide_legend(title = "Rate Type", override.aes = list(stroke = c(1, 1)))) +
+  labs(x = "Prompts", y = "# Blocked") +
+  scale_color_brewer(palette = "Set1") +
+  theme_minimal() +# Adjusted facet_grid layout
+  theme(
+    legend.text = element_text(size = 10), 
+    panel.background = element_rect(fill = "white"),  # Set background color to white
+    panel.grid.major = element_line(color = "gray93"), # Customize major grid lines color and transparency
+    panel.border = element_rect(color = "gray", fill = NA, size = 0.5),
+    strip.background = element_blank(),  # Remove background color for facet titles
+    strip.text = element_text(color = "black", face = "bold", angle = 0, hjust = 0.5, vjust = 0.5),  # Customize facet title appearance
+    legend.position = "bottom"  # Move legend to the bottom
+  ) +
+  guides(color = guide_legend(nrow = 2, byrow = TRUE),  
+         shape = guide_legend(nrow = 2, byrow = TRUE))
+
+p4
