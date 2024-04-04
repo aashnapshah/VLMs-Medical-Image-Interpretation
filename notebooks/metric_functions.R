@@ -46,11 +46,12 @@ calculate_group_metrics <- function(df, y_label, demographic_groups) {
       metrics <- df %>%
         group_by(Model, .groups = "drop") %>% 
         do({
-          calculate_metrics_with_CI(., y_label, 2) %>%
+          calculate_metrics_with_CI(., y_label, 1000) %>%
             as.data.frame(metrics_result)
         }) %>% 
         ungroup()
       metrics$skin_tone <- "Overall"
+      metrics$Category <- group
       
     } else {
       unique_values <- unique(df[[group]])
@@ -62,6 +63,8 @@ calculate_group_metrics <- function(df, y_label, demographic_groups) {
           as.data.frame(metrics_result)
         }) %>%
         ungroup()
+      metrics$Category <- group
+      
     }
     
     master_df <- rbind(master_df, metrics)

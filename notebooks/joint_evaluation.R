@@ -21,8 +21,6 @@ print(plot)
 plot <- refusal_plot(dermatology_api_results)
 print(plot)
 
-cm <- calculate_metrics_with_CI(dermatology_api_results, 'malignant', 2)
-
 demographic_groups <- c("Overall", "skin_tone") #Age", "Race", "GENDER")
 main_df <- calculate_group_metrics(dermatology_api_results, 'malignant', demographic_groups)
 
@@ -35,8 +33,7 @@ t <- main_df %>%
     Specificity_CI = paste0(round(Specificity_mean, 2), " (+/- ",
                             round(Specificity_mean - Specificity_lower, 2), ")")
   )
-# 
-# # Create the table
+
 table_df <- t %>%
   select(Model, PromptID, Size, skin_tone, Balanced.Accuracy_CI, Sensitivity_CI, Specificity_CI) %>%
   pivot_wider(
@@ -45,3 +42,16 @@ table_df <- t %>%
     values_from = c(ends_with("CI"))
   )
 
+demo_df <- main_df %>% filter(Category == "skin_tone")
+#demo_df <- demo_df[!(demo_df$Model == 'GPT-4 Vision' & demo_df$PromptID < 3), ]
+
+mean_df <- demo_df %>%
+  group_by(Model, PromptID) %>%
+  summarize(mean_accuracy = mean(Balanced.Accuracy_mean))
+
+# Merge mean data with filtered data
+filtered_demo_df <- merge(demo_df, mean_df, by = c("PromptID", "Model"))
+filtered_demo_df$PromptID <- as.factor(filtered_demo_df$PromptID)
+
+plot <- plot_balanced_acc(filtered_demo_df)
+print(plot)
