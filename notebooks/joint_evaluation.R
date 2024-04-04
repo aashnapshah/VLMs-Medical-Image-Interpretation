@@ -1,37 +1,47 @@
 library(tidyverse)
-library(caret)
-library(reshape2)
-
 
 base_dir <- "/Users/aashnashah/Dropbox/Research/derm-gemini-vs-gpt4/"
+source(paste0(base_dir, 'notebooks/cleaning_functions.R'))
+source(paste0(base_dir, 'notebooks/plot_functions.R'))
+source(paste0(base_dir, 'notebooks/metric_functions.R'))
 
-# Radiology 
+# Define data directories
 radiology_data_dir <- "data/radiology/"
-radiology_prompt_df <- read.csv(paste0(base_dir, data_dir, "prompts.csv"))
-
-# Dermatology 
 dermatology_data_dir <- "data/dermatology/"
 
-tables_dir <- "tables/"
-figures_dir <- "figures/"
+dermatology_api_results <- read_results(dermatology_data_dir, 'Dermatology')
+radiology_api_results <- read_results(radiology_data_dir, 'Radiology')
 
-# Read in Gemini results and add model column
-radiology_gemini_results <- read.csv(paste0(base_dir, radiology_data_dir, "apiResults/gemini_chexpert_results_20240312.csv"))
-radiology_gemini_results$Model <- "Gemini Pro Vision"
+# Clean the data
+# for loop the dataframes
 
-# Read in GPT-4v results and add Model column
-radiology_openai_results <- read.csv(paste0(base_dir, radiology_data_dir, "apiResults/gpt4v_radiology_results_20240328.csv"))
-radiology_openai_results$Model <- "GPT-4 Vision"
+plot <- refusal_plot(radiology_api_results)
+print(plot)
 
-# Filter rows without prompt image pait
-radiology_api_results <- rbind(radiology_openai_results, radiology_gemini_results)
+plot <- refusal_plot(dermatology_api_results)
+print(plot)
 
-# Dermatology
-ddi <- read_csv(paste0(base_dir, dermatology_data_dir, "apiResults/ddi_metadata.csv"))
-dermatology_gemini_results <- read_csv((paste0(base_dir, dermatology_data_dir, "apiResults/gemini_ddi_results_20240326_single_word.csv")))
-dermatology_gemini_results$Model <- "Gemini Pro Vision"
+cm <- calculate_metrics_with_CI(dermatology_api_results, 'malignant', 2)
 
-dermatology_gpt4_results <- read_csv((paste0(base_dir, dermatology_data_dir, "apiResults/gpt4v_dermatology_results_20240318_single_word.csv")))
-dermatology_gpt4_results$Model <- "GPT-4 Vision"               
+demographic_groups <- c("Overall", "skin_tone") #Age", "Race", "GENDER")
+main_df <- calculate_group_metrics(dermatology_api_results, 'malignant', demographic_groups)
 
+t <- main_df %>%
+  mutate(
+    Balanced.Accuracy_CI = paste0(round(Balanced.Accuracy_mean, 2), " (+/- ",
+                                  round(Balanced.Accuracy_mean - Balanced.Accuracy_lower, 2), ")"),
+    Sensitivity_CI = paste0(round(Sensitivity_mean, 2), " (+/- ",
+                            round(Sensitivity_mean - Sensitivity_lower, 2), ")"),
+    Specificity_CI = paste0(round(Specificity_mean, 2), " (+/- ",
+                            round(Specificity_mean - Specificity_lower, 2), ")")
+  )
+# 
+# # Create the table
+table_df <- t %>%
+  select(Model, PromptID, Size, skin_tone, Balanced.Accuracy_CI, Sensitivity_CI, Specificity_CI) %>%
+  pivot_wider(
+    id_cols = c("Model", "PromptID"),
+    names_from = skin_tone,
+    values_from = c(ends_with("CI"))
+  )
 
