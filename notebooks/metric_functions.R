@@ -10,10 +10,10 @@ calculate_metrics_with_CI <- function(data, y_true_col, n_bootstrap = 1000) {
       filter(PromptID == prompt_value) %>%
       drop_na({{ column_name }}, {{ y_true_col }}) %>%
       sample_frac(1, replace = TRUE)
-    
+
     sample_data[[column_name]] <- factor(sample_data[[column_name]], levels = c(FALSE, TRUE))
     sample_data[[y_true_col]] <- factor(sample_data[[y_true_col]], levels = c(FALSE, TRUE))
-    
+
     cm <- confusionMatrix(as.factor(sample_data[[column_name]]), as.factor(sample_data[[y_true_col]]), positive = "TRUE")
     
     return(data.frame(PromptID = prompt_value,
@@ -46,28 +46,33 @@ calculate_group_metrics <- function(df, y_label, demographic_groups) {
       metrics <- df %>%
         group_by(Model, .groups = "drop") %>% 
         do({
-          calculate_metrics_with_CI(., y_label, 1000) %>%
-            as.data.frame(metrics_result)
+          metrics_result <- calculate_metrics_with_CI(., y_label) 
+          metrics_result <- as.data.frame(metrics_result)
         }) %>% 
         ungroup()
-      metrics$skin_tone <- "Overall"
       metrics$Category <- group
-      
+      metrics$UniqueValue <- "Overall"
+      master_df <- rbind(master_df, metrics)
     } else {
       unique_values <- unique(df[[group]])
-      
-      metrics <- df %>%
-        group_by(Model, !!sym(group), .groups = "drop") %>%
-        do({
-          metrics_result <- calculate_metrics_with_CI(., y_label, 2)
-          as.data.frame(metrics_result)
-        }) %>%
-        ungroup()
-      metrics$Category <- group
-      
+
+      for(value in unique_values) {
+        # Subset df for each unique value in the group
+        df_subset <- df[df[[group]] == value, ]
+        
+        # Calculate metrics for each subset
+        metrics <- df_subset %>%
+          group_by(Model, .groups = "drop") %>%
+          do({
+            metrics_result <- calculate_metrics_with_CI(., y_label) 
+            metrics_result <- as.data.frame(metrics_result)
+          }) %>%
+          ungroup()
+        metrics$Category <- group
+        metrics$UniqueValue <- value
+        master_df <- rbind(master_df, metrics)
+      }
     }
-    
-    master_df <- rbind(master_df, metrics)
   }
   return(master_df)
 }
