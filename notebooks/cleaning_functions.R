@@ -93,10 +93,15 @@ clean_dermatology_results <- function(df, prompt_version) {
   ddi <- read_csv(paste0(base_dir, dermatology_data_dir, "ddi_metadata.csv"))
   dermatology_api_results_filtered <- inner_join(dermatology_api_results_filtered, ddi, by = c("Filename" = "DDI_file"))
   
+  #mutate skin_tone column so 12 == "I-II", 34 == "III-IV", 56 == "V-VI"
+  dermatology_api_results_filtered <- dermatology_api_results_filtered %>% 
+    mutate(skin_tone = case_when(
+      skin_tone == 12 ~ "I-II",
+      skin_tone == 34 ~ "III-IV",
+      skin_tone == 56 ~ "V-VI"
+    ))
   return (dermatology_api_results_filtered)
 }
-
-
 
 # Radiology Functions
 categorize_response <- function(response) {
@@ -113,8 +118,8 @@ categorize_response <- function(response) {
 # Define a function to extract the initial response
 extract_initial_response <- function(response) {
   response <- tolower(response)
-  ifelse(grepl("\\b(abnormal)\\b", response), 1,
-         ifelse(grepl("\\b(normal)\\b", response), 0, NA)
+  ifelse(grepl("\\b(abnormal)\\b", response), TRUE,
+         ifelse(grepl("\\b(normal)\\b", response), FALSE, NA)
   )
 }
 
@@ -124,7 +129,6 @@ clean_radiology_results <- function(df) {
   base_dir <- "/Users/aashnashah/Dropbox/Research/derm-gemini-vs-gpt4/"
   radiology_data_dir <- "data/radiology/"
   
-  demographics <- read.csv(paste0(base_dir, radiology_data_dir, "CheXpert/processed_test_set_2024-03-10.csv"))
   demographics <- read.csv(paste0(base_dir, radiology_data_dir, "CheXpert/processed_test_val_set_20240319.csv"))
   demographics$Age <- cut(demographics$AGE_AT_CXR, 
                           breaks = c(0, 44, 70, Inf), labels = c("18-44", "44-70", "70-96"))
@@ -139,8 +143,8 @@ clean_radiology_results <- function(df) {
            PredictedDiagnosis = extract_initial_response(Response))
   df_cleaned <- df_cleaned %>%
     filter(PromptID < 8) %>% 
-    mutate(PromptID = paste0("P",PromptID+1))
-
+    mutate(PromptID = paste0("P",PromptID+1)) %>%
+    mutate(abnormal = abnormal>0)
   
   return(df_cleaned)
   
@@ -170,4 +174,62 @@ read_results <- function(data_dir, domain) {
   return(result_cleaned)
 }
 
+refusal_rates <- function(data) {
+  rates_data <- data %>%
+    group_by(PromptID, Model, CategorizedResponse, .groups = "drop") %>%
+    summarise(count = n()) %>%
+    pivot_wider(names_from = CategorizedResponse, values_from = count, values_fill = 0) %>%
+    mutate(
+      total_responses = Diagnosed + Refused, #+ Blocked,
+      Diagnosis = Diagnosed / total_responses,
+      Refusal = Refused / total_responses,
+      #Blocked = Blocked / total_responses
+    ) %>% select(Diagnosis, Refusal) #, Blocked)
+  
+  melted_data <- melt(rates_data, id.vars = c("PromptID", "Model"), variable.name = "RateType", value.name = "Rate")
+  
+  # Calculate the fractions of refusals and blocks for each race and each Model
+  fraction_data <- aggregate(Rate ~ PromptID + Model + RateType, melted_data, sum) %>% filter(RateType != 'Diagnosis')
+  fraction_data$Model_Prompt <- paste(fraction_data$PromptID, fraction_data$Model, sep = " - ")
+  set.seed(123)
+  
+  fraction_data$PromptID <- as.factor(fraction_data$PromptID)
+  return(fraction_data)
+}
 
+format_metrics <- function(data, group) {
+  table <- data %>%
+    filter(Category == group) 
+  table <- table %>%
+    mutate(
+      Balanced.Accuracy_CI = paste0(round(Balanced.Accuracy_mean, 2), " (+/- ",
+                                    round(Balanced.Accuracy_mean - Balanced.Accuracy_lower, 2), ")"),
+      Sensitivity_CI = paste0(round(Sensitivity_mean, 2), " (+/- ",
+                              round(Sensitivity_mean - Sensitivity_lower, 2), ")"),
+      Specificity_CI = paste0(round(Specificity_mean, 2), " (+/- ",
+                              round(Specificity_mean - Specificity_lower, 2), ")")
+    ) %>%
+    select(Model, PromptID, Size, Category, UniqueValue, Balanced.Accuracy_CI, Sensitivity_CI, Specificity_CI) %>%
+    pivot_wider(
+      id_cols = c("Model", "PromptID"),
+      names_from = 'UniqueValue',
+      values_from = c(ends_with("CI"))
+    )
+  return(table)
+}
+
+get_overlap_df <- function(df, accept_prompts) {
+  filtered_df <- df %>%
+    mutate(ID = as.numeric(gsub("\\D", "", PromptID))) %>%
+    filter((Model == "GPT-4 Vision" & ID %in% accept_prompts | Model == "Gemini Pro Vision")  & !is.na(PredictedDiagnosis))
+  
+  filenames_list <- filtered_df$Filename
+  filename_counts <- table(filenames_list)
+  
+  len_expected = length(accept_prompts) + 8
+  print(len_expected)
+  filenames_at_least_12 <- names(filename_counts[filename_counts >= len_expected])
+  overlap_filtered_df <- df %>% filter(Filename %in% filenames_at_least_12)
+  
+  return(overlap_filtered_df)
+}

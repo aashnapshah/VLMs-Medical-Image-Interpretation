@@ -212,6 +212,8 @@ plot
 ggsave(paste0(base_dir, figures_dir, "facet_plot_with_consistent_jitter.png"), plot,  width = 13, height = 4 , units = "in", dpi = 300,  bg = "white")  # Set the b
 
 ```
+
+
 ```{r}
 # Get dataset with overlap 
 # Step 1: Filter by PromptID > 2 and PredictedDiagnosis is not NA
