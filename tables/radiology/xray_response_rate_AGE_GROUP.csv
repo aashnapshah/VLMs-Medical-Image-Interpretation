@@ -1,17 +1,17 @@
-"model","PromptID","18-44_Blocked","18-44_Diagnosed","18-44_Refused","44-70_Blocked","44-70_Diagnosed","44-70_Refused","70-96_Blocked","70-96_Diagnosed","70-96_Refused"
-"GPT-4v with Vision",1,0,0.08,0.92,0,0.12,0.88,0,0.19,0.81
-"GPT-4v with Vision",2,0,0.15,0.85,0,0.17,0.83,0,0.22,0.77
-"GPT-4v with Vision",3,0,1,0,0,0.99,0.01,0,0.99,0
-"GPT-4v with Vision",4,0,1,0,0,1,0,0,1,0
-"GPT-4v with Vision",5,0.01,0.98,0.02,0,0.99,0.01,0,0.99,0.01
-"GPT-4v with Vision",6,0.01,0.91,0.08,0,0.92,0.07,0,0.95,0.05
-"GPT-4v with Vision",7,0,0.99,0.01,0,1,0,0,1,0
-"GPT-4v with Vision",8,0,1,0,0,0.99,0,0,1,0
-"Gemini Pro Vision",1,0.02,0.98,0,0,1,0,0,1,0
-"Gemini Pro Vision",2,0.01,0.99,0,0,1,0,0,1,0
-"Gemini Pro Vision",3,0.01,0.99,0,0,1,0,0,1,0
-"Gemini Pro Vision",4,0,1,0,0,1,0,0,1,0
-"Gemini Pro Vision",5,0,1,0,0.01,0.99,0,0,1,0
-"Gemini Pro Vision",6,0,1,0,0.01,0.99,0,0.01,0.99,0
-"Gemini Pro Vision",7,0.01,0.99,0,0.01,0.99,0,0,1,0
-"Gemini Pro Vision",8,0,1,0,0,1,0,0,1,0
+"Model","PromptID","18-44_Diagnosed","18-44_Refused","44-70_Diagnosed","44-70_Refused","70-96_Diagnosed","70-96_Refused"
+"GPT-4v with Vision",1,0.08,0.92,0.12,0.88,0.19,0.81
+"GPT-4v with Vision",2,0.15,0.85,0.17,0.83,0.23,0.77
+"GPT-4v with Vision",3,1,0,0.99,0.01,1,0
+"GPT-4v with Vision",4,1,0,1,0,1,0
+"GPT-4v with Vision",5,0.98,0.02,0.99,0.01,0.99,0.01
+"GPT-4v with Vision",6,0.92,0.08,0.92,0.08,0.95,0.05
+"GPT-4v with Vision",7,0.99,0.01,1,0,1,0
+"GPT-4v with Vision",8,1,0,1,0,1,0
+"Gemini Pro Vision",1,1,0,1,0,1,0
+"Gemini Pro Vision",2,1,0,1,0,1,0
+"Gemini Pro Vision",3,1,0,1,0,1,0
+"Gemini Pro Vision",4,1,0,1,0,1,0
+"Gemini Pro Vision",5,1,0,1,0,1,0
+"Gemini Pro Vision",6,1,0,1,0,1,0
+"Gemini Pro Vision",7,1,0,1,0,1,0
+"Gemini Pro Vision",8,1,0,1,0,1,0

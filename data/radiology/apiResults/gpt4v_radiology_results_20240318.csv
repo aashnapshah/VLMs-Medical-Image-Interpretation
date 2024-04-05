@@ -909,7 +909,6 @@ test/patient65112/study1/view1_frontal.jpg,1,"I'm sorry, but I can"
 test/patient65113/study1/view1_frontal.jpg,1,abnormal
 test/patient65114/study1/view1_frontal.jpg,1,"I'm sorry, I can't"
 test/patient65115/study1/view1_frontal.jpg,1,"I'm sorry, but I am"
-test/patient65116/study1/view1_frontal.jpg,1,
 test/patient65117/study1/view1_frontal.jpg,1,abnormal
 test/patient65118/study1/view1_frontal.jpg,1,"I'm sorry, but I can"
 test/patient65119/study1/view1_frontal.jpg,1,"I'm sorry, but I'm"
@@ -917,7 +916,6 @@ test/patient65120/study1/view1_frontal.jpg,1,"I'm sorry, but I'm"
 test/patient65121/study1/view1_frontal.jpg,1,"I'm sorry, but I can"
 test/patient65122/study1/view1_frontal.jpg,1,"I'm sorry, but I am"
 test/patient65123/study1/view1_frontal.jpg,1,"I'm sorry, but I'm"
-test/patient65124/study1/view1_frontal.jpg,1,
 test/patient65125/study1/view1_frontal.jpg,1,"I'm sorry, I can't"
 test/patient65126/study1/view1_frontal.jpg,1,"I'm sorry, but I can"
 test/patient65127/study1/view1_frontal.jpg,1,"I'm sorry, but I cannot"
@@ -1758,7 +1756,6 @@ test/patient64866/study1/view1_frontal.jpg,4,Abnormal
 test/patient64867/study1/view1_frontal.jpg,3,Abnormal
 test/patient64867/study1/view1_frontal.jpg,4,Abnormal
 test/patient64868/study1/view1_frontal.jpg,3,Abnormal
-test/patient64868/study1/view1_frontal.jpg,4,The X-ray in the image appears
 test/patient64869/study1/view1_frontal.jpg,3,Abnormal
 test/patient64869/study1/view1_frontal.jpg,4,Abnormal
 test/patient64870/study1/view1_frontal.jpg,3,Abnormal
@@ -2487,7 +2484,6 @@ test/patient65230/study1/view1_frontal.jpg,4,Abnormal.
 test/patient65231/study1/view1_frontal.jpg,3,Abnormal
 test/patient65231/study1/view1_frontal.jpg,4,abnormal
 test/patient65232/study1/view1_frontal.jpg,3,Abnormal
-test/patient65232/study1/view1_frontal.jpg,4,The image you have provided appears to
 test/patient65233/study1/view1_frontal.jpg,3,Abnormal
 test/patient65233/study1/view1_frontal.jpg,4,abnormal
 test/patient65234/study1/view1_frontal.jpg,3,Abnormal

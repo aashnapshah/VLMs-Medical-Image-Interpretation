@@ -1,8 +1,11 @@
 library(tidyverse)
 library(caret)
 
+# set working directry 
+setwd("/Users/aashnashah/Dropbox/Research/derm-gemini-vs-gpt4/notebooks/dermatology/")
+
 # Read the DDI ground truth file
-ddi <- read_csv("../../data/dermatology/DDI/ddi_metadata.csv")
+ddi <- read_csv("../../data/dermatology/ddi_metadata.csv")
 
 gemini_results <- read_csv("../../data/dermatology/apiResults/gemini_ddi_results_20240326_single_word.csv")
 gpt4_results <- read_csv("../../data/dermatology/apiResults/gpt4v_dermatology_results_20240318_single_word.csv")
