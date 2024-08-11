@@ -1,2 +1,2 @@
-# derm-gemini-vs-gpt4
-Comparing abnormality/malignant detection in radiology and dermatology images using large multimodal models
+# gemini-vs-gpt4
+Comparing binary classification in radiology, dermatology, and histology images using large multimodal models
