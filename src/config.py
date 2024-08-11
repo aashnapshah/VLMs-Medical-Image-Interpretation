@@ -10,7 +10,7 @@ load_dotenv()
 class Config:
     # Shared configurations
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-    OPENAI_ORG_ID = os.getenv('OPENAI_ORG_ID')
+    # OPENAI_ORG_ID = os.getenv('OPENAI_ORG_ID')
     GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 
     def __init__(self, department):
@@ -22,14 +22,18 @@ class Config:
     def load_department_settings(self):
         if self.department == "dermatology":
             self.folder_path = "data/dermatology/DDI"
-            self.image_paths = pd.read_csv('data/dermatology/DDI/gemini_errors.csv')['DDI_file']
-            self.prompts_dict = pd.read_csv('data/dermatology/prompts.csv')['Prompt'].to_dict()
+            self.image_paths = pd.read_csv('../data/dermatology/DDI/gemini_errors.csv')['DDI_file']
+            self.prompts_dict = pd.read_csv('../data/dermatology/prompts.csv')['Prompt'].to_dict()
             # Additional dermatology-specific settings can be added here
         elif self.department == "radiology":
             self.folder_path = "data/CheXpert/"
-            self.image_paths = pd.read_csv('data/processed_test_val_set_20240319.csv')['Path']
-            self.prompts_dict = pd.read_csv('data/radiology/prompts.csv')['Prompt'].to_dict()
+            self.image_paths = pd.read_csv('../data/processed_test_val_set_20240319.csv')['Path']
+            self.prompts_dict = pd.read_csv('../data/radiology/prompts.csv')['Prompt'].to_dict()
             # Additional radiology-specific settings can be added here
+        elif self.department == 'histology':
+            self.folder_path = "data/histology/"
+            self.image_paths = pd.read_csv('../data/histology/histo_metadata.csv')['file']
+            self.prompts_dict = pd.read_csv('../data/histology/prompts.csv')['Prompt'].to_dict()
         else:
             raise ValueError(f"Unsupported department: {self.department}")
     def load_model_settings(self):
@@ -44,8 +48,9 @@ class Config:
             }
             # You can add more OpenAI specific settings here
         elif "gemini" in main_script_name:
+            genai.configure(api_key=self.GOOGLE_API_KEY)
             # Configure for Google Gemini
-            self.model = genai.GenerativeModel('gemini-1.0-pro-vision-latest')
+            self.model = genai.GenerativeModel('gemini-1.5-flash')
             self.safety_settings = [
                 {"category": "HARM_CATEGORY_DANGEROUS", "threshold": "BLOCK_NONE"},
                 {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},

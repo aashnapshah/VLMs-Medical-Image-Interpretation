@@ -15,7 +15,7 @@ import argparse
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process images for a specific department.")
-    parser.add_argument("--department", help="Specify the department (dermatology or radiology)", required=True)
+    parser.add_argument("--department", default="histology", help="Specify the department (dermatology or radiology)", required=False)
     args = parser.parse_args()
     return args.department
 
@@ -37,15 +37,21 @@ def get_image_paths(input: str) -> list:
 def process_image(config, file_name: str, text_prompt: str, safety_settings: list) -> tuple:
     """Process an image and return the filename, text prompt, and response."""
     img_path = os.path.join(config.folder_path, file_name)
-    with Image.open(img_path) as image:
+    max_retries = 5
+    retry_delay = 5
+    for attempt in range(1, max_retries + 1):
         try:
-            response = config.model.generate_content([text_prompt, image], safety_settings=safety_settings)
-            #logging.info(response.text)
-            return file_name, text_prompt, response.text
+            with Image.open(img_path) as image:
+                response = config.model.generate_content([text_prompt, image], safety_settings=safety_settings)
+                # logging.info(response.text)
+                return file_name, text_prompt, response.text
         except Exception as e:
-            time.sleep(2)
-            logging.error(f"Error processing hererere {file_name}: {e}")
-            return file_name, text_prompt, "Error"
+            logging.error(f"Error processing image {file_name} (attempt {attempt}/{max_retries}): {e}")
+            retry_delay *= 2
+            time.sleep(retry_delay)
+    logging.error(f"Error processing hererere {file_name}: {e}")
+    return file_name, text_prompt, "Error"
+
 
 def main():
     """Main function to process images and save results to a CSV file."""
@@ -53,7 +59,7 @@ def main():
     config = Config(department)
     image_paths = get_image_paths(config.image_paths)
     date = time.strftime("%Y%m%d")
-    csvfile_path = f"data/{department}/gemini_ddi_results_{date}_single_word_errors.csv"
+    csvfile_path = f"../data/{department}/gemini_results_{date}_{department}.csv"
 
     processed_count = 0
     
@@ -76,7 +82,7 @@ def main():
             csv_writer.writeheader()  # file doesn't exist yet, write a header
 
         for file_name, prompt_id in image_prompt_pairs:    
-            if file_name.endswith(('.png', '.jpg')):
+            if file_name.endswith(('.png', '.jpg', '.tif')):
                 text_prompt = config.prompts_dict[prompt_id] 
                 try:
                     response = process_image(config, file_name, text_prompt, config.safety_settings)
