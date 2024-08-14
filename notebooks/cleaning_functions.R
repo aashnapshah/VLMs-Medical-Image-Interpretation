@@ -109,10 +109,12 @@ categorize_response <- function(response) {
   ifelse(grepl("\\b(error)\\b", response), "Blocked",
          ifelse(grepl("unable|sorry|cannot|not possible|impossible to", response, ignore.case = TRUE), "Refused",
                 ifelse(grepl("\\b(normal)\\b", response) | grepl("\\b(abnormal)\\b", response), "Diagnosed",
+                    ifelse(grepl("\\b(tumor)\\b", response) | grepl("\\b(stroma)\\b", response), "Diagnosed",
                        ifelse(is.na(response), "Blocked", "Blocked")
                 )
          )
-  )
+    )
+)
 }
 
 # Define a function to extract the initial response
@@ -120,6 +122,14 @@ extract_initial_response <- function(response) {
   response <- tolower(response)
   ifelse(grepl("\\b(abnormal)\\b", response), TRUE,
          ifelse(grepl("\\b(normal)\\b", response), FALSE, NA)
+  )
+}
+
+# Define a function to extract the initial response
+extract_gastro_initial_response <- function(response) {
+  response <- tolower(response)
+  ifelse(grepl("\\b(tumor)\\b", response), TRUE,
+         ifelse(grepl("\\b(stroma)\\b", response), FALSE, NA)
   )
 }
 
@@ -150,6 +160,33 @@ clean_radiology_results <- function(df) {
   
 }
 
+clean_gastrology_results <- function(df) {
+  base_dir <- "/Users/aashnashah/Dropbox/Research/derm-gemini-vs-gpt4/"
+  gastrology_data_dir <- "data/gastrology/"
+  
+  demographics <- read.csv(paste0(base_dir, gastrology_data_dir, "gastrovision_metadata.csv"))
+  demographics$AveragePixelIntensity <- runif(nrow(demographics), min = 0, max = 1)
+  demographics <- demographics %>%
+    mutate(Brightness = case_when(
+      AveragePixelIntensity <= 0.33 ~ "dark",
+      AveragePixelIntensity <= 0.66 ~ "medium",
+      TRUE ~ "light"
+    )) %>%
+    mutate(label=ifelse(label=="TUMOR", TRUE, FALSE))
+
+  # Merge GPT-4v results with demographics
+  df <- merge(df, demographics, by.x = "Filename", by.y = "file", all.x = TRUE)
+  df <- df[order(df$Filename, df$PromptID), ]
+
+  df_cleaned <- df %>%
+    mutate(CategorizedResponse = categorize_response(Response),
+           PredictedDiagnosis = extract_gastro_initial_response(Response))
+  df_cleaned <- df_cleaned %>%
+    filter(PromptID < 8) %>% 
+    mutate(PromptID = paste0("P",PromptID+1)) 
+  return(df_cleaned)
+}
+
 read_results <- function(data_dir, domain) {
   gemini_files <- list.files(paste0(base_dir, data_dir, "apiResults"), pattern = "^gemini.*\\.csv$", full.names = TRUE)
   gemini_data <- lapply(gemini_files, function(file) read_csv(file, col_types = cols(), show_col_types = FALSE))
@@ -170,6 +207,9 @@ read_results <- function(data_dir, domain) {
   else if (domain == 'Radiology') {
     result_cleaned <- clean_radiology_results(results)
   }
+  else if (domain == 'Gastrology') {
+    result_cleaned <- clean_gastrology_results(results)
+  }
   
   return(result_cleaned)
 }
@@ -178,8 +218,13 @@ refusal_rates <- function(data) {
   rates_data <- data %>%
     group_by(PromptID, Model, CategorizedResponse, .groups = "drop") %>%
     summarise(count = n()) %>%
-    pivot_wider(names_from = CategorizedResponse, values_from = count, values_fill = 0) %>%
-    mutate(
+    pivot_wider(names_from = CategorizedResponse, values_from = count, values_fill = 0) 
+  # Check if the "Refused" column is present; if not, add it with a value of 0
+  if (!"Refused" %in% colnames(rates_data)) {
+    rates_data <- rates_data %>%
+      mutate(Refused = 0)
+  }
+  rates_data <- rates_data %>% mutate(
       total_responses = Diagnosed + Refused, #+ Blocked,
       Diagnosis = Diagnosed / total_responses,
       Refusal = Refused / total_responses,
