@@ -17,7 +17,7 @@ def main():
     img_dir = '/home/groups/roxanad/sonnet/ensembleVLMs/Kather_texture_2016_image_tiles_5000'
     output_csv_file_path = '../data/histology/histo_metadata.csv'  
     image_counts = defaultdict(int)
-    max_images_per_folder = 50
+    max_images_per_folder = 625 # this is all the images
     folders = ["STROMA", "TUMOR"] 
     for root, dirs, files in os.walk(img_dir):
         dirs[:] = [d for d in dirs if d[3:] in folders]

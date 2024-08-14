@@ -73,6 +73,10 @@ def main():
     else:
         mode = 'w'  # write if does not exist
         image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
+        # Filter out existing combinations
+        existing_pairs = set((row["Filename"], row["PromptID"]) for row in csv.DictReader(open(config.output_csv, 'r')))
+        image_prompt_pairs = [(file_name, prompt_id) for file_name, prompt_id in image_prompt_pairs if (file_name, prompt_id) not in existing_pairs]
+
         
     with open(csvfile_path, mode, newline='') as csvfile:
         fieldnames = ["Filename", "PromptID", "Response"]
