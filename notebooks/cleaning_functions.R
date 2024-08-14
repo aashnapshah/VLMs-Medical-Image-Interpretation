@@ -180,11 +180,11 @@ refusal_rates <- function(data) {
     summarise(count = n()) %>%
     pivot_wider(names_from = CategorizedResponse, values_from = count, values_fill = 0) %>%
     mutate(
-      total_responses = Diagnosed + Refused, #+ Blocked,
+      total_responses = Diagnosed + Refused, # + Blocked,
       Diagnosis = Diagnosed / total_responses,
       Refusal = Refused / total_responses,
-      #Blocked = Blocked / total_responses
-    ) %>% select(Diagnosis, Refusal) #, Blocked)
+     # Blocked = Blocked / total_responses
+    ) %>% select(Diagnosis, Refusal) # Blocked)
   
   melted_data <- melt(rates_data, id.vars = c("PromptID", "Model"), variable.name = "RateType", value.name = "Rate")
   

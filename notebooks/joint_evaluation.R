@@ -43,6 +43,9 @@ refusal_rate <- refusal_rates(dermatology_api_results)
 plot <- refusal_plot(refusal_rate)
 ggsave(paste0(base_dir, "figures/dermatology_refusal_plot.png"), plot, width = 10, dpi=300, height = 3.1)
 
+plot <- blocked_plot(dermatology_api_results)
+ggsave(paste0(base_dir, "figures/dermatology_blocked_plot.png"), plot, width = 3, dpi=300, height = 6.2)
+
 # Get the overlap between the two models
 dermatology_api_results_overlap <- get_overlap_df(dermatology_api_results, c(4, 7, 8))
 radiology_api_results_overlap <- get_overlap_df(radiology_api_results, c(3, 4, 5, 6, 7, 8))
@@ -50,7 +53,7 @@ radiology_api_results_overlap <- get_overlap_df(radiology_api_results, c(3, 4, 5
 unique_combinations_count <- radiology_api_results_overlap %>%
   select(PromptID, Model) %>%  # Select the columns of interest
   distinct() %>%  # Get unique rows
-  count() 
+  count()
 
 dermatology_data_frames <- list(
   all = dermatology_api_results,
@@ -61,7 +64,7 @@ for (subset in names(dermatology_data_frames)) {
   df <- dermatology_data_frames[[subset]]
   print(paste("Analyzing subset:", subset))
 
-  ### SAVE TABLE WITH ALL RESULTS ### 
+  ### SAVE TABLE WITH ALL RESULTS ###
   demographic_groups <- c("Overall", "skin_tone") #Age", "Race", "GENDER")
   outfile_name <- paste0(base_dir, "tables/dermatology_balanced_acc_group_", subset, ".csv")
   if (file.exists(outfile_name)){
@@ -72,22 +75,30 @@ for (subset in names(dermatology_data_frames)) {
     write.csv(derm_main_df, file = outfile_name)
   }
   
+  if (subset == "all") {
+    num_analyzed <- derm_main_df %>% filter(Category=='skin_tone') %>% select(Model, PromptID, Size, UniqueValue) %>% pivot_wider(names_from = UniqueValue, values_from = Size) 
+    write.csv(num_analyzed, file = paste0(base_dir, "tables/dermatology_counts_analyzed.csv"))
+  }
+
   ### SAVE THE FORMATTED TABLE ###
   category <- "skin_tone"
+  formatted_main_df_overall <- format_metrics(derm_main_df, "Overall")
   formatted_main_df <- format_metrics(derm_main_df, category)
+  overall_outfile_name <- paste0(base_dir, "tables/dermatology_balanced_acc_overall_", subset, "_formatted.csv")
   outfile_name <- paste0(base_dir, "tables/dermatology_balanced_acc_", category, "_", subset, "_formatted.csv")
+  write.csv(formatted_main_df_overall, file = overall_outfile_name)
   write.csv(formatted_main_df, file = outfile_name)
   
-  plot <- plot_fpr_tpr(derm_main_df, "skin_tone")
+  plot <- plot_fpr_tpr(derm_main_df, "skin_tone", subset)
   ggsave(paste0(base_dir, "figures/dermatology_fpr_tpr_skin_tone_", subset, ".png"), plot, width = 12, height = 5,  dpi=300)
-  
   ### PLOT THE BALANCED ACCURACY ###
-  plot <- plot_balanced_acc(derm_main_df, "skin_tone")
+  plot <- plot_balanced_acc(derm_main_df, "skin_tone", subset)
   ggsave(paste0(base_dir, "figures/dermatology_balanced_acc_skin_tone_", subset, ".png"), plot, width = 12, height = 5,  dpi=300)
 }
 
 
 ### RADIOLOGY ANALYSIS ###
+
 radiology_data_frames <- list(
   all = radiology_api_results,
   overlap = radiology_api_results_overlap
@@ -96,26 +107,38 @@ radiology_data_frames <- list(
 for (subset in names(radiology_data_frames)) {
   df <- radiology_data_frames[[subset]]
   print(paste("Analyzing subset:", subset))
-  
-  demographic_groups <- c("Overall", "Age", "Race", "GENDER")
+
+  demographic_groups <- c("Overall", "Age", "Race", "Gender")
   outfile_name <- paste0(base_dir, "tables/radiology_balanced_acc_group_", subset, ".csv")
-  if (file.exists(outfile_name)){
+  if (file.exists('outfile_name')){
     rad_main_df <- read.csv(outfile_name)
   } else {
     rad_main_df <- calculate_group_metrics(df, 'abnormal', demographic_groups)
     write.csv(rad_main_df, file = outfile_name)
   }
-
+  
+  var <- 'Age'
+  if (subset == "all") {
+    num_analyzed <- rad_main_df %>% filter(Category==var) %>% select(Model, PromptID, Size, UniqueValue) %>% pivot_wider(names_from = UniqueValue, values_from = Size) 
+    write.csv(num_analyzed, file =  paste0(base_dir, "tables/radiology_", var, "counts_analyzed.csv"))
+  }
+  
   category <- c("Age")
-  formatted_main_df <- lapply(category, function(x) format_metrics(rad_main_df, x))
-  outfile_name <- paste0(base_dir, "tables/radiology_balanced_acc_", category, "_", subset, "_formatted.csv")
+#  formatted_main_df <- lapply(category, function(x) format_metrics(rad_main_df, x))
+#  formatted_main_df <- lapply(category, function(x) format_metrics(rad_main_df, x))
+  formatted_main_df <- format_metrics(rad_main_df, category)
+  formatted_main_df_overall <- format_metrics(rad_main_df, "Overall")
+
+  overall_outfile_name <- paste0(base_dir, "tables/radiology_balanced_acc_overall_", var, "_", subset, "_formatted.csv")
+  outfile_name <- paste0(base_dir, "tables/radiology_balanced_acc_", var, "_", subset, "_formatted.csv")
+  write.csv(formatted_main_df_overall, file = overall_outfile_name)
   write.csv(formatted_main_df, file = outfile_name)
 
-  plot <- plot_balanced_acc(rad_main_df, "Age")
-  ggsave(paste0(base_dir, "figures/radiology_balanced_acc_age_", subset, ".png"), plot, width = 12, height = 5, dpi=300)
-  
-  plot <- plot_fpr_tpr(rad_main_df, "Age")
-  ggsave(paste0(base_dir, "figures/radiology_fpr_tpr_age_", subset, ".png"), plot, width = 12, height = 5, dpi=300)
+  plot <- plot_balanced_acc(rad_main_df, var)
+  ggsave(paste0(base_dir, "figures/radiology_balanced_acc_", var, "_", subset, ".png"), plot, width = 12, height = 5, dpi=300)
+
+  plot <- plot_fpr_tpr(rad_main_df, var)
+  ggsave(paste0(base_dir, "figures/radiology_fpr_tpr_", var, "_", subset, ".png"), plot, width = 12, height = 5, dpi=300)
 
 }
 

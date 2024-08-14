@@ -46,8 +46,8 @@ calculate_group_metrics <- function(df, y_label, demographic_groups) {
       metrics <- df %>%
         group_by(Model, .groups = "drop") %>% 
         do({
-          metrics_result <- calculate_metrics_with_CI(., y_label) 
-          metrics_result <- as.data.frame(metrics_result)
+          metrics <- calculate_metrics_with_CI(., y_label) 
+          metrics <- as.data.frame(metrics)
         }) %>% 
         ungroup()
       metrics$Category <- group
@@ -64,8 +64,8 @@ calculate_group_metrics <- function(df, y_label, demographic_groups) {
         metrics <- df_subset %>%
           group_by(Model, .groups = "drop") %>%
           do({
-            metrics_result <- calculate_metrics_with_CI(., y_label) 
-            metrics_result <- as.data.frame(metrics_result)
+            metrics <- calculate_metrics_with_CI(., y_label) 
+            metrics <- as.data.frame(metrics)
           }) %>%
           ungroup()
         metrics$Category <- group
@@ -76,3 +76,4 @@ calculate_group_metrics <- function(df, y_label, demographic_groups) {
   }
   return(master_df)
 }
+

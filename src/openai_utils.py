@@ -71,9 +71,15 @@ def process_request(filename, prompt, config, max_tokens=7):
         return filename, prompt, None
     
 def process_pair(pair, config):
+    print(config.OPENAI_API_KEY)
+
     file_name, prompt_id = pair
     if file_name.endswith(('.png', '.jpg')):
-        text_prompt = config.prompts_dict[prompt_id] 
+        if isinstance(prompt_id, int):
+            text_prompt = config.prompts_dict[prompt_id] 
+        else: 
+            text_prompt = prompt_id
+            
         try:
             response = process_request(file_name, text_prompt, config)
             return {"Filename": response[0], "PromptID": prompt_id, "Response": response[2]}
@@ -87,6 +93,7 @@ def main():
     image_paths = get_image_paths(config.image_paths)
     date = time.strftime("%Y%m%d")
     date = '20240328'
+
     csvfile_path = f"../data/{department}/apiResults/gpt4v_{department}_results_{date}.csv"
     #date = '20240318'
     #csvfile_path = f"data/{department}/gpt4v_{department}_results_{date}_single_word.csv"

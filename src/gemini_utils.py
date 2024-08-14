@@ -12,7 +12,6 @@ from config import Config
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import argparse
 
-
 def parse_args():
     parser = argparse.ArgumentParser(description="Process images for a specific department.")
     parser.add_argument("--department", help="Specify the department (dermatology or radiology)", required=True)
@@ -45,7 +44,7 @@ def process_image(config, model, file_name: str, text_prompt: str, safety_settin
     with Image.open(img_path) as image:
         try:
             response = model.generate_content([text_prompt, image], safety_settings=safety_settings)
-            logging.info(response.text)
+            #logging.info(response.text)
             return file_name, text_prompt, response.text
         except Exception as e:
             time.sleep(2)
@@ -64,8 +63,6 @@ def main():
 
     processed_count = 0
     
-    print(os.path.exists(csvfile_path))
-
     if os.path.exists(csvfile_path):
         mode = 'a'  # append if already exists
         all_image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
@@ -78,7 +75,7 @@ def main():
         
         completed_pairs = list(zip(completed_df['Filename'], completed_df['PromptID']))  
         image_prompt_pairs = [pair for pair in all_image_prompt_pairs if pair not in completed_pairs]
-        print(len(image_prompt_pairs))
+
     else:
         mode = 'w'  # write if does not exist
         image_prompt_pairs = [] #[(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]

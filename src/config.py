@@ -8,12 +8,18 @@ import sys
 sys.path.append('../')
 # Load environment variables
 load_dotenv()
+print(os.environ)
 
 class Config:
     # Shared configurations
     OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
+    OPENAI_ORG_KEY = os.getenv('OPENAI_ORG_KEY')
     GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 
+    print(OPENAI_API_KEY)
+    print(OPENAI_ORG_KEY)
+    print(GOOGLE_API_KEY)
+    
     def __init__(self, department):
         # Initialize department-specific configurations
         self.department = department
@@ -39,10 +45,7 @@ class Config:
 
         #if "openai" in main_script_name:
             # Configure for OpenAI
-        self.headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {self.OPENAI_API_KEY}",
-        }
+        
             # You can add more OpenAI specific settings here
         #elif "gemini" in main_script_name:
             # Configure for Google Gemini
@@ -55,6 +58,12 @@ class Config:
             {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
             {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"},
         ]
+        
+        self.headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {self.OPENAI_API_KEY}",
+        "OpenAI-Organization": {self.OPENAI_ORG_KEY}
+        }
     
     # Add any Google API specific settings or initializations here
        # else:
