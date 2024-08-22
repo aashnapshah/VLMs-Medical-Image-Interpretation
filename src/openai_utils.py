@@ -12,10 +12,12 @@ from openai import OpenAI
 from concurrent.futures import ThreadPoolExecutor
 import argparse
 from config import Config
+from PIL import Image
+import io
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Process images for a specific department.")
-    parser.add_argument("--department", help="Specify the department (dermatology or radiology)", required=True)
+    parser.add_argument("--department", help="Specify the department", required=True)
     args = parser.parse_args()
     return args.department
 
@@ -35,15 +37,26 @@ def get_image_paths(input: str) -> list:
     return image_paths
 
 def encode_image(image_path):
-    """Your docstring here"""
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
     
 def process_request(filename, prompt, config, max_tokens=7):
     image_path = os.path.join(config.folder_path, filename)
+    # Check if the file is a .tif image and convert it to .jpeg
+    if filename.lower().endswith('.tif'):
+        # Load the .tif image and convert it to .jpeg
+        img = Image.open(image_path)
+        # Generate a new filename for the converted image
+        converted_filename = f"{os.path.splitext(filename)[0]}.jpeg"
+        converted_image_path = os.path.join(config.folder_path, converted_filename)
+        # Save the converted image as .jpeg
+        img.convert("RGB").save(converted_image_path, "JPEG")
+        # Update the image_path to the converted image
+        image_path = converted_image_path
+
     base64_image = encode_image(image_path)
     payload = {
-        "model": "gpt-4-vision-preview",
+        "model": "gpt-4o",
         "messages": [
             {
                 "role": "user",
@@ -65,10 +78,67 @@ def process_request(filename, prompt, config, max_tokens=7):
     else:
         print(f"Error processing {filename} with prompt '{prompt}': {response.text}")
         return filename, prompt, None
-    
-def process_pair(pair, config):
-    file_name, prompt_id = pair
-    if file_name.endswith(('.png', '.jpg')):
+
+def convert_to_jpeg(image_path):
+    with Image.open(image_path) as img:
+        # Convert to RGB mode if it's not already
+        if img.mode != 'RGB':
+            img = img.convert('RGB')
+        
+        # Create a BytesIO object
+        jpeg_io = io.BytesIO()
+        
+        # Save as JPEG to the BytesIO object
+        img.save(jpeg_io, format='JPEG', quality=85)
+        
+        # Get the JPEG data
+        jpeg_data = jpeg_io.getvalue()
+        
+    return jpeg_data
+
+client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
+
+def analyze_image(config, filename, prompt_id, max_tokens=300):
+    text_prompt = config.prompts_dict[prompt_id] 
+    image_path = os.path.join(config.folder_path, filename)
+
+    # Convert TIF to JPEG
+    jpeg_data = convert_to_jpeg(image_path)
+
+    # Encode the JPEG data
+    base64_image = base64.b64encode(jpeg_data).decode("utf-8")
+
+    # Prepare the base64 image string with the required prefix
+    base64_image = f"data:image/jpeg;base64,{base64_image}"
+
+    response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "image_url",
+                    "image_url": {"url": base64_image},
+                },
+            ],
+        },
+        {
+            "role": "user",
+            "content": text_prompt
+        }
+    ],
+        max_tokens=max_tokens,
+    )
+
+    try:
+        return filename, prompt_id, response.choices[0].message.content
+    except Exception as e:
+        print(f"Error processing {filename}: {str(e)}")
+        return filename, prompt_id, None
+
+def process_pair(config, file_name, prompt_id):
+    if file_name.endswith(('.png', '.jpg', '.tif')):
         text_prompt = config.prompts_dict[prompt_id] 
         try:
             response = process_request(file_name, text_prompt, config)
@@ -82,10 +152,7 @@ def main():
     config = Config(department)
     image_paths = get_image_paths(config.image_paths)
     date = time.strftime("%Y%m%d")
-    date = '20240318'
-    csvfile_path = f"data/{department}/gpt4v_{department}_results_{date}_single_word.csv"
-
-    processed_count = 0
+    csvfile_path = f"../data/{department}/gpt4o_{department}_results_{date}.csv"
     
     if os.path.exists(csvfile_path):
         mode = 'a'  # append if already exists
@@ -99,9 +166,12 @@ def main():
         mode = 'w'  # write if does not exist
         image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
         
-    with ThreadPoolExecutor() as executor:
-        results = list(executor.map(lambda pair: process_pair(pair, config), image_prompt_pairs))
+    image_prompt_pairs = image_prompt_pairs[:50]
+    # print(image_prompt_pairs)
 
+    # with ThreadPoolExecutor() as executor:
+    #     results = list(executor.map(lambda pair: process_pair(pair, config), image_prompt_pairs))
+    processed_count = 0
 
     with open(csvfile_path, mode, newline='') as csvfile:
         fieldnames = ["Filename", "PromptID", "Response"]
@@ -110,9 +180,20 @@ def main():
         if csvfile.tell() == 0:
             csv_writer.writeheader()  # file doesn't exist yet, write a header
 
-        for result in results:
-            if result is not None:
-                csv_writer.writerow(result)
+        for file_name, prompt_id in image_prompt_pairs:    
+            if file_name.endswith(('.png', '.jpg', '.tif')):
+                try:
+                    # response = process_pair(config, file_name, prompt_id)
+                    response = analyze_image(config, file_name, prompt_id)
+                    csv_writer.writerow({"Filename": response[0], "PromptID": prompt_id, "Response": response[2]})
+                    csvfile.flush()
+                except Exception as exc:
+                    logging.error(f'An exception occurred: {exc}')
+                processed_count += 1
+                if processed_count >= 50:
+                    logging.info("Rate limit reached. Sleeping for 60 seconds.")
+                    time.sleep(10)
+                    processed_count = 0 
                 
 if __name__ == "__main__":
     logging.info("Starting run...")

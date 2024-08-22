@@ -49,7 +49,6 @@ def process_image(config, file_name: str, text_prompt: str, safety_settings: lis
             logging.error(f"Error processing image {file_name} (attempt {attempt}/{max_retries}): {e}")
             retry_delay *= 2
             time.sleep(retry_delay)
-    logging.error(f"Error processing hererere {file_name}: {e}")
     return file_name, text_prompt, "Error"
 
 
@@ -69,14 +68,14 @@ def main():
         completed_pairs = list(zip(completed_df['Filename'], completed_df['PromptID']))  
         image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
         image_prompt_pairs = [pair for pair in image_prompt_pairs if pair not in completed_pairs]
+        # Filter out existing combinations
+        existing_pairs = set((row["Filename"], row["PromptID"]) for row in csv.DictReader(open(csvfile_path, 'r')))
+        image_prompt_pairs = [(file_name, prompt_id) for file_name, prompt_id in image_prompt_pairs if (file_name, prompt_id) not in existing_pairs]
 
     else:
         mode = 'w'  # write if does not exist
         image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
-        # Filter out existing combinations
-        existing_pairs = set((row["Filename"], row["PromptID"]) for row in csv.DictReader(open(config.output_csv, 'r')))
-        image_prompt_pairs = [(file_name, prompt_id) for file_name, prompt_id in image_prompt_pairs if (file_name, prompt_id) not in existing_pairs]
-
+        
         
     with open(csvfile_path, mode, newline='') as csvfile:
         fieldnames = ["Filename", "PromptID", "Response"]
