@@ -40,21 +40,17 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
     
-def process_request(filename, prompt, config, max_tokens=7):
+def process_request(filename, prompt, config, max_tokens=50):
     image_path = os.path.join(config.folder_path, filename)
     # Check if the file is a .tif image and convert it to .jpeg
     if filename.lower().endswith('.tif'):
-        # Load the .tif image and convert it to .jpeg
-        img = Image.open(image_path)
-        # Generate a new filename for the converted image
-        converted_filename = f"{os.path.splitext(filename)[0]}.jpeg"
-        converted_image_path = os.path.join(config.folder_path, converted_filename)
-        # Save the converted image as .jpeg
-        img.convert("RGB").save(converted_image_path, "JPEG")
-        # Update the image_path to the converted image
-        image_path = converted_image_path
+        ## Convert TIF to JPEG
+        jpeg_data = convert_to_jpeg(image_path)
+        # Encode the JPEG data
+        base64_image = base64.b64encode(jpeg_data).decode("utf-8")
+    else:
+        base64_image = encode_image(image_path)
 
-    base64_image = encode_image(image_path)
     payload = {
         "model": "gpt-4o",
         "messages": [
@@ -89,7 +85,7 @@ def convert_to_jpeg(image_path):
         jpeg_io = io.BytesIO()
         
         # Save as JPEG to the BytesIO object
-        img.save(jpeg_io, format='JPEG', quality=85)
+        img.save(jpeg_io, format='JPEG', quality=100)
         
         # Get the JPEG data
         jpeg_data = jpeg_io.getvalue()
@@ -166,7 +162,7 @@ def main():
         mode = 'w'  # write if does not exist
         image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
         
-    image_prompt_pairs = image_prompt_pairs[:50]
+    image_prompt_pairs = image_prompt_pairs[:5]
     # print(image_prompt_pairs)
 
     # with ThreadPoolExecutor() as executor:
@@ -183,17 +179,17 @@ def main():
         for file_name, prompt_id in image_prompt_pairs:    
             if file_name.endswith(('.png', '.jpg', '.tif')):
                 try:
-                    # response = process_pair(config, file_name, prompt_id)
-                    response = analyze_image(config, file_name, prompt_id)
+                    response = process_pair(config, file_name, prompt_id)
+                    # response = analyze_image(config, file_name, prompt_id)
                     csv_writer.writerow({"Filename": response[0], "PromptID": prompt_id, "Response": response[2]})
                     csvfile.flush()
                 except Exception as exc:
                     logging.error(f'An exception occurred: {exc}')
                 processed_count += 1
-                if processed_count >= 50:
-                    logging.info("Rate limit reached. Sleeping for 60 seconds.")
-                    time.sleep(10)
-                    processed_count = 0 
+                # if processed_count >= 50:
+                #     logging.info("Rate limit reached. Sleeping for 60 seconds.")
+                #     time.sleep(10)
+                #     processed_count = 0 
                 
 if __name__ == "__main__":
     logging.info("Starting run...")
