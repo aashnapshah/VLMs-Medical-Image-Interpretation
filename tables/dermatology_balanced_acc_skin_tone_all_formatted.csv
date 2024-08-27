@@ -1,6 +1,6 @@
 "","Model","PromptID","Balanced.Accuracy_CI_V-VI","Balanced.Accuracy_CI_I-II","Balanced.Accuracy_CI_III-IV","Sensitivity_CI_V-VI","Sensitivity_CI_I-II","Sensitivity_CI_III-IV","Specificity_CI_V-VI","Specificity_CI_I-II","Specificity_CI_III-IV"
-"1","GPT-4 Vision","P1","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)"
-"2","GPT-4 Vision","P2","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","NA (+/- NA)","1 (+/- 0)"
+"1","GPT-4 Vision","P1","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)"
+"2","GPT-4 Vision","P2","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","NaN (+/- NA)","1 (+/- 0)"
 "3","GPT-4 Vision","P3","0.53 (+/- 0.09)","0.48 (+/- 0.04)","0.47 (+/- 0.04)","0.12 (+/- 0.12)","0 (+/- 0)","0 (+/- 0)","0.94 (+/- 0.09)","0.97 (+/- 0.08)","0.94 (+/- 0.09)"
 "4","GPT-4 Vision","P4","0.56 (+/- 0.1)","0.55 (+/- 0.1)","0.6 (+/- 0.09)","0.36 (+/- 0.18)","0.36 (+/- 0.18)","0.4 (+/- 0.15)","0.76 (+/- 0.09)","0.74 (+/- 0.09)","0.8 (+/- 0.08)"
 "5","GPT-4 Vision","P5","0.54 (+/- 0.07)","0.5 (+/- 0)","0.49 (+/- 0.02)","0.13 (+/- 0.13)","0 (+/- 0)","0 (+/- 0)","0.95 (+/- 0.05)","1 (+/- 0)","0.98 (+/- 0.04)"
