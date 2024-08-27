@@ -64,7 +64,7 @@ def main():
     
     if os.path.exists(csvfile_path):
         mode = 'a'  # append if already exists
-        completed_df = pd.read_csv(csvfile_path)
+        completed_df = pd.read_csv(csvfile_path, error_bad_lines=False)
         completed_pairs = list(zip(completed_df['Filename'], completed_df['PromptID']))  
         image_prompt_pairs = [(image_path, prompt_id) for image_path in image_paths for prompt_id in config.prompts_dict.keys()]
         image_prompt_pairs = [pair for pair in image_prompt_pairs if pair not in completed_pairs]

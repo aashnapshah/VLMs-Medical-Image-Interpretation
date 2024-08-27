@@ -179,8 +179,8 @@ def main():
         for file_name, prompt_id in image_prompt_pairs:    
             if file_name.endswith(('.png', '.jpg', '.tif')):
                 try:
-                    response = process_pair(config, file_name, prompt_id)
-                    # response = analyze_image(config, file_name, prompt_id)
+                    # response = process_pair(config, file_name, prompt_id)
+                    response = analyze_image(config, file_name, prompt_id)
                     csv_writer.writerow({"Filename": response[0], "PromptID": prompt_id, "Response": response[2]})
                     csvfile.flush()
                 except Exception as exc:
