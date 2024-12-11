@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluating the Steerability of LVLMs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .toolbar {
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .toolbar .inputs {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            max-width: 600px;
+        }
+
+        .toolbar .inputs select, 
+        .toolbar .inputs input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        
+        /* .image-section {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            display: block;
+            flex-direction: column;
+            align-items: center;
+        } */
+
+        .image-section {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            margin-top: 20px; 
+            margin-bottom: 20px;
+        }
+
+        .image-preview {
+            /* .image-preview { */
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            border: 2px dashed #aaa;
+            background-color: #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            cursor: pointer;
+            transition: border-color 0.3s, background-color 0.3s;
+        } 
+
+        .image-preview img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: contain;
+        }
+
+        .image-preview.dragging {
+            border-color: green;
+            background-color: #e8ffe8;
+        }
+
+        .output-table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .output-table th, 
+        .output-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .output-table th {
+            background-color: #f0f0f0;
+        }
+
+        .actions {
+            margin: 0 auto;
+            display: block;
+            margin-top: 20px;
+        }
+
+        .actions button {
+            margin: 0 auto;
+            display: block;
+            padding: 10px 20px;
+            display: block;
+            font-size: 16px;
+            border: none;
+            align-items: center;
+            border-radius: 4px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+
+        .actions button:hover {
+            background-color: #0056b3;
+            align-items: center;
+
+        }
+
+        .sample-select-container{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <div class="inputs">
+                <div>
+                    <label for="model">Select Model:</label><br>
+                    <select id="model">
+                        <option value="gpt-4o">gpt-4o</option>
+                        <option value="gpt-4o-2024-05-13">gpt-4o-2024-05-13</option>
+                        <option value="gpt-4-turbo">gpt-4-turbo</option>
+                        <option value="gpt-4-turbo-2024-04-09">gpt-4-turbo-2024-04-09</option>
+                        <option value="Gemini Pro Vision">Gemini Pro Vision</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="domain">Select Domain:</label><br>
+                    <select id="domain">
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Radiology">Radiology</option>
+                        <option value="Histology">Histology</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="evaluation">Expert Evaluation:</label><br>
+                    <select id="evaluation">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="prompting">Prompting Style:</label><br>
+                    <select id="prompting">
+                        <option value="neither">Vanilla</option>
+                        <option value="matching game">Matching Game</option>
+                        <option value="painting">Painting</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+            </div>
+            <!-- <div class="image-section" style="text-align:center;">
+                <button id="use-sample-button" style="margin-bottom:10px;">Use a Provided Sample Image</button>
+                <div class="image-preview" id="image-preview">
+                    <span>Drag and drop an image here or click to upload</span>
+                </div>
+            </div> -->
+
+            <div class="image-section" style="text-align:center;">
+                <button id="use-sample-button" style="margin-bottom:10px;">Use a Provided Sample Image</button>
+                <div class="image-preview" id="image-preview">
+                    <span>Drag and drop an image here or click to upload</span>
+                </div>
+                <!-- Hidden file input -->
+                <input type="file" id="fileInput" style="display:none;" accept="image/*" />
+            </div>
+
+        <div class="actions">
+            <input type="file" id="file-input" accept="image/*" style="display: none;">
+            <button id="generate-button">Generate Response</button>
+        </div>
+
+        <table class="output-table">
+            <thead>
+                <tr>
+                    <th>Model</th>
+                    <th>Prompt</th>
+                    <th>Response</th>
+                    <th>Image</th>
+
+                </tr>
+            </thead>
+            <tbody id="output-table-body">
+                <tr>
+                    <!-- <td colspan="2" style="text-align: center;">Output will appear here.</td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+<script src="script.js"></script>
