@@ -9,7 +9,7 @@ import requests
 import base64
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-GOOGLE_API_KEY = 'AIzaSyCb6q8gdLFt3KJ9g906CLAmcAHACtfhqhk' 
+GOOGLE_API_KEY = os.getenv('GEMINI_API_KEY')
 
 def encode_image(image_path):
     """Your docstring here"""
